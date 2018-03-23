@@ -9,7 +9,7 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/tatecarson/lsu-ddem-new"
+  editURL = "https://github.com/lsu-ddem/pathways-site"
   description = "Educational material for LSU Programming Digital Media"
   author = "Tate Carson"
   showVisitedLinks = true
@@ -24,11 +24,6 @@ title = "Educational material for LSU Programming Digital Media"
 weight = 1
 languageName = "English"
 
-[[Languages.en.menu.shortcuts]] 
-name = "<i class='fa fa-fw fa-github'></i> Github repo"
-identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
-weight = 10
 
 
 
