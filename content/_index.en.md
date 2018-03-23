@@ -4,6 +4,8 @@ title: "Programming Digital Media"
 
 ## Programming Digital Media
 
+are we still working.
+
 ### Expanding text
 
 {{%expand%}}
