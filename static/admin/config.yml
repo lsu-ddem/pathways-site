@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  repo: tatecarson/lsu-ddem-new
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+
+collections:
+  - name: "homepage" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Home Page" # Used in the UI, ie.: "New Post"
+    folder: "content" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "p5js" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "p5js" # Used in the UI, ie.: "New Post"
+    folder: "content/unit-1-p5js" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+
+
