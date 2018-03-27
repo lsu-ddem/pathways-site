@@ -1,12 +1,24 @@
 ---
 title: Samples
-chapter: true
-weight: 1
+weight: 2
 ---
 
 ### Samples
 
-Here is a list of samples you can choose from for your project. Click on them to preview in the bowser. To use them just use the link when defining your players.
+Here is a list of samples you can choose from for your project. Click on them to preview in the browser. To use them just use the link when defining your players.
+
+### Playing
+
+To play samples use with a new Tone.Player() for one sound or a new Tone.Players() for multiple sounds.
+
+```js
+player = new Tone.Player('url').toMaster();
+
+players = new Tone.Players({
+	sample1: 'url',
+	sample2: 'url'
+}).toMaster();
+```
 
 ## Shorter weird sounds:
 
