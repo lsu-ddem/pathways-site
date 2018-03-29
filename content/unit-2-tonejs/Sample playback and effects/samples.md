@@ -1,27 +1,10 @@
 ---
-title: Samples
-weight: 2
+title: Samples to pick from 
+weight: 1
 disableToc: false
 ---
 
-### Samples
-
-Here is a list of samples you can choose from for your project. Click on them to preview in the browser. To use them just use the link when defining your players.
-
-### Playing
-
-To play samples use with a new Tone.Player() for one sound or a new Tone.Players() for multiple sounds.
-
-```js
-player = new Tone.Player('url').toMaster();
-
-players = new Tone.Players({
-	sample1: 'url',
-	sample2: 'url'
-}).toMaster();
-```
-
-## Table of contents
+<!-- ## Table of contents
 
 * [Short Weird sounds](#short-weird-sounds)
 * [Long weird sounds](#long-weird-sounds)
@@ -33,7 +16,7 @@ players = new Tone.Players({
 * [Short percussion sounds](#short-percussion-sounds)
 * [Short nature sounds](#short-nature-sounds)
 * [Long nature sounds](#long-nature-sounds)
-* [Reversed sounds](#reversed-sounds)
+* [Reversed sounds](#reversed-sounds) -->
 
 ## Shorter weird sounds:
 
