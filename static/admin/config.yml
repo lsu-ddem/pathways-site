@@ -4,6 +4,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
   accept_roles: 
     - admin 
+    - editor 
 
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
 
@@ -18,6 +19,13 @@ collections:
   - name: "p5js" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "p5js" # Used in the UI, ie.: "New Post"
     folder: "content/unit-1-p5js" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "p5js-lesson1" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "p5js-lesson1" # Used in the UI, ie.: "New Post"
+    folder: "content/unit-1-p5js/lesson_1" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
