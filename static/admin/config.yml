@@ -9,13 +9,6 @@ backend:
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
 
 collections:
-  - name: "homepage" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Home Page" # Used in the UI, ie.: "New Post"
-    folder: "content" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "p5js" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "p5js" # Used in the UI, ie.: "New Post"
     folder: "content/unit-1-p5js" # The path to the folder where the documents are stored
@@ -23,13 +16,26 @@ collections:
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "p5js-lesson1" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "p5js-lesson1" # Used in the UI, ie.: "New Post"
-    folder: "content/unit-1-p5js/lesson_1" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+  - name: "p5js-lesson1" 
+    label: "p5js-lesson1" 
+    folder: "content/unit-1-p5js/lesson_1" 
+    create: true 
+    fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-
+  - name: "tonejs" 
+    label: "tonejs" 
+    folder: "content/unit-2-tonejs" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "sample playback and effects" 
+    label: "sample playback and effects" 
+    folder: "content/unit-2-tonejs/sample-playback-and-effects" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
 
