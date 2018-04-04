@@ -1,10 +1,11 @@
 ---
 title: Lesson 1
 ---
-
 # Basics
 
 Make a rectangle:
+
+edit edit 
 
 ```js
 rect(100, 100, 100, 100);
