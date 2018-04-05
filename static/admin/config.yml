@@ -11,7 +11,7 @@ media_folder: "images/uploads" # Media files will be stored in the repo under im
 collections:
   - name: "p5js-lesson1" 
     label: "p5js-lesson1" 
-    folder: "content/unit-1-p5js/lesson_1" 
+    folder: "content/1_Coding/1_introToCoding" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
