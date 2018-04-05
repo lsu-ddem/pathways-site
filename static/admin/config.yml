@@ -17,4 +17,84 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "2_GoodCoding" 
+    label: "2_GoodCoding" 
+    folder: "content/1_Coding/2_GoodCoding" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "3_Variables" 
+    label: "3_Variables" 
+    folder: "content/1_Coding/3_Variables" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "4_Math" 
+    label: "4_Math" 
+    folder: "content/1_Coding/4_Math" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "5_Conditionals" 
+    label: "5_Conditionals" 
+    folder: "content/1_Coding/5_Conditionals" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "6_Arrays" 
+    label: "6_Arrays" 
+    folder: "content/1_Coding/6_Arrays" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "7_Loops" 
+    label: "7_Loops" 
+    folder: "content/1_Coding/7_Loops" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "8_Functions" 
+    label: "8_Functions" 
+    folder: "content/1_Coding/8_Functions" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "9_Classes" 
+    label: "9_Classes" 
+    folder: "content/1_Coding/9_Classes" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "10_Classes" 
+    label: "10_Classes" 
+    folder: "content/1_Coding/10_Classes" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  # - name: "2_GoodCoding" 
+  #   label: "2_GoodCoding" 
+  #   folder: "content/1_Coding/2_GoodCoding" 
+  #   create: true 
+  #   fields: 
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Order", name: "weight", widget: "number"}
+  #     - {label: "Body", name: "body", widget: "markdown"}
  
