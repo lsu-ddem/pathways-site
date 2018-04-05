@@ -73,9 +73,9 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "9_Classes" 
-    label: "9_Classes" 
-    folder: "content/1_Coding/9_Classes" 
+  - name: "9_p5js" 
+    label: "9_p5js" 
+    folder: "content/1_Coding/9_p5js" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
