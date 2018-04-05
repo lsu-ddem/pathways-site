@@ -1,8 +1,8 @@
 ---
-title: p5.js
+title: Coding Style 
 chapter: true
-pre: "<b>1. </b>"
-weight: 1
+pre: "<b>2. </b>"
+weight: 2
 ---
 
 ### Chapter 1

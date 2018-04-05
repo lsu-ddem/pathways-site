@@ -1,8 +1,8 @@
 ---
 title: "Tonejs"
-weight: 10
+weight: 100
 chapter: true
-pre: "<b>2. </b>"
+# pre: "<b>2. </b>"
 ---
 
 ### Chapter 2
