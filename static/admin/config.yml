@@ -9,8 +9,8 @@ backend:
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
 
 collections:
-  - name: "p5js-lesson1" 
-    label: "p5js-lesson1" 
+  - name: "1_introToCoding" 
+    label: "1_introToCoding" 
     folder: "content/1_Coding/1_introToCoding" 
     create: true 
     fields: 
