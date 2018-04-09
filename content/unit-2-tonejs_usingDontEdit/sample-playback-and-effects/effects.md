@@ -21,7 +21,7 @@ Every effect has a range that the effect can be applied to the sound, also calle
 
 ## Delay
 
-{{% codepen 400 gevmWR %}}
+{{% codepen 400 zWRZwV %}}
 
 ## Distortion
 
