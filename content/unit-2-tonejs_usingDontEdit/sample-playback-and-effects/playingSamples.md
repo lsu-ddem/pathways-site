@@ -6,10 +6,6 @@ disableToc: false
 
 To play samples use with a new **Tone.Player** for one sound or a new **Tone.Players** for multiple sounds.
 
-<!-- add this to codepen examples -->
-
-<!-- <script async src="//jsfiddle.net/yotammann/8ozo3v9e/4/embed/"></script> -->
-
 ## Tone.Player
 
 ### Play one sound
@@ -45,6 +41,14 @@ We used **Tone.Players** when we want to collect multiple samples to play.
 
 To define which sounds to play we create an object with multiple file paths, each with a unique name to call the sound up by later. You can think of this name as a type of variable that is inside of an object.
 
+### Trigger sounds
+
+There are multiple ways of triggering and controlling sounds. Below we look at **keyIsDown**, **buttons**, and **sliders**.
+{{% notice tip %}}
+Buttons and sliders are DOM elements in p5. To use them include the p5.dom library in your html file by pasting this under the p5.js file:
+`<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>`
+{{% /notice %}}
+
 #### keyIsDown
 
 Since we have multiple sounds to play now we can use keys on the keyboard to trigger them. To do that we use the p5 function **keyIsDown**.
@@ -59,10 +63,51 @@ To get each specific sound to play we use a special syntax: **players.get('sampl
 
 Instead of using **keyIsDown** we can create buttons to trigger sounds. The below example is the same as the previous one just now we use buttons.
 
-We create a button with the p5 function **createButton**. Inside the ('') we give the button text to display.
+We create a button with the p5 function **createButton()**. The parameter is a string that decides the button label. Name it something that describes what your button does.
+
+```
+createButton('button label')
+```
 
 **button1.position(x, y)** determines the button location.
 
 **button1.mousePressed()** calls a function that we define below. Inside of this function put any code that you want to run when you click the button.
 
 {{% codepen 600 zWRNby %}}
+
+#### Using sliders
+
+To change an aspect of our sound while it is playing we can use a slider. To make a slider in p5.js use **createSlider()**.
+
+##### Syntax
+
+```
+createSlider(min,max,[value],[step])
+```
+
+##### Parameters
+
+* min - minimum value of the slider
+* max - maximum value of the slider
+* value - default value of the slider
+* step - step size for each tick of the slider (if step is set to 0, the slider will move continuously from the minimum to the maximum value)
+
+To get the current value of the slider: **slider.value()**
+
+#### Labeling your sampler
+
+To label the sampler we use the **text()** function.
+
+##### Syntax
+
+```
+text(str,x,y,[x2],[y2])
+```
+
+##### Parameters
+
+* str - the alphanumeric symbols to be displayed
+* x - x-coordinate of text
+* y - y-coordinate of text
+
+{{% codepen 600 Brbbbj %}}
