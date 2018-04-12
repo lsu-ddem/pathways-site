@@ -44,10 +44,6 @@ To define which sounds to play we create an object with multiple file paths, eac
 ### Trigger sounds
 
 There are multiple ways of triggering and controlling sounds. Below we look at **keyIsDown**, **buttons**, and **sliders**.
-{{% notice tip %}}
-Buttons and sliders are DOM elements in p5. To use them include the p5.dom library in your html file by pasting this under the p5.js file:
-`<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>`
-{{% /notice %}}
 
 #### keyIsDown
 
@@ -64,6 +60,11 @@ To get each specific sound to play we use a special syntax: **players.get('sampl
 Instead of using **keyIsDown** we can create buttons to trigger sounds. The below example is the same as the previous one just now we use buttons.
 
 We create a button with the p5 function **createButton()**. The parameter is a string that decides the button label. Name it something that describes what your button does.
+
+{{% notice tip %}}
+Buttons and sliders are DOM elements in p5. To use them include the p5.dom library in your html file by pasting this under the p5.js file:
+`<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>`
+{{% /notice %}}
 
 ```
 createButton('button label')
