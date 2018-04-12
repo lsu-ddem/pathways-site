@@ -61,11 +61,6 @@ Instead of using **keyIsDown** we can create buttons to trigger sounds. The belo
 
 We create a button with the p5 function **createButton()**. The parameter is a string that decides the button label. Name it something that describes what your button does.
 
-{{% notice tip %}}
-Buttons and sliders are DOM elements in p5. To use them include the p5.dom library in your html file by pasting this under the p5.js file:
-`<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>`
-{{% /notice %}}
-
 ```
 createButton('button label')
 ```
