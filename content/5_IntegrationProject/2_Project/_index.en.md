@@ -1,5 +1,5 @@
 ---
-title: Coding Basics
+title: Project
 weight: 2
 ---
 

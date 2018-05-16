@@ -1,5 +1,5 @@
 ---
-title: Coding Basics
+title: Synths and Music 
 weight: 2
 ---
 

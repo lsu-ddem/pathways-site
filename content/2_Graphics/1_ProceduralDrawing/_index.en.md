@@ -1,6 +1,6 @@
 ---
-title: Coding Basics
-weight: 2
+title: Procedural Drawing
+weight: 1
 ---
 
 ### Chapter 1

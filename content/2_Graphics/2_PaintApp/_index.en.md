@@ -1,5 +1,5 @@
 ---
-title: Coding Basics
+title: Paint App
 weight: 2
 ---
 

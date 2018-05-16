@@ -1,4 +1,4 @@
 ---
 title: Code that does a thing - functions 
-weight: '1'
+weight: 1
 ---

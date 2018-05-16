@@ -1,6 +1,6 @@
 ---
-title: Coding Basics
-weight: 2
+title: Documentation
+weight: 3
 ---
 
 ### Chapter 1

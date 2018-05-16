@@ -1,6 +1,6 @@
 ---
-title: Coding Basics
-weight: 2
+title: Serial Communication 
+weight: 3
 ---
 
 ### Chapter 1

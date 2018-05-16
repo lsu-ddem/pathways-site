@@ -1,5 +1,5 @@
 ---
-title: Coding Basics
+title: Analog I/O
 weight: 2
 ---
 

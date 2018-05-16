@@ -1,6 +1,6 @@
 ---
-title: Coding Basics
-weight: 2
+title: Presentation
+weight: 4
 ---
 
 ### Chapter 1
