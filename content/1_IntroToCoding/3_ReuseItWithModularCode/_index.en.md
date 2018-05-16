@@ -1,7 +1,8 @@
 ---
-title: Coding Intro
+title: Reuse it with modular code
 weight: 1
 ---
+
 ### Chapter 1
 
 Everything on a chapter page will be centered.

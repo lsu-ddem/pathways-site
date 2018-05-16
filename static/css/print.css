@@ -1,0 +1,24 @@
+nav,
+form,
+#top-bar-sticky-wrapper,
+#navigation {
+  display: none !important;
+}
+#body {
+  margin-left: 0 !important;
+}
+
+/* add back in margin */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0.75rem !important;
+}
+
+/* remove print information, webpage, date, etc */
+@page {
+  size: auto;
+  margin: auto;
+}

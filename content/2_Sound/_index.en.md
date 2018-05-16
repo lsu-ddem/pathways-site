@@ -1,6 +1,6 @@
 ---
-title: "Tonejs"
-weight: 100
+title: "Sound"
+weight: 2
 chapter: true
 # pre: "<b>2. </b>"
 ---

@@ -1,10 +1,10 @@
 ---
-title: Coding Style 
-chapter: true
-pre: "<b>2. </b>"
-weight: 2
+title: Coding Basics
+weight: 1
 ---
 
 ### Chapter 1
 
 Everything on a chapter page will be centered.
+
+{{% codepen 500 ByvmMo %}}
