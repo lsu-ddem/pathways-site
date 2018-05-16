@@ -1,5 +1,5 @@
 ---
-title: Sounds in Bug Squish 
+title: Sprite Collisions w/Sound!
 weight: 3
 ---
 

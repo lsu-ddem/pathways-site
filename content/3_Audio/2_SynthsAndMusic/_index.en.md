@@ -1,5 +1,5 @@
 ---
-title: Synths and Music 
+title: Synthesizer w/ sequencing
 weight: 2
 ---
 

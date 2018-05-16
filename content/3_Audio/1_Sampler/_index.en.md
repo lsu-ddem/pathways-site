@@ -1,5 +1,5 @@
 ---
-title: Sampler
+title: Sampler w/ effects
 weight: 1
 ---
 

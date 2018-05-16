@@ -1,5 +1,5 @@
 ---
-title: Bug Squish 
+title: Sprites spawning and movement using the p5.play library 
 weight: 3
 ---
 

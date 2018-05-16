@@ -1,4 +1,4 @@
 ---
-title: "Physical Computing"
+title: "Physical Computing (Arduino)"
 weight: 4
 ---

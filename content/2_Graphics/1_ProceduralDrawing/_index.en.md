@@ -1,5 +1,5 @@
 ---
-title: Procedural Drawing
+title: Drawing & Shapes
 weight: 1
 ---
 
