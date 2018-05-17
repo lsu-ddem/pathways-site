@@ -11,7 +11,7 @@ media_folder: "images/uploads" # Media files will be stored in the repo under im
 collections:
   - name: "1_introToCoding" 
     label: "1_introToCoding" 
-    folder: "content/1_Coding/1_introToCoding" 
+    folder: "content/1_IntroToCoding/1_CodingBasics" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
