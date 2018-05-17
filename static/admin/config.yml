@@ -99,3 +99,31 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+# Reuse it with modular code   
+  - name: "Reuse it with modular code" 
+    label: "Reuse it with modular code" 
+    folder: "content/1_IntroToCoding/3_ReuseItWithModularCode" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Code that does a thing" 
+    label: "Code that does a thing" 
+    folder: "content/1_IntroToCoding/3_ReuseItWithModularCode/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Code that is a thing" 
+    label: "Code that is a thing" 
+    folder: "content/1_IntroToCoding/3_ReuseItWithModularCode/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
