@@ -363,3 +363,121 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+# Unit 4 - Physical computing   
+  - name: "Physical Computing" 
+    label: "Physical Computing" 
+    folder: "content/4_PhysicalComputing" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+  # Digital IO    
+  - name: "Digital IO" 
+    label: "Digital IO" 
+    folder: "content/4_PhysicalComputing/1_Digital_IO" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Digital IO - Lesson 1" 
+    label: "Digital IO - Lesson 1" 
+    folder: "content/4_PhysicalComputing/1_Digital_IO/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Digital IO - Lesson 2" 
+    label: "Digital IO - Lesson 2" 
+    folder: "content/4_PhysicalComputing/1_Digital_IO/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Digital IO - Lesson 3" 
+    label: "Digital IO - Lesson 3" 
+    folder: "content/4_PhysicalComputing/1_Digital_IO/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+# Analog IO   
+  - name: "Analog IO" 
+    label: "Analog IO" 
+    folder: "content/4_PhysicalComputing/2_Analog_IO" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Analog IO - Lesson 1" 
+    label: "Analog IO - Lesson 1" 
+    folder: "content/4_PhysicalComputing/2_Analog_IO/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Analog IO - Lesson 2" 
+    label: "Analog IO - Lesson 2" 
+    folder: "content/4_PhysicalComputing/2_Analog_IO/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Analog IO - Lesson 3" 
+    label: "Analog IO - Lesson 3" 
+    folder: "content/4_PhysicalComputing/2_Analog_IO/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Sounds in Bug Squish    
+  - name: "Sounds in Bug Squish" 
+    label: "Sounds in Bug Squish" 
+    folder: "content/4_PhysicalComputing/3_SerialCommunication" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Sounds in Bug Squish - Lesson 1" 
+    label: "Sounds in Bug Squish - Lesson 1" 
+    folder: "content/4_PhysicalComputing/3_SerialCommunication/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sounds in Bug Squish - Lesson 2" 
+    label: "Sounds in Bug Squish - Lesson 2" 
+    folder: "content/4_PhysicalComputing/3_SerialCommunication/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sounds in Bug Squish - Lesson 3" 
+    label: "Sounds in Bug Squish - Lesson 3" 
+    folder: "content/4_PhysicalComputing/3_SerialCommunication/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
