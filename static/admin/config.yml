@@ -12,14 +12,23 @@ collections:
   # homepage 
   - name: "homepage" 
     label: "homepage" 
-    folder: "content/index.en.md" 
+    file: "content/index.en.md" 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Unit 1 - Intro to coding 
+  - name: "1_IntroToCoding" 
+    label: "1_IntroToCoding" 
+    file: "content/1_IntroToCoding/index.md" 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "1_IntroToCoding/1_CodingBasics" 
     label: "1_IntroToCoding/1_CodingBasics" 
-    folder: "content/1_IntroToCoding/1_CodingBasics" 
+    folder: "content/1_IntroToCoding/1_CodingBasics/1_Lesson_1" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
