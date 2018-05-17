@@ -19,8 +19,8 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
   # Unit 1 - Intro to coding 
-  - name: "1_IntroToCoding" 
-    label: "1_IntroToCoding" 
+  - name: "Intro to Coding" 
+    label: "Intro to Coding" 
     folder: "content/1_IntroToCoding" 
     create: true 
     fields: 
@@ -34,10 +34,28 @@ collections:
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}      
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
   - name: "Getting Started" 
     label: "Getting Started" 
     folder: "content/1_IntroToCoding/1_CodingBasics/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Storing things in code" 
+    label: "Storing things in code" 
+    folder: "content/1_IntroToCoding/1_CodingBasics/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Everything is a number" 
+    label: "Everything is a number" 
+    folder: "content/1_IntroToCoding/1_CodingBasics/3_Lesson_3" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
