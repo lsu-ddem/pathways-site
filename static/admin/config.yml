@@ -577,7 +577,7 @@ collections:
   # Lessons 
   - name: "Documentation - Lesson 1" 
     label: "Documentation - Lesson 1" 
-    folder: "content/5_IntegrationProject/3_documentation/1_Lesson_1" 
+    folder: "content/5_IntegrationProject/3_Documentation/1_Lesson_1" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
@@ -585,7 +585,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "Documentation - Lesson 2" 
     label: "Documentation - Lesson 2" 
-    folder: "content/5_IntegrationProject/3_documentation/2_Lesson_2" 
+    folder: "content/5_IntegrationProject/3_Documentation/2_Lesson_2" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
@@ -593,7 +593,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "Documentation - Lesson 3" 
     label: "Documentation - Lesson 3" 
-    folder: "content/5_IntegrationProject/3_documentation/3_Lesson_3" 
+    folder: "content/5_IntegrationProject/3_Documentation/3_Lesson_3" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
