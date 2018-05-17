@@ -11,14 +11,14 @@ media_folder: "images/uploads" # Media files will be stored in the repo under im
 collections:
   # homepage 
   - name: "homepage" 
-    # label: "1_introToCoding" 
+    label: "homepage" 
     folder: "content/index.en.md" 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "1_introToCoding" 
-    # label: "1_introToCoding" 
+  - name: "1_IntroToCoding/1_CodingBasics" 
+    label: "1_IntroToCoding/1_CodingBasics" 
     folder: "content/1_IntroToCoding/1_CodingBasics" 
     create: true 
     fields: 
