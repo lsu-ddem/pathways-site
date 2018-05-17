@@ -35,8 +35,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}      
-  - name: "Everything is a number" 
-    label: "Everything is a number" 
+  - name: "Getting Started" 
+    label: "Getting Started" 
     folder: "content/1_IntroToCoding/1_CodingBasics/1_Lesson_1" 
     create: true 
     fields: 
