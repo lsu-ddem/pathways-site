@@ -295,7 +295,7 @@ collections:
 # Synths And Music   
   - name: "Synths And Music" 
     label: "Synths And Music" 
-    folder: "content/3_Audio/1_SynthsAndMusic" 
+    folder: "content/3_Audio/2_SynthsAndMusic" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
@@ -305,7 +305,7 @@ collections:
   # Lessons 
   - name: "Synths And Music - Lesson 1" 
     label: "Synths And Music - Lesson 1" 
-    folder: "content/3_Audio/1_SynthsAndMusic/1_Lesson_1" 
+    folder: "content/3_Audio/2_SynthsAndMusic/1_Lesson_1" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
@@ -313,7 +313,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "Synths And Music - Lesson 2" 
     label: "Synths And Music - Lesson 2" 
-    folder: "content/3_Audio/1_SynthsAndMusic/2_Lesson_2" 
+    folder: "content/3_Audio/2_SynthsAndMusic/2_Lesson_2" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
@@ -321,7 +321,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "Synths And Music - Lesson 3" 
     label: "Synths And Music - Lesson 3" 
-    folder: "content/3_Audio/1_SynthsAndMusic/3_Lesson_3" 
+    folder: "content/3_Audio/2_SynthsAndMusic/3_Lesson_3" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
