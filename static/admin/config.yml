@@ -27,6 +27,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  # Coding Basics    
   - name: "Coding Basics" 
     label: "Coding Basics" 
     folder: "content/1_IntroToCoding/1_CodingBasics" 
@@ -62,3 +64,38 @@ collections:
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
  
+# Making Things Happen    
+  - name: "making Things Happen" 
+    label: "making Things Happen" 
+    folder: "content/1_IntroToCoding/2_makingThings_Happen" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Computers Making Choices" 
+    label: "Computers Making Choices" 
+    folder: "content/1_IntroToCoding/2_makingThings_Happen/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Making Groups and Lists" 
+    label: "Making Groups and Lists" 
+    folder: "content/1_IntroToCoding/2_makingThings_Happen/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Do it again" 
+    label: "Do it again" 
+    folder: "content/1_IntroToCoding/2_makingThings_Happen/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}

@@ -1,4 +1,4 @@
 ---
 title: Computers Making Choices - Conditionals 
-weight: '1'
+weight: 1
 ---

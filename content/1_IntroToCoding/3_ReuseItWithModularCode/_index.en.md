@@ -1,6 +1,6 @@
 ---
 title: Reuse it with modular code
-weight: 1
+weight: 3
 ---
 
 ### Chapter 1
