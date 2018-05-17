@@ -481,3 +481,157 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+# Unit 5 - Integrations Project   
+  - name: "Integrations Project" 
+    label: "Integrations Project" 
+    folder: "content/5_IntegrationsProject" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+  # Proposal    
+  - name: "Proposal" 
+    label: "Proposal" 
+    folder: "content/5_IntegrationsProject/1_Proposal" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Proposal - Lesson 1" 
+    label: "Proposal - Lesson 1" 
+    folder: "content/5_IntegrationsProject/1_Proposal/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Proposal - Lesson 2" 
+    label: "Proposal - Lesson 2" 
+    folder: "content/5_IntegrationsProject/1_Proposal/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Proposal - Lesson 3" 
+    label: "Proposal - Lesson 3" 
+    folder: "content/5_IntegrationsProject/1_Proposal/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+# Project   
+  - name: "Project" 
+    label: "Project" 
+    folder: "content/5_IntegrationsProject/2_Project" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Project - Lesson 1" 
+    label: "Project - Lesson 1" 
+    folder: "content/5_IntegrationsProject/2_Project/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Project - Lesson 2" 
+    label: "Project - Lesson 2" 
+    folder: "content/5_IntegrationsProject/2_Project/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Project - Lesson 3" 
+    label: "Project - Lesson 3" 
+    folder: "content/5_IntegrationsProject/2_Project/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Documentation    
+  - name: "Documentation" 
+    label: "Documentation" 
+    folder: "content/5_IntegrationsProject/3_Documentation" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Documentation - Lesson 1" 
+    label: "Documentation - Lesson 1" 
+    folder: "content/5_IntegrationsProject/3_documentation/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Documentation - Lesson 2" 
+    label: "Documentation - Lesson 2" 
+    folder: "content/5_IntegrationsProject/3_documentation/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Documentation - Lesson 3" 
+    label: "Documentation - Lesson 3" 
+    folder: "content/5_IntegrationsProject/3_documentation/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Presentation
+  - name: "Presentation" 
+    label: "Presentation" 
+    folder: "content/5_IntegrationsProject/4_Presentation" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Presentation - Lesson 1" 
+    label: "Presentation - Lesson 1" 
+    folder: "content/5_IntegrationsProject/4_Presentation/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Presentation - Lesson 2" 
+    label: "Presentation - Lesson 2" 
+    folder: "content/5_IntegrationsProject/4_Presentation/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Presentation - Lesson 3" 
+    label: "Presentation - Lesson 3" 
+    folder: "content/5_IntegrationsProject/4_Presentation/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}     
