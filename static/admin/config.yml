@@ -12,7 +12,7 @@ collections:
   # homepage 
   - name: "homepage" 
     label: "homepage" 
-    file: "content/index.en.md" 
+    folder: "content" 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
@@ -21,7 +21,7 @@ collections:
   # Unit 1 - Intro to coding 
   - name: "1_IntroToCoding" 
     label: "1_IntroToCoding" 
-    file: "content/1_IntroToCoding/index.md" 
+    folder: "content/1_IntroToCoding" 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
