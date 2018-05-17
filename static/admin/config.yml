@@ -245,3 +245,121 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  # Unit 3 - Audio  
+  - name: "Audio" 
+    label: "Audio" 
+    folder: "content/3_Audio" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+  # Sampler    
+  - name: "Sampler" 
+    label: "Sampler" 
+    folder: "content/3_Audio/1_Sampler" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Sampler - Lesson 1" 
+    label: "Sampler - Lesson 1" 
+    folder: "content/3_Audio/1_Sampler/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sampler - Lesson 2" 
+    label: "Sampler - Lesson 2" 
+    folder: "content/3_Audio/1_Sampler/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sampler - Lesson 3" 
+    label: "Sampler - Lesson 3" 
+    folder: "content/3_Audio/1_Sampler/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+# Synths And Music   
+  - name: "Synths And Music" 
+    label: "Synths And Music" 
+    folder: "content/3_Audio/1_SynthsAndMusic" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Synths And Music - Lesson 1" 
+    label: "Synths And Music - Lesson 1" 
+    folder: "content/3_Audio/1_SynthsAndMusic/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Synths And Music - Lesson 2" 
+    label: "Synths And Music - Lesson 2" 
+    folder: "content/3_Audio/1_SynthsAndMusic/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Synths And Music - Lesson 3" 
+    label: "Synths And Music - Lesson 3" 
+    folder: "content/3_Audio/1_SynthsAndMusic/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Sounds in Bug Squish    
+  - name: "Sounds in Bug Squish" 
+    label: "Sounds in Bug Squish" 
+    folder: "content/3_Audio/3_SoundsInBugSquish" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Sounds in Bug Squish - Lesson 1" 
+    label: "Sounds in Bug Squish - Lesson 1" 
+    folder: "content/3_Audio/3_SoundsInBugSquish/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sounds in Bug Squish - Lesson 2" 
+    label: "Sounds in Bug Squish - Lesson 2" 
+    folder: "content/3_Audio/3_SoundsInBugSquish/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sounds in Bug Squish - Lesson 3" 
+    label: "Sounds in Bug Squish - Lesson 3" 
+    folder: "content/3_Audio/3_SoundsInBugSquish/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
