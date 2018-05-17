@@ -210,10 +210,10 @@ collections:
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-# Reuse it with modular code   
-  - name: "Reuse it with modular code" 
-    label: "Reuse it with modular code" 
-    folder: "content/2_Graphics/3_ReuseItWithModularCode" 
+# Bug Squish    
+  - name: "Bug Squish" 
+    label: "Bug Squish" 
+    folder: "content/2_Graphics/3_BugSquish" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
@@ -221,17 +221,25 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}    
 
   # Lessons 
-  - name: "Code that does a thing" 
-    label: "Code that does a thing" 
-    folder: "content/2_Graphics/3_ReuseItWithModularCode/1_Lesson_1" 
+  - name: "Bug Squish - Lesson 1" 
+    label: "Bug Squish - Lesson 1" 
+    folder: "content/2_Graphics/3_BugSquish/1_Lesson_1" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "Code that is a thing" 
-    label: "Code that is a thing" 
-    folder: "content/2_Graphics/3_ReuseItWithModularCode/2_Lesson_2" 
+  - name: "Bug Squish - Lesson 2" 
+    label: "Bug Squish - Lesson 2" 
+    folder: "content/2_Graphics/3_BugSquish/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Bug Squish - Lesson 3" 
+    label: "Bug Squish - Lesson 3" 
+    folder: "content/2_Graphics/3_BugSquish/3_Lesson_3" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
