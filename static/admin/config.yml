@@ -67,7 +67,7 @@ collections:
 # Making Things Happen    
   - name: "making Things Happen" 
     label: "making Things Happen" 
-    folder: "content/1_IntroToCoding/2_makingThings_Happen" 
+    folder: "content/1_IntroToCoding/2_MakingThings_Happen" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
