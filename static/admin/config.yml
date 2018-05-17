@@ -127,3 +127,113 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  # Unit 2 - Graphics  
+  - name: "Graphics" 
+    label: "Graphics" 
+    folder: "content/2_Graphics" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Procedural Drawing    
+  - name: "Procedural Drawing" 
+    label: "Procedural Drawing" 
+    folder: "content/2_Graphics/1_ProceduralDrawing" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Procedural Drawing - Lesson 1" 
+    label: "Procedural Drawing - Lesson 1" 
+    folder: "content/2_Graphics/1_ProceduralDrawing/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Procedural Drawing - Lesson 2" 
+    label: "Procedural Drawing - Lesson 2" 
+    folder: "content/2_Graphics/1_ProceduralDrawing/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Procedural Drawing - Lesson 3" 
+    label: "Procedural Drawing - Lesson 3" 
+    folder: "content/2_Graphics/1_ProceduralDrawing/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+# Making Things Happen    
+  - name: "making Things Happen" 
+    label: "making Things Happen" 
+    folder: "content/2_Graphics/2_MakingThings_Happen" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Computers Making Choices" 
+    label: "Computers Making Choices" 
+    folder: "content/2_Graphics/2_MakingThings_Happen/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Making Groups and Lists" 
+    label: "Making Groups and Lists" 
+    folder: "content/2_Graphics/2_MakingThings_Happen/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Do it again" 
+    label: "Do it again" 
+    folder: "content/2_Graphics/2_MakingThings_Happen/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Reuse it with modular code   
+  - name: "Reuse it with modular code" 
+    label: "Reuse it with modular code" 
+    folder: "content/2_Graphics/3_ReuseItWithModularCode" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Code that does a thing" 
+    label: "Code that does a thing" 
+    folder: "content/2_Graphics/3_ReuseItWithModularCode/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Code that is a thing" 
+    label: "Code that is a thing" 
+    folder: "content/2_Graphics/3_ReuseItWithModularCode/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
