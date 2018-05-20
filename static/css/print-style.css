@@ -4,11 +4,13 @@ form,
 #navigation {
   display: none !important;
 }
+
 #body {
   margin-left: 0 !important;
 }
 
 /* add back in margin */
+
 h1,
 h2,
 h3,
@@ -18,7 +20,8 @@ h5 {
 }
 
 /* remove print information, webpage, date, etc */
+
 @page {
   size: auto;
-  margin: auto;
+  margin: 0;
 }
