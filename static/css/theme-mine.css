@@ -1,3 +1,5 @@
+/* RGB */
+
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab");
 
@@ -39,7 +41,7 @@ h6 {
 /* first level */
 #sidebar ul.topics > li > a {
   font-family: "Roboto Slab";
-  font-weight: 700;
+  font-weight: 575;
   line-height: 2rem;
   font-size: 1.1rem;
 }
@@ -56,17 +58,17 @@ h6 {
 
 :root {
   --MAIN-TEXT-color: #323232; /* Color of text by default */
-  --MAIN-TITLES-TEXT-color: #5e5e5e; /* Color of titles h2-h3-h4-h5 */
-  --MAIN-LINK-color: #599a3e; /* Color of links */
-  --MAIN-LINK-HOVER-color: #3f6d2c; /* Color of hovered links */
-  --MAIN-ANCHOR-color: #599a3e; /* color of anchors on titles */
+  --MAIN-TITLES-TEXT-color: #323232; /* Color of titles h2-h3-h4-h5 */
+  --MAIN-LINK-color: #3cc9b8; /* Color of links */
+  --MAIN-LINK-HOVER-color: #35b0a1; /* Color of hovered links */
+  --MAIN-ANCHOR-color: #3cc9b8; /* color of anchors on titles */
 
-  --MENU-HEADER-BG-color: #93e165; /* Background color of menu header */
-  --MENU-HEADER-BORDER-color: #9cd484; /*Color of menu header border */
+  --MENU-HEADER-BG-color: #de3540; /* Background color of menu header */
+  --MENU-HEADER-BORDER-color: #c42d38; /*Color of menu header border */
 
-  --MENU-SEARCH-BG-color: #7bbb56; /* Search field background color (by default borders + icons) */
-  --MENU-SEARCH-BOX-color: #93e165; /* Override search field border color */
-  --MENU-SEARCH-BOX-ICONS-color: #c7f7c4; /* Override search field icons color */
+  --MENU-SEARCH-BG-color: #323232; /* Search field background color (by default borders + icons) */
+  --MENU-SEARCH-BOX-color: #de3540; /* Override search field border color */
+  --MENU-SEARCH-BOX-ICONS-color: #ccc; /* Override search field icons color */
 
   --MENU-SECTIONS-ACTIVE-BG-color: #212525dd; /* Background color of the active section and its childs */
   --MENU-SECTIONS-BG-color: #383f3e; /* Background color of other sections */
@@ -75,8 +77,7 @@ h6 {
   --MENU-SECTION-ACTIVE-CATEGORY-color: #777; /* Color of active category text */
   --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #fff; /* Color of background for the active category (only) */
 
-  --MENU-VISITED-color: #599a3e; /* Color of 'page visited' icons in menu */
-  --MENU-SECTION-HR-color: #18211c; /* Color of <hr> separator in menu */
+  --MENU-VISITED-color: #3cc9b8; /* Color of 'page visited' icons in menu */
 }
 
 body {
@@ -120,6 +121,11 @@ a {
 
 a:hover {
   color: var(--MAIN-LINK-HOVER-color);
+}
+
+/* arrows */
+.nav {
+  color: #ffde45;
 }
 
 #sidebar ul li.visited > a .read-icon {
@@ -188,6 +194,9 @@ a:hover {
   #body {
     margin-left: 0 !important;
   }
+  #body .padding {
+    padding: 0;
+  }
 
   /* add back in margin */
   h1,
@@ -197,12 +206,14 @@ a:hover {
   h5 {
     margin-top: 0.75rem !important;
   }
-
+  .cp_embed_wrapper {
+    margin-top: 1rem !important;
+  }
   /* remove print information, webpage, date, etc */
-  @page {
+  /* @page {
     size: auto;
     margin: 0;
-  }
+  } */
 
   /*!
  * Gutenberg
