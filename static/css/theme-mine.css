@@ -20,7 +20,7 @@ h1 {
 
 h2,
 h3 {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", serif !important;
   text-transform: uppercase;
 }
 
@@ -58,7 +58,7 @@ h6 {
 
 :root {
   --MAIN-TEXT-color: #323232; /* Color of text by default */
-  --MAIN-TITLES-TEXT-color: #323232; /* Color of titles h2-h3-h4-h5 */
+  --MAIN-TITLES-TEXT-color: #777; /* Color of titles h2-h3-h4-h5 */
   --MAIN-LINK-color: #3cc9b8; /* Color of links */
   --MAIN-LINK-HOVER-color: #35b0a1; /* Color of hovered links */
   --MAIN-ANCHOR-color: #3cc9b8; /* color of anchors on titles */
