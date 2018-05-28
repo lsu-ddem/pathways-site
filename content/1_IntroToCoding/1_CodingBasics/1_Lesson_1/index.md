@@ -9,7 +9,9 @@ Head to the [P5.js Web Editor](http://alpha.editor.p5js.org/), sign up for a per
 
 You can also edit and read the code found in your project's HTML and CSS files by clicking on the arrow found near the upper lefthand corner of the editor panel:
 
-![](images/uploads/screen-shot-2018-05-28-at-11.55.32-am.png)
+![](/images/uploads/screen-shot-2018-05-28-at-11.55.32-am.png)
+
+<!-- ![](/images/uploads/screenshot.jpg) -->
 
 And then clicking on the files that are listed:
 
@@ -27,11 +29,7 @@ When coding a project that uses the p5.js library, every JS file must contain th
 
 In p5.js-based projects, code that is placed inside of the larger _**setup()**_ and _**draw()**_ blocks will behave differently based on which block they are called from within, and it's important for us to understand the difference between their behaviors.
 
-<<<<<<< HEAD
-Any code inside of _**setup()**_ will only be run _once_ upon the loading of the HTML file. You can rerun anything in the \_**setup() **\_block by refreshing your browser.
-=======
 Any code inside of _**setup()**_ will only be run _once_ upon the loading of the HTML file. You can rerun anything in the _**setup()**_ block by refreshing your browser.
->>>>>>> ce3b2a67e74bfac1cfd00f1a73c8b37fd4d587c6
 
 The _**draw()**_ function behaves like a loop. Any code placed inside this block will be read by our browser from top to bottom and executed over and over again. The speed of the _**draw()**_ block loop is 60 cycles (or **_frames_**) per second.
 
@@ -39,13 +37,7 @@ Take a look at the embedded code below, and add the new console.log() lines into
 
 {{% codepen 500 GGKdaj %}}
 
-<<<<<<< HEAD
-Place your cursor inside the Console section and scroll up. You should see the statements "Ready" and "Set" printed only once, and then a long list of "Go!" plus an increasing number statements listed after that. The first two statements only printed to the console once since the were coded inside the _**setup() **\_block, while the the "Go!" statement printed multiple times. The increasing number attached to "Go!" represents the current iteration of loop that the _**draw()**\_ block was on before you stopped your code from running.
-=======
-Place your cursor inside the Console section and scroll up. You should see the statements "Ready" and "Set" printed only once, and then a long list of "Go!" plus an increasing number statements listed after that. The first two statements only printed to the console once since the were coded inside the _**setup()**_ block, while the "GO!" statement printed multiple times. The increasing number attached to "GO!" represents the current iteration of the _**draw()**_  loop.
-
-
->>>>>>> ce3b2a67e74bfac1cfd00f1a73c8b37fd4d587c6
+Place your cursor inside the Console section and scroll up. You should see the statements "Ready" and "Set" printed only once, and then a long list of "Go!" plus an increasing number statements listed after that. The first two statements only printed to the console once since the were coded inside the _**setup()**_ block, while the "GO!" statement printed multiple times. The increasing number attached to "GO!" represents the current iteration of the _**draw()**_ loop.
 
 ## Arguments
 
@@ -63,6 +55,6 @@ background() sets the color of the canvas background, and a single number betwee
 background(96, 110, 220);
 ```
 
-Our canvas background is now a shade of violet. When three arguments are passed into the background() function, it blends  red, green, and blue hues together (in that order) based on the values you give it.
+Our canvas background is now a shade of violet. When three arguments are passed into the background() function, it blends red, green, and blue hues together (in that order) based on the values you give it.
 
 Each function in the p5.js library will require different types of data in different orders to adjust their behavior. Check the [P5.js Reference Page](https://p5js.org/reference/) to see a complete list of functions and their adjustable properties.
