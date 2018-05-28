@@ -23,7 +23,9 @@ var rectHeight =50;
 or at a later time in a function block:
 
 ```
-function setup(){ rectHeight = 50;}
+function setup(){
+ rectHeight = 50;
+}
 ```
 
 Take note: unlike in math operations, the equals sign means assignment, NOT equality. In our example, rectHeight gets assigned a value of 50, but it is not equal to 50.
