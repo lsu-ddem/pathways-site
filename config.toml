@@ -23,7 +23,7 @@ home = [ "HTML", "RSS", "JSON"]
 title = "Educational material for LSU Programming Digital Media"
 weight = 1
 languageName = "English"
-
+# staticDir = "images/uploads"
 
 
 
