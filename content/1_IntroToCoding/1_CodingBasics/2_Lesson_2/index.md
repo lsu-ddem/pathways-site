@@ -12,7 +12,7 @@ In this code, we draw two polygons to the screen. The teal square is built using
 
 ## Making Variables
 
-To make a variable, we start by _declaring_ a name for the container. In our code, we've declared both "rectWidth" and "rectHeight" at the very top of our code by first typing the keyword 'var'. We've done this outside of either the setup() or draw() blocks, which means that we've declared these variables _globally_ (we'll discuss this in detail at the bottom of the page).
+To make a variable, we start by _declaring_ a name for the container. In our code, we've declared both "rectWidth" and "rectHeight" at the very top of our code by first typing the keyword 'var'. We've done this outside of either the `setup()` or `draw()` blocks, which means that we've declared these variables _globally_ (we'll discuss this in detail at the bottom of the page).
 
 Next, we need to _assign_ an initial value to each variable. This is also called _initialization_, or _init_ for short. This step can be done immeditaly after declaring a variable:
 
@@ -42,6 +42,6 @@ It's important to note a few things about making variables:
 
 ## Fixed Values vs. Changeable Values
 
-Variables can contain fixed values as well as changeable values. In our example, rectHeight contains a fixed value of 50 inside of it (which happens at the very top of our code, above the setup() function block), allowing us to use the value of 50 in any location we type the phrase "rectHeight."  rectWidth, however, contains the result of a function called _**random()**_, which generates a random number between its two arguments each time it is run. Since it only runs inside of the setup() block, we need to hit the rerun button in the embedded Result panel in order to get a different width for the pink rectangle. We can easily modify our code so that random() spits out a new value and updates our variable with every frame of the draw loop:
+Variables can contain fixed values as well as changeable values. In our example, rectHeight contains a fixed value of 50 inside of it (which happens at the very top of our code, above the `setup()` function block), allowing us to use the value of 50 in any location we type the phrase "rectHeight."  rectWidth, however, contains the result of a function called `random()`, which generates a random number between its two arguments each time it is run. Since it only runs inside of the `setup()` block, we need to hit the rerun button in the embedded Result panel in order to get a different width for the pink rectangle. We can easily modify our code so that `random()` spits out a new value and updates our variable with every frame of the draw loop:
 
  {{% codepen 400 qKWywY %}}
