@@ -2,7 +2,7 @@
 title: Storing Things in Code - Variables
 weight: 2
 ---
-So far, our code has used concrete, static data to create visuals. However, we can use updatable, changing data in order to modify our projects while they are running in order to make them more dynamic. To do this, we use **_variables._** A variable is a container that stores a single value in the memory or our code so that we can use it at a later time, in multiple places throughout our code. This make variables more flexible than fixed, concrete values.
+So far, our code has used concrete, static data to create visuals. However, we can use updatable, changing data in order to modify our projects while they are running in order to make them more dynamic. To do this, we use _**variables.**_ A variable is a container that stores a single value in the memory or our code so that we can use it at a later time, in multiple places throughout our code. This make variables more flexible than fixed, concrete values.
 
 Take a look at the embedded code below, and click on it's title to jump to an editable version of it on CodePen:
 
@@ -33,14 +33,17 @@ Take note: unlike in math operations, the equals sign means assignment, NOT equa
 It's important to note a few things about making variables:
 
 * You can only declare a variable once. If you try to declare it more than once, your code will wipe the previous value inside of your variable form its memory. For instance, the following code is an issue: 
-  
-  `var xValue=1;
 
-  function setup(){
+
+```
+var xValue=1; 
+
+function setup(){
 
   var xValue =21;
-  }`
-  
+
+  }
+```
 
   because the original value of  "xValue", which was 1, has now be  replaced with 21. 
 
