@@ -31,10 +31,14 @@ Take note: unlike in math operations, the equals sign means assignment, NOT equa
 It's important to note a few things about making variables:
 
 * You can only declare a variable once. If you try to declare it more than once, your code will wipe the previous value inside of your variable form its memory. For instance, the following code is an issue: 
-  ```
-  var xValue =1;
+  
+  `var xValue=1;
+
+  function setup(){
+
   var xValue =21;
-  ```
+  }`
+  
 
   because the original value of  "xValue", which was 1, has now be  replaced with 21. 
 
