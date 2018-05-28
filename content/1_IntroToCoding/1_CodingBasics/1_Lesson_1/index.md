@@ -8,11 +8,11 @@ Head to the [P5.js Web Editor](http://alpha.editor.p5js.org/), sign up for a per
 
 You can also edit and read the code found in your project's HTML and CSS files by clicking on the arrow found near the upper lefthand corner of the editor panel:
 
-![null](/images/uploads/screen-shot-2018-05-28-at-11.55.32-am.png)
+![](/images/uploads/screen-shot-2018-05-28-at-11.55.32-am.png)
 
 And then clicking on the files that are listed:
 
-![null](/images/uploads/screen-shot-2018-05-28-at-11.57.41-am.png)
+![](/images/uploads/screen-shot-2018-05-28-at-11.57.41-am.png)
 
 As we discussed, we will mainly be coding inside of the "sketch.js" file, so the P5 Web Editor presents this file to you automatically when a new File is created. 
 
