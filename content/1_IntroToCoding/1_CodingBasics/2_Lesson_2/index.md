@@ -35,7 +35,7 @@ It's important to note a few things about making variables:
   var xValue =1;var xValue =21;
   ```
 
-\    because the original value of  "xValue", which was 1, has now be  replaced with 21. 
+  because the original value of  "xValue", which was 1, has now be  replaced with 21. 
 
 * You cannot have two separate variables that share the same name. The same code example above would also cause an issue due to the fact that you are attempting to declare two separate variables that share the same name.
 
