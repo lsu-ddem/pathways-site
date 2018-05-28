@@ -26,4 +26,8 @@ When coding a project that uses the p5.js library, every JS file must contain th
 
 In p5.js-based projects, code that is placed inside of the larger _**setup()**_ and _**draw()**_ blocks will behave differently based on which block they are called from within. Any code inside of _**setup()**_ will only be run _once_ upon the loading of the HTML file. You can rerun anything in the _**setup() **_block by refreshing your browser.
 
-The _**draw()**_ function behaves like a loop. Any code placed inside this block will be read by our browser from top to bottom and executed over and over again. The speed of the _**draw()**_ block loop is 60 cycles (or **_frames_**) per second.
+The _**draw()**_ function behaves like a loop. Any code placed inside this block will be read by our browser from top to bottom and executed over and over again. The speed of the _**draw()**_ block loop is 60 cycles (or **_frames_**) per second. 
+
+Take a look at the embedded code below, and add the new console.log() lines into your project on the P5 Web Editor so that both code examples match. Once you've done that, hit the Run Button (shaped like a triangle) at the top of your editor window, and watch the section below marked "Console." After a few seconds, hit the Stop Button.
+
+{{% codepen 500 GGKdaj %}}
