@@ -4,35 +4,7 @@ weight: 1
 ---
 Let's get started! In this first example, we'll cover the basics of text-based coding in the JavaScript language. 
 
-Head to the [P5.js Web Editor](http://alpha.editor.p5js.org/), sign up for a personal account, and open a new File. You'll be presented with a new editor window that displays the code found in your "sketch.js" file. The P5 Web Editor starts you off with some basic code that is needed to create a blank, grey canvas:
-
-```
-function setup() {
-```
-
-```
-  createCanvas(400, 400);
-```
-
-```
-}
-```
-
-```
-
-```
-
-```
-function draw() {
-```
-
-```
-  background(220);
-```
-
-```
-}
-```
+Head to the [P5.js Web Editor](http://alpha.editor.p5js.org/), sign up for a personal account, and open a new File. You'll be presented with a new editor window that displays the code found in your "sketch.js" file. The P5 Web Editor starts you off with some basic code that is needed to create a blank, grey canvas.
 
 You can also edit and read the code found in your project's HTML and CSS files by clicking on the arrow found near the upper lefthand corner of the editor panel:
 
@@ -49,3 +21,5 @@ And then clicking on the files that are listed:
 As we discussed, we will mainly be coding inside of the "sketch.js" file, so the P5 Web Editor presents this file to you automatically when a new File is created. 
 
 ## Functions
+
+Take a look at the code below, which matches the code in your project on the P5 Web Editor:
