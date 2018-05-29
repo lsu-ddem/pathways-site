@@ -40,8 +40,8 @@ When working in the p5 Web Editor, every new project you create will inherently 
 
 Throughout our projects, we will be using a variety of different data types in our code. Here is a quick explanation of common data types used in JavaScript:
 
-* **Number:  **a value represented by numerical digits. Numbers can be floats or integers. Large numbers over three digits should not include a comma as they normally would in the written word (e.g. 1,000 should be 1000 in your code).
-* **String: **a value represented by text and characters (including spaces), commonly enclosed in a pair of quotation marks (e.g. "blue", "duckling", "Type Any Word Here!"
+* **Number:**a value represented by numerical digits. Numbers can be floats or integers. Large numbers over three digits should not include a comma as they normally would in the written word (e.g. 1,000 should be 1000 in your code).
+* **String:**a value represented by text and characters (including spaces), commonly enclosed in a pair of quotation marks (e.g. "blue", "duckling", "Type Any Word Here!"
 * **Boolean:** a logical entity represented through the states of `true` or `false`.
 
 ## Coding with Proper Syntax
