@@ -11,12 +11,6 @@ Take a look at the HTML, JS, and CSS tabs in the embedded CodePen sketch below t
 {{% codepen 500 MGMMXv %}}
 
  ## HTML file 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
 
 The HTML file in your project is read by your web browser and rendered into readable text, visuals, and audio.  Each web project we create in this course will require the minimum code that you see in this example. While we won't dive too deep into coding practices for HTML, lets take a look at what these vital lines of code do:
 
