@@ -15,7 +15,7 @@ Many of the same mathematical operators that we commonly encounter in the world 
 
 
 
-# Using Math in Code
+## Using Math in Code
 
 Lets look at a few examples of where we can use simple math in our code. In the example below, we've created four rows of squares. Each square is placed on the canvas based on the result of a different mathematical equation to determine its X and Y coordinate. Take a look at each grouping of **rect() **functions to see how we use the same "rectX" and "rectY" variables, but return different location results based on the various equations we code for:
 
