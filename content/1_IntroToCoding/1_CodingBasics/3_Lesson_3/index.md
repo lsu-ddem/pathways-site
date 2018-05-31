@@ -48,7 +48,7 @@ This second example makes it look as if Pac-Man is stretching  across the entire
 
 In order to have a cyclical animation pattern, we would need to produce a cycling series of numbers and use that cycle as position data for our shape. There are very few processes in p5.js that loop in a cyclical fashion, so we'll need to get creative with how we create one. 
 
-Read [this article](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic) on a mathematical process known as modular arithmetic. Using the modulo operator (%), we can take a series of increasing numbers and divide them by a fixed number (the modulus) in order to create a pattern of repeating numbers.  Lets tap into the power of the looping **draw()** block and use the **frameCount **variable (which updates to provide the current count of draw() block loops) as our dividend. Mathematically, it looks like this:
+Read [this article](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic) on a mathematical process known as modular arithmetic. Using the modulo operator (%), we can take a series of increasing numbers and divide them by a fixed number (the modulus) in order to create a pattern of repeating numbers.  Lets tap into the power of the looping **draw()** block and use the **frameCount** variable (which updates to provide the current count of draw() block loops) as our dividend. Mathematically, it looks like this:
 
 Current Frame Count % Total Number of Pixels We Want to Move =  _Cyclical Pattern_
 
