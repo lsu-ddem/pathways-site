@@ -4,7 +4,16 @@ weight: 1
 ---
 ## Creating a Test
 
+**Common relational expressions**
 
+| Operator | Expression               |
+| -------- | ------------------------ |
+| \>       | Greater than             |
+| <        | Less than                |
+| \==      | Equal to                 |
+| \>=      | Greater than or equal to |
+| <=       | Less than or equal to    |
+| !=       | Not equal to             |
 
 {{<mermaid align="center">}}
 graph TD
