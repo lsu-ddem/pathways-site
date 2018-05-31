@@ -22,6 +22,7 @@ There are a number of different controllable loops in coding, but the one that w
 
 The logic flow of a  for loop would therefor look like this:
 
+
 {{<mermaid align="center">}}
 graph TD 
 
@@ -39,6 +40,7 @@ style C fill:  #f7dc6f ,stroke:#FFFFFF;
 style E fill: #FFFFFF, stroke:#FFFFFF;
 style H fill:  #f7dc6f ,stroke:#FFFFFF;
 {{< /mermaid >}}
+
 
 Translated into code, here is what the structure of a for loop looks like:
 
