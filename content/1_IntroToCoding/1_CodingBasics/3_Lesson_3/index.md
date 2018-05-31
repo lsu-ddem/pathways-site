@@ -14,15 +14,28 @@ Many of the same mathematical operators that we commonly encounter in the world 
 | /      | Division       |
 | %      | Modulus        |
 
-
 ## Using Math in Code
 
 Lets look at a few examples of where we can use simple math in our code. In the example below, we've created four rows of squares. Each square is placed on the canvas based on the result of a different mathematical equation to determine its X and Y coordinate. Take a look at each grouping of **rect() **functions to see how we use the same "rectX" and "rectY" variables, but return different location results based on the various equations we code for:
 
 {{% codepen 400 OEJEWp%}}
 
-We can also run these same equations against a variable that isn't a fixed, static value. In the example below, move your mouse left and right across the canvas to watch how the squares update their location on the X axis. Take a look at the first and third row: their X locations are determined through addition or subtraction, so they are simply **shifting** their position across the canvas. Since the second and fourth rows determine their X position through multiplication and and division, we are **scaling **their position.
+We can also run these same equations against a variable that isn't a fixed, static value. In the example below, move your mouse left and right across the canvas to watch how the squares update their location on the X axis. Take a look at the first and third row: their X locations are determined through addition or subtraction, so they are simply **shifting** their position across the canvas. Since the second and fourth rows determine their X position through multiplication and and division, we are **scaling** their position.
 
 {{% codepen 400 GGgmam%}}
 
 ## Math for Animation
+
+In order to animate a shape or image, we will need to replace one or more of its fixed location arguments with a variable, and then write a line of code that causes that variable to update with a new, changed. This last action will need to repeat continuously at a rate fast enough for our eyes to percieve the location change as a smooth motion. The **draw()** block is a perfect place to add this new code since it loops the code inside of it at a rate of 60 frames per second.
+
+Take a look at the two examples embedded below. The first code produces a PacMan character that is fixed in place, while the second example produces a PacMan that is gradually moving across the screen as the "pacX" variable gradually updates with a growing value:
+
+{{% codepen 400 dKyWVG%}}
+
+{{% codepen 400 mKdLOg%}}
+
+The math works like this: each time the draw() block loops, we take the initial value inside of **pacX** and replace it with the result of the equation **pacX - 2**. This causes the value inside of **pacX **to gradually decrease and push Pac-Man off the left-hand side of the canvas. Open your console to see the result of this equation printed out for you.
+
+This second example makes it look as if Pac-Man is stretching  across the entire screen instead of moving his entire body along the entire canvas. This is because with each new loop of the draw() block, we're drawing a new Pac-Man that is located two pixels to the left of the previous one. All of these Pac-Man copies overlap on top of each other, which makes it look as if he's stretching. In order to delete the old Pac-Man copies, make sure to call the **background()** function at the very beginning of your **draw()** block. This essentially "clears" the screen before drawing our newly-moved yellow friend. The example below shows this in action, and also adds a new variable called **speed** to stand in for the rate at which Pac-Man moves across the screen:
+
+{{% codepen 400 KeKePy%}}
