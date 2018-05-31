@@ -27,6 +27,10 @@ style B stroke:#FFFFFF;
 style C fill:#FFFFFF, stroke:#FFFFFF;
 {{< /mermaid >}}
 
+
+
+## Single Test, Single Result  (The If Statement)
+
 Translated into code, an If statement looks like this:
 
 ```
@@ -36,6 +40,12 @@ if (test) {
 ```
 
 {{% codepen 600 QxWpqG%}}
+
+
+
+
+
+## Single Test, Two Results  (The If/Else Statement)
 
 {{<mermaid align="center">}}
 graph TD
@@ -52,6 +62,10 @@ style E fill:#FFFFFF, stroke:#FFFFFF;
 
 {{< /mermaid >}}
 
+
+
+
+
 Translated into code, an If/Else statement looks like this:
 
 ```
@@ -62,7 +76,13 @@ if (test) {
 }
 ```
 
+
+
 {{% codepen 600 jKOBQw%}}
+
+
+
+## Multiple Tests, Multiple Results  (The If/Else If Statement)
 
 {{<mermaid align="center">}}
 graph TD
@@ -94,6 +114,8 @@ if (test 1) {
 ```
 
 {{% codepen 600 VdwVPz%}}
+
+
 
 ## Nested Conditionals
 
