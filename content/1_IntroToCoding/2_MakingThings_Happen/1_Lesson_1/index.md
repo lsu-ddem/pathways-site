@@ -33,6 +33,7 @@ D-->E
 
 style A  stroke:#FFFFFF;
 style B  stroke:#FFFFFF;
+style D  stroke:#FFFFFF;
 style E fill:#FFFFFF, stroke:#FFFFFF;
 
 
