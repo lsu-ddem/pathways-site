@@ -12,7 +12,7 @@ Many of the same mathematical operators that we commonly encounter in the world 
 | \-     | Subtraction    |
 | \*     | Multiplication |
 | /      | Division       |
-
+| %      | Modulus        |
 
 
 ## Using Math in Code
