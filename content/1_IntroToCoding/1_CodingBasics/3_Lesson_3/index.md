@@ -39,3 +39,9 @@ The math works like this: each time the draw() block loops, we take the initial 
 This second example makes it look as if Pac-Man is stretching  across the entire screen instead of moving his entire body along the entire canvas. This is because with each new loop of the draw() block, we're drawing a new Pac-Man that is located two pixels to the left of the previous one. All of these Pac-Man copies overlap on top of each other, which makes it look as if he's stretching. In order to delete the old Pac-Man copies, make sure to call the **background()** function at the very beginning of your **draw()** block. This essentially "clears" the screen before drawing our newly-moved yellow friend. The example below shows this in action, and also adds a new variable called **speed** to stand in for the rate at which Pac-Man moves across the screen:
 
 {{% codepen 400 KeKePy%}}
+
+
+
+## Cyclical Animations with Modulus
+
+{{% codepen 400 JZowZv%}}
