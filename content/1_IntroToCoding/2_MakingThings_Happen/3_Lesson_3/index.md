@@ -60,10 +60,10 @@ Next, we design a test that will need to be passed in order for the loop to cont
 
 | Operator | Expression               |
 | -------- | ------------------------ |
-| \>       | Greater than             |
+|  >       | Greater than             |
 | <        | Less than                |
-| \==      | Equal to                 |
-| \>=      | Greater than or equal to |
+|  ==      | Equal to                 |
+|  >=      | Greater than or equal to |
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
 
