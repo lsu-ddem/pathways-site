@@ -2,6 +2,10 @@
 title: Computers Making Choices - Conditionals
 weight: 1
 ---
+## Creating a Test
+
+
+
 {{<mermaid align="center">}}
 graph TD
 
@@ -71,6 +75,7 @@ style G fill:#fe856b, stroke:#FFFFFF;
 {{< /mermaid >}}
 
 Translated into code, an If/Else If statement looks like this:
+
 ```
 if (test 1) {
   result 1
@@ -78,10 +83,8 @@ if (test 1) {
   result 2
 }
 ```
+
 {{% codepen 600 VdwVPz%}}
-
-
-
 
 ## Nested Conditionals
 
@@ -91,14 +94,10 @@ graph TD
 H{Outer Test}-. True  .->A
 H{Outer Test}-. False  .->I
 
-
-subgraph    
+subgraph\
 A{Inner Test 1} -->|True| B(Inner Result Block 1)
 
 A{Inner Test 1} -->|False| F{Inner Test 2}
-
-
-
 
 F-->|True| G(Inner Result Block 2)
 
