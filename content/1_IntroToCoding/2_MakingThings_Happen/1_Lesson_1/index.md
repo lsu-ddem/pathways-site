@@ -32,7 +32,7 @@ B-->E(Code After Conditional)
 D-->E
 
 style A  stroke:#FFFFFF;
-style B stroke:#FFFFFF;
+style B  stroke:#FFFFFF;
 style E fill:#FFFFFF, stroke:#FFFFFF;
 
 
