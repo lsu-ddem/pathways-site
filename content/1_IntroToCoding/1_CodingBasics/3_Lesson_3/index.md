@@ -32,6 +32,10 @@ Take a look at the two examples embedded below. The first code produces a PacMan
 
 {{% codepen 400 dKyWVG%}}
 
+
+
+
+
 {{% codepen 400 mKdLOg%}}
 
 The math works like this: each time the draw() block loops, we take the initial value inside of **pacX** and replace it with the result of the equation **pacX - 2**. This causes the value inside of **pacX **to gradually decrease and push Pac-Man off the left-hand side of the canvas. Open your console to see the result of this equation printed out for you.
