@@ -3,15 +3,15 @@ title: Do it again - Loops
 weight: 3
 ---
 {{<mermaid align="center">}}
-
 graph TD 
 
 H(Create Variable)-->|Original Variable Value|A
 
- A-->|False| E\[Loop Stops]\
-A{Test} -->|True| B\[Repeated Result Block]
 
-B-->C\[Update Variable Value]
+ A-->|False| E[Loop Stops]  
+A{Test} -->|True| B[Repeated Result Block]
+
+B-->C[Update Variable Value]
 C-->|Updated Variable Value|A
 
 style A fill:  #f7dc6f , stroke:#FFFFFF;
