@@ -20,7 +20,7 @@ There are a number of different controllable loops in coding, but the one that w
 2. Design a test that defines the condition for the loop to run (this test is checked _each_ time the loop runs)
 3. Set a method of changing/updating the iteration variable (this happens_ after_ each run of the loop)
 
-The logic flow of a  for loop would therefor look like this:
+The logic flow of a for loop would therefor look like this:
 
 
 {{<mermaid align="center">}}
