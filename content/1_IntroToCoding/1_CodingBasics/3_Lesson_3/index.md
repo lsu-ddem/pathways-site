@@ -12,7 +12,7 @@ Many of the same mathematical operators that we commonly encounter in the world 
 | \-     | Subtraction    |
 | \*     | Multiplication |
 | /      | Division       |
-| %      | Modulus        |
+| %      | Modulo         |
 
 ## Using Math in Code
 
@@ -40,8 +40,20 @@ This second example makes it look as if Pac-Man is stretching  across the entire
 
 {{% codepen 400 KeKePy%}}
 
+## Cyclical Animations with Modulo
 
+In order to have a cyclical animation pattern, we would need to produce a cycling series of numbers and use that cycle as position data for our shape. There are very few processes in p5.js that loop in a cyclical fashion, so we'll need to get creative with how we create one. 
 
-## Cyclical Animations with Modulus
+Read [this article](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic) on a mathematical process known as modular arithmetic. Using the modulo operator (%), we can take a series of increasing numbers and divide them by a fixed number (the modulus) in order to create a pattern of repeating numbers.  Lets tap into the power of the looping **draw()** block and use the **frameCount **variable (which updates to provide the current count of draw() block loops) as our dividend. Mathematically, it looks like this:
+
+Current Frame Count % Total Number of Pixels We Want to Move =  _Cyclical Pattern_
+
+{{% notice tip %}}
+Number sequences produced by this method will always start at zero and end at a number that is **one less than the modulus**. Therefor, you'll want to use a modulus that is one number greater than the position location you want your shape to reach. For example, if you want a shape to move between X location 0 and X location 415, you'll need to use a modulus of 416.
+{{% /notice %}}
+
+The embedded code below shows this process in action. Notice how we are reassigning the value inside of the **rectX** variable to be the result of **frameCount** mod 300. This produces a repeating pattern between 0 and 299 (one less than the modulus). The rest of the code draws a new purple square at each new updated position, traveling to position 299 on the X axis before telporting back to 0. 
 
 {{% codepen 400 JZowZv%}}
+
+If you want to slow down the speed of the square's travel, call the **frameRate()** function in your **setup()** block and give it a number that is less than 60 in order to slow down the looping rate of the **draw()** block.
