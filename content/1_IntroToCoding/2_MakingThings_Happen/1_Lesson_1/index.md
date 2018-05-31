@@ -113,4 +113,4 @@ style E fill:#FFFFFF, stroke:#FFFFFF;
 style G fill:#fe856b, stroke:#FFFFFF;
 {{< /mermaid >}}
 
-zaYMLo
+{{% codepen 600 zaYMLo%}}
