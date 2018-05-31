@@ -2,6 +2,8 @@
 title: Do it again - Loops
 weight: 3
 ---
+{{<mermaid align="center">}}
+
 graph TD 
 
 H(Create Variable)-->|Original Variable Value|A
@@ -18,3 +20,13 @@ style B fill:  #f7dc6f ,stroke:#FFFFFF;
 style C fill:  #f7dc6f ,stroke:#FFFFFF;
 style E fill: #FFFFFF, stroke:#FFFFFF;
 style H fill:  #f7dc6f ,stroke:#FFFFFF;
+{{< /mermaid >}}
+
+Translated into code, here is what the structure of a for loop looks like:
+
+```
+for (create variable; test; update variable){
+   repeated result block
+  }
+```
+
