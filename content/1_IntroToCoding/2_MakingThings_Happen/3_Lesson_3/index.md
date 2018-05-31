@@ -8,11 +8,10 @@ graph TD
 
 H(Create Variable)-->|Original Variable Value|A
 
+ A-->|False| E\[Loop Stops]\
+A{Test} -->|True| B\[Repeated Result Block]
 
- A-->|False| E[Loop Stops]  
-A{Test} -->|True| B[Repeated Result Block]
-
-B-->C[Update Variable Value]
+B-->C\[Update Variable Value]
 C-->|Updated Variable Value|A
 
 style A fill:  #f7dc6f , stroke:#FFFFFF;
@@ -32,3 +31,13 @@ for (create variable; test; update variable){
 
 
 
+## Relational Expressions and their Operators
+
+| Operator | Expression               |
+| -------- | ------------------------ |
+| \>       | Greater than             |
+| <        | Less than                |
+| \==      | Equal to                 |
+| \>=      | Greater than or equal to |
+| <=       | Less than or equal to    |
+| !=       | Not equal to             |
