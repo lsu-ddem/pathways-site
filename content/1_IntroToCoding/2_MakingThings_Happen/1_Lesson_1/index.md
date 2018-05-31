@@ -12,6 +12,13 @@ A{Test} -->|False| C(Code After Conditional)
 style C fill:#FFFFFF, stroke:#FFFFFF;
 {{< /mermaid >}}
 
+Translated into code, an If statement looks like this:
+
+```
+if (test) {
+  result
+}
+```
 
 
 {{<mermaid align="center">}}
@@ -27,7 +34,15 @@ style E fill:#FFFFFF, stroke:#FFFFFF;
 
 {{< /mermaid >}}
 
+Translated into code, an If/Else statement looks like this:
 
+```
+if (test) {
+  result 1
+} else {
+  result 2
+}
+```
 {{<mermaid align="center">}}
 graph TD
 
@@ -44,3 +59,13 @@ style F fill:#fe856b, stroke:#FFFFFF;
 style E fill:#FFFFFF, stroke:#FFFFFF;
 style G fill:#fe856b, stroke:#FFFFFF;
 {{< /mermaid >}}
+
+Translated into code, an If/Else If statement looks like this:
+
+```
+if (test 1) {
+  result 1
+} else if (test 2) {
+  result 2
+}
+```
