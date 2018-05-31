@@ -22,6 +22,8 @@ if (test) {
 }
 ```
 
+{{% codepen 600 QxWpqG%}}
+
 {{<mermaid align="center">}}
 graph TD
 
@@ -47,6 +49,8 @@ if (test) {
 }
 ```
 
+{{% codepen 600 jKOBQw%}}
+
 {{<mermaid align="center">}}
 graph TD
 
@@ -67,12 +71,15 @@ style G fill:#fe856b, stroke:#FFFFFF;
 {{< /mermaid >}}
 
 Translated into code, an If/Else If statement looks like this:
-
+```
 if (test 1) {
   result 1
 } else if (test 2) {
   result 2
 }
+```
+{{% codepen 600 VdwVPz%}}
+
 
 
 
