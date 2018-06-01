@@ -28,8 +28,8 @@ A{Test} -->|True| B(Code In Result Block)
 B--> C
 A{Test} -->|False| C(Code After Conditional)
 
-style A  stroke:#FFFFFF;
-style B stroke:#FFFFFF;
+style A  fill:#00ffff, stroke:#FFFFFF;
+style B fill: #00ffff, stroke:#FFFFFF;
 style C fill:#FFFFFF, stroke:#FFFFFF;
 {{< /mermaid >}}
 
