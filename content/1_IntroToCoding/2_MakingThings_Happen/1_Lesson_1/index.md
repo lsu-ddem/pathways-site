@@ -59,9 +59,9 @@ A{Test} -->|False| D(Result Block 2)
 B-->E(Code After Conditional)
 D-->E
 
-style A  stroke:#FFFFFF;
-style B  stroke:#FFFFFF;
-style D  stroke:#FFFFFF;
+style A  fill:#00ffff, stroke:#FFFFFF;
+style B  fill:#00ffff, stroke:#FFFFFF;
+style D  fill:#00ffff, stroke:#FFFFFF;
 style E fill:#FFFFFF, stroke:#FFFFFF;
 
 {{< /mermaid >}}
