@@ -100,8 +100,8 @@ F{Test 2}-->|False| E(Code After Conditional)
 F{Test 2}-->|True| G(Result Block 2)
 G --> E
 
-style A  stroke:#FFFFFF;
-style B stroke:#FFFFFF;
+style A  fill:#00ffff,stroke:#FFFFFF;
+style B fill:#00ffff, stroke:#FFFFFF;
 style F fill:#fe856b, stroke:#FFFFFF;
 style E fill:#FFFFFF, stroke:#FFFFFF;
 style G fill:#fe856b, stroke:#FFFFFF;
@@ -138,8 +138,8 @@ I(Outer Test Result Block 2)
 B-->E
 G --> E
 I -.->E
-style A stroke:#FFFFFF;
-style B stroke:#FFFFFF;
+style A fill:#00ffff, stroke:#FFFFFF;
+style B fill:#00ffff, stroke:#FFFFFF;
 style H fill:#2bf5be, stroke:#FFFFFF;
 style I fill:#2bf5be, stroke:#FFFFFF;
 style F fill:#fe856b, stroke:#FFFFFF;
