@@ -12,7 +12,7 @@ Take a look at the amount of repeating functions in our **draw()** block. We use
 
 In order to simplify this process, we can create a self-contained loop that repeats a block of code for a set amount of times before stopping. This way, we can re-run the two lines of code needed to make the square as many times as we want without having to explicitly retype everything. 
 
-This second version of the project uses a type of loop known as a **for loop** to create 100 squares, alternating between teal and pink colors in the fill() function and placing each square 20 away from the previous one:
+This second version of the project uses a type of loop known as a **for loop** to create 100 squares, alternating between teal and pink colors in the fill() function and placing each square 20 pixels away from the previous one. This results in a much shorter code that then we would have had if we didn't use a loop :
 
 {{% codepen 400 KRBeNL %}}
 
@@ -20,7 +20,7 @@ This second version of the project uses a type of loop known as a **for loop** t
 
 ## Understanding For Loops
 
-A for loop is a 
+The following logic chart breaks down the basic concept behind how a for loop works:
 
 {{<mermaid align="center">}}
 graph TD 
@@ -36,6 +36,10 @@ style E fill: #FFFFFF, stroke:#FFFFFF;
 style H fill:  #f7dc6f ,stroke:#FFFFFF;
 {{< /mermaid >}}
 
+To create a for loop, we first design a set of statements that control how many times the loop runs and separate each one with a semicolon. First, we create a variable for use in the loop and initialize it with a starting value. This variable is typically given a one-letter label and is different from any other variable we are using elsewhere in our code. Next, we define a test that evaluates this variable on every loop and keeps the loop running as long as the test passes. If the test fails, the loop stops immediately. The test is always a relational expression, relating the value on the left to the value on the right (a table of common relational expressions and their operators can be found below). Finally, we write a statement that allows the loop variable to be updated every time the test is passed. 
+
+
+
 Translated into code, here is what the structure of a for loop looks like:
 
 ```
@@ -43,6 +47,10 @@ for (create variable; test; update variable){
    repeated result block
   }
 ```
+
+In the embedded code below, our loop draws multiple lines. The variable i is declared with an initial value of 20. The loop runs for as long as i is less than 400. Every time the test passes, the value of i is updated to be the result of itself plus 8 (20, 28, 36, etc.). When i grows to be bigger than 400, the loop stops.
+
+{{% codepen 400 eKZZZz %}}
 
 ## Relational Expressions and their Operators
 
