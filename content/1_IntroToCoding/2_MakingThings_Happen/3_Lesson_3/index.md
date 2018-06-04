@@ -2,35 +2,36 @@
 title: Do it again - Loops
 weight: 3
 ---
-## Life without Loops
+## Why Use Loops?
 
-Code that includes elements of repetition, coded in a "long-hand" manner:
+Often times, projects that feature repeating patterns or duplicated actions result in a code that is overly long, and therefor difficult to troubleshoot. Take the following embedded code, which features a handful of alternating squares, as an example:
 
 {{% codepen 400 GdBGjQ %}}
 
+Take a look at the amount of repeating functions in our **draw()** block. We use one pair of **fill()** and **rect()** functions to create each square. Because of this, we would need 200 lines of code in order to make a line of 100 squares. There is also a significant amount of repetition within the arguments of each rect() function: the last three arguments (Y axis location, width, and height) of each rect() are exactly the same, with the X axis location being the only difference.
+
+In order to simplify this process, we can create a self-contained loop that repeats a block of code for a set amount of times before stopping. This way, we can re-run the two lines of code needed to make the square as many times as we want without having to explicitly retype everything. 
+
+This second version of the project uses a type of loop known as a **for loop** to create 100 squares, alternating between teal and pink colors in the fill() function and placing each square 20 away from the previous one:
+
+{{% codepen 400 KRBeNL %}}
 
 
 
+## Understanding For Loops
 
-## Building a Loop
-
-There are a number of different controllable loops in coding, but the one that we will focus on is the **for loop**. A for loop is a control-flow statement that specifies rules for iteration, allowing for a specific block of code to be repeated a specified number of times. In order to design a for loop, we need to do three things:
-
-1. Declare and initialize a variable that can act as an interation progress counter (this is run _before_ the loop begins)
-2. Design a test that defines the condition for the loop to run (this test is checked _each_ time the loop runs)
-3. Set a method of changing/updating the iteration variable (this happens_ after_ each run of the loop)
-
-The logic flow of a for loop would therefor look like this:
+A 
 
 {{<mermaid align="center">}}
+
 graph TD 
 
 H(Create Variable)-->|Original Variable Value|A
 
- A-->|False| E[Loop Stops]
-A{Test} -->|True| B[Repeated Result Block]
+ A-->|False| E\[Loop Stops]\
+A{Test} -->|True| B\[Repeated Result Block]
 
-B-->C[Update Variable Value]
+B-->C\[Update Variable Value]
 C-->|Updated Variable Value|A
 
 style A fill:  #f7dc6f , stroke:#FFFFFF;
@@ -40,8 +41,6 @@ style E fill: #FFFFFF, stroke:#FFFFFF;
 style H fill:  #f7dc6f ,stroke:#FFFFFF;
 {{< /mermaid >}}
 
-
-
 Translated into code, here is what the structure of a for loop looks like:
 
 ```
@@ -50,21 +49,13 @@ for (create variable; test; update variable){
   }
 ```
 
-
-
-For step 1, we create and initialize a variable just as we've done in the past. Typically, these variables will only be used inside of or in relation to the loop we build them for, and they are typically a single, lowercase letter.
-
-Next, we design a test that will need to be passed in order for the loop to continue running the code inside the result block. These tests are always a form of relational expression, since we will want the loop to stop running once the test fails. As a reminder, here are our relational expressions and their JavaScript operators:
-
-**Relational Expressions and their Operators**
+## Relational Expressions and their Operators
 
 | Operator | Expression               |
 | -------- | ------------------------ |
-|  >       | Greater than             |
+| \>       | Greater than             |
 | <        | Less than                |
-|  ==      | Equal to                 |
-|  >=      | Greater than or equal to |
+| \==      | Equal to                 |
+| \>=      | Greater than or equal to |
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
-
-
