@@ -30,7 +30,7 @@ Each value in an array is known as an _element_, and the position of that elemen
 
 {{% notice warning %}}
 
-Computers start counting at 0 instead of 1. If you have an array with 6 elements in it, their index numbers will not be 1 through 6, but 0 through 5. 
+Computers start counting at 0 instead of 1. Therefor, the first index in an array is known as the 0 index. If you have an array with 6 elements in it, their index numbers will not be 1 through 6, but 0 through 5. 
 {{% /notice %}}
 
 
