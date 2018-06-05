@@ -12,11 +12,11 @@ In this project, we have six variables: three used to determine the RGB color va
 
 ## Building Arrays
 
-An **array **is a list of variables that all share a similar label. We can use arrays to group together multiple values and use them all together, or one at a time, depending on our needs.
+An **array** is a list of variables that all share a similar label. We can use arrays to group together multiple values and use them all together, or one at a time, depending on our needs.
 
 Take a look at our newly-improved version of the previous code to see how the use of arrays make things simpler:
 
-{{% codepen 600 vrGbZr %}}
+{{% codepen 600 VdagQx %}}
 
 In this new version, we have two arrays: one called **squareColor1** and the other called **squareColor2. **To build an array, we go through the same process of declaring a label and initializing values as we do with variables, except this time we contain all of the values inside of a pair of square brackets ( \[ and ] symbols). We separate each value in the array by a comma just as we would with arguments inside of a function's parenthesis. Now, we can call for the entire contents, laid out in order from left to right, to be passed  into the fill() function's arguments based on the results of our if statement.
 
