@@ -33,6 +33,8 @@ Each value in an array is known as an _element_, and the position of that elemen
 Computers start counting at 0 instead of 1. Therefor, the first index in an array is known as the 0 index. If you have an array with 6 elements in it, their index numbers will not be 1 through 6, but 0 through 5. 
 {{% /notice %}}
 
-
-
 ## Cycling Through Elements in an Array
+
+Arrays are useful for holding a complete list of possible values, states, and objects that you can cycle through and use one after another. In the example below, we have one array that holds our four possible square colors, listed as strings. When you click the mouse, we pull out a new element from the array by moving through it one index position at a time. To do this, we can make a variable that grows by one every time the mouse is pressed (called **clickCount** in this example), allowing us to count every click of the mouse. Then, we take the result of that current **clickCount** value mod 4 in order to step through a repeating series of numbers (0-3) and put that current number into a variable (**currentColor**). All of this code is located inside of the **mousePressed()** block, which only runs the code inside of it when the mouse has been pressed. This number sequence matches up with the same index numbers associated with the four elements in our array, so we can use that variable and the value inside of it by placing it inside the square brackets behind the squareColors array in our **fill()** function. This allows us to step through each index in our array in a cyclical pattern:
+
+{{% codepen 600 bKpZMg %}}
