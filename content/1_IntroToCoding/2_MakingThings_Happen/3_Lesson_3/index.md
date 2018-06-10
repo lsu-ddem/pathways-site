@@ -70,3 +70,43 @@ Here are some examples of projects that use for loops to create complex designs.
 {{% codepen 400 JZXXZL %}} 
 
 {{% codepen 600 PevZgB %}}
+
+## Nested For Loops
+
+{{<mermaid align="center">}}
+graph TD
+H(Create Outer Variable)-->A
+A-->|False| E[Loop Stops]
+A{Outer Test} -->|True| M(Create Inner Variable)
+
+B{Inner Test}-->|False|L[Inner Loop Stops]
+M-->B
+
+L-->K[Update Outer Variable Value]
+K-->A
+B-->|True|J[Repeated Result Block]
+
+
+J-->C[Update Inner Variable Value]
+
+C-->|Updated Variable Value|B
+style A fill: #f7dc6f , stroke:#FFFFFF;
+style B fill: #08b8cd ,stroke:#FFFFFF;
+style K fill: #f7dc6f ,stroke:#FFFFFF;
+style C fill: #08b8cd ,stroke:#FFFFFF;
+style E fill: #FFFFFF, stroke:#FFFFFF;
+style L fill: #FFFFFF, stroke:#FFFFFF;
+style H fill: #f7dc6f ,stroke:#FFFFFF;
+style J fill: #08b8cd ,stroke:#FFFFFF;
+style M fill: #08b8cd , stroke:#FFFFFF;
+{{< /mermaid >}}
+
+Translated into code, here is what the structure of a nested for loop looks like:
+
+```
+for (create outer variable; outer test; update outer variable){
+   for (create inner variable; inner test; update inner variable){
+      repeated result block
+      }
+  }
+```
