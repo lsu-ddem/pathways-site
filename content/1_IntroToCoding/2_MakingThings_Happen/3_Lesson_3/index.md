@@ -22,7 +22,7 @@ The following logic chart breaks down the basic concept behind how a for loop wo
 
 {{<mermaid align="center">}}
 graph LR 
-H(Create Variable)-->|Original Variable Value|A
+H(Create Variable)-->A
  A-->|False| E[Loop Stops]
 A{Test} -->|True| B[Repeated Result Block]
 B-->C[Update Variable Value]
