@@ -24,7 +24,7 @@ The following logic chart breaks down the basic concept behind how a for loop wo
 graph TD 
 H(Create Variable)-->|Original Variable Value|A
  A-->|False| E[Loop Stops]
-A{Test} -->|True| B\[Repeated Result Block]
+A{Test} -->|True| B[Repeated Result Block]
 B-->C[Update Variable Value]
 C-->|Updated Variable Value|A
 style A fill:  #f7dc6f , stroke:#FFFFFF;
