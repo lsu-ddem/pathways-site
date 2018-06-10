@@ -21,7 +21,7 @@ This second version of the project uses a type of loop known as a **for loop** t
 The following logic chart breaks down the basic concept behind how a for loop works:
 
 {{<mermaid align="center">}}
-graph TD 
+graph LR 
 H(Create Variable)-->|Original Variable Value|A
  A-->|False| E[Loop Stops]
 A{Test} -->|True| B[Repeated Result Block]
