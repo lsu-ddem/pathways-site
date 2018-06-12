@@ -210,10 +210,14 @@ a:hover {
     margin-top: 1rem !important;
   }
   /* remove print information, webpage, date, etc */
-  /* @page {
-    size: auto;
-    margin: 0;
-  } */
+  @page {
+    size: 8.5in 11in;
+    margin: 10%;
+
+    /* @top-left {
+      content: "Hamlet";
+    } */
+  }
 
   /*!
  * Gutenberg
@@ -943,9 +947,23 @@ a:hover {
     font-size: 80%;
   }
 
+  /* this content thing is not working */
+  /* a:after {
+    content: " (" attr(href) ") " !important;
+  } */
+
   abbr[title]:after,
   acronym[title]:after {
     content: " (" attr(title) ")";
+  }
+
+  /* iframe[src^='//codepen.io']:after {
+    content: " (" attr(src) ")" !important;
+  } */
+
+  /* this is working */
+  iframe[src^='//codepen.io'] {
+    display: none;
   }
 
   .page-break,
