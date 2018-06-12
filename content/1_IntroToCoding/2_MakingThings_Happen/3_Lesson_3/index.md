@@ -6,7 +6,7 @@ weight: 3
 
 Often times, projects that feature repeating patterns or duplicated actions result in a code that is overly long, and therefor difficult to troubleshoot. Take the following embedded code, which features a handful of alternating squares, as an example:
 
-{{% codepen 400 GdBGjQ %}}
+{{% codepen 400 pKPLJZ %}}
 
 Take a look at the amount of repeating functions in our **draw()** block. We use one pair of **fill()** and **rect()** functions to create each square. Because of this, we would need 200 lines of code in order to make a line of 100 squares. There is also a significant amount of repetition within the arguments of each **rect()** function: the last three arguments (Y axis location, width, and height) of each **rect()** are exactly the same, with the X axis location being the only difference.
 
@@ -14,7 +14,7 @@ In order to simplify this process, we can create a self-contained loop that repe
 
 This second version of the project uses a type of loop known as a **for loop** to create 100 squares, alternating between teal and pink colors in the **fill()** function and placing each square 20 pixels away from the previous one. This results in a much shorter code that then we would have had if we didn't use a loop :
 
-{{% codepen 400 KRBeNL %}}
+{{% codepen 400 PamXqd %}}
 
 ## Understanding For Loops
 
@@ -46,7 +46,7 @@ for (create variable; test; update variable){
 
 In the embedded code below, our loop draws multiple lines. The variable i is declared with an initial value of 20. The loop runs for as long as i is less than 400. Every time the test passes, the value of i is updated to be the result of itself plus 8 (20, 28, 36, etc.). When i grows to be bigger than 400, the loop stops. Try adding `console.log(i)` inside of the loop's result block to see the growing value of i with each loop:
 
-{{% codepen 400 eKZZZz %}}
+{{% codepen 400 KemQoy %}}
 
 ## Relational Expressions and their Operators
 
@@ -65,11 +65,11 @@ In the embedded code below, our loop draws multiple lines. The variable i is dec
 
 Here are some examples of projects that use for loops to create complex designs. Try to determine how all three statements of the for loop work and how they create the resulting patterns for each code embedded below:
 
-{{% codepen 400 QxNNab %}}
+{{% codepen 400 oyWEqr %}}
 
-{{% codepen 400 JZXXZL %}} 
+{{% codepen 400 NzjyLg %}} 
 
-{{% codepen 600 PevZgB %}}
+{{% codepen 600 LryQWq %}}
 
 ## Nested For Loops
 
