@@ -69,9 +69,12 @@ Here are some examples of projects that use for loops to create complex designs.
 
 {{% codepen 400 NzjyLg %}} 
 
-{{% codepen 600 LryQWq %}}
+
 
 ## Nested For Loops
+
+
+
 
 {{<mermaid align="center">}}
 graph TD
@@ -110,3 +113,7 @@ for (create outer variable; outer test; update outer variable){
       }
   }
 ```
+
+Here is another example of a nested for loop. Study this example to see how it works
+
+{{% codepen 600 LryQWq %}}
