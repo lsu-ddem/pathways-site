@@ -63,11 +63,11 @@ h6 {
   --MAIN-LINK-HOVER-color: #3e0048; /* Color of hovered links */
   --MAIN-ANCHOR-color: #3cc9b8; /* color of anchors on titles */
 
-  --MENU-HEADER-BG-color: #de3540; /* Background color of menu header */
-  --MENU-HEADER-BORDER-color: #c42d38; /*Color of menu header border */
+  --MENU-HEADER-BG-color: #3cc9b8; /* Background color of menu header */
+  --MENU-HEADER-BORDER-color: #36ab9d; /*Color of menu header border */
 
   --MENU-SEARCH-BG-color: #323232; /* Search field background color (by default borders + icons) */
-  --MENU-SEARCH-BOX-color: #de3540; /* Override search field border color */
+  --MENU-SEARCH-BOX-color: #36ab9d; /* Override search field border color */
   --MENU-SEARCH-BOX-ICONS-color: #ccc; /* Override search field icons color */
 
   --MENU-SECTIONS-ACTIVE-BG-color: #212525dd; /* Background color of the active section and its childs */
