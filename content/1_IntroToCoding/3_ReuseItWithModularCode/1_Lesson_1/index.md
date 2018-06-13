@@ -10,6 +10,8 @@ hello
 
 ## Making a Function
 
+{{% codepen 600 gKWqmb %}}
+
 {{% codepen 600 oywJee %}}
 
 {{% codepen 600 XYgoop %}}
