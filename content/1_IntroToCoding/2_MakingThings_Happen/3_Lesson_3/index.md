@@ -100,7 +100,7 @@ style C fill: #08b8cd ,stroke:#FFFFFF;
 style E fill: #FFFFFF, stroke:#FFFFFF;
 style L fill: #FFFFFF, stroke:#FFFFFF;
 style H fill: #f7dc6f ,stroke:#FFFFFF;
-style J fill: #08b8cd ,stroke:#FFFFFF;
+style J fill:  #ec7063  ,stroke:#FFFFFF;
 style M fill: #08b8cd , stroke:#FFFFFF;
 {{< /mermaid >}}
 
