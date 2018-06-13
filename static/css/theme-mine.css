@@ -180,29 +180,19 @@ a:hover {
   border-color: var(--MENU-SECTION-HR-color);
 }
 
-/* Default left, right, top, bottom margin is 2cm */
-@page {
-  margin: 2cm;
-}
-
-/* First page, 10 cm margin on top */
-@page :first {
-  margin-top: 5cm;
-}
-
-/* Left pages, a wider margin on the left */
-@page :left {
-  margin-left: 3cm;
-  margin-right: 2cm;
-}
-
-@page :right {
-  margin-left: 2cm;
-  margin-right: 3cm;
+/* codepen padding */
+.cp_embed_wrapper {
+  padding: 2.3rem 0;
 }
 
 /* print style sheet */
 @media print {
+  /* this removes URLS from print */
+  /* @page {
+    size: auto;
+    margin: 0 -6cm;
+  } */
+
   /* remove unwanted elements */
   nav,
   form,
@@ -217,18 +207,6 @@ a:hover {
   }
   #body .padding {
     padding: 0;
-  }
-
-  /* add back in margin */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin-top: 0.75rem !important;
-  }
-  .cp_embed_wrapper {
-    margin-top: 1rem !important;
   }
 
   /*!
@@ -715,8 +693,7 @@ a:hover {
 
   html {
     font-size: 16px;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
   }
 
   body {
@@ -727,8 +704,6 @@ a:hover {
     /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     font-size: 1rem;
     line-height: 1.5;
-    /* margin: 0 5%;
-    padding: 0; */
     float: none !important;
     text-rendering: optimizeLegibility;
   }
@@ -898,6 +873,10 @@ a:hover {
     border: 0;
     text-decoration: none;
   }
+
+  /********
+  Page breaks
+  */
 
   table,
   blockquote,
