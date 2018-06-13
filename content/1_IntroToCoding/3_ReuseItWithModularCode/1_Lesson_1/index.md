@@ -6,16 +6,10 @@ weight: 1
 
 
 
-
-
-
+hello
 
 ## Making a Function
 
 {{% codepen 600  %}}
-
-
-
-
 
 {{% codepen 600 XYgoop %}}
