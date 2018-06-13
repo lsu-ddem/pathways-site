@@ -768,8 +768,9 @@ a:hover {
   }
   p,
   a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
+
   a,
   a:visited {
     color: #000;
