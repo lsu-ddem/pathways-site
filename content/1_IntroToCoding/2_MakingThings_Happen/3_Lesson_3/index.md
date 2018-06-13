@@ -21,7 +21,7 @@ This second version of the project uses a type of loop known as a **for loop** t
 The following logic chart breaks down the basic concept behind how a for loop works:
 
 {{<mermaid align="center">}}
-graph TD 
+graph LR 
 H(Create Variable)-->A
  A-->|False| E[Loop Stops]
 A{Test} -->|True| B[Repeated Result Block]
@@ -77,7 +77,7 @@ Here are some examples of projects that use for loops to create complex designs.
 
 
 {{<mermaid align="center">}}
-graph TD
+graph LR
 H(Create Outer Variable)-->A
 A-->|False| E[Loop Stops]
 A{Outer Test} -->|True| M(Create Inner Variable)
