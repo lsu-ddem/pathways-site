@@ -66,6 +66,7 @@ In the embedded code below, our loop draws multiple lines. The variable i is dec
 Here are some examples of projects that use for loops to create complex designs. Try to determine how all three statements of the for loop work and how they create the resulting patterns for each code embedded below:
 
 {{% codepen 400 oyWEqr %}}
+<br>
 
 {{% codepen 500 NzjyLg %}} 
 
