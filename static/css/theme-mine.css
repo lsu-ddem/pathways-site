@@ -182,9 +182,11 @@ a:hover {
 
 /* codepen padding */
 .cp_embed_wrapper {
-  padding: 2.3rem 0;
+  padding-top: 2.3rem;
 }
-
+.codepen-url {
+  display: none;
+}
 /* print style sheet */
 @media print {
   /* this removes URLS from print */
@@ -209,6 +211,10 @@ a:hover {
     padding: 0;
   }
 
+  .codepen-url {
+    display: block;
+    padding-block-end: 2.3rem;
+  }
   /*!
  * Gutenberg
  *
@@ -738,29 +744,31 @@ a:hover {
   }
 
   h1 {
-    font-size: 2.25rem;
-  }
-
-  h2 {
     font-size: 1.75rem;
   }
 
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h4 {
+  h2 {
     font-size: 1.25rem;
   }
 
-  h5 {
+  h3 {
     font-size: 1rem;
   }
 
-  h6 {
+  h4 {
     font-size: 0.75rem;
   }
 
+  h5 {
+    font-size: 0.5rem;
+  }
+
+  h6 {
+    font-size: 0.25rem;
+  }
+  p {
+    font-size: 1rem;
+  }
   a,
   a:visited {
     color: #000;
@@ -929,10 +937,11 @@ a:hover {
   }
 
   body {
-    padding-bottom: 2.54cm;
+    /* padding-bottom: 2.54cm;
     padding-left: 1.8cm;
     padding-right: 1.8cm;
-    padding-top: 2.54cm;
+    padding-top: 2.54cm; */
+    padding: 0cm;
   }
 
   a[href^='http://']:after, a[href^='https://']:after, a[href^='ftp://']:after {
@@ -949,10 +958,6 @@ a:hover {
   acronym[title]:after {
     content: " (" attr(title) ")";
   }
-
-  /* iframe[src^='//codepen.io']:after {
-    content: " (" attr(src) ")" !important;
-  } */
 
   /* this is working */
   /* iframe[src^='//codepen.io'] {
