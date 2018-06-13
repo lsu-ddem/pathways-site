@@ -67,6 +67,8 @@ Here are some examples of projects that use for loops to create complex designs.
 
 {{% codepen 400 oyWEqr %}}
 <pre>
+
+
 </pre>
 {{% codepen 500 NzjyLg %}} 
 
