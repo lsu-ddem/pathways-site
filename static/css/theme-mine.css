@@ -180,6 +180,27 @@ a:hover {
   border-color: var(--MENU-SECTION-HR-color);
 }
 
+/* Default left, right, top, bottom margin is 2cm */
+@page {
+  margin: 2cm;
+}
+
+/* First page, 10 cm margin on top */
+@page :first {
+  margin-top: 5cm;
+}
+
+/* Left pages, a wider margin on the left */
+@page :left {
+  margin-left: 3cm;
+  margin-right: 2cm;
+}
+
+@page :right {
+  margin-left: 2cm;
+  margin-right: 3cm;
+}
+
 /* print style sheet */
 @media print {
   /* remove unwanted elements */
@@ -208,15 +229,6 @@ a:hover {
   }
   .cp_embed_wrapper {
     margin-top: 1rem !important;
-  }
-  /* remove print information, webpage, date, etc */
-  @page {
-    size: 8.5in 11in;
-    margin: 10%;
-
-    /* @top-left {
-      content: "Hamlet";
-    } */
   }
 
   /*!
@@ -269,10 +281,10 @@ a:hover {
      * Correct the font size and margin on `h1` elements within `section` and
      * `article` contexts in Chrome, Firefox, and Safari.
      */
-  h1 {
+  /* h1 {
     font-size: 2em;
     margin: 0.67em 0;
-  }
+  } */
 
   /* Grouping content
        ========================================================================== */
@@ -703,8 +715,8 @@ a:hover {
 
   html {
     font-size: 16px;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
   }
 
   body {
@@ -715,7 +727,9 @@ a:hover {
     /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     font-size: 1rem;
     line-height: 1.5;
-    margin: 0 auto;
+    /* margin: 0 5%;
+    padding: 0; */
+    float: none !important;
     text-rendering: optimizeLegibility;
   }
 
@@ -749,27 +763,27 @@ a:hover {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
     font-size: 1.75rem;
   }
 
-  h4 {
+  h3 {
     font-size: 1.5rem;
   }
 
-  h5 {
+  h4 {
     font-size: 1.25rem;
   }
 
-  h6 {
+  h5 {
     font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.75rem;
   }
 
   a,
@@ -962,9 +976,9 @@ a:hover {
   } */
 
   /* this is working */
-  iframe[src^='//codepen.io'] {
+  /* iframe[src^='//codepen.io'] {
     display: none;
-  }
+  } */
 
   .page-break,
   .page-break-before {
