@@ -21,14 +21,14 @@ This second version of the project uses a type of loop known as a **for loop** t
 The following logic chart breaks down the basic concept behind how a for loop works:
 
 {{<mermaid align="center">}}
-graph TD 
+graph LR 
 H(Create Variable)-->A
  A-->|False| E[Loop Stops]
 A{Test} -->|True| B[Repeated Result Block]
 B-->C[Update Variable Value]
 C-->|Updated Variable Value|A
 style A fill:  #f7dc6f , stroke:#FFFFFF;
-style B fill:  #f7dc6f ,stroke:#FFFFFF;
+style B fill:  #ec7063, stroke:#FFFFFF;
 style C fill:  #f7dc6f ,stroke:#FFFFFF;
 style E fill: #FFFFFF, stroke:#FFFFFF;
 style H fill:  #f7dc6f ,stroke:#FFFFFF;
@@ -67,7 +67,7 @@ Here are some examples of projects that use for loops to create complex designs.
 
 {{% codepen 400 oyWEqr %}}
 
-{{% codepen 400 NzjyLg %}} 
+{{% codepen 500 NzjyLg %}} 
 
 
 
@@ -77,7 +77,7 @@ Here are some examples of projects that use for loops to create complex designs.
 
 
 {{<mermaid align="center">}}
-graph TD
+graph LR
 H(Create Outer Variable)-->A
 A-->|False| E[Loop Stops]
 A{Outer Test} -->|True| M(Create Inner Variable)
@@ -100,7 +100,7 @@ style C fill: #08b8cd ,stroke:#FFFFFF;
 style E fill: #FFFFFF, stroke:#FFFFFF;
 style L fill: #FFFFFF, stroke:#FFFFFF;
 style H fill: #f7dc6f ,stroke:#FFFFFF;
-style J fill: #08b8cd ,stroke:#FFFFFF;
+style J fill:  #ec7063  ,stroke:#FFFFFF;
 style M fill: #08b8cd , stroke:#FFFFFF;
 {{< /mermaid >}}
 
