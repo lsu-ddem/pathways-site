@@ -187,13 +187,34 @@ a:hover {
 .codepen-url {
   display: none;
 }
+
+/* hide page number unless printing */
+#pageFooter {
+  display: none;
+}
 /* print style sheet */
 @media print {
-  /* this removes URLS from print */
-  /* @page {
-    size: auto;
-    margin: 0 -6cm;
-  } */
+  /* page numbers - only works in firefox */
+
+  #body-inner {
+    display: table;
+  }
+
+  #pageFooter {
+    display: table-footer-group;
+    counter-reset: page;
+  }
+
+  #pageFooter:after {
+    counter-increment: page;
+    content: "Page " counter(page);
+    padding: 1px 2px;
+    margin-right: 0.2em;
+    background: #ffc;
+    color: #000;
+    border: 1px solid #999;
+    font-weight: bold;
+  }
 
   /* remove unwanted elements */
   nav,
@@ -766,6 +787,7 @@ a:hover {
   h6 {
     font-size: 0.25rem;
   }
+
   p,
   a {
     font-size: 0.8rem;
