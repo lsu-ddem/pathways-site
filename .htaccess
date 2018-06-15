@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "One does not simply"
+AuthUserFile /home/fellowship/.htpasswd
+Require valid-user
