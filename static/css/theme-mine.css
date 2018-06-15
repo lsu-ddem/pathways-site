@@ -934,7 +934,7 @@ a:hover {
   }
 
   h1,
-  h2,
+  /* h2, */
   h3,
   h4,
   h5,
@@ -947,6 +947,10 @@ a:hover {
   h2 + p,
   h3 + p {
     page-break-before: avoid;
+  }
+
+  h2 {
+    page-break-before: always;
   }
 
   img {
