@@ -1,5 +1,24 @@
-<!-- Partial intended to be overwritten with tags loaded at the end of the page loading (usually for Javascript) 
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
 <script>
-    console.log("running some javascript");
+  //already logged in? 
+  if (Cookies.get('login')) {
+    $('.teacher').show()
+    console.log('logged in already')
+  }
+  function logout() {
+    Cookies.remove('login');
+    $('.teacher').hide()
+    console.log('logout')
+  }
+
+  function validatePass() {
+    //set password 
+    if (document.getElementById('password').value == 'test') {
+      Cookies.set('login', true);
+      $('.teacher').show()
+    } else {
+      alert('wrong password!!')
+    }
+  }
 </script>
--->

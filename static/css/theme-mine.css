@@ -192,6 +192,12 @@ a:hover {
 #pageFooter {
   display: none;
 }
+
+/* hide teacher material by default */
+.teacher {
+  display: none;
+}
+
 /* print style sheet */
 @media print {
   /* page numbers - only works in firefox */

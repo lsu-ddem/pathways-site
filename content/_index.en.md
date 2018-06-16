@@ -34,3 +34,7 @@ allowing the disparate elements
 of
 graphics, sound, and hardware to be composed into interactive
 projects.
+
+{{% teacher %}}
+another
+{{% teacher /%}}
