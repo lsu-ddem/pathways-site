@@ -1,4 +1,5 @@
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js"></script>
 
 <script>
   //already logged in? 
@@ -14,11 +15,12 @@
 
   function validatePass() {
     //set password 
-    if (document.getElementById('password').value == 'test') {
+    var hashed = md5(document.getElementById('password').value) == "098f6bcd4621d373cade4e832627b4f6";
+    if (hashed) {
       Cookies.set('login', true);
       $('.teacher').show()
     } else {
-      alert('wrong password!!')
+      alert('Incorrect password, please try again.')
     }
   }
 </script>
