@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Document</title>
+
+  <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+</head>
+
+<body>
+  hello {{.Content}}
+  <script>
+    let url = new URL(window.location);
+    let params = new URLSearchParams(url.search.slice(1));
+    let tempLessons = [];
+    let lessons = [];
+
+    for (let p of params) {
+      //remove odd index 
+      var filtered = p.filter(function (element, index, array) {
+        return (index % 2 === 0);
+      });
+      tempLessons.push(filtered)
+    }
+
+    //flatten 2d array 
+    lessons = tempLessons.reduce((acc, val) => acc.concat(val), []);
+
+    //create iframes based on lessons array 
+    lessons.forEach(lesson => {
+      //outer div with lesson id
+      var div = document.createElement('div');
+      div.id = lesson;
+      document.body.appendChild(div);
+
+      //inner iframe 
+      // var iframe = document.createElement('iframe')
+      // iframe.src = "index.html";
+      // iframe.scrolling = "no"
+      // iframe.frameBorder = 'no'
+      // iframe.width = '100%'
+      // div.appendChild(iframe);
+      var pymParent = new pym.Parent(lesson, 'index.html', {});
+    })
+
+
+  </script>
+
+</body>
+
+
+</html>
