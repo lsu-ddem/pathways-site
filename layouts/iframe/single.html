@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  hello {{.Content}}
   <script>
     let url = new URL(window.location);
     let params = new URLSearchParams(url.search.slice(1));
@@ -36,17 +35,8 @@
       div.id = lesson;
       document.body.appendChild(div);
 
-      //inner iframe 
-      // var iframe = document.createElement('iframe')
-      // iframe.src = "index.html";
-      // iframe.scrolling = "no"
-      // iframe.frameBorder = 'no'
-      // iframe.width = '100%'
-      // div.appendChild(iframe);
-      var pymParent = new pym.Parent(lesson, 'index.html', {});
+      var pymParent = new pym.Parent(lesson, location.origin + lesson, {});
     })
-
-
   </script>
 
 </body>
