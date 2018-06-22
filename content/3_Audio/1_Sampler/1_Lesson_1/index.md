@@ -7,3 +7,5 @@ weight: '1'
 {{% codepen 500 MXVgVR %}}
 
 ## Understanding the Audio Signal Path
+
+![](images/uploads/ampu3.png)
