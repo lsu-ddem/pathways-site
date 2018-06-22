@@ -1,2 +1,3 @@
 <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<script>var pymChild = new pym.Child();</script>
+<!-- polling fixes issue of iframe not being quite large enough onload -->
+<script>var pymChild = new pym.Child({ polling: 1000 });</script>
