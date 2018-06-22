@@ -8,10 +8,13 @@
   <title>Document</title>
 
   <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
   <script>
+
     let url = new URL(window.location);
     let params = new URLSearchParams(url.search.slice(1));
     let tempLessons = [];
@@ -37,9 +40,25 @@
 
       var pymParent = new pym.Parent(lesson, location.origin + lesson, {});
     })
+
+    $('iframe').on("load", function () {
+      var iframe = document.querySelectorAll('iframe');
+
+      iframe.forEach(frame => {
+
+        var innerDoc = frame.contentDocument || frame.contentWindow.document;
+
+        //remove menubar content 
+        innerDoc.body.querySelector('nav').style.display = 'none'
+        innerDoc.body.querySelector('#top-bar-sticky-wrapper').style.display = 'none'
+        innerDoc.body.querySelector('#navigation').style.display = 'none'
+        innerDoc.body.querySelector('#body').style.marginLeft = 0
+      })
+    });
+
+
+
   </script>
-
 </body>
-
 
 </html>
