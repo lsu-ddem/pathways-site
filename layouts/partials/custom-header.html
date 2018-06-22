@@ -61,4 +61,10 @@
     aTag.target = "_blank";
     aTag.innerText = url + '?' + params.toString();
   }
+
+  //remove checks and link 
+  function clearLessons() {
+    $('input:checkbox').removeAttr('checked')
+    $('#url-string')[0].innerText = '';
+  }
 </script>

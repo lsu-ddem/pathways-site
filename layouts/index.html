@@ -5,6 +5,7 @@
 {{ $currentNode := . }}
 <h3>Choose Lessons</h3>
 <button type="button" class="btn btn-default" onclick="setUrlString()">Submit</button>
+<button type="button" class="btn btn-default" onclick="clearLessons()">Clear</button>
 <div>
 	<p>
 		<a href="http://" id="url-string"></a>
@@ -77,5 +78,4 @@
   {{end}}
  {{ end }}
 {{ end }}
-
 {{ partial "footer.html" . }}
