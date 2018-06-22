@@ -180,6 +180,11 @@ a:hover {
   border-color: var(--MENU-SECTION-HR-color);
 }
 
+/* lesson picker style */
+.choose ul li {
+  list-style: none;
+}
+
 /* codepen padding */
 .cp_embed_wrapper {
   padding-top: 2.3rem;
