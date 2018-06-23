@@ -2,5 +2,4 @@
 title: Intro to coding
 weight: 1
 ---
-
-![](images/uploads/film-bg.jpg)
+![](/images/uploads/ampu3.png)
