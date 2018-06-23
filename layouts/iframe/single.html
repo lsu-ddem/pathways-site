@@ -13,8 +13,11 @@
 </head>
 
 <body>
+  <button type="button" class="btn btn-default" onclick="print()">Print all</button>
+
   <script>
 
+    //load chosen iframes 
     let url = new URL(window.location);
     let params = new URLSearchParams(url.search.slice(1));
     let tempLessons = [];
@@ -41,6 +44,7 @@
       var pymParent = new pym.Parent(lesson, location.origin + lesson, {});
     })
 
+    //remove extra menus from chosen content
     $('iframe').on("load", function () {
       var iframe = document.querySelectorAll('iframe');
 
@@ -55,6 +59,15 @@
         innerDoc.body.querySelector('#body').style.marginLeft = 0
       })
     });
+
+    // print each frame 
+    function print() {
+      var frames = window.frames; // or // var frames = window.parent.frames;
+      for (var i = 0; i < frames.length; i++) {
+        frames[i].focus();
+        frames[i].print()
+      }
+    }
   </script>
 </body>
 
