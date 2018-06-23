@@ -1,0 +1,76 @@
+{{ $currentNode := . }}
+<h3>Choose Lessons</h3>
+<button type="button" class="btn btn-default" onclick="setUrlString()">Submit</button>
+<button type="button" class="btn btn-default" onclick="clearLessons()">Clear</button>
+<div>
+	<p>
+		<a href="http://" id="url-string"></a>
+	</p>
+</div>	
+<form>
+	<ul class="choose">
+			{{range .Site.Home.Sections.ByWeight}}
+			{{ template "choose-content" dict "sect" . "currentnode" $currentNode}}
+			{{end}}			
+	</ul>
+</form>
+
+<!-- templates -->
+{{ define "choose-content" }}
+{{ $showvisitedlinks := .showvisitedlinks }}
+{{ $currentNode := .currentnode }}
+ {{with .sect}}
+  {{if .IsSection}}
+    {{safeHTML .Params.head}}
+    <li data-nav-id="{{.URL}}" title="{{.Title}}" class="dd-item">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="{{.URL}}"> 
+					  <a href="{{.RelPermalink}}">
+         		 {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
+						</a>
+				</label>
+    	</div>
+      {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
+      {{ if ne $numberOfPages 0 }}
+        <ul>
+          {{ $currentNode.Scratch.Set "pages" .Pages }}
+          {{ if .Sections}}
+            {{ $currentNode.Scratch.Set "pages" (.Pages | union .Sections) }}
+          {{end}}
+          {{ $pages := ($currentNode.Scratch.Get "pages") }}
+          
+        {{if eq .Site.Params.ordersectionsby "title"}}  
+          {{ range $pages.ByTitle }}
+            {{ if and .Params.hidden (not $.showhidden) }} 
+            {{else}}
+            {{ template "choose-content" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks }}
+            {{end}}
+          {{ end }}
+        {{else}}
+          {{ range $pages.ByWeight }}
+            {{ if and .Params.hidden (not $.showhidden) }} 
+            {{else}}
+            {{ template "choose-content" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks }}
+            {{end}}
+          {{ end }}
+        {{end}}
+        </ul>
+      {{ end }}        
+    </li>
+  {{else}}
+    {{ if not .Params.Hidden }}
+      <li data-nav-id="{{.URL}}" title="{{.Title}}" class="dd-item {{if eq .UniqueID $currentNode.UniqueID}}active{{end}}">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="{{.URL}}"> 
+							<a href="{{.RelPermalink}}">
+							{{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
+							</a>
+					</label>
+				</div>
+   	 </li>
+     {{ end }}
+  {{end}}
+ {{ end }}
+{{ end }}
