@@ -1,19 +1,19 @@
 ---
-title: Lesson 1
+title: WebAudio Basics & Sound File Players
 weight: '1'
 ---
+## Understanding the Audio Signal Path
+
+
+
 ## Creating a Sound File Sampler
 
 {{% codepen 500 MXVgVR %}}
 
-## Understanding the Audio Signal Path
-
-![](/static/images/uploads/signal_pathway_basic_diagram.png)
+## 
 
 
 
 
 
-## Adding Effects into the Signal Path
-
-![](/static/images/uploads/signal_pathway_effects_diagram.png)
+##
