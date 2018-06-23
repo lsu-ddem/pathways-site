@@ -181,7 +181,8 @@ a:hover {
 }
 
 /* lesson picker style */
-.choose ul li {
+.choose ul,
+li {
   list-style: none;
 }
 
@@ -189,12 +190,10 @@ a:hover {
 .cp_embed_wrapper {
   padding-top: 2.3rem;
 }
-.codepen-url {
-  display: none;
-}
 
-/* hide page number unless printing */
-#pageFooter {
+/* hide things unless printing */
+#pageFooter,
+.codepen-url {
   display: none;
 }
 
