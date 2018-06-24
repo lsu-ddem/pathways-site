@@ -4,7 +4,7 @@ weight: '1'
 ---
 ## Understanding the Audio Signal Path
 
-![null](/images/uploads/simple_audio_pathway-1-.png)
+![](/images/uploads/simple_audio_pathway-1-.png)
 
 ## Creating a Sound File Sampler
 
