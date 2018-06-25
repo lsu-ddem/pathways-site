@@ -1,5 +1,5 @@
 ---
-title: 'Collisions & Interactions/Assignment # 3'
+title: 'Collisions / Assignment # 3'
 weight: '3'
 ---
 ## Understanding Collisions
