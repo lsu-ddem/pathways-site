@@ -1,5 +1,5 @@
 ---
-title: 'Movement & Sprite-to-Sprite Interactions '
+title: Interactivity
 weight: '3'
 ---
 
