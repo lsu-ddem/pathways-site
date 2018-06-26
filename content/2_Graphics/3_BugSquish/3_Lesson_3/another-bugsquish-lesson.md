@@ -1,5 +1,5 @@
 ---
-title: another bugsquish lesson
+title: Collisions
 weight: '5'
 ---
-BUGSSSS
+## Understanding Collisions
