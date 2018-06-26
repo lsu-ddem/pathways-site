@@ -1,5 +1,5 @@
 ---
-title: ' Assignment #3 - Bug Squish game'
+title: 'Graphics Assignment #3 - Bug Squish game'
 weight: '5'
 ---
 
