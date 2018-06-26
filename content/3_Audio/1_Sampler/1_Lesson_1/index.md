@@ -14,4 +14,12 @@ weight: '1'
 
 ## Playing Multiple Sounds with Tone.Players
 
+
+
+
+
 {{% codepen 500 vrzEjR %}}
+
+
+
+##
