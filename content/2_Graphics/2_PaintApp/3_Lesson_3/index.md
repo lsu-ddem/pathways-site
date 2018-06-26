@@ -1,5 +1,5 @@
 ---
-title: Lesson 3
+title: 'Graphics Assignment # 2 - Paint App'
 weight: '3'
 ---
 
