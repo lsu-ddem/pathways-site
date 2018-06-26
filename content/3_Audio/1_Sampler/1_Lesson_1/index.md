@@ -26,7 +26,7 @@ Since we have multiple sounds to play now we can use keys on the keyboard to tri
 
 #### Starting the sounds
 
-To get each specific sound to play we use a special syntax: players.get(‘samplename’). In this case we do either players.get(‘bells’) to select the bells sound or players.get(‘arpeggio”) to play the arpeggiated synthesizer sound. Then we call .start() on the same line to play those sounds.
+To get each specific sound to play we use a special syntax: players.get("samplename"). In this case we do either players.get("bells") to select the bells sound or players.get("arpeggio”) to play the arpeggiated synthesizer sound. Then we call .start() on the same line to play those sounds.
 
 {{% codepen 500 vrzEjR %}}
 
