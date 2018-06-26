@@ -636,3 +636,69 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}     
+
+  # Resources 
+  - name: "Resources - Basic Javascript" 
+    label: "Resources - Basic Javascript" 
+    folder: "content/6_Resources/1_BasicJavascript" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - Variables" 
+    label: "Resources - Variables" 
+    folder: "content/6_Resources/2_Variables" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - Loops" 
+    label: "Resources - Loops" 
+    folder: "content/6_Resources/3_Loops" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - p5 and Drawing" 
+    label: "Resources - p5 and Drawing" 
+    folder: "content/6_Resources/4_p5andDrawing" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - Basic Shapes" 
+    label: "Resources - Basic Shapes" 
+    folder: "content/6_Resources/5_BasicShapes" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources -  Text" 
+    label: "Resources -  Text" 
+    folder: "content/6_Resources/6_Text" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - Sound and Music" 
+    label: "Resources - Sound and Music" 
+    folder: "content/6_Resources/7_SoundandMusic" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - Arduino" 
+    label: "Resources - Arduino" 
+    folder: "content/6_Resources/8_Arduino" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
