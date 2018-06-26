@@ -1,5 +1,5 @@
 ---
 title: Collisions
-weight: '4'
+weight: '3'
 ---
 ## Understanding Collisions
