@@ -1,7 +1,5 @@
 ---
-title: Animations and Movement
+title: Motion & Appearence
 weight: '2'
 ---
-Here is an example of adding a looping animation to a sprite and coding for interactions from mouse and key presses:
-
-{{% codepen 400 ZRRoEG %}}
+This section will cover motion: moving our sprites across the canvas as well as overlaying animations or images on top of our sprites.
