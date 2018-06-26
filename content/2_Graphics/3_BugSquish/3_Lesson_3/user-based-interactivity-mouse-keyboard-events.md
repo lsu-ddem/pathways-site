@@ -1,6 +1,6 @@
 ---
 title: User-Based Interactivity (Mouse/Keyboard Events)
-weight: '4'
+weight: '3'
 ---
 
 ## Bringing it All Together
