@@ -1,14 +1,9 @@
 ---
-title: 'Movement/ Assignment # 3'
+title: 'Movement & Sprite-to-Sprite Interactions '
 weight: '3'
 ---
-## 
 
-## Bringing it All Together
 
-Here is an example of an advanced game that features animations, movement through key and mouse interaction, and collisions between groups and single sprite characters:
-
-{{% codepen 600 jKKZjz %}}
 
 ## Assignment #3
 
