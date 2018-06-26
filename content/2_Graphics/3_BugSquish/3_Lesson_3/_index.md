@@ -4,13 +4,4 @@ weight: '2'
 ---
 
 
-
-## Assignment #3
-
-Here is your assignment for this section of the course.
-
-{{% codepen-results 600 eKyvxX %}}
-
-{{% teacher %}}
-
-{{% teacher /%}}
+In this section, we'll discus how to interact with your sprites and how to have them interact with each other.
