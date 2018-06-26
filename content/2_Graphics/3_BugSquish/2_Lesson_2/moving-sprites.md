@@ -1,5 +1,5 @@
 ---
 title: Moving Sprites
-weight: '2'
+weight: '3'
 ---
 Samples
