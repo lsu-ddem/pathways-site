@@ -1,5 +1,5 @@
 ---
-title: Lesson 3
+title: 'Graphics Assignment # 1 - Recreate Four Images'
 weight: 3
 ---
 {{% codepen-results 400 485e2f98c817e9f714942d8af82acd8d %}}
