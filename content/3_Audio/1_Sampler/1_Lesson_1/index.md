@@ -53,6 +53,7 @@ We can then customize the button by modifying some of its properties.
 
 To change an aspect of our sound while it is playing we can use a slider. To make a slider in p5.js use createSlider().
 
+
 ##### Syntax
 
 ```
@@ -65,6 +66,10 @@ createSlider(min,max,[value],[step])
 * _max_ - maximum value of the slider
 * _value_ - default value of the slider
 * _step_ - step size for each tick of the slider (if step is set to 0, the slider will move continuously from the minimum to the maximum value)
+
+{{% notice tip %}}
+Remember: when a function's arguments are listed inside of flat brackets ina syntax example or on an API document, this indicates that those arguments are optional, and are not required in order for the function to run successfuly. In the case of createSlider(), the first two arguments (min and max) are required, while the second two (value and step) can be added if you'd like to have more control over how your slider behaves.
+{{% /notice %}}
 
 To get the current value of the slider and use it in your code, call for slider.value() and attach it to a property of your player. 
 
