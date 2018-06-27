@@ -53,11 +53,10 @@ We can then customize the button by modifying some of its properties.
 
 To change an aspect of our sound while it is playing we can use a slider. To make a slider in p5.js use createSlider().
 
-
 ##### Syntax
 
 ```
-createSlider(min,max,[value],[step])
+createSlider(min,max,[value],[step]);
 ```
 
 ##### Parameters
@@ -73,23 +72,21 @@ Remember: when a function's arguments are listed inside of flat brackets ina syn
 
 To get the current value of the slider and use it in your code, call for slider.value() and attach it to a property of your player. 
 
-
-
 #### Labeling your sampler
 
 It's a good idea to label any sliders used to control your sampler so that you know what they do. Here is a quick reminder of how the text() function works: 
 
 ##### Syntax
 
-text(str,x,y,\[x2],\[y2])
+```
+text(str,x,y);
+```
 
 ##### Parameters
 
-*  _str_ - the alphanumeric symbols to be displayed
-*    _x_ - x-coordinate of text
-*    _y _- y-coordinate of text
-
-
+*  _str_ - the alphanumeric symbols to be displayed- x-coordinate of text
+*  _y_ - the y axis coordinate of text
+*  _x_ - the x axis coordinate of text
 
 In the code below, we use a button to trigger the playback of each sound and  a slider, labeled "\[File Name] Playback Speed" to change the playback speed rate of our sound while it plays:
 
