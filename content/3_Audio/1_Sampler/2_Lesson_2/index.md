@@ -18,6 +18,9 @@ Here is an example of how to add an audio effect into your code and attach it to
 
 Every effect has a universal parameter called its **wet** value. The wet value  represents the proportion of mix between the original (or "dry") sound source signal coming into the effect and the effected (or "wet") signal coming out of the effect. Try adjusting the slider in the embedded code above to hear the resulting sound at various rations of dry/wet mixes.
 
+{{% notice hint %}}
+Remember to build your audio effects before you try to connect your sound source to them using the .connect( ) method. If you attempt to connect a sound source to an effect that hasn't been built yet, your code won't render  even if your code has no other mistakes. Since our code is read from top to bottom, it's best to put the code that builds your effects above any code that connects sound sources to them.  
+{{% /notice %}}
 
 
 ## Common Audio Effects
