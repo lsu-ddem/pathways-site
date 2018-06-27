@@ -2,11 +2,11 @@
 title: Audio Effects
 weight: '2'
 ---
-## Adding Audio Effects into the Signal Path 
+## Adding Audio Effects into the Signal Path
 
 ![null](/images/uploads/effects_pathway.png)
 
-In order to pass sound from our sound source into an audio effect, we need to comlete the following steps:
+In order to pass sound from our sound source into an audio effect, we need to comlete the following steps: 
 
 1. Build our chosen audio effect, assign it to a variable, and connect its output to the master speakers (using the .toMaster( ) method)
 2. Build our sound source, assign it to a variable, and connect its output to our audio effect (using a new method called **.connect( )**
@@ -19,9 +19,8 @@ Here is an example of how to add an audio effect into your code and attach it to
 Every effect has a universal parameter called its **wet** value. The wet value  represents the proportion of mix between the original (or "dry") sound source signal coming into the effect and the effected (or "wet") signal coming out of the effect. Try adjusting the slider in the embedded code above to hear the resulting sound at various rations of dry/wet mixes.
 
 {{% notice hint %}}
-Remember to build your audio effects before you try to connect your sound source to them using the .connect( ) method. If you attempt to connect a sound source to an effect that hasn't been built yet, your code won't render  even if your code has no other mistakes. Since our code is read from top to bottom, it's best to put the code that builds your effects above any code that connects sound sources to them.  
+Remember to build your audio effects before you try to connect your sound source to them using the .connect( ) method. If you attempt to connect a sound source to an effect that hasn't been built yet, your code won't render  even if your code has no other mistakes. Since our code is read from top to bottom, it's best to put the code that builds your effects above any code that connects sound sources to them.\
 {{% /notice %}}
-
 
 ## Common Audio Effects
 
@@ -69,8 +68,6 @@ Tremolo is the variation in amplitude of sound achieved through electronic means
 
 TREM EXAMPLE
 
-
-
 ### BitCrusher
 
 Bitcrusher is a distortion effect that creates a lo-fi version of the incoming sound source through a digital reduction of the audio's resolution (as known as its bitdepth). 
@@ -78,7 +75,5 @@ Bitcrusher is a distortion effect that creates a lo-fi version of the incoming s
 #### BitCrusher Parameters
 
 * **bits **- the number of bits to downsample the signal (must use a nominal range of 1 to 8)
-
-
 
 BIT EXAMPLE
