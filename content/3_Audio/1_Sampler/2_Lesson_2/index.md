@@ -18,6 +18,8 @@ Here is an example of how to add an audio effect into your code and attach it to
 
 Every effect has a universal parameter called its **wet** value. The wet value  represents the proportion of mix between the original (or "dry") sound source signal coming into the effect and the effected (or "wet") signal coming out of the effect. Try adjusting the slider in the embedded code above to hear the resulting sound at various rations of dry/wet mixes.
 
+
+
 ## Common Audio Effects
 
 Tone.js has a large collection of audio effects that can be used to modulate a sound source. Below, we discuss some of the most commonly used audio effects and demonstrate how we can use them in our wed projects. To see a complete list of possible audio effects and their parameters in the Tone.js library, head to the library's API documentation by clicking [here](https://tonejs.github.io/docs/).
