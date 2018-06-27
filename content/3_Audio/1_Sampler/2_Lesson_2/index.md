@@ -10,7 +10,7 @@ In order to pass sound from our sound source into an audio effect, we need to co
 
 1. Build our chosen audio effect, assign it to a variable, and connect its output to the master speakers (using the .toMaster( ) method)
 2. Build our sound source, assign it to a variable, and connect its output to our audio effect (using a new method called **.connect( )**
-3. The argument passed into the **.connect( )** method is the variable we created to store our audio effect
+3. The argument passed into the **.connect( )** method is the variable we created to store our audio effect 
 
 Here is an example of how to add an audio effect into your code and attach it to the output of your sound file player. In the code embedded below, we create a delay effect and send both sound file players through the effect before they are passed to our master output speakers:
 
