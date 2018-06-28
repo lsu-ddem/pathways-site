@@ -6,7 +6,7 @@ weight: '2'
 
 ![null](/images/uploads/effects_pathway.png)
 
-In order to pass sound from our sound source into an audio effect, we need to comlete the following steps: 
+In order to pass sound from our sound source into an audio effect, we need to complete the following steps: 
 
 1. Build our chosen audio effect, assign it to a variable, and connect its output to the master speakers (using the .toMaster( ) method)
 2. Build our sound source, assign it to a variable, and connect its output to our audio effect (using a new method called **.connect( )**
@@ -32,9 +32,9 @@ Reverb is the persistance of a sound that continues after the original sound has
 
 #### Reverb Parameters
 
-* r**oomsize** - the amount of time for the sound to decay.
+* **roomsize** - the amount of time for the sound to decay.
 
-REVERB EXAMPLE
+{{% codepen 500 oyaRoE %}}
 
 ### Delay
 
@@ -45,7 +45,7 @@ A delay effect records a sound into a buffer and plays it back after a certain p
 * **delayTime** - the time between consecutive echos.
 * **feedback** - the amount of the effected signal which is fed back through the delay.
 
-DELAY EXAMPLE
+{{% codepen 500 KeGLed %}}
 
 ### Distortion
 
@@ -55,7 +55,7 @@ Gives sound a “fuzzy”, “growling”, or “gritty” tone, think electric 
 
 * **distortion** - the amount of distortion (must use a nominal range of 0-1)
 
-DISTORTION EXAMPLE
+{{% codepen 500 GGYaLL %}}
 
 ### Tremolo
 
@@ -66,7 +66,7 @@ Tremolo is the variation in amplitude of sound achieved through electronic means
 * **frequency** - the rate of the effect, reuslting in faster vibrato or slower vibrato
 * **depth** - the depth of the effect upon the sound source
 
-TREM EXAMPLE
+ {{% codepen 500 jKQKdP %}}
 
 ### BitCrusher
 
