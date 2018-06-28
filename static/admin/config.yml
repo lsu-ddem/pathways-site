@@ -246,8 +246,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "Graphics Assignment #3 - Bugsquish game" 
-    label: "Graphics Assignment #3 - Bugsquish game" 
+  - name: "Graphics Assignment 3 - Bugsquish game" 
+    label: "Graphics Assignment 3 - Bugsquish game" 
     folder: "content/2_Graphics/3_BugSquish/4_Lesson_4" 
     create: true 
     fields: 
