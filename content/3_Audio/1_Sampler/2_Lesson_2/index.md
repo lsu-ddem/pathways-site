@@ -34,7 +34,7 @@ Reverb is the persistance of a sound that continues after the original sound has
 
 * **roomsize** - the amount of time for the sound to decay.
 
-{{% codepen 500 oyaRoE %}}
+{{% codepen 600 oyaRoE %}}
 
 ### Delay
 
@@ -45,7 +45,7 @@ A delay effect records a sound into a buffer and plays it back after a certain p
 * **delayTime** - the time between consecutive echos.
 * **feedback** - the amount of the effected signal which is fed back through the delay.
 
-{{% codepen 500 KeGLed %}}
+{{% codepen 600 KeGLed %}}
 
 ### Distortion
 
@@ -55,7 +55,7 @@ Gives sound a “fuzzy”, “growling”, or “gritty” tone, think electric 
 
 * **distortion** - the amount of distortion (must use a nominal range of 0-1)
 
-{{% codepen 500 GGYaLL %}}
+{{% codepen 600 GGYaLL %}}
 
 ### Tremolo
 
@@ -66,7 +66,7 @@ Tremolo is the variation in amplitude of sound achieved through electronic means
 * **frequency** - the rate of the effect, reuslting in faster vibrato or slower vibrato
 * **depth** - the depth of the effect upon the sound source
 
- {{% codepen 500 jKQKdP %}}
+ {{% codepen 600 jKQKdP %}}
 
 ### BitCrusher
 
@@ -76,4 +76,4 @@ Bitcrusher is a distortion effect that creates a lo-fi version of the incoming s
 
 * **bits**- the number of bits to downsample the signal (must use a nominal range of 1 to 8)
 
-{{% codepen 500 pKQmPM %}}
+{{% codepen 600 pKQmPM %}}
