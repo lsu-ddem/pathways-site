@@ -66,7 +66,7 @@ Tremolo is the variation in amplitude of sound achieved through electronic means
 * **frequency** - the rate of the effect, reuslting in faster vibrato or slower vibrato
 * **depth** - the depth of the effect upon the sound source
 
- {{% codepen 500 jKQKdP %}}
+ {{% codepen 600 jKQKdP %}}
 
 ### BitCrusher
 
