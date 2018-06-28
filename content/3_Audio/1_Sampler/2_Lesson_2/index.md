@@ -76,4 +76,4 @@ Bitcrusher is a distortion effect that creates a lo-fi version of the incoming s
 
 * **bits**- the number of bits to downsample the signal (must use a nominal range of 1 to 8)
 
-BIT EXAMPLE
+{{% codepen 500 pKQmPM %}}
