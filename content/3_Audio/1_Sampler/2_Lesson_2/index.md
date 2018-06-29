@@ -54,12 +54,15 @@ Gives sound a “fuzzy”, “growling”, or “gritty” tone, think electric 
 #### Distortion Parameters
 
 * **distortion** - the amount of distortion (must use a nominal range of 0-1)
+  * does _not_ require the addition of **.value** to modify
 
 {{% codepen 600 GGYaLL %}}
 
 ### Tremolo
 
 Tremolo is the variation in amplitude of sound achieved through electronic means. Musically, it results in a "warbly", vibrato-induced sound. This effect works best on longer duration, sustained sounds.
+
+Because the tremolo effect relies on an oscilator to generate the amplitude change, we need to add the .start( ) method upon creation of the effect. This can be done on the same line, right after the .toMaster( ) method is called. More information on oscilators can be found in the Resources section, as well as the next chapter.
 
 #### Tremolo Parameters
 
@@ -75,5 +78,6 @@ Bitcrusher is a distortion effect that creates a lo-fi version of the incoming s
 #### BitCrusher Parameters
 
 * **bits**- the number of bits to downsample the signal (must use a nominal range of 1 to 8)
+  * does _not_ require the addition of **.value** to modify
 
 {{% codepen 600 pKQmPM %}}
