@@ -36,7 +36,7 @@ Reverb is the persistance of a sound that continues after the original sound has
 
 #### Reverb Parameters
 
-* **roomsize** - the amount of time for the sound to decay.
+* **roomSize** - the amount of time for the sound to decay.
 
 {{% codepen 600 oyaRoE %}}
 
