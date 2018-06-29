@@ -2,6 +2,10 @@
 title: Audio Effects
 weight: '2'
 ---
+Audio effects are used to modulate and manipulate a sound source in order to create more experimental sonic results. The Tone.js framework has a large collection of audio effects that we can utilize in our web projects. 
+
+
+
 ## Adding Audio Effects into the Signal Path
 
 ![null](/images/uploads/effects_pathway.png)
