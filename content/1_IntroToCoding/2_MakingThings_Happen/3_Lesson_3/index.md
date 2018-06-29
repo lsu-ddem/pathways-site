@@ -41,7 +41,7 @@ Translated into code, here is what the structure of a for loop looks like:
 ```
 for (create variable; test; update variable){
    repeated result block
-  }
+}
 ```
 
 In the embedded code below, our loop draws multiple lines. The variable i is declared with an initial value of 20. The loop runs for as long as i is less than 400. Every time the test passes, the value of i is updated to be the result of itself plus 8 (20, 28, 36, etc.). When i grows to be bigger than 400, the loop stops. Try adding `console.log(i)` inside of the loop's result block to see the growing value of i with each loop:
@@ -73,9 +73,6 @@ Here are some examples of projects that use for loops to create complex designs.
 
 
 ## Nested For Loops
-
-
-
 
 {{<mermaid align="center">}}
 graph LR
@@ -109,10 +106,10 @@ Translated into code, here is what the structure of a nested for loop looks like
 
 ```
 for (create outer variable; outer test; update outer variable){
-   for (create inner variable; inner test; update inner variable){
+    for (create inner variable; inner test; update inner variable){
       repeated result block
-      }
-  }
+    }
+}
 ```
 
 Here is another example of a nested for loop. Study this example to see how it works
