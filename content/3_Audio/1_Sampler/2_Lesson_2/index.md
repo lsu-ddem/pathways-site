@@ -100,7 +100,7 @@ PitchShift is an effect that changes the pitch of an incoming sound source by sh
 
 A Chorus effect combines elements of the Delay and Tremelo effects. An incoming sound source is slightly delayed and layered on top of the original, allowing one sound source to be perceived as a group of many. They layered, delayed "copies" are then modulated in amplitude, causing their pitch to waver slightly and not perfectlty match the pitch of the original source. This simulates a natural effect that occurs when a chorus of singers or a group of instruments perform the same note simultaneouly, with each individual performer playing slight out of tune from the next. This effect works best with a delay time between 2 and 20 milliseconds, and a slower frequency of modulation.
 
-While the chours effect is similar to the Tremolo effect, we do _**not**_ need to start an internal oscilator by adding the .start( ) method upon creation of the effect. Also, the delayTime parameter for this effect does not need the additional **.value **property in order to be changed. 
+While the chorus effect is similar to the Tremolo effect, we do _**not**_ need to start an internal oscilator by adding the** .start( )** method upon creation of the effect. Also, the delayTime parameter for this effect does not need the additional **.value** property in order to be changed. 
 
 #### Chorus Parameters
 
