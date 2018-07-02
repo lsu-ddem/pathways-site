@@ -4,8 +4,6 @@ weight: '2'
 ---
 Audio effects are used to modulate and manipulate a sound source in order to create more experimental sonic results. Let's learn how to start incorporating effects into our web project! 
 
-
-
 ## Adding Audio Effects into the Signal Path
 
 ![null](/images/uploads/effects_pathway.png)
@@ -85,3 +83,30 @@ Bitcrusher is a distortion effect that creates a lo-fi version of the incoming s
   * does _not_ require the addition of **.value** to modify
 
 {{% codepen 600 pKQmPM %}}
+
+
+
+### PitchShift
+
+PitchShift is an effect that changes the pitch of an incoming sound source by shifting its pitch up or down by a designated number of half steps. For audio files, this is done without having to change the player's **playbackRate** property.
+
+#### PitchShift Parameters
+
+* **pitch**- the number of half steps to shift the sound in pitch (positiove numbers shift the pitch higher, negative numbers shift the pitch lower, and "0" keeps the sound at its original pitch
+  * does _not_ require the addition of **.value** to modify
+  {{% codepen 600 RJEYLr %}}
+
+### Chorus
+
+A Chorus effect combines elements of the Delay and Tremelo effects. An incoming sound source is slightly delayed and layered on top of the original, allowing one sound source to be perceived as a group of many. They layered, delayed "copies" are then modulated in amplitude, causing their pitch to waver slightly and not perfectlty match the pitch of the original source. This simulates a natural effect that occurs when a chorus of singers or a group of instruments perform the same note simultaneouly, with each individual performer playing slight out of tune from the next. This effect works best with a delay time between 2 and 20 milliseconds, and a slower frequency of modulation.
+
+While the chours effect is similar to the Tremolo effect, we do _**not**_ need to start an internal oscilator by adding the .start( ) method upon creation of the effect. Also, the delayTime parameter for this effect does not need the additional **.value **property in order to be changed. 
+
+#### Chorus Parameters
+
+* **frequency** - the rate of the effect, reuslting in faster vibrato or slower vibrato
+* **delayTime** - The delay time in _milliseconds_ of the chorus (nominal range for a Chours delay time is between 2 and 20ms)
+  * does _not_ require the addition of **.value** to modify the parameter for this effect
+* **depth** - the depth of the effect upon the sound source
+
+ {{% codepen 600 vrbNQP %}}
