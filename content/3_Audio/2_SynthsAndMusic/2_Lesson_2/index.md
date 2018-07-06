@@ -4,8 +4,6 @@ weight: '2'
 ---
 ## Understanding Sequences
 
-
-
-## Modifying a Sequence Duirng Performance
+## Modifying a Sequence During Performance
 
 {{% codepen 500 dKjLpR %}}
