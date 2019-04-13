@@ -1,5 +1,5 @@
 ---
-title: Making Custom/Advanced Shapes
+title: Color and Transparency
 weight: 2
 ---
-Custom shapes lesson goes here
+Color lesson goes here
