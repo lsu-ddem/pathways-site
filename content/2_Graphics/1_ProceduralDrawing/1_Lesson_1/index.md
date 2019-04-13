@@ -1,5 +1,5 @@
 ---
-title: Color
+title: Basic & Advanced Shapes
 weight: 1
 ---
-Color Lesson goes here
+Shapes lesson goes here
