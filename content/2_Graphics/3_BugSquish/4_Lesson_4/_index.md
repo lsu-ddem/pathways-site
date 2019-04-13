@@ -2,5 +2,4 @@
 title: 'Graphics Assignment #3 - Bug Squish game'
 weight: '5'
 ---
-
-hiiiii
+{{codepen-results b409072693c51cdbefdb8c778c33a041}}
