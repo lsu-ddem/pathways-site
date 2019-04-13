@@ -1,4 +1,5 @@
 ---
-title: Lesson 1
+title: Color
 weight: 1
 ---
+Color Lesson goes here
