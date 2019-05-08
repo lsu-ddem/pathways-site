@@ -1,4 +1,5 @@
 ---
-title: Lesson 2
+title: Color and Transparency
 weight: 2
 ---
+Color lesson goes here

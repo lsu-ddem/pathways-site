@@ -1,10 +1,7 @@
 ---
-title: Serial Communication 
+title: Adding Sound to a Game
 weight: 3
 ---
 
-### Chapter 1
 
-Everything on a chapter page will be centered.
-
-{{% codepen 500 ByvmMo %}}
+The following lessons will focus on adding sound elements to the completed "Bug Squish!" game from the previous chapter.
