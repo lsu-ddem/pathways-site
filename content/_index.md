@@ -5,7 +5,7 @@ title: "Programming Digital Media"
 <script async src="//jsfiddle.net/oyz8zg40/1/embed/result/"></script>
 
 ## Course Description and Objectives
-test
+
 {{% link "programming-digital-media.pdf" %}}
 
 Programming Digital Media introduces a broad array of topics related to digital media through project oriented programming of graphics, audio, and hardware applications. The motivation for this course is
