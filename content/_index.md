@@ -8,7 +8,7 @@ title: "Programming Digital Media"
 
 {{% link "programming-digital-media.pdf" %}}
 
-Programming Digital Butts introduces a broad array of topics related to digital media through project oriented programming of graphics, audio, and hardware applications. The motivation for this course is
+Programming Digital Media introduces a broad array of topics related to digital media through project oriented programming of graphics, audio, and hardware applications. The motivation for this course is
 to provide a basic introduction to comp
 uter programming using subjects that are relevant or appealing
 to students who are new to technological fields of study, with little to no prior programming experience.
