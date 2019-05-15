@@ -456,8 +456,8 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
 # Sounds in Bug Squish    
-  - name: "Sounds in Bug Squish" 
-    label: "Sounds in Bug Squish" 
+  - name: "Serial Communication" 
+    label: "Serial Communication" 
     folder: "content/4_PhysicalComputing/3_SerialCommunication" 
     create: true 
     fields: 
@@ -466,24 +466,24 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}    
 
   # Lessons 
-  - name: "Sounds in Bug Squish - Lesson 1" 
-    label: "Sounds in Bug Squish - Lesson 1" 
+  - name: "Serial Communication - Lesson 1" 
+    label: "Serial Communication - Lesson 1" 
     folder: "content/4_PhysicalComputing/3_SerialCommunication/1_Lesson_1" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "Sounds in Bug Squish - Lesson 2" 
-    label: "Sounds in Bug Squish - Lesson 2" 
+  - name: "Serial Communication - Lesson 2" 
+    label: "Serial Communication - Lesson 2" 
     folder: "content/4_PhysicalComputing/3_SerialCommunication/2_Lesson_2" 
     create: true 
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Order", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "Sounds in Bug Squish - Lesson 3" 
-    label: "Sounds in Bug Squish - Lesson 3" 
+  - name: "Serial Communication - Lesson 3" 
+    label: "Serial Communication - Lesson 3" 
     folder: "content/4_PhysicalComputing/3_SerialCommunication/3_Lesson_3" 
     create: true 
     fields: 
