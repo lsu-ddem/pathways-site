@@ -30,7 +30,7 @@ Each shape function requires a different set of arguments to be added when calle
 
 An example of these four basic shapes can be found in the code below. Try changing some of the arguments to see how this modifies the shape's location or appearance:
 
-{{% codepen 600 zQRVby %}}
+{{% codepen 500 zQRVby %}}
 
 
 
@@ -46,4 +46,4 @@ To remove an outline from a shape entirely, use the `noStroke()` function.
 
 The following code adds changeable stroke color and stroke weight to the same shapes from the previous code:
 
-{{% codepen 600 WBMVbd %}}
+{{% codepen 500 WBMVbd %}}
