@@ -44,6 +44,6 @@ The thickness of a shape's stroke can be set with the `strokeWeight()` function.
 
 To remove an outline from a shape entirely, use the `noStroke()` function.
 
-The following code adds changeable stroke color and stroke weight to the same shapes from the previous code:
+The following code adds changeable stroke color and stroke weight to the same shapes from the previous code. Try adding the `noStroke()` to see its effect:
 
 {{% codepen 500 WBMVbd %}}
