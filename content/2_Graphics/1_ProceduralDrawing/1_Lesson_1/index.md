@@ -47,3 +47,14 @@ To remove an outline from a shape entirely, use the `noStroke()` function.
 The following code adds changeable stroke color and stroke weight to the same shapes from the previous code. Try adding the `noStroke()` to see its effect:
 
 {{% codepen 500 WBMVbd %}}
+
+
+
+## Drawing Custom Shapes
+
+We can create complex images by overlapping basic shapes, but we can also design our our shapes by connecting multiple vertices together. To do this, we first call the `beginShape() `function, then one `vertex()` function with a pair of X & Y coordinates for the location of each angle point of our shape. Finally, we call the `endShape()` function to designate that we have completed our design. Similar to the `triangle()` function, p5 draws connects the coordinates in our `vertex()` functions in the order in which we code them, so take extra care to have a plan in place for working in a clockwise or counterclockwise order or you will have stroke outlines bisecting your finished shape.
+
+Like the arc() function, the final line segment of our custom shape is left "open". To add a final stroke and "close" the shape, we can add the word **_CLOSE_** as an argument in the `endShape()` function.
+
+The following code shows two custom shapes draw by using the `beginShape()`, `endShape()`, `vertex()`, procedure:
+
