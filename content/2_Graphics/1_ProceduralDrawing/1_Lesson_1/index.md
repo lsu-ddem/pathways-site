@@ -26,8 +26,20 @@ Each shape function requires a different set of arguments to be added when calle
   * The fifth argument states where to start drawing the outer perimeter of the circle. p5.js draws the perimeter _**counterclockwise**_, and the sixth argument tells the function at what point to stop drawing the perimeter.
   * Be default, p5.js requires radians (PI, QUARTER_PI, etc.) to be used for the fifth and sixth arguments of `arc( )` but it is a bit easier to use degrees (0-360). In order to use degrees instead, call `angleMode(DEGREES)`before calling your `arc( )`function and p5.js will convert the fifth and sixth arguments properly.
     * Example: `calling arc(120, 15, 60, 60, 90, 270)` draws a half circle split vertically, with its center located at 120 X & 15 Y, 60 pixels wide and 60 pixels tall (if the entire circle was drawn), with a perimeter that starts at 90 degrees and extends counterclockwise stopping at 270 degrees.
-  * By default, arcs are left "open" when drawn. To add a stroke outline to the flat edges of an arc, add the word **_PIE_  **as a seventh argument to the `arc()`function.
+  * By default, arcs are left "open" when drawn. To add a stroke outline to the flat edges of an arc, add the word **_PIE_** as a seventh argument to the `arc()`function.
 
 An example of these four basic shapes can be found in the code below. Try changing some of the arguments to see how this modifies the shape's location or appearance:
 
 {{% codepen 600 zQRVby %}}
+
+\###Outlines (Stroke weight and Stroke Color)
+
+p5 draws shapes with a thin black outline by default. This outline is called the **stroke**, and it can be modified in a number of ways.
+
+The `stroke()` function changes the color of any shapes drawn after it is called. It can take either a String or RGB color values as arguments, similar to the `fill()` function. 
+
+The thickness of a shape's stroke can be set with the strokeWeight() function. It takes a single argument that sets the thickness in units of pixels.
+
+The following code adds changeable stroke color and stroke weight to the same shapes from the previous code:
+
+{{% codepen 600 WBMVbd %}}
