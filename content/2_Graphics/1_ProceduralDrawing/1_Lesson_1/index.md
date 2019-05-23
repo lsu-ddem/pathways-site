@@ -42,6 +42,8 @@ The `stroke()` function changes the color of any shapes drawn after it is called
 
 The thickness of a shape's stroke can be set with the `strokeWeight()` function. It takes a single argument that sets the thickness in units of pixels.
 
+To remove an outline from a shape entirely, use the `noStroke()` function.
+
 The following code adds changeable stroke color and stroke weight to the same shapes from the previous code:
 
 {{% codepen 600 WBMVbd %}}
