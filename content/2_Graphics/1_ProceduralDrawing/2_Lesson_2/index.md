@@ -22,7 +22,7 @@ p5.js allows the `fill()` function to accept a number of different data types. S
 fill("lightGreen");ellipse(12, 36, 78, 90);
 ```
 
-We can also use numbers as arguments in order to create very specific color shades. We do this by balancing red, green, and blue values. Start by designing a color shade using a tool such as an [RGB Color Calculator](https://www.w3schools.com/colors/colors_rgb.asp) to find the shade you'd like to use. Once you pick your shade, you'll notice the color's red, green, and blue values represented as three discrete number values:
+We can also use numbers as arguments in order to create very specific color shades. We do this by balancing red, green, and blue values. Start by designing a color shade using a tool such as an [RGB Color Calculator](https://www.w3schools.com/colors/colors_rgb.asp) to find the shade you'd like to use. Once you pick your shade, you'll notice the color's red, green, and blue values represented as three discrete number values between 0 and 255:
 
 ![](/images/uploads/screen-shot-2019-05-24-at-10.14.00-am.png "RGB Color Calculator example")
 
@@ -43,5 +43,3 @@ fill('#222222') //dark grey colorellipse(12, 36, 78, 90);
 One of the benefits of setting color through RGB values is that you can easily change one or more values in realtime by replacing fixed values with variables. The code below demonstrates all of the previously discussed methods of setting color with the `fill() `function as well as demonstrating the process of changing color values through interaction:
 
 {{% codepen 400 byvxvL %}}
-
-byvxvL
