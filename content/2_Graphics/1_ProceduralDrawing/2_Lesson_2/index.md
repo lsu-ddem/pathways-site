@@ -41,3 +41,7 @@ fill('#222222') //dark grey colorellipse(12, 36, 78, 90);
 ```
 
 One of the benefits of setting color through RGB values is that you can easily change one or more values in realtime by replacing fixed values with variables. The code below demonstrates all of the previously discussed methods of setting color with the `fill() `function as well as demonstrating the process of changing color values through interaction:
+
+{{% codepen 400 byvxvL %}}
+
+byvxvL
