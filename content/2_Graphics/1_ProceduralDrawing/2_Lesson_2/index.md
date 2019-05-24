@@ -67,3 +67,7 @@ The difference between `fill()` and `color()` is that **fill( )** sets the color
 ## Greyscale and Transparency
 
 When using RGB color values, we will need to use one discrete value to represent each of our primary colors. If we want to set a grayscale color, we can simply pass one argument into the `fill()` function. Using 0 (black) to 255 (white), we can create shades of gray in our project. The following code demonstrates a changing grayscale fill, which you can adjust by moving your mouse from left to right:
+
+{{% codepen 400 BerGxj %}}
+
+We can also control the transparency value of a color by adding in an alpha value. For RGB colors, the alpha is represented as a number between 0 (completely transparent) and 255 (fully opaque) and passed in as a fourth argument to `fill()` or `color()`. For grayscale colors, the alpha value is passed in as the second argument but needs to be placed within square brackets. The code below demonstrates how transparent colors can be used in a project for realtime color blending:
