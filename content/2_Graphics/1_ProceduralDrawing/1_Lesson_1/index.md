@@ -56,5 +56,6 @@ We can create complex images by overlapping basic shapes, but we can also design
 
 Like the arc() function, the final line segment of our custom shape is left "open". To add a final stroke and "close" the shape, we can add the word **_CLOSE_** as an argument in the `endShape()` function.
 
-The following code shows two custom shapes draw by using the `beginShape()`, `endShape()`, `vertex()`, procedure:
+The following code shows two custom shapes drawn using the `beginShape()`, `endShape()`, `vertex()`, procedure:
 
+{{% codepen 500 dEmKre %}}
