@@ -70,4 +70,6 @@ When using RGB color values, we will need to use one discrete value to represent
 
 {{% codepen 400 BerGxj %}}
 
-We can also control the transparency value of a color by adding in an alpha value. For RGB colors, the alpha is represented as a number between 0 (completely transparent) and 255 (fully opaque) and passed in as a fourth argument to `fill()` or `color()`. For grayscale colors, the alpha value is passed in as the second argument but needs to be placed within square brackets. The code below demonstrates how transparent colors can be used in a project for realtime color blending:
+We can also control the transparency value of a color by adding in an alpha value. For RGB colors, the alpha is represented as a number between 0 (completely transparent) and 255 (fully opaque) and passed in as a fourth argument to `fill()` or `color()`. For transparent grayscale colors, you can use the value you've chosen and pass it in as the same for R,G, and B values,(mixing the same percentage of all three colors together will result in a white-gray-balck shade) adding a fourth alpha value. The code below demonstrates how transparent colors can be used in a project for realtime color blending:
+
+{{% codepen 400 YbaRbK %}}
