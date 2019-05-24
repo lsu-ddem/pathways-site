@@ -58,4 +58,4 @@ Like the arc() function, the final line segment of our custom shape is left "ope
 
 The following code shows two custom shapes drawn using the `beginShape()`, `endShape()`, `vertex()`, procedure:
 
-{{% codepen 500 dEmKre %}}
+{{% codepen 400 dEmKre %}}
