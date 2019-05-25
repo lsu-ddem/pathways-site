@@ -9,3 +9,15 @@ Often times, you will want your project to have interactive mouse events tied to
 The process of tracking and reacting to mouse clicks on objects will becomes easier with the use of a specialty library, particularly ones used to make game development more intuitive. We'll begin working with just such a library, p5.play.js, in the next chapter.
 
 {{% /notice %}}
+
+
+
+## Stationary Shape Measurements
+
+Let's imagine that you want to register whenever a user clicks their mouse inside of the square drawn below. The function called to draw the square looks like this:
+
+```
+rect(200, 50, 150, 150);
+```
+
+``
