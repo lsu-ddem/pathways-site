@@ -2,7 +2,7 @@
 title: Intro to coding
 weight: 1
 ---
-## Chapter 1
+## Unit 1
 
 The following lessons will focus on introducing students to the technical aspects of coding as a medium for artistic creation. These lesson require no previous knowledge of coding as a concept, computer science, or the JavaScript/HTML/CSS languages.
 
