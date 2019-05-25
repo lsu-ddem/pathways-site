@@ -45,3 +45,6 @@ You'll notice that the individual greater than/lesser than tests in the example 
 ### Circles
 
 {{% codepen 500 VOxWyq %}}
+
+## Moving Shape Measurements
+{{% codepen 500 vwjWEa %}}
