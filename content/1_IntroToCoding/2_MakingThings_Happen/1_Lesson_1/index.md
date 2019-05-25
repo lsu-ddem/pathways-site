@@ -15,6 +15,13 @@ weight: 1
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
 
+**Common logic expressions**
+
+| Operator | Expression               |
+| -------- | ------------------------ |
+| &&       | and                      |
+| ||       | or                       |
+
 
 
 ## Single Test, Single Result  (The If Statement)
