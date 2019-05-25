@@ -28,7 +28,7 @@ Now we can see that the corners of our rectangle have a handful of shared coordi
 
 ![](/images/uploads/square_measurement_mouse.jpg)
 
-Based on our math, we need to code a test that can only pass if our mouse is clicked **_and_** if it's located at a point greater than  200 X _**and**_ less than 350 X _**and**_ less than 200 Y _**and**_ greater than 50 Y. We can do this by making a conditional that measures all four of those conditions simultaneously. As a reminder, the **&&**  operator will stand in for the word "and" in our test. The following code demonstrates a border measurement click test, causing the background color to change _only_ when we click inside the bounds of the square:
+Based on our math, we need to code a test that can only pass if our mouse is clicked _**and**_ if it's located at a point greater than  200 X **_and_** less than 350 X **_and_** less than 200 Y **_and_** greater than 50 Y. We can do this by making a conditional that measures all four of those conditions simultaneously. As a reminder, the **&&**  operator will stand in for the word "and" in our test. The following code demonstrates a border measurement click test, causing the background color to change _only_ when we click inside the bounds of the square:
 
 {{% codepen 400 zQjwzv %}}
 
@@ -39,3 +39,7 @@ Try modifying this code by removing the "mouseIsPressed" portion of the test. Th
 You'll notice that the individual greater than/lesser than tests in the example above are incased inside of parenthesis pairs. This is done in order to make out code look cleaner and to make each portion of this multi-portion test easier to identify. Be careful to count your individual symbols and not leave out the essential parenthesis that forms the if ( ) test format!
 
 {{% /notice %}}
+
+
+
+{{% codepen 500 VOxWyq %}}
