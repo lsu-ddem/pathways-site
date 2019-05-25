@@ -12,6 +12,8 @@ The process of tracking and reacting to mouse clicks on objects will becomes eas
 
 ## Stationary Shape Measurements
 
+### Squares and Rectangles
+
 Let's imagine that you want to register whenever a user clicks their mouse inside of the square drawn below. The function called to draw the square looks like this:
 
 ```
@@ -40,6 +42,6 @@ You'll notice that the individual greater than/lesser than tests in the example 
 
 {{% /notice %}}
 
-
+### Circles
 
 {{% codepen 500 VOxWyq %}}
