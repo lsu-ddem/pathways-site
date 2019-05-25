@@ -88,8 +88,9 @@ Here are some commonly used System Variables found in the p5.js JavaScript libra
 | `keyCode` | current special key pressed (ENTER, UP_ARROW, etc.) |
 
 
-**Boolean System variables**
-|    Variable    |                             Use                             |
-|:--------------:|:-----------------------------------------------------------:|
-| mouseIsPressed |  boolean: contains "true" if mouse pressed, "false" if not  |
-|  keyIsPressed  | boolean: contains "true" if any key pressed, "false" if not |
+Boolean System Variables
+
+|    Variable    |                             Use                              |
+|----------------|--------------------------------------------------------------|
+| mouseIsPressed |  boolean - contains "true" if mouse pressed, "false" if not  |
+|  keyIsPressed  | boolean - contains "true" if any key pressed, "false" if not |
