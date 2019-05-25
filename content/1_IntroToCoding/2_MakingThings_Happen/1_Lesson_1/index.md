@@ -10,23 +10,19 @@ weight: 1
 | -------- | ------------------------ |
 | \>       | Greater than             |
 | <        | Less than                |
-| ==      | Equal to                 |
-| >=      | Greater than or equal to |
+| \==      | Equal to                 |
+| \>=      | Greater than or equal to |
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
 
 **Common logic expressions**
 
-| Operator | Expression               |
-| -------- | ------------------------ |
-| &&       | and                      |
-| ||       | or                       |
-
-
+| Operator | Expression |
+| -------- | ---------- |
+| &&       | and        |
+| \|\|     | or         |
 
 ## Single Test, Single Result  (The If Statement)
-
-
 
 {{<mermaid align="center">}}
 graph TD
@@ -40,8 +36,6 @@ style B fill: #00ffff, stroke:#FFFFFF;
 style C fill:#FFFFFF, stroke:#FFFFFF;
 {{< /mermaid >}}
 
-
-
 Translated into code, an If statement looks like this:
 
 ```
@@ -51,10 +45,6 @@ if (test) {
 ```
 
 {{% codepen 600 QxWpqG%}}
-
-
-
-
 
 ## Single Test, Two Results  (The If/Else Statement)
 
@@ -73,10 +63,6 @@ style E fill:#FFFFFF, stroke:#FFFFFF;
 
 {{< /mermaid >}}
 
-
-
-
-
 Translated into code, an If/Else statement looks like this:
 
 ```
@@ -87,11 +73,7 @@ if (test) {
 }
 ```
 
-
-
 {{% codepen 600 jKOBQw%}}
-
-
 
 ## Multiple Tests, Multiple Results  (The If/Else If Statement)
 
@@ -126,8 +108,6 @@ if (test 1) {
 
 {{% codepen 600 VdwVPz%}}
 
-
-
 ## Nested Conditionals
 
 {{<mermaid align="center">}}
@@ -153,6 +133,5 @@ style F fill:#fe856b, stroke:#FFFFFF;
 style E fill:#FFFFFF, stroke:#FFFFFF;
 style G fill:#fe856b, stroke:#FFFFFF;
 {{< /mermaid >}}
-
 
 {{% codepen 600 zaYMLo%}}
