@@ -2,6 +2,8 @@
 title: Measuring the Boundaries of a Shape
 weight: '1'
 ---
+
+
 Often times, you will want your project to have interactive mouse events tied to specific shapes or drawings. It's important to remember that any shape or object drawn on the canvas can't simply be referred to by name, since p5.js has no way of knowing the difference between a green triangle or a pink square. In order to determine whether or not a user has clicked on a 2D object, we have to use conditional statements to measure whether or not the mouse click occurred within the boundaries of that object.
 
 {{% notice note %}}
@@ -9,8 +11,6 @@ Often times, you will want your project to have interactive mouse events tied to
 The process of tracking and reacting to mouse clicks on objects will becomes easier with the use of a specialty library, particularly ones used to make game development more intuitive. We'll begin working with just such a library, p5.play.js, in the next chapter.
 
 {{% /notice %}}
-
-
 
 ## Stationary Shape Measurements
 
@@ -20,4 +20,8 @@ Let's imagine that you want to register whenever a user clicks their mouse insid
 rect(200, 50, 150, 150);
 ```
 
-``
+![](/images/uploads/square_measurement-2-.jpg)
+
+The coordinates of the upper lefthand corner of the square match the first two arguments of our `rect()` function. Using basic math and the last two arguments of the function, we can figure out the coordinates of the remaining corners:
+
+![](/images/uploads/square_measurement-3-.jpg)
