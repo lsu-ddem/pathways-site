@@ -39,6 +39,7 @@ Take note: unlike in math operations, the equals sign means assignment, NOT equa
 {{% notice note %}}
 
 It's important to note a few things about making variables:
+{{% /notice %}}
 
 * You can only declare a variable once. If you try to declare it more than once, your code will wipe the previous value inside of your variable from its memory. For instance, the following code is an issue: 
 
@@ -57,7 +58,6 @@ function setup(){
 
 * You cannot have two separate variables that share the same name. The same code example above would also cause an issue due to the fact that you are attempting to declare two separate variables that share the same name. While this sort of thing is POSSIBLE to do, it makes for a very confusing code. This has to do with the scope in which both variables were declared (more on this below). 
 
-{{% /notice %}}
 
 
 
@@ -81,5 +81,13 @@ The values inside of **_mouseX_** and _**mouseY**_ are updated every time you mo
 
 ### Common System Variables in p5.js
 
-Here are some commonly used System Variables found in the p5.js JavaScript library:
+Here are some commonly used System Variables found in the p5.js JavaScript library. Remember - we can read these variables, but we cannot reassign them:
 
+|  Variable | Use                                                |
+| ----------| -----------------------------------------------    |
+| mouseX    | current location of mouse on the canvas' X axis    |
+| mouseY    | current location of mouse on the canvas' Y axis    |
+| pmouseX   | previous location of mouse on the canvas' X axis   |
+| pmouseY   | previous location of mouse on the canvas' Y axis   |
+| key       | current key pressed (ASCII keys only)              |
+| keyCode   | current special key pressed (ENTER, UP_ARROW, etc.)|
