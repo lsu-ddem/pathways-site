@@ -17,7 +17,8 @@ The `fill()`function works like a paint can resting on top of a ladder: when it 
 p5.js allows the `fill()` function to accept a number of different data types. Strings allow you to choose from a handful of colors that p5.js designers have preprogrammed into the main p5.js library. Not all colors imaginable are possible to represent with a string, so try out as many as you can think of and see what works!
 
 ```
-fill("lightGreen");ellipse(12, 36, 78, 90);
+fill("lightGreen");
+ellipse(12, 36, 78, 90);
 ```
 
 We can also use numbers as arguments in order to create very specific color shades. We do this by balancing red, green, and blue values. Start by designing a color shade using a tool such as an [RGB Color Calculator](https://www.w3schools.com/colors/colors_rgb.asp) to find the shade you'd like to use. Once you pick your shade, you'll notice the color's red, green, and blue values represented as three discrete number values between 0 and 255:
