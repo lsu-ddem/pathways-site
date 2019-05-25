@@ -2,11 +2,11 @@
 title: Storing Things in Code - Variables
 weight: 2
 ---
-So far, our code has used concrete, static data to create visuals. However, we can use updatable, changing data in order to modify our projects while they are running in order to make them more dynamic. To do this, we use **_variables._** A variable is a container that stores a single value in the memory or our code so that we can use it at a later time, in multiple places throughout our code. This make variables more flexible than fixed, concrete values.
+So far, our code has used concrete, static data to create visuals. However, we can use updatable, changing data in order to modify our projects while they are running in order to make them more dynamic. To do this, we use _**variables.**_ A variable is a container that stores a single value in the memory or our code so that we can use it at a later time, in multiple places throughout our code. This make variables more flexible than fixed, concrete values.
 
 Take a look at the embedded code below:
 
-{{% codepen 400 pVXgNZ %}}
+{{% codepen 400 wXdQOE %}}
 
 In this code, we've drawn two polygons to the screen. The teal square is built using four fixed values as arguments; its location, width, and height will never be changed unless we stop the code, edit the values, and rerun the program. The pink rectangle uses two variables: "rectWidth" and "rectHeight". 
 
@@ -16,13 +16,13 @@ To make a variable, we start by _declaring_ a name for the container. In our cod
 
 Next, we need to _assign_ an initial value to each variable. This is also called _initialization_, or _init_ for short. This step can be done immediately after declaring a variable:
 
-```
+```javascript
 let rectHeight =50;
 ```
 
 or at a later time in a function block:
 
-```
+```javascript
 function setup(){
  rectHeight = 50;
 }
@@ -42,7 +42,7 @@ It's important to note a few things about making variables:
 * You can only declare a variable once. If you try to declare it more than once, your code will wipe the previous value inside of your variable from its memory. For instance, the following code is an issue: 
 
 
-```
+```javascript
 let xValue=1; 
 
 function setup(){
@@ -60,7 +60,7 @@ function setup(){
 
 Variables can contain fixed values as well as changeable values. In our example, rectHeight contains a fixed value of 50 inside of it (which happens at the very top of our code, above the **setup( )** function block), allowing us to use the value of 50 in any location we type the phrase "rectHeight."  rectWidth, however, contains the result of a function called `random()`, which generates a random number between its two arguments each time it is run. Since it only runs inside of the **setup( )** block, we need to hit the rerun button in the embedded Result panel in order to get a different width for the pink rectangle. We can easily modify our code so that `random()` spits out a new value and updates our variable with every frame of the draw loop:
 
- {{% codepen 400 qKWywY %}}
+ {{% codepen 400 BVRVYL %}}
 
 ## System Variables
 
@@ -68,11 +68,11 @@ The p5.js library includes a series of built in variables that allow you to moni
 
 Take a look at the embedded code below to see an example of some common System Variables in p5.js:
 
-{{% codepen 400 wjLMQj %}}
+{{% codepen 400 OEmaYw %}}
 
-Since every variable in this example is a System Variable, we cannot declare or initialize them in our code like we would with custom-built variables. Their declaration occurs inside of the larger p5.js library, and their initialization/updating occurs differently based on the variable. **_width_** and **_height_** are variables that hold the current size dimensions for the project's canvas and are initialized when the `createCanvas()` function is called. Open this code on CodePen or copy it into your P5 Web Editor, then change the argument inside of `createCanvas()` to see how updating those values also updates these variables.
+Since every variable in this example is a System Variable, we cannot declare or initialize them in our code like we would with custom-built variables. Their declaration occurs inside of the larger p5.js library, and their initialization/updating occurs differently based on the variable. _**width**_ and _**height**_ are variables that hold the current size dimensions for the project's canvas and are initialized when the `createCanvas()` function is called. Open this code on CodePen or copy it into your P5 Web Editor, then change the argument inside of `createCanvas()` to see how updating those values also updates these variables.
 
-The values inside of **_mouseX_** and _**mouseY**_ are updated every time you move your mouse cursor across the canvas. Using these variables, you can update the location of an object (like we're doing to one corner of the triangle) or use their current values in a calculation to generate changeable arguments.
+The values inside of _**mouseX**_ and **_mouseY_** are updated every time you move your mouse cursor across the canvas. Using these variables, you can update the location of an object (like we're doing to one corner of the triangle) or use their current values in a calculation to generate changeable arguments.
 
 ### Common System Variables in p5.js
 
