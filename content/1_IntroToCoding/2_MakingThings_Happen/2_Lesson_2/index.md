@@ -6,7 +6,7 @@ Variables are great for adding updatable values into our code, but they also hav
 
 Take a look at the following code embedded below to see how the limitations of variables can end up leading to a code that looks more complex than it actually is:
 
-{{% codepen 600 vrGbZr %}}
+{{% codepen 600 jKmZjz %}}
 
 In this project, we have six variables: three used to determine the RGB color values of the first square color option, and three more for the second square color option. Since the variables are all named something similar, it could be easy to mix them up when using them throughout the code. Plus, if we want to have more than just two square color options, we would need to add a new set of three variables for each new color. This will begin to make the code more complex and confusing than it needs to be, and the solution to simplifying this process is to build an **array**.
 
