@@ -89,8 +89,7 @@ Here are some commonly used System Variables found in the p5.js JavaScript libra
 
 
 **Boolean System variables**
-
-| Variable       | Use                                              |   
-| ---------------|--------------------------------------------------|
-|`mouseIsPressed`|boolean: "true" if mouse pressed, "false" if not  |
-|`keyIsPressed`  |boolean: "true" if any key pressed, "false" if not|
+|    Variable    |                             Use                             |
+|:--------------:|:-----------------------------------------------------------:|
+| mouseIsPressed |  boolean: contains "true" if mouse pressed, "false" if not  |
+|  keyIsPressed  | boolean: contains "true" if any key pressed, "false" if not |
