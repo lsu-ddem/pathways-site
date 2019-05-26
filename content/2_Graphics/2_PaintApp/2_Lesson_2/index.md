@@ -36,4 +36,20 @@ As coders, using Nested Conditionals serves a number of practical purposes in ad
 
 ## Nested Conditional Examples
 
-Let's take a look at a code similar to one we worked with in the last lesson. This time, we have two squares that we want to interact with. Clicking on both causes different results, so we need to use an If/Else If statement. The code below works, but the conditional test is very long and repetitive. How can condense some repeated subtests and break them about into a Nested Conditional?:
+Let's take a look at a code similar to one we worked with in the last lesson. This time, we have two squares that we want to interact with. Clicking on both causes different results, so we need to use an If/Else If statement: 
+
+{{% codepen 400 PveEKb %}}
+
+This If/Else If test (ending with an additional else to keep the background gray if neither square is clicked on) works fine, but imagine if we had 20 squares in a row to click on! Fixing just a handful of them that weren't working right would be tough to debug. How can we condense some of the repeated subtests and break them about into a Nested Conditional?
+
+Let's start start to simplify things by finding repetition. First, both tests require that we check to see if the mouse has been pressed. Lets make that conditional into it's own If/Else statement; **if** the mouse is pressed, we can run some more tests to see if we're clicking inside a square, **else** the background stays gray:
+
+```javascript
+if(mouseIsPressed){//square boundary measuring} else {backColor = "gray";}
+```
+
+Now we won't be able to check anything else unless the mouse click test is passed first, and we don't have to repeat that test twice as a subtest in our other conditionals (it will act like the green barrier in the picture above). Next, our two squares share the exact same Y coordinates on the canvas: the top boundary of each square is at 100 Y and their bottom boundaries are at 250 Y. This means we can condense these Y boundary measurements into their own second, inner test! **If** the mouse is located between these Y boundaries, we can continue on and check our X boundaries. We don't have any result set up for failing this test, so we can simply use an If statement conditional here and add it into the Result section of the outer test:
+
+```javascript
+if(mouseIsPressed){    //check Y axis boundaries    if((mouseY > 100) &&(mouseY < 250)){         //check X axis boundaries      }} else {backColor = "gray";}
+```
