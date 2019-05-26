@@ -12,7 +12,7 @@ In this code, we've drawn two polygons to the screen. The teal square is built u
 
 ## Making Variables
 
-To make a variable, we start by _declaring_ a name for the container. In our code, we've declared both "rectWidth" and "rectHeight" at the very top of our code by first typing the keyword 'let'. This is synonymous to asking our code to let "rectWidth" contain a specific value in its memory, so that we can refer to it by that name in our project from now on. We've done this outside of either the **setup( )** or **draw( )** blocks, which means that we've declared these variables _globally_ (we'll discuss this in detail at the bottom of the page).
+To make a variable, we start by _declaring_ a name for the container. In our code, we've declared both "rectWidth" and "rectHeight" at the very top of our code by first typing the keyword **let**. This is synonymous to asking our code to let "rectWidth" contain a specific value in its memory, so that we can refer to it by that name in our project from now on. We've done this outside of either the **setup( )** or **draw( )** blocks, which means that we've declared these variables _**globally**_ and they can be used/accessed anywhere in our code(we'll discuss this in detail at the bottom of the page).
 
 Next, we need to _assign_ an initial value to each variable. This is also called _initialization_, or _init_ for short. This step can be done immediately after declaring a variable:
 
@@ -53,7 +53,15 @@ function setup(){
 
   because the original value of  "xValue", which was 1, has now be  replaced with 21. 
 
-* You cannot have two separate variables that share the same name. The same code example above would also cause an issue due to the fact that you are attempting to declare two separate variables that share the same name. While this sort of thing is POSSIBLE to do, it makes for a very confusing code. This has to do with the scope in which both variables were declared (more on this below). 
+* You _**should not**_ have two separate variables that share the same name. The same code example above would also cause an issue due to the fact that you are attempting to declare two separate variables that share the same name. While this sort of thing is POSSIBLE to do, it makes for a very confusing code. This has to do with the scope in which both variables were declared (more on this below). 
+* If you are declaring a number of variables without immediately initializing them, you can save some vertical space in your code editor by declaring them all on the same line while using a single **let** keyword. The example below declares four different variables all on one line, separated by commas:
+
+
+```
+let circleX, circleY, speed, jumpHeight;
+```
+
+
 
 ## Fixed Values vs. Changeable Values
 
@@ -95,8 +103,6 @@ Boolean System Variables
 | `mouseIsPressed` | boolean - contains "true" if mouse pressed, "false" if not   |
 | `keyIsPressed`   | boolean - contains "true" if any key pressed, "false" if not |
 
-
-
 ## Global Scope vs. Local Scope
 
 Depending on our project, we may need the data inside of a variable to be accessible across our entire code so that we can use/read/change it in every function. In some cases, however, we may only need a variable to exist within a specific function or section of our code. This determination of how widely or narrowly accessible data is available throughout our code is known as **_scope_**. 
@@ -104,3 +110,11 @@ Depending on our project, we may need the data inside of a variable to be access
 In all of our examples so far, we've been declaring our variables outside of any of our function blocks (the ones we've used most often are **draw( )** and **setup( )**), mainly at the very top of our code. This process is known as **global declaration**, and these variables can be used/read/changed anywhere and everywhere in our code. In the example below, the variable "circSize" is declared with the keyword **let** outside of any function block or function argument, which allows us to initialize it in the **setup( )** block, change it in the **draw( )** block, and then print it to the console on every click in the **mousePressed( )** block.
 
 {{% codepen 600 joxoqe %}}
+
+We also have a second variable, squareSize, that is declared inside of the brackets of the mousePressed() function. This is known as **local declaration**. Because of this, "squareSize" can only be used and modified inside of this function. To demonstrate this, copy the entire code from the embedded editor above and paste it into a new sketch on the [p5.js Web Editor page](https://editor.p5js.org/). Uncomment the code on line 33, rerun the sketch, and watch for an error in the console. You should see the following text:
+
+![](/images/uploads/screen-shot-2019-05-26-at-2.42.31-pm.png)
+
+This is a common error related to using variables in a project, and in this instance, it is caused because we are trying to read the value of "squareSize" form inside the **draw( )** function block. Our code then tells us that it doesn't understand what "squareSize" is because it hasn't been properly defined, even though we declared and initialized it. This variable's local scope won't allow us to do anything with it outside of **mousePressed( )**. Try cutting line 33 and pasting it into **mousePressed( )** on any line after we declare it, and both console.log() functions will now work properly.
+
+There are a number of reasons why you would want to declare a variable locally instead of globally, but many of them depend on specific circumstances. As we progress through this unit and others, we'll call attention to instances where we choose local vs. global and explain why this choice is sometimes necessary.
