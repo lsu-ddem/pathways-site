@@ -64,13 +64,15 @@ Pay close attention to the various symbols in the code example above. Every Cond
 
 ![](/images/uploads/simple_test_explanation-1-.png)
 
-The embedded code below shows an If Statement in action. Clicking and dragging your mouse along the gray canvas draws lines made of teal squares. The test measures the `mouseIsPressed` system variable from our previous lesson and wait to see if it contains the boolean value "true." If it does, a teal square is produced by running the two lines of code found inside of the braces. If it doesn't, the test continues to check and wait to see when it will be passed because we have placed it inside of the **draw( )** loop. The code outside of the If Statement continues to run regardless.
+The embedded code below shows an If Statement in action. Clicking and dragging your mouse along the gray canvas draws lines made of teal squares. The test measures the `mouseIsPressed` system variable from our previous lesson and waits to see if it contains the boolean value "true." If it does, a teal square is produced by running the two lines of code found inside of the braces. If it doesn't, the test continues to check and wait to see when it will be passed because we have placed it inside of the **draw( )** loop. The code outside of the If Statement continues to run regardless:
 
 {{% codepen 600 aKWKmj%}}
 
 
 
 ## Single Test, Two Results  (The If/Else Statement)
+
+A more advanced conditional statement is the If/Else Statement. This statement is comprised of a single test just like the If statement, but we have two different results that can occur: one for passing the test and one for failing the test. This is similar to receiving a conciliation prize after attempting to win the grand prize.  Logically, the IF/Else statement acts like the diagram below: **if** we pass the test, we get to run any code we designate as the result,  **else** we run any code designated as a secondary result. When we fail the test,  we continue to take the test until we pass it and continue to run the secondary result code. The rest of our code outside of our If/Else Statement continues to run as normal:
 
 {{<mermaid align="center">}}
 graph TD
@@ -97,9 +99,19 @@ if (test) {
 }
 ```
 
-{{% codepen 600 jKOBQw%}}
+Notice how similar this looks to our If Statement. The only difference is the addition of a second keyword (else), another pair of brackets, and any code we want to act as the secondary result code, located within the second pair of brackets. Using our video game analogy from before, the second pair of brackets is similar to a new, blue room that we are sent to _only_ if we try to enter our green-barrier treasure room and fail to do so.
+
+![](/images/uploads/if_else_test_explanation-1-.png)
+
+The code embedded below modifies out original square drawing code by changing our If Statement to an If/Else Statement. Our test is still the same: it measures the `mouseIsPressed`  variable and waits to see if it contains the boolean value "true." If it does, a teal square is produced. If the **mouseIsPressed** variable contains the boolean value "false", the code in our else block is run, giving us the secondary result of drawing peach circles to the screen instead. The code outside of the If Statement continues to run regardless:
+
+{{% codepen 600 YvVvwM%}}
+
+
 
 ## Multiple Tests, Multiple Results  (The If/Else If Statement)
+
+Yet another, more advanced logic flow can be created by creating conditionals that chain together multiple test/result pairs, creating an If/Else If Statement. This statement is comprised of as many tests and corresponding result blocks as we see fit, each utilizing its own set of if/else keywords, parenthesis, and brackets. Logically, the IF/Else IF Statement looks like the diagram below:
 
 {{<mermaid align="center">}}
 graph TD
@@ -130,32 +142,10 @@ if (test 1) {
 }
 ```
 
-{{% codepen 600 VdwVPz%}}
+Notice the formating in this structure. Instead of following or else keyword with an open bracket, we immediatly follow it with the if keyword and another test/result pair. We can continue this chaining to make If/Else If Statements that comprise as many different options for tests and results as we need. Now our video game analogy becomes a bit more complex: we can approach multiple rooms, each with their own barriers and their own separate treasures. If we can pass through any of the barriers, we will receive whatever is inside of that specific room, but not _all_ of the treasure in _all_ of the rooms:
 
-## Nested Conditionals
+![](/images/uploads/multiple_test_explanation.png)
 
-{{<mermaid align="center">}}
-graph TD
-H{Outer Test}-. True .->A
-H{Outer Test}-. False .->I
-subgraph 
-A{Inner Test 1} -->|True| B(Inner Result Block 1)
-A{Inner Test 1} -->|False| F{Inner Test 2}
-F-->|True| G(Inner Result Block 2)
-end
-F{Inner Test 2}-->|False| E(Code After Conditional)
+We can now make one final modification to our embedded code and change our If/Else Statement into an If/Else If Statement! In this version below, we've divided the screen vertically into three equal sections and designed three test/result pairs to chain together. Each of these tests is comprised of multiple sub-conditionals: they all start by checking to see if mouseIsPressed contains "true", and they all ask for additional conditions to be simultaneously satisfied through the use of the && operator. Based on the portion of the canvas our mouse's X location falls within, we will either draw a teal square, a pink square, or a peach circle. As always, he code outside of the If Statement continues to run regardless:
 
-I(Outer Test Result Block 2)
-B-->E
-G --> E
-I -.->E
-style A fill:#00ffff, stroke:#FFFFFF;
-style B fill:#00ffff, stroke:#FFFFFF;
-style H fill:#2bf5be, stroke:#FFFFFF;
-style I fill:#2bf5be, stroke:#FFFFFF;
-style F fill:#fe856b, stroke:#FFFFFF;
-style E fill:#FFFFFF, stroke:#FFFFFF;
-style G fill:#fe856b, stroke:#FFFFFF;
-{{< /mermaid >}}
-
-{{% codepen 600 zaYMLo%}}
+{{% codepen 600 zaGpgp%}}
