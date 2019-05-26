@@ -52,13 +52,25 @@ if(mouseIsPressed){
 }
 ```
 
-Now we won't be able to check anything else unless the mouse click test is passed first, and we don't have to repeat that test twice as a subtest in our other conditionals (it will act like the green barrier in the picture above). Next, our two squares share the exact same Y coordinates on the canvas: the top boundary of each square is at 100 Y and their bottom boundaries are at 250 Y. This means we can condense these Y boundary measurements into their own second, inner test! **If** the mouse is located between these Y boundaries, we can continue on and check our X boundaries. We don't have any result set up for failing this test, so we can simply use an If statement conditional here and add it into the Result section of the outer test:
+Now we won't be able to check anything else unless the mouse click test is passed first, and we don't have to repeat that test twice as a subtest in our other conditionals (it will act like the green barrier in the picture above). Next, our two squares share the exact same Y coordinates on the canvas: the top boundary of each square is at 100 Y and their bottom boundaries are at 250 Y. This means we can condense these Y boundary measurements into their own second, inner test! **If** the mouse is located between these Y boundaries, we can continue on and check our X boundaries. We don't have any result set up for failing this test, so we can simply use an If statement conditional here and add it into the Result section of the outer test (This additional test acts like the green barrier in the picture above):
 
 ```javascript
 if(mouseIsPressed){     
-  if((mouseY > 100) &&(mouseY < 250)){ 
+  if((mouseY > 100) && (mouseY < 250)){ 
               
-    }
+  }
+} else {
+ backColor = "gray";
+}
+```
+
+ We're almost done! The X boundaries of each square are different, so we can't condense our test any further than this. Our final tests will be placed inside the inner test we just wrote, and will serve as our reward for the mouse being clicked **and** being located inside of the Y boundaries of the two squares. Now we will need an **If/Else If** statement: **if** a click on the orange square occurs, change the background to lime, **else if** a click on the blue square occurs, change the background to gold. This is yet another layer before reaching our ultimate goal, and the entire Nested conditional will look like this:
+
+```javascript
+if(mouseIsPressed){     
+  if((mouseY > 100) && (mouseY < 250)){ 
+    if((mouseX > 100) && (mouseX < 250)){      backColor = "lime";
+    } else if((mouseX > 300) && (mouseX < 450)){      backColor = "gold";    }  }
 } else {
  backColor = "gray";
 }
