@@ -27,10 +27,10 @@ We might need to make tests that ask for more than one condition to be measured 
 
 **Common logic expressions**
 
-| Operator | Expression |
-| -------- | ---------- |
-| &&       | and        |
-| \||      | or         |
+| Operator | Expression |     |
+| -------- | ---------- | --- |
+| &&       | and        |     |
+| \|       |            | or  |
 
 Let's take a look at some common conditional statements and see how we code them into our projects.
 
@@ -60,15 +60,11 @@ if (test) {
 
 Pay close attention to the various symbols in the code example above. Every Conditional statement will include a keyword(s), a pair of parenthesis, and a pair of braces ( { } ). The code inside of those symbols is extremely important: the tests that make up the conditional must always go inside of the parenthesis. Any code that we want to run as the result of passing the test (whether it be one line or one thousand lines) must be contained inside of the { } brackets. A good way to remember this separation of test code and result code is to imagine playing a video game where the sole purpose is to enter a locked room to reach a treasure. In the scenario, the locked door and barrier keeping you from the treasure is any test code placed inside the parenthesis. The treasure itself is any result code placed inside of the brackets:
 
-
-
 ![](/images/uploads/simple_test_explanation-1-.png)
 
 The embedded code below shows an If Statement in action. Clicking and dragging your mouse along the gray canvas draws lines made of teal squares. The test measures the `mouseIsPressed` system variable from our previous lesson and waits to see if it contains the boolean value "true." If it does, a teal square is produced by running the two lines of code found inside of the braces. If it doesn't, the test continues to check and wait to see when it will be passed because we have placed it inside of the **draw( )** loop. The code outside of the If Statement continues to run regardless:
 
 {{% codepen 600 aKWKmj%}}
-
-
 
 ## Single Test, Two Results  (The If/Else Statement)
 
@@ -107,8 +103,6 @@ The code embedded below modifies out original square drawing code by changing ou
 
 {{% codepen 600 YvVvwM%}}
 
-
-
 ## Multiple Tests, Multiple Results  (The If/Else If Statement)
 
 Yet another, more advanced logic flow can be created by creating conditionals that chain together multiple test/result pairs, creating an If/Else If Statement. This statement is comprised of as many tests and corresponding result blocks as we see fit, each utilizing its own set of if/else keywords, parenthesis, and brackets. Logically, the IF/Else IF Statement looks like the diagram below:
@@ -146,9 +140,9 @@ Notice the formating in this structure. Instead of following or else keyword wit
 
 ![](/images/uploads/multiple_test_explanation.png)
 
-We can now make one final modification to our embedded code and change our If/Else Statement into an If/Else If Statement! In this version below, we've divided the screen vertically into three equal sections and designed three test/result pairs to chain together. Each of these tests is comprised of multiple sub-conditionals: they all start by checking to see if mouseIsPressed contains "true", and they all ask for additional conditions to be simultaneously satisfied through the use of the && operator. Based on the portion of the canvas our mouse's X location falls within, we will either draw a teal square, a pink square, or a peach circle. As always, he code outside of the If Statement continues to run regardless:
+We can now make one final modification to our embedded code and change our If/Else Statement into an If/Else If Statement! In this version below, we've divided the screen vertically into three equal sections and designed three test/result pairs to chain together. Each of these tests is comprised of multiple sub-conditionals: they all start by checking to see if mouseIsPressed contains "true", and they all ask for additional conditions to be simultaneously satisfied through the use of the && operator. Based on the portion of the canvas our mouse's Y location falls within, we will either draw a teal square, a pink square, or a peach circle. As always, he code outside of the If Statement continues to run regardless:
 
-{{% codepen 600 zaGpgp%}}
+{{% codepen 900 zaGpgp%}}
 
 {{% notice warning %}}
 
