@@ -40,6 +40,18 @@ This second example makes it look as if Pac-Man is stretching across the entire 
 
 {{% codepen 400 gKWePW%}}
 
+Once you are comfortable with the process of adding to or subtracting from a variable, we can shorten the equations we used above with the help of some compound symbols. The chart below shows the common math operations we can perform on variables and some sort hand symbols we can use to create the exact same equations:
+
+| Compound Symbols | Operation     | Example     |
+| ---------------- | ------------- | ----------- |
+| +=               | X = X + value | X += value; |
+| \-=              | X = X - value | X -= value; |
+| \*=              | X = X * value | X *= value; |
+| /=               | X = X / value | X /= value; |
+| %=               | X = X % value | X %= value; |
+
+
+
 ## Cyclical Animations with Modulo
 
 In order to have a cyclical animation pattern, we would need to produce a cycling series of numbers and use that cycle as position data for our shape. There are very few processes in p5.js that loop in a cyclical fashion, so we'll need to get creative with how we create one. 
