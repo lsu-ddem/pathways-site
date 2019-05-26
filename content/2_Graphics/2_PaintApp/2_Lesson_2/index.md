@@ -84,11 +84,9 @@ The code below works just like our original version, but with our final Nested C
 
 {{% codepen 400 VOxyVa %}}
 
-
-
 ## Bracket Alignment & Test Levels
 
-Nesting conditional statements helps show other coders the order of our decision making logic in more ways than one. When practicing this, there are a few things to keep in mind:
+Nesting conditional statements helps show other coders the order of our decision-making logic in more ways than one. When practicing this, there are a few things to keep in mind:
 
 * The braces of each conditional test ( { } ) act like barriers: they contain a result that can only be accessed if we pass the test coded inside the preceding parenthesis. Make sure to count your braces when nesting one test inside of another; a test with a missing brace is like a room with a missing wall. Most code editors will help you out by automatically adding a closing brace whenever you type an open brace, but always be sure to check for yourself!
 * Study the code examples above and you'll notice that for every new layer of conditional we added, we first started by indenting the if/else keywords, result code, and brackets closer to the center of the editor window. This is a really good way of visually showing the order of tests to both yourself and other coders. Outer/first tests should always have their brackets, results, and keywords closer to the left side of the editor window, and each inner level test should have its corresponding code indented further into the center. 
