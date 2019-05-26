@@ -1,8 +1,8 @@
 ---
-title: Nested Conditionals for Complex Boundary Measurement
+title: Nested Conditionals & Complex Boundary Measurement
 weight: '2'
 ---
-In our last lesson, you may have noticed that our conditional tests looked a little repetitive. When measuring the boundaries of shapes that have multiple boundaries on the same X or Y coordinate, we can save ourselves the hassle of repeating portions of a test by using Nested Conditionals. Lets take a look at a diagram demonstrating the logic of a Nested Conditional to refresh our memories from Unit 1:
+In our last lesson, you may have noticed that our conditional tests looked a little repetitive. When measuring shapes that have multiple boundaries on the same X or Y coordinate, we can save ourselves the hassle of repeating portions of a test by using Nested Conditionals. Lets take a look at a diagram demonstrating the logic of a Nested Conditional to refresh our memories from Unit 1:
 
 {{<mermaid align="center">}}
 graph TD
