@@ -149,3 +149,9 @@ Notice the formating in this structure. Instead of following or else keyword wit
 We can now make one final modification to our embedded code and change our If/Else Statement into an If/Else If Statement! In this version below, we've divided the screen vertically into three equal sections and designed three test/result pairs to chain together. Each of these tests is comprised of multiple sub-conditionals: they all start by checking to see if mouseIsPressed contains "true", and they all ask for additional conditions to be simultaneously satisfied through the use of the && operator. Based on the portion of the canvas our mouse's X location falls within, we will either draw a teal square, a pink square, or a peach circle. As always, he code outside of the If Statement continues to run regardless:
 
 {{% codepen 600 zaGpgp%}}
+
+{{% notice warning %}}
+
+Building extensive If/Else If Statements can end up making your code look cluttered and hard to debug if certain tests aren't acting the way they should. In our [Graphics Unit](https://pdm.lsupathways.org/2_graphics/2_paintapp/2_lesson_2/), we'll learn how to nest a conditional test inside of another test in order to make more clean-looking, sensical logic flows for advanced projects.
+
+{{% /notice %}}
