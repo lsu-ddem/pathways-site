@@ -98,3 +98,9 @@ Boolean System Variables
 
 
 ## Global Scope vs. Local Scope
+
+Depending on our project, we may need the data inside of a variable to be accessible across our entire code so that we can use/read/change it in every function. In some cases, however, we may only need a variable to exist within a specific function or section of our code. This determination of how widely or narrowly accessible data is available throughout our code is known as **_scope_**. 
+
+In all of our examples so far, we've been declaring our variables outside of any of our function blocks (the ones we've used most often are **draw( )** and **setup( )**), mainly at the very top of our code. This process is known as **global declaration**, and these variables can be ****used/read/changed anywhere and everywhere in our code. In the example below, the variable "circSize" is declared with the keyword **let** outside of any function block or function argument, which allows us to initialize it in the **setup( )** block, change it in the **draw( )** block, and then print it to the console in the **mousePressed( )** block**.**
+
+{{% codepen 600 joxoqe %}}
