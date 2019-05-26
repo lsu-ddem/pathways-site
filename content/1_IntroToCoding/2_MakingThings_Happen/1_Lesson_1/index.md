@@ -142,7 +142,7 @@ Notice the formating in this structure. Instead of following or else keyword wit
 
 We can now make one final modification to our embedded code and change our If/Else Statement into an If/Else If Statement! In this version below, we've divided the screen vertically into three equal sections and designed three test/result pairs to chain together. Each of these tests is comprised of multiple sub-conditionals: they all start by checking to see if mouseIsPressed contains "true", and they all ask for additional conditions to be simultaneously satisfied through the use of the && operator. Based on the portion of the canvas our mouse's Y location falls within, we will either draw a teal square, a pink square, or a peach circle. As always, he code outside of the If Statement continues to run regardless:
 
-{{% codepen 900 zaGpgp%}}
+{{% codepen 600 zaGpgp%}}
 
 {{% notice warning %}}
 
