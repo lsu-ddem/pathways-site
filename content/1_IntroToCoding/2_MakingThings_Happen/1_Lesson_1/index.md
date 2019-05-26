@@ -136,7 +136,7 @@ if (test 1) {
 }
 ```
 
-Notice the formating in this structure. Instead of following or else keyword with an open bracket, we immediatly follow it with the if keyword and another test/result pair. We can continue this chaining to make If/Else If Statements that comprise as many different options for tests and results as we need. Now our video game analogy becomes a bit more complex: we can approach multiple rooms, each with their own barriers and their own separate treasures. If we can pass through any of the barriers, we will receive whatever is inside of that specific room, but not _all_ of the treasure in _all_ of the rooms:
+Notice the formating in this structure. Instead of following our **else** keyword with an open bracket, we immediately follow it with the **if** keyword and another test/result pair. We can continue this chaining to make If/Else If Statements that comprise as many different options for tests and results as we need. Now our video game analogy becomes a bit more complex: we can approach multiple rooms, each with their own barriers and their own separate treasures. If we can't pass through the first room, we try to pass through the second. If we can pass through any of the barriers, we will receive whatever is inside of that specific room, but not _all_ of the treasure in _all_ of the rooms:
 
 ![](/images/uploads/multiple_test_explanation.png)
 
