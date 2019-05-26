@@ -41,7 +41,6 @@ It's important to note a few things about making variables:
 
 * You can only declare a variable once. If you try to declare it more than once, your code will wipe the previous value inside of your variable from its memory. For instance, the following code is an issue: 
 
-
 ```javascript
 let xValue=1; 
 
@@ -86,6 +85,8 @@ Here are some commonly used System Variables found in the p5.js JavaScript libra
 | `pmouseY` | previous location of mouse on the canvas' Y axis    |
 | `key`     | current key pressed (ASCII keys only)               |
 | `keyCode` | current special key pressed (ENTER, UP_ARROW, etc.) |
+| `width`   | current width of the canvas in pixels               |
+| `height`  | current height of the canvas in pixels              |
 
 Boolean System Variables
 
@@ -93,3 +94,7 @@ Boolean System Variables
 | ---------------- | ------------------------------------------------------------ |
 | `mouseIsPressed` | boolean - contains "true" if mouse pressed, "false" if not   |
 | `keyIsPressed`   | boolean - contains "true" if any key pressed, "false" if not |
+
+
+
+## Global Scope vs. Local Scope
