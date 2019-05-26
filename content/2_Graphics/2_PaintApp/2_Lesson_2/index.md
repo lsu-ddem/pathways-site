@@ -69,8 +69,12 @@ if(mouseIsPressed){
 ```javascript
 if(mouseIsPressed){     
   if((mouseY > 100) && (mouseY < 250)){ 
-    if((mouseX > 100) && (mouseX < 250)){      backColor = "lime";
-    } else if((mouseX > 300) && (mouseX < 450)){      backColor = "gold";    }  }
+    if((mouseX > 100) && (mouseX < 250)){      
+      backColor = "lime";
+    } else if((mouseX > 300) && (mouseX < 450)){      
+      backColor = "gold";    
+    }  
+  }
 } else {
  backColor = "gray";
 }
