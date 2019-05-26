@@ -45,11 +45,21 @@ This If/Else If test (ending with an additional else to keep the background gray
 Let's start start to simplify things by finding repetition. First, both tests require that we check to see if the mouse has been pressed. Lets make that conditional into it's own If/Else statement; **if** the mouse is pressed, we can run some more tests to see if we're clicking inside a square, **else** the background stays gray:
 
 ```javascript
-if(mouseIsPressed){//square boundary measuring} else {backColor = "gray";}
+if(mouseIsPressed){
+
+} else {
+ backColor = "gray";
+}
 ```
 
 Now we won't be able to check anything else unless the mouse click test is passed first, and we don't have to repeat that test twice as a subtest in our other conditionals (it will act like the green barrier in the picture above). Next, our two squares share the exact same Y coordinates on the canvas: the top boundary of each square is at 100 Y and their bottom boundaries are at 250 Y. This means we can condense these Y boundary measurements into their own second, inner test! **If** the mouse is located between these Y boundaries, we can continue on and check our X boundaries. We don't have any result set up for failing this test, so we can simply use an If statement conditional here and add it into the Result section of the outer test:
 
 ```javascript
-if(mouseIsPressed){    //check Y axis boundaries    if((mouseY > 100) &&(mouseY < 250)){         //check X axis boundaries      }} else {backColor = "gray";}
+if(mouseIsPressed){     
+  if((mouseY > 100) &&(mouseY < 250)){ 
+              
+    }
+} else {
+ backColor = "gray";
+}
 ```
