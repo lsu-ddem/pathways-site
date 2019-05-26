@@ -18,24 +18,25 @@ We can also design tests that compare the relationship between two values and on
 | -------- | ------------------------ |
 | \>       | Greater than             |
 | <        | Less than                |
-| ==       | Equal to                 |
+| \==      | Equal to                 |
 | \>=      | Greater than or equal to |
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
 
-
-We might need to make tests that ask for more than one condition to be measured at a time, allowing the test to pass only if both conditions are met or if either one or more options listed are met. In these cases, we can chain conditions together with the && operator (which stands for "and") or use the \|\| operator (which stands for "or") to allow for two passable options for a single test:
+We might need to make tests that ask for more than one condition to be measured at a time, allowing the test to pass only if both conditions are met or if either one or more options listed are met. In these cases, we can chain conditions together with the && operator (which stands for "and") or use the || operator (which stands for "or") to allow for two passable options for a single test:
 
 **Common logic expressions**
 
 | Operator | Expression |
 | -------- | ---------- |
 | &&       | and        |
-| \|\|      | or        |
+| \||      | or         |
 
 Let's take a look at some common conditional statements and see how we code them into our projects.
 
 ## Single Test, Single Result  (The If Statement)
+
+The most commonly-used conditional is called the If Statement, and it is comprised of a single test (which could be made up of many sub-conditionals linked together with and or or operators) and a single result. Logically, an If Statement acts like the diagram below: if we pass the test, we get to run any code we designate as the result; if we fail the test, we continue to take the test until we pass it. The rest of our code outside of our If Statement continues to run as normal:
 
 {{<mermaid align="center">}}
 graph TD
@@ -49,9 +50,7 @@ style B fill: #00ffff, stroke:#FFFFFF;
 style C fill:#FFFFFF, stroke:#FFFFFF;
 {{< /mermaid >}}
 
-
-
-Translated into code, an If statement looks like this:
+Translated into code, an If Statement looks like this:
 
 ```
 if (test) {
@@ -59,7 +58,17 @@ if (test) {
 }
 ```
 
+Pay close attention to the various symbols in the code example above. Every Conditional statement will include a keyword(s), a pair of parenthesis, and a pair of braces ( { } ). The code inside of those symbols is extremely important: the tests that make up the conditional must always go inside of the parenthesis. Any code that we want to run as the result of passing the test (whether it be one line or one thousand lines) must be contained inside of the { } brackets. A good way to remember this separation of test code and result code is to imagine playing a video game where the sole purpose is to enter a locked room to reach a treasure. In the scenario, the locked door and barrier keeping you from the treasure is any test code placed inside the parenthesis. The treasure itself is any result code placed inside of the brackets:
+
+
+
+![](/images/uploads/simple_test_explanation-1-.png)
+
+The embedded code below shows an If Statement in action. Clicking and dragging your mouse along the gray canvas draws lines made of teal squares. The test measures the mouseIsPressed system variable from our previous lesson and wait to see if it contains the boolean value "true." If it does, a teal square is produced. If it doesn't, the code outside of the If Statement continues to run and the tests continues to check and wait to see when it will be passed.
+
 {{% codepen 600 QxWpqG%}}
+
+
 
 ## Single Test, Two Results  (The If/Else Statement)
 
