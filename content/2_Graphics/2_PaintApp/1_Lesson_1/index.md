@@ -30,7 +30,7 @@ Now we can see that the corners of our rectangle have a handful of shared coordi
 
 ![](/images/uploads/square_measurement_mouse.jpg)
 
-Based on our math, we need to code a test that can only pass if our mouse is clicked _**and**_ if it's located at a point greater than  200 X **_and_** less than 350 X **_and_** less than 200 Y **_and_** greater than 50 Y. We can do this by making a conditional that measures all four of those conditions simultaneously. As a reminder, the **&&**  operator will stand in for the word "and" in our test. The following code demonstrates a border measurement click test, causing the background color to change _only_ when we click inside the bounds of the square:
+Based on our math, we need to code a test that can only pass if our mouse is clicked **_and_** if it's located at a point greater than  200 X _**and**_ less than 350 X _**and**_ less than 200 Y _**and**_ greater than 50 Y. We can do this by making a conditional that measures all four of those conditions simultaneously. As a reminder, the **&&**  operator will stand in for the word "and" in our test. The following code demonstrates a border measurement click test, causing the background color to change _only_ when we click inside the bounds of the square:
 
 {{% codepen 400 zQjwzv %}}
 
@@ -44,7 +44,30 @@ You'll notice that the individual greater than/lesser than tests in the example 
 
 ### Circles
 
+Measuring the boundaries of a circle is a slightly more challenging task, since there are no sides for us to measure. Instead, we'll need to know the coordinates of the circle's center, the diameter of the circle, and its radius: 
+
+
+
+![](/images/uploads/circle_measurement.png)
+
+
+
+
+
+The first three values can be found as the four arguments passed into the **ellipse( )** function called to draw the circle to the canvas. The circle's radius is half of its diameter. We should declare a variable to hold that result of the circle's diameter divided by 2 so that we can use that value later.
+
+Since the radius is the distance between the center of the circle and its enter outer perimeter, our next step is find a way to trigger an event whenever our **mouseX** and **mouseY** variables cross that perimeter. If we can compare the value in our circle radius variable against the distance between the current mouse location and the circle's center, we could use that to test if our mouse has hovered over or been been clicked inside of our circle:
+
+![](/images/uploads/circle_distance_measurement.png)
+
+To accomplish this, we can use p5.js' `dist()` function. This function lets us pass in two pairs of X/Y coordinates and returns the number of pixels between those two points. Using this function, we need to devise a test that compares the distance between our mouse location and the circle's center with the circle's radius value. The test should only pass if the distance value is less than the radius value and if the mouse is clicked. Storing the ever-changing result of our `dist()` function inside of a variable will make this test easier to understand, and the code embedded below shows an example of what this test should look like:
+
 {{% codepen 500 VOxWyq %}}
 
+
+
 ## Moving Shape Measurements
+
+The techniques learned above will also work for shapes that are moving across the canvas. The only difference in our boundary measurement tests will is the need to measure our mouse location against variables that stand in for the ever-changing location of the shape's edges/centers. Take a look at the code below and test it out. The background will change to different colors when you click on the square versus when you click on the circle. Compare this code to the ones we studied above:
+
 {{% codepen 500 vwjWEa %}}
