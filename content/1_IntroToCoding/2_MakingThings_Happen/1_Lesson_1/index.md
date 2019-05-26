@@ -4,6 +4,14 @@ weight: 1
 ---
 ## Creating a Test
 
+Computers are extremely powerful machines, but without our help, they cannot make choices and decisions on their own. In order to make our web projects smarter and more interactive, we need to first learn how to design tests and reactions that computers can understand.
+
+A Conditional is a statement that tells our code to perform certain actions based on whether a test we devised has been passed or failed. All conditionals will contain both a test and a result. Our daily lives are filled with conditional statements that dictate what we can do and when we can do it. For example, if the weather is nice, then we can go outside, otherwise we need to stay indoors and wait for the weather to clear. In this instance, the test is a check to see if the weather conditions are safe enough for us to head outdoors, and the result is either us leaving the house to play outside, or more repeats of the test.
+
+Most of our tests in web programing will boil down to measuring boolean conditions, which can be one of two possible values: true or false.  We can design tests that measure a certain condition and only allow us to pass that test if the condition is either met (true) or not met (false). This is extremely common for conditionals that test to see if a user has interacted with your project through mouse clicks or keyboard presses, since those two objects can only produce two different states: clicked/pressed or unclicked/unpressed.
+
+We can also design tests that compare the relationship between two values and only pass based on what that relationship is. The chart below lists some common relational expressions (many of which you may have encounter in math class) and the symbols we use in JavaScript to add them into our code:
+
 **Common relational expressions**
 
 | Operator | Expression               |
@@ -15,12 +23,17 @@ weight: 1
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
 
+
+We might need to make tests that ask for more than one condition to be measured at a time, allowing the test to pass only if both conditions are met or if either one or more options listed are met. In these cases, we can chain conditions together with the && operator (which stands for "and") or use the \|\| operator (which stands for "or") to allow for two passable options for a single test:
+
 **Common logic expressions**
 
 | Operator | Expression |
 | -------- | ---------- |
 | &&       | and        |
-| \|\|     | or         |
+| \|\|      | or        |
+
+Let's take a look at some common conditional statements and see how we code them into our projects.
 
 ## Single Test, Single Result  (The If Statement)
 
@@ -35,6 +48,8 @@ style A  fill:#00ffff, stroke:#FFFFFF;
 style B fill: #00ffff, stroke:#FFFFFF;
 style C fill:#FFFFFF, stroke:#FFFFFF;
 {{< /mermaid >}}
+
+
 
 Translated into code, an If statement looks like this:
 
