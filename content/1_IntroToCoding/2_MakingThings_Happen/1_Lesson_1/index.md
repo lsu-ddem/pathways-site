@@ -64,7 +64,7 @@ Pay close attention to the various symbols in the code example above. Every Cond
 
 ![](/images/uploads/simple_test_explanation-1-.png)
 
-The embedded code below shows an If Statement in action. Clicking and dragging your mouse along the gray canvas draws lines made of teal squares. The test measures the mouseIsPressed system variable from our previous lesson and wait to see if it contains the boolean value "true." If it does, a teal square is produced. If it doesn't, the code outside of the If Statement continues to run and the tests continues to check and wait to see when it will be passed.
+The embedded code below shows an If Statement in action. Clicking and dragging your mouse along the gray canvas draws lines made of teal squares. The test measures the `mouseIsPressed` system variable from our previous lesson and wait to see if it contains the boolean value "true." If it does, a teal square is produced by running the two lines of code found inside of the braces. If it doesn't, the test continues to check and wait to see when it will be passed because we have placed it inside of the **draw( )** loop. The code outside of the If Statement continues to run regardless.
 
 {{% codepen 600 QxWpqG%}}
 
