@@ -2,6 +2,9 @@
 title: Audio Effects
 weight: '2'
 ---
+
+<a href="/slides/sound/audio-effects" target="_blank">View slides</a>
+
 Audio effects are used to modulate and manipulate a sound source in order to create more experimental sonic results. Let's learn how to start incorporating effects into our web project! 
 
 ## Adding Audio Effects into the Signal Path

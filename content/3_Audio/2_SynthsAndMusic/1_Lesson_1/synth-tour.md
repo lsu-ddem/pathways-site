@@ -3,7 +3,7 @@ title: "Synthesizer tour"
 weight: 3
 ---
 
-<a href="../synth-tour-slides" target="_blank">View slides</a>
+<a href="/slides/sound/synth-tour-slides" target="_blank">View slides</a>
 
 ## Examples from last year
 

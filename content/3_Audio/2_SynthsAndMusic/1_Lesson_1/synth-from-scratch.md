@@ -3,7 +3,7 @@ title: synth making from scratch
 weight: 2
 ---
 
-<a href="../synth-from-scratch-slides" target="_blank">View slides</a>
+<a href="/slides/sound/synth-from-scratch-slides" target="_blank">View slides</a>
 
 ### Building blocks: Sources and Signals
 

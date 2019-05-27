@@ -2,6 +2,9 @@
 title: WebAudio Basics & Sound File Players
 weight: '1'
 ---
+
+<a href="/slides/sound/basics-slides" target="_blank">View slides</a>
+
 ## Understanding the Audio Signal Path
 
 ![null](/images/uploads/simple_audio_pathway-1-.png)

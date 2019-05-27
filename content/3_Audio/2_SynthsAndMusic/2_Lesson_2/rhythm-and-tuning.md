@@ -3,7 +3,7 @@ title: "Rhythm and tuning"
 weight: 5
 ---
 
-<a href="../rhythm-and-tuning-slides" target="_blank">View slides</a>
+<a href="/slides/sound/rhythm-and-tuning-slides" target="_blank">View slides</a>
 
 ## Tone-rhythm
 

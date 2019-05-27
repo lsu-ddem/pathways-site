@@ -3,7 +3,7 @@ title: "Scheduling Signals"
 weight: 2
 ---
 
-<a href="../scheduling-signals-slides" target="_blank">View slides</a>
+<a href="/slides/sound/scheduling-signals-slides" target="_blank">View slides</a>
 
 ## Setting Values
 

@@ -4,7 +4,7 @@ weight: 3
 ---
 
 
-<a href="../sound-effects-sequencing-slides" target="_blank">View slides</a>
+<a href="/slides/sound/sound-effects-sequencing-slides" target="_blank">View slides</a>
 
 ---
 
