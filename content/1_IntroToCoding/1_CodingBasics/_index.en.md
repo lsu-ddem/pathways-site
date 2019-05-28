@@ -16,8 +16,8 @@ Take a look at the HTML, JS, and CSS tabs in the embedded CodePen sketch below t
 
 The HTML file in your project is read by your web browser and rendered into readable text, visuals, and audio. Each web project we create in this course will require the minimum code that you see in this example. While we won't dive too deep into coding practices for HTML, lets take a look at what these vital lines of code do:
 
-* Inside of the **_head_** element, we include **_script_** tags that link us to the code libraries that we'll use as dependencies for our JavaScript file. This will allow the code we write in our JavaScript file to work properly and create the interactive audiovisuals we design. When working with p5.js, it's necessary to include a link to the main p5 library and suggested to include a link to the p5.dom library (which allows us to create user-friendly buttons, sliders, and other common website features in our projects). If you're working in the p5 Web Editor, each project you create will automatically include links to these two libraries and an additional p5.sound library (we will replace this with the Tone.js library in future lessons).
-* Inside of the **_body_** element, we place any code that will form the primary audiovisual elements of our project. For this course, we will be writing this code inside of its own file named "sketch.js", so we simply need to call to it here in our HTML file using another **_script_** tag.
+* Inside of the _**head**_ element, we include _**script**_ tags that link us to the code libraries that we'll use as dependencies for our JavaScript file. This will allow the code we write in our JavaScript file to work properly and create the interactive audiovisuals we design. When working with p5.js, it's necessary to include a link to the main p5 library and suggested to include a link to the p5.dom library (which allows us to create user-friendly buttons, sliders, and other common website features in our projects). If you're working in the p5 Web Editor, each project you create will automatically include links to these two libraries and an additional p5.sound library (we will replace this with the Tone.js library in future lessons).
+* Inside of the _**body**_ element, we place any code that will form the primary audiovisual elements of our project. For this course, we will be writing this code inside of its own file named "sketch.js", so we simply need to call to it here in our HTML file using another _**script**_ tag.
 
 ## CSS file
 
@@ -30,13 +30,13 @@ padding: 0;
 }
 ```
 
-The preceding CSS code states that any visual elements found in the _**body**_ element of our HTML file will be rendered in our browser with no added margin or padding around them. In many cases, a "style.css" file is not needed for our projects to run properly. When working in the p5 Web Editor, a CSS file is automatically created for each new project.
+The preceding CSS code states that any visual elements found in the **_body_** element of our HTML file will be rendered in our browser with no added margin or padding around them. In many cases, a "style.css" file is not needed for our projects to run properly. When working in the p5 Web Editor, a CSS file is automatically created for each new project.
 
 ## JavaScript File
 
 This file contains the bulk of the code that creates results in our project. We will be working primarily inside of this file, as it will be loaded into our web browser through our HTML file and rendered by your web browser. In this example, our JS file contains just enough code to allow the p5 library to create a blank, gray canvas, which can be seen in the "Result" tab.
 
-When working in the p5 Web Editor, every new project you create will inherently name this file "sketch.js". You can rename this file to be anything you'd like, but if you do, you will need to also update that filename in the _**body**_ element of your accompanying HTML file. When creating and hosting files locally on your computer, you'll want to be careful to not store multiple, different JavaScript files inside of the same project folder if they all share the same generic name. Doing so will cause your browser to be unable to render the proper JavaScript file, and your project won't run.
+When working in the p5 Web Editor, every new project you create will inherently name this file "sketch.js". You can rename this file to be anything you'd like, but if you do, you will need to also update that filename in the **_body_** element of your accompanying HTML file. When creating and hosting files locally on your computer, you'll want to be careful to not store multiple, different JavaScript files inside of the same project folder if they all share the same generic name. Doing so will cause your browser to be unable to render the proper JavaScript file, and your project won't run.
 
 ## Data Types
 
@@ -73,4 +73,4 @@ comment. Neat!
 The console is a section of your code editor or browser that can be used when you want to get information on aspects of your code, or you want to see a log of any and all errors that have occurred in your project. You can also use the console to communicate with your code while it is running, which is helpful for checking on the current state of variables, the current color of shapes and objects, or to even double check that functions or events you designed are working properly.
 
 Click on the "Edit on CodePen" title on the embedded code below to see a few examples of how you can ask your code to log info to your browser's console. To ask your code to log something to the console, use the `console.log()` function, and place whatever you want to be logged inside of the parenthesis. Our example below logs the current mouseX position if you click on the screen, the sum of a mathematical equation, and the contents of a variable called `phrase1`. You can also try typing into the console to get information back. Try typing `circleColor` or `newPhrase` and see what you get when you hit enter.
-{{% codepen 500 JBePPpq %}}
+{{% codepen 500 OEmEpM %}}
