@@ -18,7 +18,7 @@ We can also design tests that compare the relationship between two values and on
 | -------- | ------------------------ |
 | \>       | Greater than             |
 | <        | Less than                |
-| ==      | Equal to                 |
+| ==       | Equal to                 |
 | \>=      | Greater than or equal to |
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
