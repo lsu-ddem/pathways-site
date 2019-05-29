@@ -18,7 +18,7 @@ We can also design tests that compare the relationship between two values and on
 | -------- | ------------------------ |
 | \>       | Greater than             |
 | <        | Less than                |
-| \==      | Equal to                 |
+| ==      | Equal to                 |
 | \>=      | Greater than or equal to |
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
@@ -27,10 +27,10 @@ We might need to make tests that ask for more than one condition to be measured 
 
 **Common logic expressions**
 
-| Operator | Expression |     |
-| -------- | ---------- | --- |
-| &&       | and        |     |
-| \|       |            | or  |
+| Operator | Expression |   
+| -------- | ---------- |
+| &&       | and        |
+| \|\|     |  or        |
 
 Let's take a look at some common conditional statements and see how we code them into our projects.
 
