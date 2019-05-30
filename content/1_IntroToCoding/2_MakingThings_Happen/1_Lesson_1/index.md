@@ -29,7 +29,7 @@ We might need to make tests that ask for more than one condition to be measured 
 
 
 | Operator | Expression |   
-| -------- | ---------- |
+| -------- | -----------|
 | &&       | and        |
 | \|\|     |  or        |
 
