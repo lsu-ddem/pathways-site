@@ -5,8 +5,6 @@ weight: 1
 
 ## Understanding Sequences
 
-## Building a Sequence
-
 {{% codepen 500 NzZNBp %}}
 
 ## Modifying a Sequence During Performance
