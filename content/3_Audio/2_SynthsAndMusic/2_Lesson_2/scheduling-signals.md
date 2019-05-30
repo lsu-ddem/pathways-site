@@ -1,6 +1,6 @@
 ---
 title: "Scheduling Signals"
-weight: 2
+weight: 1
 ---
 
 <a href="/slides/sound/scheduling-signals-slides" target="_blank">View slides</a>

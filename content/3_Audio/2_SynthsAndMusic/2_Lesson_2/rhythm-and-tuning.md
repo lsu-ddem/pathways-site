@@ -94,20 +94,3 @@ const mariaPitches = ["Eb4", "A4", "Bb4", "Eb4", "A4", "Bb4", "C5", "A4", "Bb4",
 [starter](https://codepen.io/lsuddem/pen/PLWMWQ?editors=1011)
 
 ---
-
-## A more perfect union 
-
-[hub](https://ampu.site/hub.html)
-
-Visit [ampu.site](http://ampu.site)  on your smartphones to participate
-
-[source](https://github.com/tatecarson/a-more-pefect-union)
-
----
-
-
-## Mesh Garden 
-
-Visit [distseq.now.sh](http://distseq.now.sh) on your smartphones to participate
-
-[source](https://github.com/tatecarson/distributedSequencer)
