@@ -73,4 +73,4 @@ comment. Neat!
 The console is a section of your code editor or browser that can be used when you want to get information on aspects of your code, or you want to see a log of any and all errors that have occurred in your project. You can also use the console to communicate with your code while it is running, which is helpful for checking on the current state of variables, the current color of shapes and objects, or to even double check that functions or events you designed are working properly.
 
 Click on the "Edit on CodePen" title on the embedded code below to see a few examples of how you can ask your code to log info to your browser's console. To ask your code to log something to the console, use the `console.log()` function, and place whatever you want to be logged inside of the parenthesis. Our example below logs the current mouseX position if you click on the screen, the sum of a mathematical equation, and the contents of a variable called `phrase1`. You can also try typing into the console to get information back. Try typing `circleColor` or `newPhrase` and see what you get when you hit enter.
-{{% codepen 500 JZPVRa %}}
+{{% codepen 500 OEmEpM %}}
