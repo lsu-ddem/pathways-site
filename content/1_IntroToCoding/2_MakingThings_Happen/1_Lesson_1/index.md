@@ -28,10 +28,11 @@ We might need to make tests that ask for more than one condition to be measured 
 **Common logic expressions**
 
 
-| Operator | Expression |   
-| ------   | --------- |
-| &&       | and        |
-| \|\|     |  or        |
+
+| Operator | Expression               |
+| -------- | ------------------------ |
+| &&       | and                      |
+| \|\|     | or                       |
 
 Let's take a look at some common conditional statements and see how we code them into our projects.
 
