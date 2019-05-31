@@ -20,19 +20,7 @@ This second version of the project uses a type of loop known as a **for loop** t
 
 The following logic chart breaks down the basic concept behind how a for loop works:
 
-{{<mermaid align="center">}}
-graph LR 
-H(Create Variable)-->A
- A-->|False| E\[Loop Stops]
-A{Test} -->|True| B\[Repeated Result Block]
-B-->C\[Update Variable Value]
-C-->|Updated Variable Value|A
-style A fill:  #f7dc6f , stroke:#FFFFFF;
-style B fill:  #ec7063, stroke:#FFFFFF;
-style C fill:  #f7dc6f ,stroke:#FFFFFF;
-style E fill: #FFFFFF, stroke:#FFFFFF;
-style H fill:  #f7dc6f ,stroke:#FFFFFF;
-{{< /mermaid >}}
+![](/images/uploads/screen-shot-2019-05-31-at-12.35.35-pm.png)
 
 To create a for loop, we first design a set of statements that control how many times the loop runs and separate each one with a semicolon. First, we create a variable for use in the loop and initialize it with a starting value. This variable is typically given a one-letter label and is different from any other variable we are using elsewhere in our code. Next, we define a test that evaluates this variable on every loop and keeps the loop running as long as the test passes. If the test fails, the loop stops immediately. The test is always a relational expression, relating the value on the left to the value on the right (a table of common relational expressions and their operators can be found below). Finally, we write a statement that allows the loop variable to be updated every time the test is passed. 
 
@@ -58,8 +46,6 @@ In the embedded code below, our loop draws multiple lines. The variable i is dec
 | \>=      | Greater than or equal to |
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
-
-
 
 ## More For Loop Examples
 
@@ -138,35 +124,14 @@ What does this tell us? It shows us that when we nest for loops, they both work 
 
  The following logic chart breaks down the basic concept behind how a nested for loop works:
 
-{{<mermaid align="center">}}
-graph LR
-H(Create Outer Variable)-->A
-A-->|False| E\[Loop Stops]
-A{Outer Test} -->|True| M(Create Inner Variable)
-
-B{Inner Test}-->|False|L\[Inner Loop Stops]
-M-->B
-
-L-->K\[Update Outer Variable Value]
-K-->A
-B-->|True|J\[Repeated Result Block]
-
-J-->C\[Update Inner Variable Value]
-
-C-->|Updated Variable Value|B
-style A fill: #f7dc6f , stroke:#FFFFFF;
-style B fill: #08b8cd ,stroke:#FFFFFF;
-style K fill: #f7dc6f ,stroke:#FFFFFF;
-style C fill: #08b8cd ,stroke:#FFFFFF;
-style E fill: #FFFFFF, stroke:#FFFFFF;
-style L fill: #FFFFFF, stroke:#FFFFFF;
-style H fill: #f7dc6f ,stroke:#FFFFFF;
-style J fill:  #ec7063  ,stroke:#FFFFFF;
-style M fill: #08b8cd , stroke:#FFFFFF;
-{{< /mermaid >}}
+![](/images/uploads/screen-shot-2019-05-31-at-12.54.47-pm.png)
 
 To better understand how a nested for loop works, play with the embedded code below by moving your mouse from left to right across the canvas. The position of your mouseX and mouseY variables determine the total number of times the inner and outer loops run, adding/subtracting more circles in groups as your mouse moves:
 
 {{% codepen 600 gJQEMw %}}
 
+
+
 Here is another example of a nested for loop. Study this example to see how it works:
+
+{{% codepen 600 OYaGVZ %}}
