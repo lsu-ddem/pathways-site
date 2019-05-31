@@ -42,7 +42,7 @@ In the embedded code below, our loop draws multiple lines. The variable i is dec
 | -------- | ------------------------ |
 | \>       | Greater than             |
 | <        | Less than                |
-| \==      | Equal to                 |
+| ==       | Equal to                 |
 | \>=      | Greater than or equal to |
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
