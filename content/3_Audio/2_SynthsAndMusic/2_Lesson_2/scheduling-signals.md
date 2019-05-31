@@ -21,9 +21,6 @@ oscillator.frequency.value = 100; //sets the value immediately
 - **setValueAtTime** - to schedule a value change at a precise time.
 - **linearRampToValueAtTime** - to ramp to a value starting from the previously scheduled value.
 - **exponentialRampToValueAtTime** - same as the above, but with an exponential curve instead of a linear curve.
-
----
-
 - **setTargetAtTime** - unlike the RampValueAtTime methods, in setTargetAtTime, the time attribute is when it should start ramping towards the value instead of arrive at the value. It takes a third parameter which is the time constant at which it will change.
 - **setValueCurveAtTime** - sets an array of values which will be evenly invoked over the course of the duration.
 - **cancelScheduledValues** - cancels all values after the specified time.
