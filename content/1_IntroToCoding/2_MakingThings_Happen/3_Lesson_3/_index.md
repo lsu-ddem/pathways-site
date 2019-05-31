@@ -59,6 +59,8 @@ In the embedded code below, our loop draws multiple lines. The variable i is dec
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
 
+
+
 ## More For Loop Examples
 
 Here are some examples of projects that use for loops to create complex designs. Try to determine how all three statements of the for loop work and how they create the resulting patterns for each code embedded below:
@@ -101,7 +103,6 @@ for(let i = 0; i <= 4; i++){
 Now look at your console. You should see the following text printed out:
 
 ```javascript
-
 Outer Loop: 0: Inner Loop: 0 
 Outer Loop: 0: Inner Loop: 1 
 Outer Loop: 0: Inner Loop: 2 
@@ -135,9 +136,7 @@ Outer Loop: 4: Inner Loop: 4
 
 What does this tell us? It shows us that when we nest for loops, they both work together in a unique way: the outer loop starts first and completes just one run of the shared result code if its test can pass. Then, it pauses and lets the inner loop complete all of its runs until the inner loop's test fails and, causing it to stop. Now, the outer loop wakes up and runs a second time. Once that second run is finished, it lets the inner loop run its entire series of loops again! This continues to happen until the outer loop has completely exhausted its chances to run while its test can still be passed.
 
-
  The following logic chart breaks down the basic concept behind how a nested for loop works:
-
 
 {{<mermaid align="center">}}
 graph LR
@@ -170,6 +169,4 @@ To better understand how a nested for loop works, play with the embedded code be
 
 {{% codepen 600 gJQEMw %}}
 
-
 Here is another example of a nested for loop. Study this example to see how it works:
-
