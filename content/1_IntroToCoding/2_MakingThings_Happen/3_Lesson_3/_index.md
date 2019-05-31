@@ -134,4 +134,4 @@ To better understand how a nested for loop works, play with the embedded code be
 
 Here is another example of a nested for loop. Study this example to see how it works:
 
-{{% codepen 600 OYaGVZ %}}
+{{% codepen 600 LryQWq %}}
