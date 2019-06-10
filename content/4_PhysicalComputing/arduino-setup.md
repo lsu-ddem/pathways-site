@@ -1,6 +1,6 @@
 ---
 title: Arduino Setup
-weight: 5
+weight: 1
 ---
 Arduino must first be setup on your computer.
 
