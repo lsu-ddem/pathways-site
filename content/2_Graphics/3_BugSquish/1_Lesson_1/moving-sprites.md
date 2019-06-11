@@ -1,5 +1,5 @@
 ---
 title: Moving Sprites Around the Canvas
-weight: '3'
+weight: '2'
 ---
 Samples
