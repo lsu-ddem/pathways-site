@@ -7,7 +7,7 @@ weight: '3'
 Example codes for collisions
 
 Adding to a Sprite Group on Collision
-{{% codepen 600 RzwPKX %}}
+{{% codepen 400 RzwPKX %}}
 
 Removing from a Sprite Group on Collision
-{{% codepen 600 JQjxra %}}
+{{% codepen 400 JQjxra %}}
