@@ -4,4 +4,4 @@ weight: '2'
 ---
 Samples
 
-{{% codepen 400 RzPbrY %}}
+{{% codepen 600 RzPbrY %}}
