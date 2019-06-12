@@ -1,5 +1,5 @@
 ---
-title: Appearance & Animations
+title: Sprite Appearance
 weight: '2'
 ---
 
