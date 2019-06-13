@@ -1,5 +1,5 @@
 ---
-title: Intro to coding
+title: Intro to Coding
 weight: 1
 ---
 ## Unit 1
