@@ -1,6 +1,6 @@
 ---
 title: Higher level sequencers
-weight: 10
+weight: 2
 ---
   
 ## Event

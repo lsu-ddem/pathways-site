@@ -1,6 +1,6 @@
 ---
-title: "Resources"
-weight: 8
+title: "Presentations"
+weight: 9
 chapter: true
 # pre: "<b>2. </b>"
 ---
