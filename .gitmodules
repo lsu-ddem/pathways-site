@@ -1,3 +1,6 @@
 [submodule "themes/hugo-pathways-theme"]
 	path = themes/hugo-pathways-theme
 	url = https://github.com/lsu-ddem/hugo-pathways-theme.git
+[submodule "themes/reveal-hugo"]
+	path = themes/reveal-hugo
+	url = https://github.com/dzello/reveal-hugo.git
