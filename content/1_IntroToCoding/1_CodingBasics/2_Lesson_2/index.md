@@ -26,7 +26,7 @@ As previously mentioned, the canvas is arranged in pixels, similar to a coordina
 
 ![default](/images/graphics/coordinateplane.jpg)
 
-   #####  Image originally from: https://socratic.org/questions/in-what-quadrant-is-the-point-6-7  
+   #### Image originally from: https://socratic.org/questions/in-what-quadrant-is-the-point-6-7 ####
     
 
 As shown in the code below, by increasing the X coordinate of various items on the canvas, that object will move to the right. Increasing the Y coordinate will lower the item on the canvas. The inverse of this is also true. 
