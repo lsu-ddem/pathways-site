@@ -9,10 +9,10 @@ The first thing we have to do before adding an image to our sprite is to include
 
 2. You can also add you own locacl images from your own device onto P5's server in the steps detailed below. 
     1. Open the file editor ![default](/images/graphics/fileeditor.png)
-    2. click on the arrow next to "Sketch Files" and select "Create Folder" ![default](/images/graphics/loadfile2)
+    2. click on the arrow next to "Sketch Files" and select "Create Folder" ![default](/images/graphics/loadfile2.png)
     3. Give this folder a name using the pop up window. For this example, we went with "images". You will now see your folder appear inside of the file editor. 
-    4. Clock the small triangle next to your new folder and select "upload file". You can then use the pop-up window to drag-and-drop your image, or manually upload it by serching your device. ![default](/images/graphics/loadfile3)
-    5. you will now see the file inside your folder like in the image below. You can click the triangle by your file to rename it or delete it as needed. ![default](/images/graphics/loadfile4)
+    4. Clock the small triangle next to your new folder and select "upload file". You can then use the pop-up window to drag-and-drop your image, or manually upload it by serching your device. ![default](/images/graphics/loadfile3.png)
+    5. you will now see the file inside your folder like in the image below. You can click the triangle by your file to rename it or delete it as needed. ![default](/images/graphics/loadfile4.png)
 
 The second method tends to be a little more stable than method 1 because if the server location chages at all in the previous method, P5 will be unable to locate the images and the project will break. The downside is that each P5 account has a limited amount of storage, so you will have to be careful not to use all of this space. This process works the same for images, sound files, and video files. 
 
