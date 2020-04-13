@@ -26,18 +26,19 @@ As previously mentioned, the canvas is arranged in pixels, similar to a coordina
 
 ![default](/images/graphics/coordinateplane.jpg)
 
-   ##### Image originally from: https://socratic.org/questions/in-what-quadrant-is-the-point-6-7 #####
+   #####  Image originally from: https://socratic.org/questions/in-what-quadrant-is-the-point-6-7  
     
 
 As shown in the code below, by increasing the X coordinate of various items on the canvas, that object will move to the right. Increasing the Y coordinate will lower the item on the canvas. The inverse of this is also true. 
 
 {{% codepen 600 pojzjoX %}}
 
+
 In the next code, the same functionality from the previous code is present, but now when you click the mouse, a bulls-eye pattern will appear at the mouse’s location. The XY pixel coordinate of this shape is also displayed. Try clicking in various places to see how the location numbers change. 
 
 {{% codepen 600 xxwKwgq %}}
 
-Drawing basic shapes on the canvas:
+## Drawing basic shapes on the canvas:
 
 Below are a few basic shape functions that we will expand on later. All shape functions need a set of coordinates in order to be drawn on the screen. 
 
