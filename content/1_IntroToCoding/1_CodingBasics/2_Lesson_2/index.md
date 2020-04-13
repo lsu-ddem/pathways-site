@@ -19,6 +19,7 @@ Look at the default starting code in p5, you can see a few items that are used t
 Inside of function setup(), you can see the line createCanvas(400, 400); this line is what tell p5 to create the canvas, and how large to make it. The numbers represent how wide and tall to make the canvas from the top-left corner, in pixels. The default is 400px x 400px. Try adjusting these number to see how the canvas changes.
 
 ![default](/images/graphics/p5default.png)
+This is the default P5 starting code. All it does is make the canvas and give it a background color. Everything else is up to you!
 
 Inside of function draw(), you can see the line background(200); this line is what determines the color of the canvas. We will discuss color in more detail in a later chapter, but know that the number represents the grayscale shade of the canvas. 0 = completely black, and 255 is completely white. (number higher than 255 will not affect the color and will will just read as 255 when the code is executed)
 
@@ -26,7 +27,7 @@ As previously mentioned, the canvas is arranged in pixels, similar to a coordina
 
 ![default](/images/graphics/coordinateplane.jpg)
 
-   #### Image originally from: https://socratic.org/questions/in-what-quadrant-is-the-point-6-7 ####
+    Image originally from: https://socratic.org/questions/in-what-quadrant-is-the-point-6-7 
     
 
 As shown in the code below, by increasing the X coordinate of various items on the canvas, that object will move to the right. Increasing the Y coordinate will lower the item on the canvas. The inverse of this is also true. 
