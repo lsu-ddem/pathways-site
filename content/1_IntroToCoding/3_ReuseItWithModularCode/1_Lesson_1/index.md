@@ -21,9 +21,13 @@ Look at this code; what is different from the previous code? You will notice tha
 ## Making a Function
 
 To create a function, follow these general steps:
+
 1. Use the identifier “function”, and give your function a unique name (note that you cannot have 2 functions with identical names)
-2. Inside the parentheses, give a name for each argument that your function needs. These will act like variables in the code to follow, and be replaced with number when we use the function
+
+2. Inside the parentheses, give a name for each argument that your function needs. These will act like variables in the code to follow, and be replaced with number when we use the function.
+
 3. Place the code you want your function to execute inside of the braces. Be sure to use the names for your arguments when needed. (In the previous code example, we have an argument for any parameter that we want to be able to change with our ghosts) 
+
 4. Now you can call your function inside of draw(). Notice how this happens twice in the previous code, and two different ghosts appear. This is because the first call happens with one set of arguments, and the second happens with a new set. Each function call is independent, like when you called rect() multiple times to create multiple rectangles on the canvas. 
 
 
