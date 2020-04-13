@@ -4,4 +4,9 @@ weight: 1
 ---
 ## Chapter 4
 
-This assignment will ask you to recreate four 2D images. The following lessons focus on the basics of drawing and coloring shapes using the p5.js library.
+The upcoming assignment will be to recreate four images using p5. We have some experience with shapes, but for this we will need to go over a few more basic concepts:
+
+* Review of basic shapes
+* Introduction to more advanced and custom shapes
+* Color and transparency
+
