@@ -1,5 +1,5 @@
 ---
-title: Sampler w/ effects
+title: Sampler with effects
 weight: 1
 ---
 ## Chapter 7
