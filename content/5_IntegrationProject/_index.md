@@ -5,6 +5,7 @@ weight: 5
 The remainder of the course will focus around your final comprehensive project. This project will be one that you design and create from start to finish. However there are a few rules and guidelines to go over before you begin working. 
 
 First, Your project has to have the following elements, which integrate all of the units gone over so far into one cohesive product:
+
 * At least one sprite must be on the screen and be interactive in some way
 * At least one image must be utilized in the project
 * Some sort of audio must be present as a soundtrack and/or playback
