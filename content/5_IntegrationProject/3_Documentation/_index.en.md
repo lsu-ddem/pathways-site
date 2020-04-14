@@ -4,6 +4,7 @@ weight: 3
 ---
 
 As you wrap up your project, it is important to document your work in various ways. 
+
 * Save older versions of your code.
 * Take picturees of you arduino circuits. 
 * Create a video of your final, working project.
