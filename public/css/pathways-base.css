@@ -1,0 +1,163 @@
+/* RGB */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab");
+
+body {
+  font-family: "Roboto", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 18px !important;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+  font-weight: 200;
+}
+
+h2,
+h3 {
+  font-family: "Roboto Slab", serif !important;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Roboto Slab", serif;
+}
+
+h5,
+h6 {
+  font-family: "Roboto", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #5e5e5e;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+/* sidebar */
+/* first level */
+#sidebar ul.topics > li > a {
+  font-family: "Roboto Slab";
+  font-weight: 575;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+/* second level */
+#sidebar ul.topics > li > ul {
+  font-family: "Roboto Slab";
+}
+
+/* top bar */
+#top-bar {
+  font-family: "Roboto Slab";
+}
+
+/* lesson picker style */
+.choose ul > li {
+  list-style: none;
+}
+
+/* codepen padding */
+.cp_embed_wrapper {
+  padding-top: 2.3rem;
+}
+
+/* hide things unless printing */
+#pageFooter,
+.codepen-url {
+  display: none;
+}
+
+/* hide teacher material by default */
+.teacher {
+  display: none;
+}
+
+/* responsive iframe embeds */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* teacher material shortcode */
+.teacher-material {
+  margin: 2rem 0;
+  position: relative;
+}
+.teacher-material p {
+  padding: 15px;
+  display: block;
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  color: #666;
+}
+.teacher-material ul {
+  padding: 15px;
+  display: block;
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-left: 2em;
+  color: #666;
+}
+
+.teacher-material p:first-child:before {
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  font-family: FontAwesome;
+  content: "";
+  left: 10px;
+}
+.teacher-material ul:first-child:before {
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  font-family: FontAwesome;
+  content: "";
+  left: 10px;
+}
+
+.teacher-material :first-child:after {
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  left: 2rem;
+}
+.teacher-material p {
+  border-top: 30px solid rgba(92, 184, 92, 0.8);
+  background: #e6f9e6;
+}
+.teacher-material ul {
+  border-top: 30px solid rgba(92, 184, 92, 0.8);
+  background: #e6f9e6;
+}
+.teacher-material p:first-child:after {
+  content: "Teacher Material";
+}
+.teacher-material ul:first-child:after {
+  content: "Teacher Material";
+}
+
+/* codepen */
+span .cm-comment {
+  color: #525252
+}

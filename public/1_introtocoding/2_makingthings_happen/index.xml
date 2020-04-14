@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Making Things Happen on Educational material for LSU Programming Digital Media</title>
+    <link>/1_introtocoding/2_makingthings_happen/</link>
+    <description>Recent content in Making Things Happen on Educational material for LSU Programming Digital Media</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/1_introtocoding/2_makingthings_happen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computers Making Choices - Conditionals</title>
+      <link>/1_introtocoding/2_makingthings_happen/1_lesson_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1_introtocoding/2_makingthings_happen/1_lesson_1/</guid>
+      <description>Creating a Test Computers are extremely powerful machines, but without our help, they cannot make choices and decisions on their own. In order to make our web projects smarter and more interactive, we need to first learn how to design tests and reactions that computers can understand.
+A Conditional is a statement that tells our code to perform certain actions based on whether a test we devised has been passed or failed.</description>
+    </item>
+    
+    <item>
+      <title>Making Groups and Lists - Arrays</title>
+      <link>/1_introtocoding/2_makingthings_happen/2_lesson_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1_introtocoding/2_makingthings_happen/2_lesson_2/</guid>
+      <description>Variables are great for adding updatable values into our code, but they also have their limitations. One major limitation is that variables can only be assigned one value at a time. Reassigning a new value to a variable removes the previous value from the computer&amp;rsquo;s memory, and we would need additional lines of code in order to return that variable back to its previous state.
+Take a look at the following code embedded below to see how the limitations of variables can end up leading to a code that looks more complex than it actually is:</description>
+    </item>
+    
+  </channel>
+</rss>

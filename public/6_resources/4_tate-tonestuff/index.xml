@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tonejs on Educational material for LSU Programming Digital Media</title>
+    <link>/6_resources/4_tate-tonestuff/</link>
+    <description>Recent content in tonejs on Educational material for LSU Programming Digital Media</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/6_resources/4_tate-tonestuff/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Including Tone</title>
+      <link>/6_resources/4_tate-tonestuff/includingtone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/6_resources/4_tate-tonestuff/includingtone/</guid>
+      <description>For Tone.js to work in your sketch you need to include it in your HTML file.
+Open your project-folder and find the index.html file. Add this line under the first three script tags:
+&amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/tone/0.11.0/Tone.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; This loads Tone.js in your sketch.</description>
+    </item>
+    
+  </channel>
+</rss>

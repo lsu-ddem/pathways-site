@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sprite Collisions w/Sound! on Educational material for LSU Programming Digital Media</title>
+    <link>/3_audio/3_soundsinbugsquish/</link>
+    <description>Recent content in Sprite Collisions w/Sound! on Educational material for LSU Programming Digital Media</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/3_audio/3_soundsinbugsquish/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adding Sound Events to Games: Sound File Playback</title>
+      <link>/3_audio/3_soundsinbugsquish/1_lesson_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/3_soundsinbugsquish/1_lesson_1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adding Sound Events to Games: Synthesizers &amp; Sequences</title>
+      <link>/3_audio/3_soundsinbugsquish/2_lesson_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/3_soundsinbugsquish/2_lesson_2/</guid>
+      <description>Lesson goes here</description>
+    </item>
+    
+    <item>
+      <title>Sound Assignment #3 - Adding Sound Events to BugSquish!</title>
+      <link>/3_audio/3_soundsinbugsquish/3_lesson_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/3_soundsinbugsquish/3_lesson_3/</guid>
+      <description>Result code goes here</description>
+    </item>
+    
+  </channel>
+</rss>

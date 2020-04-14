@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sequences on Educational material for LSU Programming Digital Media</title>
+    <link>/3_audio/2_synthsandmusic/2_lesson_2/</link>
+    <description>Recent content in Sequences on Educational material for LSU Programming Digital Media</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/3_audio/2_synthsandmusic/2_lesson_2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building a sequence</title>
+      <link>/3_audio/2_synthsandmusic/2_lesson_2/buildingasequence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/2_synthsandmusic/2_lesson_2/buildingasequence/</guid>
+      <description>Sequencing notes To use any sequencing functions Tone.Transport() must be started.
+Parameters  start stop toggle - go between start and stop seconds - get current position in seconds position - get beats:bars:sixteens bpm - beats per minute  Examples Understanding Sequences Modifying a Sequence During Performance Removing and Replacing Patterns in the Same Sequence </description>
+    </item>
+    
+    <item>
+      <title>Scheduling Signals</title>
+      <link>/3_audio/2_synthsandmusic/2_lesson_2/scheduling-signals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/2_synthsandmusic/2_lesson_2/scheduling-signals/</guid>
+      <description>View slidesSetting Values  This will set the value when ever you trigger it  oscillator.frequency.value; //returns the current frequency value oscillator.frequency.value = 100; //sets the value immediately  Scheduling Values  setValueAtTime - to schedule a value change at a precise time. linearRampToValueAtTime - to ramp to a value starting from the previously scheduled value. exponentialRampToValueAtTime - same as the above, but with an exponential curve instead of a linear curve.</description>
+    </item>
+    
+    <item>
+      <title>Higher level sequencers</title>
+      <link>/3_audio/2_synthsandmusic/2_lesson_2/higherlevelsequences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/2_synthsandmusic/2_lesson_2/higherlevelsequences/</guid>
+      <description>Event  abstracts away Tone.Transport.schedule and provides a schedulable callback for a single or repeatable events along the timeline loop  true of false   loopEnd loopStart mute  won&amp;rsquo;t fire if mute is true      playbackRate  interval if looped   probability  add randomness to note triggered probability   progress  where are we in the loop?      https://codepen.</description>
+    </item>
+    
+    <item>
+      <title>Sound effects with sequencing examples</title>
+      <link>/3_audio/2_synthsandmusic/2_lesson_2/sound-effects-sequencing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/2_synthsandmusic/2_lesson_2/sound-effects-sequencing/</guid>
+      <description>View slides Bubbles with sound   See HackPact for inspiration   Sound Effect  Massive impact starter Rain on a tin roof starter
+ Sirens starter</description>
+    </item>
+    
+    <item>
+      <title>Rhythm and tuning</title>
+      <link>/3_audio/2_synthsandmusic/2_lesson_2/rhythm-and-tuning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/2_synthsandmusic/2_lesson_2/rhythm-and-tuning/</guid>
+      <description>View slidesTone-rhythm source
+ how do you match a rhythm and pitch array together?  const mariaDurations = [&#39;8n&#39;, &#39;8n&#39;, [&#39;2n&#39;, &#39;4n&#39;], &#39;8n&#39;, &#39;4t&#39;, &#39;4t&#39;, &#39;4t&#39;, &#39;4t&#39;, &#39;4t&#39;, &#39;4t&#39;, &#39;8n&#39;, [&#39;2n&#39;, &#39;4n&#39;], &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, [&#39;4n&#39;, &#39;8n&#39;], &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, &#39;4n&#39;, &#39;4n&#39;, [&#39;2n&#39;, &#39;4n&#39;, &#39;8n&#39;], &#39;8n&#39;, &#39;8n&#39;, [&#39;2n&#39;, &#39;4n&#39;], &#39;8n&#39;, &#39;4t&#39;, &#39;4t&#39;, &#39;4t&#39;, &#39;4t&#39;, &#39;4t&#39;, &#39;4t&#39;, &#39;8n&#39;, [&#39;2n&#39;, &#39;4n&#39;], &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, [&#39;4n&#39;, &#39;8n&#39;], &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, &#39;8n&#39;, &#39;4n&#39;, &#39;4n&#39;, [&#39;2n&#39;, &#39;4n&#39;, &#39;8n&#39;]]; const mariaPitches = [&amp;quot;Eb4&amp;quot;, &amp;quot;A4&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;Eb4&amp;quot;, &amp;quot;A4&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;C5&amp;quot;, &amp;quot;A4&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;C5&amp;quot;, &amp;quot;A4&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;A4&amp;quot;, &amp;quot;G4&amp;quot;, &amp;quot;F4&amp;quot;, &amp;quot;Eb4&amp;quot;, &amp;quot;F4&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;Ab4&amp;quot;, &amp;quot;G4&amp;quot;, &amp;quot;F4&amp;quot;, &amp;quot;Eb4&amp;quot;, &amp;quot;F4&amp;quot;, &amp;quot;Eb4&amp;quot;, &amp;quot;G4&amp;quot;, &amp;quot;Eb4&amp;quot;, &amp;quot;A4&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;Eb4&amp;quot;, &amp;quot;A4&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;C5&amp;quot;, &amp;quot;A4&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;C5&amp;quot;, &amp;quot;D5&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;D5&amp;quot;, &amp;quot;Eb5&amp;quot;, &amp;quot;D5&amp;quot;, &amp;quot;C5&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;D5&amp;quot;, &amp;quot;D5&amp;quot;, &amp;quot;Eb5&amp;quot;, &amp;quot;D5&amp;quot;, &amp;quot;C5&amp;quot;, &amp;quot;Bb4&amp;quot;, &amp;quot;D5&amp;quot;, &amp;quot;Eb5&amp;quot;, &amp;quot;F5&amp;quot;];  option 1 - manually  {&amp;quot;time&amp;quot; : 0, &amp;quot;note&amp;quot; : &amp;quot;C3&amp;quot;, &amp;quot;velocity&amp;quot;: 0.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sampler with effects on Educational material for LSU Programming Digital Media</title>
+    <link>/3_audio/1_sampler/</link>
+    <description>Recent content in Sampler with effects on Educational material for LSU Programming Digital Media</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/3_audio/1_sampler/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WebAudio Basics &amp; Sound File Players</title>
+      <link>/3_audio/1_sampler/1_lesson_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/1_sampler/1_lesson_1/</guid>
+      <description>View slidesUnderstanding the Audio Signal Path Creating a Sound File Player  Playing Multiple Sounds with Tone.Players Instead of making multiple single-file soundfile players, we can build one Tone.Players instrument and load it with multiple soundfiles. To define which sounds to play we create an object with multiple file paths (done by opening a pair of { } brackets inside of the Tone.Players functions parenthesis), each with a unique name to call the sound up by later.</description>
+    </item>
+    
+    <item>
+      <title>Audio Effects</title>
+      <link>/3_audio/1_sampler/2_lesson_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/1_sampler/2_lesson_2/</guid>
+      <description>View slidesAudio effects are used to modulate and manipulate a sound source in order to create more experimental sonic results. Let&amp;rsquo;s learn how to start incorporating effects into our web project!
+Adding Audio Effects into the Signal Path In order to pass sound from our sound source into an audio effect, we need to complete the following steps:
+ Build our chosen audio effect, assign it to a variable, and connect its output to the master speakers (using the .</description>
+    </item>
+    
+    <item>
+      <title>Sound Assignment # 1 - Multiplayer with Effects and Controls</title>
+      <link>/3_audio/1_sampler/3_lesson_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/1_sampler/3_lesson_3/</guid>
+      <description>Here is an example of a solution for Sound Assignment # 1.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Synthesizers on Educational material for LSU Programming Digital Media</title>
+    <link>/3_audio/2_synthsandmusic/1_lesson_1/</link>
+    <description>Recent content in Synthesizers on Educational material for LSU Programming Digital Media</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/3_audio/2_synthsandmusic/1_lesson_1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Envelopes</title>
+      <link>/3_audio/2_synthsandmusic/1_lesson_1/envelopes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/2_synthsandmusic/1_lesson_1/envelopes/</guid>
+      <description>Enevelopes  Tone example   ADSR  Attack time is the time taken for initial run-up of level from nil to peak, beginning when the key is first pressed. Decay time is the time taken for the subsequent run down from the attack level to the designated sustain level. Sustain level is the level during the main sequence of the sound&amp;rsquo;s duration, until the key is released. Release time is the time taken for the level to decay from the sustain level to zero after the key is released.</description>
+    </item>
+    
+    <item>
+      <title>Filters</title>
+      <link>/3_audio/2_synthsandmusic/1_lesson_1/filters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/2_synthsandmusic/1_lesson_1/filters/</guid>
+      <description>Filters  A filter modifies a source sound by either amplifying or attenuating certain frequency ranges of that sound.   Filter types can include:  lowpass highpass bandpass lowshelf highshelf notch allpass peaking  </description>
+    </item>
+    
+    <item>
+      <title>Noise</title>
+      <link>/3_audio/2_synthsandmusic/1_lesson_1/noise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/2_synthsandmusic/1_lesson_1/noise/</guid>
+      <description>Noise  Tone.Noise produces different colors of noise. Each has a different sound, covers a different frequency range, and is used for different purposes. There are other colors of noise that tone doesn&amp;rsquo;t implement that are good to know about.   Most often used types  white brown pink   click left arrow for noise starter</description>
+    </item>
+    
+    <item>
+      <title>LFOs</title>
+      <link>/3_audio/2_synthsandmusic/1_lesson_1/lfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/2_synthsandmusic/1_lesson_1/lfo/</guid>
+      <description>LFO (Low Frequency Oscillator) starter</description>
+    </item>
+    
+    <item>
+      <title>Synthesizer tour</title>
+      <link>/3_audio/2_synthsandmusic/1_lesson_1/synth-tour/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_audio/2_synthsandmusic/1_lesson_1/synth-tour/</guid>
+      <description>View slidesGetting presets presets
+Simple Synths Synth Preset - Alien Synth   type
+ fatsine4  prefix the basic types with “fm”, “am”, or “fat” to use the FMOscillator, AMOscillator or FatOscillator types. sine, square, triangle, or sawtooth. number of partials      from FatOscillator docs
+ docs count  number of detuned oscillators   spread  detune spread between oscillators   The effect of modulation here is timbral not control    Example  Preset - Steelpan  type fatcustom  osc type + custom partials partials represented as an array each number is the gain of a partial      PolySynth  Make any synth polyphonic play more than one note at a time!</description>
+    </item>
+    
+  </channel>
+</rss>

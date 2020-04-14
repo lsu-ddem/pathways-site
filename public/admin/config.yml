@@ -1,0 +1,712 @@
+backend:
+  name: git-gateway
+  repo: lsu-ddem/pathways-site
+  branch: master # Branch to update (optional; defaults to master)
+  accept_roles: 
+    - admin 
+    - editor 
+
+media_folder: "/static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  # homepage 
+  - name: "homepage" 
+    label: "homepage" 
+    folder: "content" 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Unit 1 - Intro to coding 
+  - name: "Intro to Coding" 
+    label: "Intro to Coding" 
+    folder: "content/1_IntroToCoding" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Coding Basics    
+  - name: "Coding Basics" 
+    label: "Coding Basics" 
+    folder: "content/1_IntroToCoding/1_CodingBasics" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Getting Started" 
+    label: "Getting Started" 
+    folder: "content/1_IntroToCoding/1_CodingBasics/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Storing things in code" 
+    label: "Storing things in code" 
+    folder: "content/1_IntroToCoding/1_CodingBasics/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Everything is a number" 
+    label: "Everything is a number" 
+    folder: "content/1_IntroToCoding/1_CodingBasics/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+# Making Things Happen    
+  - name: "making Things Happen" 
+    label: "making Things Happen" 
+    folder: "content/1_IntroToCoding/2_MakingThings_Happen" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Computers Making Choices" 
+    label: "Computers Making Choices" 
+    folder: "content/1_IntroToCoding/2_MakingThings_Happen/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Making Groups and Lists" 
+    label: "Making Groups and Lists" 
+    folder: "content/1_IntroToCoding/2_MakingThings_Happen/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Do it again" 
+    label: "Do it again" 
+    folder: "content/1_IntroToCoding/2_MakingThings_Happen/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Reuse it with modular code   
+  - name: "Reuse it with modular code" 
+    label: "Reuse it with modular code" 
+    folder: "content/1_IntroToCoding/3_ReuseItWithModularCode" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Code that does a thing" 
+    label: "Code that does a thing" 
+    folder: "content/1_IntroToCoding/3_ReuseItWithModularCode/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Code that is a thing" 
+    label: "Code that is a thing" 
+    folder: "content/1_IntroToCoding/3_ReuseItWithModularCode/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Unit 2 - Graphics  
+  - name: "Graphics" 
+    label: "Graphics" 
+    folder: "content/2_Graphics" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Procedural Drawing    
+  - name: "Procedural Drawing" 
+    label: "Procedural Drawing" 
+    folder: "content/2_Graphics/1_ProceduralDrawing" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Procedural Drawing - Lesson 1" 
+    label: "Procedural Drawing - Lesson 1" 
+    folder: "content/2_Graphics/1_ProceduralDrawing/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Procedural Drawing - Lesson 2" 
+    label: "Procedural Drawing - Lesson 2" 
+    folder: "content/2_Graphics/1_ProceduralDrawing/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Procedural Drawing - Lesson 3" 
+    label: "Procedural Drawing - Lesson 3" 
+    folder: "content/2_Graphics/1_ProceduralDrawing/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+# Paint app   
+  - name: "Paint App" 
+    label: "Paint App" 
+    folder: "content/2_Graphics/2_PaintApp" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Paint App - Lesson 1" 
+    label: "Paint App - Lesson 1" 
+    folder: "content/2_Graphics/2_PaintApp/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Paint App - Lesson 2" 
+    label: "Paint App - Lesson 2" 
+    folder: "content/2_Graphics/2_PaintApp/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Paint App - Lesson 3" 
+    label: "Paint App - Lesson 3" 
+    folder: "content/2_Graphics/2_PaintApp/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Bug Squish    
+  - name: "Bug Squish" 
+    label: "Bug Squish" 
+    folder: "content/2_Graphics/3_BugSquish" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Bug Squish - Lesson 1" 
+    label: "Bug Squish - Lesson 1" 
+    folder: "content/2_Graphics/3_BugSquish/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Bug Squish - Lesson 2" 
+    label: "Bug Squish - Lesson 2" 
+    folder: "content/2_Graphics/3_BugSquish/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Bug Squish - Lesson 3" 
+    label: "Bug Squish - Lesson 3" 
+    folder: "content/2_Graphics/3_BugSquish/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Graphics Assignment 3 - Bugsquish game" 
+    label: "Graphics Assignment 3 - Bugsquish game" 
+    folder: "content/2_Graphics/3_BugSquish/4_Lesson_4" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Unit 3 - Audio  
+  - name: "Audio" 
+    label: "Audio" 
+    folder: "content/3_Audio" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+  # Sampler    
+  - name: "Sampler" 
+    label: "Sampler" 
+    folder: "content/3_Audio/1_Sampler" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Sampler - Lesson 1" 
+    label: "Sampler - Lesson 1" 
+    folder: "content/3_Audio/1_Sampler/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sampler - Lesson 2" 
+    label: "Sampler - Lesson 2" 
+    folder: "content/3_Audio/1_Sampler/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sampler - Lesson 3" 
+    label: "Sampler - Lesson 3" 
+    folder: "content/3_Audio/1_Sampler/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+# Synths And Music   
+  - name: "Synths And Music" 
+    label: "Synths And Music" 
+    folder: "content/3_Audio/2_SynthsAndMusic" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Synths And Music - Lesson 1" 
+    label: "Synths And Music - Lesson 1" 
+    folder: "content/3_Audio/2_SynthsAndMusic/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Synths And Music - Lesson 2" 
+    label: "Synths And Music - Lesson 2" 
+    folder: "content/3_Audio/2_SynthsAndMusic/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Synths And Music - Lesson 3" 
+    label: "Synths And Music - Lesson 3" 
+    folder: "content/3_Audio/2_SynthsAndMusic/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Sounds in Bug Squish    
+  - name: "Sounds in Bug Squish" 
+    label: "Sounds in Bug Squish" 
+    folder: "content/3_Audio/3_SoundsInBugSquish" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Sounds in Bug Squish - Lesson 1" 
+    label: "Sounds in Bug Squish - Lesson 1" 
+    folder: "content/3_Audio/3_SoundsInBugSquish/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sounds in Bug Squish - Lesson 2" 
+    label: "Sounds in Bug Squish - Lesson 2" 
+    folder: "content/3_Audio/3_SoundsInBugSquish/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sounds in Bug Squish - Lesson 3" 
+    label: "Sounds in Bug Squish - Lesson 3" 
+    folder: "content/3_Audio/3_SoundsInBugSquish/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Unit 4 - Physical computing   
+  - name: "Physical Computing" 
+    label: "Physical Computing" 
+    folder: "content/4_PhysicalComputing" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+  # Digital IO    
+  - name: "Digital IO" 
+    label: "Digital IO" 
+    folder: "content/4_PhysicalComputing/1_Digital_IO" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Digital IO - Lesson 1" 
+    label: "Digital IO - Lesson 1" 
+    folder: "content/4_PhysicalComputing/1_Digital_IO/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Digital IO - Lesson 2" 
+    label: "Digital IO - Lesson 2" 
+    folder: "content/4_PhysicalComputing/1_Digital_IO/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Digital IO - Lesson 3" 
+    label: "Digital IO - Lesson 3" 
+    folder: "content/4_PhysicalComputing/1_Digital_IO/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+# Analog IO   
+  - name: "Analog IO" 
+    label: "Analog IO" 
+    folder: "content/4_PhysicalComputing/2_Analog_IO" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Analog IO - Lesson 1" 
+    label: "Analog IO - Lesson 1" 
+    folder: "content/4_PhysicalComputing/2_Analog_IO/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Analog IO - Lesson 2" 
+    label: "Analog IO - Lesson 2" 
+    folder: "content/4_PhysicalComputing/2_Analog_IO/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Analog IO - Lesson 3" 
+    label: "Analog IO - Lesson 3" 
+    folder: "content/4_PhysicalComputing/2_Analog_IO/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Sounds in Bug Squish    
+  - name: "Serial Communication" 
+    label: "Serial Communication" 
+    folder: "content/4_PhysicalComputing/3_SerialCommunication" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Serial Communication - Lesson 1" 
+    label: "Serial Communication - Lesson 1" 
+    folder: "content/4_PhysicalComputing/3_SerialCommunication/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Serial Communication - Lesson 2" 
+    label: "Serial Communication - Lesson 2" 
+    folder: "content/4_PhysicalComputing/3_SerialCommunication/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Serial Communication - Lesson 3" 
+    label: "Serial Communication - Lesson 3" 
+    folder: "content/4_PhysicalComputing/3_SerialCommunication/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Unit 5 - Integrations Project   
+  - name: "Integrations Project" 
+    label: "Integrations Project" 
+    folder: "content/5_IntegrationProject" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+  # Proposal    
+  - name: "Proposal" 
+    label: "Proposal" 
+    folder: "content/5_IntegrationProject/1_Proposal" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Proposal - Lesson 1" 
+    label: "Proposal - Lesson 1" 
+    folder: "content/5_IntegrationProject/1_Proposal/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Proposal - Lesson 2" 
+    label: "Proposal - Lesson 2" 
+    folder: "content/5_IntegrationProject/1_Proposal/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Proposal - Lesson 3" 
+    label: "Proposal - Lesson 3" 
+    folder: "content/5_IntegrationProject/1_Proposal/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+ 
+# Project   
+  - name: "Project" 
+    label: "Project" 
+    folder: "content/5_IntegrationProject/2_Project" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Project - Lesson 1" 
+    label: "Project - Lesson 1" 
+    folder: "content/5_IntegrationProject/2_Project/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Project - Lesson 2" 
+    label: "Project - Lesson 2" 
+    folder: "content/5_IntegrationProject/2_Project/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Project - Lesson 3" 
+    label: "Project - Lesson 3" 
+    folder: "content/5_IntegrationProject/2_Project/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Documentation    
+  - name: "Documentation" 
+    label: "Documentation" 
+    folder: "content/5_IntegrationProject/3_Documentation" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Documentation - Lesson 1" 
+    label: "Documentation - Lesson 1" 
+    folder: "content/5_IntegrationProject/3_Documentation/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Documentation - Lesson 2" 
+    label: "Documentation - Lesson 2" 
+    folder: "content/5_IntegrationProject/3_Documentation/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Documentation - Lesson 3" 
+    label: "Documentation - Lesson 3" 
+    folder: "content/5_IntegrationProject/3_Documentation/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+# Presentation
+  - name: "Presentation" 
+    label: "Presentation" 
+    folder: "content/5_IntegrationProject/4_Presentation" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}    
+
+  # Lessons 
+  - name: "Presentation - Lesson 1" 
+    label: "Presentation - Lesson 1" 
+    folder: "content/5_IntegrationProject/4_Presentation/1_Lesson_1" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Presentation - Lesson 2" 
+    label: "Presentation - Lesson 2" 
+    folder: "content/5_IntegrationProject/4_Presentation/2_Lesson_2" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Presentation - Lesson 3" 
+    label: "Presentation - Lesson 3" 
+    folder: "content/5_IntegrationProject/4_Presentation/3_Lesson_3" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}     
+
+  # Resources 
+  - name: "Resources - Basic Javascript" 
+    label: "Resources - Basic Javascript" 
+    folder: "content/6_Resources/1_BasicJavascript" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - Variables" 
+    label: "Resources - Variables" 
+    folder: "content/6_Resources/2_Variables" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - Loops" 
+    label: "Resources - Loops" 
+    folder: "content/6_Resources/3_Loops" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - p5 and Drawing" 
+    label: "Resources - p5 and Drawing" 
+    folder: "content/6_Resources/4_p5andDrawing" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - Basic Shapes" 
+    label: "Resources - Basic Shapes" 
+    folder: "content/6_Resources/5_BasicShapes" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources -  Text" 
+    label: "Resources -  Text" 
+    folder: "content/6_Resources/6_Text" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - Sound and Music" 
+    label: "Resources - Sound and Music" 
+    folder: "content/6_Resources/7_SoundandMusic" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
+  - name: "Resources - Arduino" 
+    label: "Resources - Arduino" 
+    folder: "content/6_Resources/8_Arduino" 
+    create: true 
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
