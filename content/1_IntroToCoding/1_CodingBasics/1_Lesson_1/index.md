@@ -65,7 +65,7 @@ When making our code, there are a few different kinds of data that we will use i
 
 Integer Numbers: These are whole numbers that you can type into your code. A few examples of this are the numbers that come up in the default P5 patch. 400 and 220 are both integer numbers. These are used for setting pixel locations on the canvas and other similar processes.
 
-!{default}(images/graphics/p5default.png)
+!{default}(/images/graphics/p5default.png)
 
 Floating Point Numbers: These numbers have a decimal point value attached to it. Some functions will require floats as arguments, or output them as results.  58.459, and 3.141592654359 are both examples of Floating Point Numbers.
 
