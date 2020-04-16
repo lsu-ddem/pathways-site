@@ -7,6 +7,8 @@ Let's get started! In this first example, we'll cover the basics of text-based c
 
 Head to the [P5.js Web Editor](http://alpha.editor.p5js.org/), sign up for a personal account, and open a new File. You'll be presented with a new editor window that displays the code found in your "sketch.js" file. The P5 Web Editor starts you off with some basic code that is needed to create a blank, grey canvas.
 
+![default](/images/graphics/p5default.png)
+
 You can also edit and read the code found in your project's HTML and CSS files by clicking on the arrow found near the upper lefthand corner of the editor panel:
 
 ![](/images/uploads/screen-shot-2018-05-28-at-11.55.32-am.png)
@@ -17,7 +19,9 @@ And then clicking on the files that are listed:
 
 ![](/images/uploads/screen-shot-2018-05-28-at-11.57.41-am.png)
 
-As we discussed, we will mainly be coding inside of the "sketch.js" file, so the P5 Web Editor presents this file to you automatically when a new File is created.
+As we discussed, we will mainly be coding inside of the "sketch.js" file, so the P5 Web Editor presents this file to you automatically when a new project is created.
+
+The other two files, HTML and CSS, have different functions that let the js file work efficiently. On a general level, the HTML file is the foundation that the code is built on. It tells the program where to find various resources and how to structure all of those resources. The CSS file is used for changing the appearance of various on-screen elements. Later in the course we will dive into the HTML file, but won't be getting too much into the CSS as much.
 
 ## Functions
 
@@ -65,7 +69,7 @@ When making our code, there are a few different kinds of data that we will use i
 
 Integer Numbers: These are whole numbers that you can type into your code. A few examples of this are the numbers that come up in the default P5 patch. 400 and 220 are both integer numbers. These are used for setting pixel locations on the canvas and other similar processes.
 
-!{default}(/images/graphics/p5default.png)
+![default](/images/graphics/p5default.png)
 
 Floating Point Numbers: These numbers have a decimal point value attached to it. Some functions will require floats as arguments, or output them as results.  58.459, and 3.141592654359 are both examples of Floating Point Numbers.
 
