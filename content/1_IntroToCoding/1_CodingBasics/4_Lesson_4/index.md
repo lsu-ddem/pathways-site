@@ -68,4 +68,4 @@ The embedded code below shows this process in action. Notice how we are reassign
 
 {{% codepen 400 mKmxPR%}}
 
-If you want to slow down the speed of the square's travel, call the `frameRate( )` function in your **setup( )** block and give it a number that is less than 60 in order to slow down the looping rate of the **draw( )** block.
+If you want to slow down the speed of the square's travel, call the `frameRate( )` function in your **setup( )** block and give it a number that is less than 60 in order to slow down the looping rate of the **draw( )** block. Adjusting this system variable will change how many times the **draw()** function loops per second.

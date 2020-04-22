@@ -36,13 +36,20 @@ In the embedded code below, our loop draws multiple lines. The variable i is dec
 
 {{% codepen 400 KemQoy %}}
 
+Because we are using the variable created in the for loop `i` as a variable for drawing our shapes, we are able to see the repeated pattern on the canvas. Without this, we would instead see, or not see, multiple copies of the lines drawn exactly on top of each other. 
+
+A for loop will run its test and display the results as fast as possible by your computer's hardware, unlike functions like **draw()** that will run at a relatively slower 60 times per second. 
+ 
+
 ## Relational Expressions and their Operators
+
+When designing for loops the logic behind the initial test is crucial. We can use the same operators as we did with conditional statements, but the consequences of having an incorrectly formatted test are much greater with for loops. In conditionals, if a test cannot pass, the conditional statement will never happen. However, in for loops, you have to design a test that will start as `true` and eventually become `false`. In the previous example the variable `i` began at the value 20 and was incresed by 8 until it was no longer less than 400. the variable passing this threshold is what stops the value. If the wrong symbol had been used and the line read `let i = 20; i < 400; i = i - 8` then i would be continually reduced and since it would never be greater than 400, the loop would never stop. This woud effectively lock up your computer and you woul dhave no choice but to close the tab, and possibly the entire browowser before you could access your code again, effectively loosing any work from the last time you saved. Different combinations of errors will result in other errors such as the for loop never beginning, or the results being skewed from what is expected, but these are not as serious and can usually be remedied by fixing the conditions of your for loop.
 
 | Operator | Expression               |
 | -------- | ------------------------ |
 | \>       | Greater than             |
 | <        | Less than                |
-| ==       | Equal to                 |
+| ===      | Is equal to              |
 | \>=      | Greater than or equal to |
 | <=       | Less than or equal to    |
 | !=       | Not equal to             |
@@ -55,6 +62,8 @@ Here are some examples of projects that use for loops to create complex designs.
 <br>
 
 {{% codepen 500 NzjyLg %}} 
+
+One way to think about for loops is that they behave like an super-powerful conditional statement: You create a test, and the loop will run for as long as the test result is `true`, just like a conditional statement. The main difference is that you are now creating a set of rules for how many times your test can repeat itself before it automatically stops.  
 
 ## Nested For Loops
 

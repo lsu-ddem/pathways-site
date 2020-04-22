@@ -42,17 +42,17 @@ When working in the p5 Web Editor, every new project you create will inherently 
 
 Throughout our projects, we will be using a variety of different data types in our code. Here is a quick explanation of common data types used in JavaScript:
 
-* **Number:** a value represented by numerical digits. Numbers can be floats or integers. Large numbers over three digits should not include a comma as they normally would in the written word (e.g. 1,000 should be 1000 in your code).
+* **Number:** a value represented by numerical digits. Numbers can be floats or integers. A float, or floating point number, is just a number with numbre with a decimal value, not a whole number integer. Large numbers over three digits should not include a comma as they normally would in the written word (e.g. 1,000 should be 1000 in your code).
 * **String:** a value represented by text and characters (including spaces), commonly enclosed in a pair of quotation marks (e.g. "blue", "duckling", "Type Any Word Here!"
-* **Boolean:** a logical entity represented through the states of `true` or `false`.
+* **Boolean:** a logical entity represented through the states of `true` or `false`. Boolean values can also be represented as `1` or `0` in specific scsenarios.
 
 ## Coding with Proper Syntax
 
 When coding in a text-based language such as JavaScript, it's important to follow some basic rules of syntax so that your computer can properly render your project without errors. In many cases, an error will cause your entire project to not work, or at the very least, large portions of it. Learning to follow some simple techniques from the start will help cut down on time spent debugging and troubleshooting:
 
-* Symbols such as braces—{ , [ ,—and parenthesis are always used in pairs. Open and closed braces and parenthesis are used to enclose data that is being used for a specific purpose, and forgetting to match open and closed symbols can lead to common errors. For example: in the embedded code above, the phrase `createCanvas()` is followed by a pair of parenthesis containing a set of numbers. If we edited that line of code and removed one of those parenthesis, our browser or code editor would give us an error in our Console (more on this below), and the code would not run beyond that line.
-* Capitalization is crucial when coding, and words/phrases must use the same capitalization when they are used more than once. For instance, the words "pecan" and "Pecan" are close enough to be understood as the same entity when reading them in this sentence, but to a computer, they are considered to be two completely different things. If the word "pecan", starting with a lower case "p", is used to represent something crucial in your code, you will need to type it exactly the same way each time you need to reference it.
-* Good code includes comments or short explanations of any complex elements involved so that others can learn from your work. This is also helpful to keep track of how your code works so that you can pinpoint exact lines or sections that may need to be fixed. To leave comments in your JS file, add two / symbols before the comment you want to type:
+* Symbols such as braces—{ , [ ,—and parenthesis are always used in pairs. Open and closed braces and parenthesis are used to enclose data that is being used for a specific purpose, and forgetting to match open and closed symbols can lead to common errors. For example: in the embedded code above, the phrase `createCanvas()` is followed by a pair of parenthesis containing a set of numbers. If we edited that line of code and removed one of those parenthesis, our browser or code editor would give us an error in our Console (more on this below), and the code would not run beyond that line. Unlike some code editors, P5 does not automacally provide the closing brace, so to help avoid errors, try and practice typing both the open and close together, and then fill in the data that goes inside.
+* Capitalization is crucial when coding, and words/phrases must use the same capitalization when they are used more than once. For instance, the words "pecan" and "Pecan" are close enough to be understood as the same entity when reading them in this sentence, but to a computer, they are considered to be two completely different things. If the word "pecan", starting with a lower case "p", is used to represent something crucial in your code, you will need to type it exactly the same way each time you need to reference it. Because `P` is a different character than `p`, the computer will not be able to make the connection , and be unable to locate items that are spelled differently. 
+* Good code includes comments or short explanations of any complex elements involved so that others can learn from your work. This is also helpful to keep track of how your code works so that you can pinpoint exact lines or sections that may need to be fixed. When in doubt, always add comments into your codes. To leave comments in your JS file, add two / symbols before the comment you want to type:
 
 
 ```
@@ -67,6 +67,7 @@ a multi-line
 comment. Neat!
 */
 ```
+
 
 ## Using the Console
 
