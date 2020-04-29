@@ -6,11 +6,18 @@ weight: 2
 
 There are a number of ways to set the color of objects, shapes, backgrounds, and outlines in p5.js. With the exception of stroke outlines (which uses the `stroke()` function) and canvas backgrounds (which uses the `background()` function), we will use the `fill()` function to add color to things that we draw.
 
-{{% notice warning %}}
 
-The `fill()`function works like a paint can resting on top of a ladder: when it tips over, it will change the color of everything below it. Since our code is read top to bottom, calling the `fill()` function before calling any shape functions will set the color of all shapes drawn from that point forward. To change the color of a specific shape, you will need to call the `fill()` function again immediately before the function that draws that shape.
 
-{{% /notice %}}
+The `fill()` function works like a paint can resting on top of a ladder: when it tips over, it will change the color of everything below it. Since our code is read top to bottom, calling the `fill()` function before calling any shape functions will set the color of all shapes drawn from that point forward. To change the color of a specific shape, you will need to call the `fill()` function again immediately before the function that draws that specific shape. The example below is what your code needs to look like in order to have multiple shapes with unique colors.
+
+```
+fill("lightGreen");
+ellipse(12, 36, 78, 90);
+fill("blue")
+rect(100, 68, 4, 19);
+```
+
+
 
 ### Setting Color with fill( )
 
@@ -21,7 +28,9 @@ fill("lightGreen");
 ellipse(12, 36, 78, 90);
 ```
 
-We can also use numbers as arguments in order to create very specific color shades. We do this by balancing red, green, and blue values. Start by designing a color shade using a tool such as an [RGB Color Calculator](https://www.w3schools.com/colors/colors_rgb.asp) to find the shade you'd like to use. Once you pick your shade, you'll notice the color's red, green, and blue values represented as three discrete number values between 0 and 255:
+The colors that are strings are defined within the core of P5 and your web browser, so they cannot be changed. using [these](https://searchwindevelopment.techtarget.com/definition/136-browser-colors-with-names) pre-created colors is benificial for quick codes, but lack any degree of customization. Using RGB or Hexadecimal color codes as arguments can allow us to specify our intended colors with a much finer level of detail.
+
+We can utilize a collection of three numbers as arguments in P5's color related funcitons in order to create very specific color shades. We do this by balancing amount of red, green, and blue present in the color. You can start by designing a color shade using a tool such as an [RGB Color Calculator](https://www.w3schools.com/colors/colors_rgb.asp) to find the shade you'd like to use. Once you pick your shade, you'll notice the color's red, green, and blue values (R,G,B) represented as three integer number values between 0 and 255:
 
 ![](/images/uploads/screen-shot-2019-05-24-at-10.14.00-am.png "RGB Color Calculator example")
 
@@ -31,11 +40,15 @@ We can now add these values in order (R,G,B) as three arguments when we call the
 fill(186, 132, 135); //rose color
 ```
 
-We can also pass three or six digit hex code colors into the `fill()` function, but they need to be passed in as a string.
+By increasing one of these numbers, you increase the amount of red, green, or blue (respectively) in your color. 0 would be none of a color, and 255 would be as much as possible. Having a value outside of this range will cause P5 to default to the closest value that the program can process (either 0 or 255)
+
+We can also pass three or six digit hex code colors into the `fill()` function, but they need to be passed in as a **string**.
 
 ```
 fill('#222222'); //dark grey color
 ```
+
+These hex code colors are binary representations of various combinations of red, green, and blue, and are a different representation of the same values we discussed with RGB color codes. Because each of the three colors have 256 total potential values, there is a possibilty of over 16 million discrete color combinations usilizing these codes; a much larger range of possibilites than the approximately 140 colors identifyable via preset strings. 
 
 One of the benefits of setting color through RGB values is that you can easily change one or more values in realtime by replacing fixed values with variables. The code below demonstrates all of the previously discussed methods of setting color with the `fill()`function as well as demonstrating the process of changing color values through interaction:
 
@@ -57,11 +70,11 @@ var roseColor = color(186, 132, 135);
 fill(roseColor); 
 ```
 
-{{% notice tip %}}
+
 
 The difference between `fill()` and `color()` is that **fill( )** sets the color of an object whereas **color( )** actually generates a color out of hexcode or RGB values. There are benefits and downsides to using either of them, and which one you use may depend on your specific project needs. To learn more about their differences, head to the [p5.js Reference Page](https://p5js.org/reference/#group-Color).
 
-{{% /notice %}}
+
 
 ## Grayscale and Transparency
 
@@ -69,6 +82,10 @@ When using RGB color values, we will need to use one discrete value to represent
 
 {{% codepen 500 BerGxj %}}
 
-We can also control the transparency value of a color by adding in an **alpha value**. For RGB colors, the alpha is represented as a number between 0 (completely transparent) and 255 (fully opaque) and passed in as a fourth argument to `fill()` or `color()`. For transparent grayscale colors, we can add the alpha value as the second argument. The code below demonstrates how transparent colors can be used in a project for realtime color blending:
+The default P5 patch utilizes this color scheme by setting the `background(220)` line inside of the draw() function. the results are a slightly off-white acnvas by default.
+
+We can also control the transparency value of a color by adding in an **alpha value**. For RGB colors, the alpha is represented as a number between 0 (completely transparent) and 255 (fully opaque) and passed in as a fourth, optional argument to `fill()` or `color()`. For transparent grayscale colors, we can add the alpha value as the second argument. The code below demonstrates how transparent colors can be used in a project for realtime color blending:
 
 {{% codepen 600 YbaRbK %}}
+
+Notice how the shapes with this alpha value added can now be seen through. This can be useful for various drawing and interactive purposes in our projects later on.
