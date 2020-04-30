@@ -4,7 +4,7 @@ weight: 4
 ---
 Adding mathematical calculations to our code allows us to create projects that intelligently adapt to changes and change on their own. We can also use math equations to create basic animations and cycles of change for any element in our project.
 
-Many of the same mathematical operators that we commonly encounter in the world are used in JavaScript, but there are some exceptions. Here is a quick chart of common math operations and their equivalent symbols in JavaScript: 
+Many of the same mathematical operators that we commonly encounter in the world are used in JavaScript, but there are some exceptions. Here is a quick chart of common math operations and their equivalent symbols in JavaScript:
 
 | Symbol | Operation      |
 | ------ | -------------- |
@@ -54,7 +54,7 @@ Once you are comfortable with the process of adding to or subtracting from a var
 
 ## Cyclical Animations with Modulo
 
-In order to have a cyclical animation pattern, we would need to produce a cycling series of numbers and use that cycle as position data for our shape. There are very few processes in p5.js that loop in a cyclical fashion, so we'll need to get creative with how we create one. 
+In order to have a cyclical animation pattern, we would need to produce a cycling series of numbers and use that cycle as position data for our shape. There are very few processes in p5.js that loop in a cyclical fashion, so we'll need to get creative with how we create one.
 
 Read [this article](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic) on a mathematical process known as modular arithmetic. Using the modulo operator (%), we can take a series of increasing numbers and divide them by a fixed number (the modulus) in order to create a pattern of repeating numbers.  Lets tap into the power of the looping **draw( )** block and use the **frameCount** variable (which updates to provide the current count of **draw( )** block loops) as our dividend. Mathematically, it looks like this:
 
@@ -64,7 +64,7 @@ Current Frame Count % Total Number of Pixels We Want to Move =  _Cyclical Patter
 Number sequences produced by this method will always start at zero and end at a number that is **one less than the modulus**. Therefor, you'll want to use a modulus that is one number greater than the position location you want your shape to reach. For example, if you want a shape to move between X location 0 and X location 415, you'll need to use a modulus of 416.
 {{% /notice %}}
 
-The embedded code below shows this process in action. Notice how we are reassigning the value inside of the **rectX** variable to be the result of **frameCount** mod 300. This produces a repeating pattern between 0 and 299 (one less than the modulus). The rest of the code draws a new purple square at each new updated position, traveling to position 299 on the X axis before teleporting back to 0. 
+The embedded code below shows this process in action. Notice how we are reassigning the value inside of the **rectX** variable to be the result of **frameCount** mod 300. This produces a repeating pattern between 0 and 299 (one less than the modulus). The rest of the code draws a new purple square at each new updated position, traveling to position 299 on the X axis before being teleported back to 0.
 
 {{% codepen 400 mKmxPR%}}
 
