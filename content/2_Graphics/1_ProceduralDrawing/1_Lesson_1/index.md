@@ -31,7 +31,7 @@ Each shape function requires a different set of arguments to be added when calle
   * Be default, p5.js requires radians (PI, QUARTER_PI, etc.) to be used for the fifth and sixth arguments of `arc( )` but it is a bit easier to use degrees (0-360). In order to use degrees instead, call `angleMode(DEGREES)`before calling your `arc( )`function and p5.js will convert the fifth and sixth arguments properly.
     * Example: `calling arc(120, 15, 60, 60, 90, 270)` draws a half circle split vertically, with its center located at 120 X & 15 Y, 60 pixels wide and 60 pixels tall (if the entire circle was drawn), with a perimeter that starts at 90 degrees and extends counterclockwise stopping at 270 degrees.
   * By default, arcs are left "open" when drawn. To add a stroke outline to the flat edges of an arc (to the shape's center), add the word **_PIE_** as an optional seventh argument to the `arc()`function creating a pie-graph shape.
-  * There are a total of three options for the arc's optional seventh argument. In addition to **_PIE_**, the argument **_CHORD_** connects the connects the edges of the arc with a straight line that aavoids the center of the shape. **_OPEN_** resets the arc to its default settings.
+  * There are a total of three options for the arc's optional seventh argument. In addition to **_PIE_**, the argument **_CHORD_** connects the connects the edges of the arc with a straight line that avoids the center of the shape. **_OPEN_** resets the arc to its default settings.
 
 An example of these four basic shapes can be found in the code below. Try changing some of the arguments to see how this modifies the shape's location or appearance:
 
@@ -61,4 +61,4 @@ The following code shows two custom shapes drawn using the `beginShape()`, `endS
 
 {{% codepen 500 dEmKre %}}
 
-These shape functions can be used in favious repetitions and combinations within P5 to create a near limitless variety of images, however this is not an exaustive list of all availble functions. Depending on the context of a particular assignment or your [Final Integration Project](https://pdm.lsupathways.org/5_integrationproject/) you may need to utilize additional drawing functionality. Be sure to look at the [P5 Refrence](https://p5js.org/reference/) material for detailed information on these and other functions within P5.
+These shape functions can be used in various repetitions and combinations within P5 to create a near limitless variety of images, however this is not an exhaustive list of all available functions. Depending on the context of a particular assignment or your [Final Integration Project](https://pdm.lsupathways.org/5_integrationproject/) you may need to utilize additional drawing functionality. Be sure to look at the [P5 Reference](https://p5js.org/reference/) material for detailed information on these and other functions within P5.

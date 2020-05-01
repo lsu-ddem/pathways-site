@@ -2,7 +2,7 @@
 title: 'Graphics Assignment # 1 - Recreate Four Images'
 weight: 3
 ---
-By this point you should be starting to develop a familiarity with P5, Javascript, and how computers process information. Below are a series of four different images generated from P5 code. This assignment is designed to test your ability to place the various shapes mentioned in the first section of this unit, as well as your understanding of the color concepts from the last page. To do this, open a new P5 project and recreate the images shown as accurately as possible. (for a total of 4 seperate code)
+By this point you should be starting to develop a familiarity with P5, Javascript, and how computers process information. Below are a series of four different images generated from P5 code. This assignment is designed to test your ability to place the various shapes mentioned in the first section of this unit, as well as your understanding of the color concepts from the last page. To do this, open a new P5 project and recreate the images shown as accurately as possible. (for a total of 4 separate code)
 
 Be sure to consider the following for each image:
 

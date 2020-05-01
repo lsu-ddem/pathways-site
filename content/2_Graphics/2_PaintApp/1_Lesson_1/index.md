@@ -12,7 +12,7 @@ The process of tracking and reacting to mouse clicks on objects will becomes eas
 
 ## Stationary Shape Measurements
 
-The logic involved with determining the boundries of various shapes is relatively similar even if a shape is moving across the canvas. However, since it is easier to test that your code is functioning properly when the target isn't moving across te screen, lets begin with stationary shapes.
+The logic involved with determining the boundaries of various shapes is relatively similar even if a shape is moving across the canvas. However, since it is easier to test that your code is functioning properly when the target isn't moving across te screen, lets begin with stationary shapes.
 
 ### Squares and Rectangles
 
@@ -41,7 +41,7 @@ Try modifying this code by removing the "mouseIsPressed" portion of the test. Th
 
 You'll notice that the individual greater than/lesser than tests in the example above are incased inside of parenthesis pairs. This is done in order to make out code look cleaner and to make each portion of this multi-portion test easier to identify. Be careful to count your individual symbols and not leave out the essential parenthesis that forms the if ( ) test format!
 
-As you will see later on, the idea of measuring the boundry of a rectangle is important to several upcoming concepts and assignments. Be sure to take the time to go through all of the codes provided to make sure you have a solid understanding of te concept.
+As you will see later on, the idea of measuring the boundary of a rectangle is important to several upcoming concepts and assignments. Be sure to take the time to go through all of the codes provided to make sure you have a solid understanding of te concept.
 
 
 ### Circles
@@ -68,7 +68,7 @@ To accomplish this, we can use p5.js' `dist()` function. This function lets us p
 
 Because the radius is half of the diameter, a value we need to draw the circle, we can simply calculate the value of r by dividing our `circleDiam` value by 2. Then we need to continually check the distance between the mouse's location on the canvas and the center of our circle. By storing this distance in a variable (that updates every time the mouse moves) we can compare this value with our radius and determine when the circle's threshold has been crossed.
 
-Remeber that you are not interacting directly with the shape that is visible on the canvas. in reality an invisivlble boundry is being set up that (intentionally) matches the measurements of our shapes. Try commenting out the `rect()` or `ellipse()` functions in any of these codes (leave everything else) and you will see that they still functionif you click where the shape is no longer being drawn.
+Remember that you are not interacting directly with the shape that is visible on the canvas. in reality an invisible boundary is being set up that (intentionally) matches the measurements of our shapes. Try commenting out the `rect()` or `ellipse()` functions in any of these codes (leave everything else) and you will see that they still function if you click where the shape is no longer being drawn.
 
 ## Moving Shape Measurements
 
@@ -76,4 +76,4 @@ The techniques learned above will also work for shapes that are moving across th
 
 {{% codepen 500 vwjWEa %}}
 
-Notice how the shape parameters are all variables instead of being hardcoded like before. Because the logic is still the same, we can substitute and variety of values and achieve a consistant effect. This is why the shapes can move and still be measured. Try changing the variable values and you will see that the code still contains the same functionality. 
+Notice how the shape parameters are all variables instead of being hard-coded like before. Because the logic is still the same, we can substitute and variety of values and achieve a consistent effect. This is why the shapes can move and still be measured. Try changing the variable values and you will see that the code still contains the same functionality. 

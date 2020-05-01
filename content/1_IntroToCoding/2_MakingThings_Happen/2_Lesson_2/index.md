@@ -30,7 +30,7 @@ Each value in an array is known as an _element_, and the position of that elemen
 
 {{% notice warning %}}
 
-Computers start counting at 0 instead of 1. Therefor, the first index in an array is known as the 0 index. If you have an array with 6 elements in it, their index numbers will be 0 through 5, not 1 through 6. If you accidentally try to refrence an element in an index that does not exist, you will recieve an error from your code editor. 
+Computers start counting at 0 instead of 1. Therefor, the first index in an array is known as the 0 index. If you have an array with 6 elements in it, their index numbers will be 0 through 5, not 1 through 6. If you accidentally try to reference an element in an index that does not exist, you will receive an error from your code editor. 
 {{% /notice %}}
 
 ## Cycling Through Elements in an Array

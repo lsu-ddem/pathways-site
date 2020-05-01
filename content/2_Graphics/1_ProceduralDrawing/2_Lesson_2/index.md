@@ -28,9 +28,9 @@ fill("lightGreen");
 ellipse(12, 36, 78, 90);
 ```
 
-The colors that are strings are defined within the core of P5 and your web browser, so they cannot be changed. using [these](https://searchwindevelopment.techtarget.com/definition/136-browser-colors-with-names) pre-created colors is benificial for quick codes, but lack any degree of customization. Using RGB or Hexadecimal color codes as arguments can allow us to specify our intended colors with a much finer level of detail.
+The colors that are strings are defined within the core of P5 and your web browser, so they cannot be changed. using [these](https://searchwindevelopment.techtarget.com/definition/136-browser-colors-with-names) pre-created colors is beneficial for quick codes, but lack any degree of customization. Using RGB or Hexadecimal color codes as arguments can allow us to specify our intended colors with a much finer level of detail.
 
-We can utilize a collection of three numbers as arguments in P5's color related funcitons in order to create very specific color shades. We do this by balancing amount of red, green, and blue present in the color. You can start by designing a color shade using a tool such as an [RGB Color Calculator](https://www.w3schools.com/colors/colors_rgb.asp) to find the shade you'd like to use. Once you pick your shade, you'll notice the color's red, green, and blue values (R,G,B) represented as three integer number values between 0 and 255:
+We can utilize a collection of three numbers as arguments in P5's color related functions in order to create very specific color shades. We do this by balancing amount of red, green, and blue present in the color. You can start by designing a color shade using a tool such as an [RGB Color Calculator](https://www.w3schools.com/colors/colors_rgb.asp) to find the shade you'd like to use. Once you pick your shade, you'll notice the color's red, green, and blue values (R,G,B) represented as three integer number values between 0 and 255:
 
 ![](/images/uploads/screen-shot-2019-05-24-at-10.14.00-am.png "RGB Color Calculator example")
 
@@ -48,7 +48,7 @@ We can also pass three or six digit hex code colors into the `fill()` function, 
 fill('#222222'); //dark grey color
 ```
 
-These hex code colors are binary representations of various combinations of red, green, and blue, and are a different representation of the same values we discussed with RGB color codes. Because each of the three colors have 256 total potential values, there is a possibilty of over 16 million discrete color combinations usilizing these codes; a much larger range of possibilites than the approximately 140 colors identifyable via preset strings. 
+These hex code colors are binary representations of various combinations of red, green, and blue, and are a different representation of the same values we discussed with RGB color codes. Because each of the three colors have 256 total potential values, there is a possibility of over 16 million discrete color combinations utilizing these codes; a much larger range of possibilities than the approximately 140 colors identifiable via preset strings. 
 
 One of the benefits of setting color through RGB values is that you can easily change one or more values in realtime by replacing fixed values with variables. The code below demonstrates all of the previously discussed methods of setting color with the `fill()`function as well as demonstrating the process of changing color values through interaction:
 
@@ -82,7 +82,7 @@ When using RGB color values, we will need to use one discrete value to represent
 
 {{% codepen 500 BerGxj %}}
 
-The default P5 patch utilizes this color scheme by setting the `background(220)` line inside of the draw() function. the results are a slightly off-white acnvas by default.
+The default P5 patch utilizes this color scheme by setting the `background(220)` line inside of the draw() function. the results are a slightly off-white canvas by default.
 
 We can also control the transparency value of a color by adding in an **alpha value**. For RGB colors, the alpha is represented as a number between 0 (completely transparent) and 255 (fully opaque) and passed in as a fourth, optional argument to `fill()` or `color()`. For transparent grayscale colors, we can add the alpha value as the second argument. The code below demonstrates how transparent colors can be used in a project for realtime color blending:
 

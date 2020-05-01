@@ -9,4 +9,3 @@ The upcoming assignment will be to recreate four images using p5. We have some e
 * Review of basic shapes
 * Introduction to more advanced and custom shapes
 * Color and transparency
-
