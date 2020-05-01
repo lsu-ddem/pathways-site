@@ -4,7 +4,7 @@ weight: '1'
 ---
 ## Including the p5.play Library
 
-More detailed information about how to include the P5.play library is available on the previous page. Summarized, the minimum steps needed to be able to utilize the code library are given below:
+A library is a collection of code that our editor can reference in order to achieve new results. This code contains new functions, objects, and other items that we can utilize to make our lives much easier.
 
 For p5.play.js to work in your sketch you need to include it in your HTML file. We can use the [jsDelivr](https://jsDelivr.com) website to generate a link to the P5.play library's github source code. This generated link is provided for you below.
 
@@ -14,12 +14,14 @@ Open your project-folder and find the index.html file. Add this line under the f
 <script src="https://cdn.jsdelivr.net/gh/molleindustria/p5.play/lib/p5.play.js"></script>
 ```
 
-One recommendation is to move everything from line **6** onward in the HTML file down by one space and then paste the line above onto the now empty line. This should keep all of the source elements properly formatted in the code. 
+One recommendation is to move everything from line **6** onward in the HTML file down by one space and then paste the line above onto the now empty line. This should keep all of the source elements properly formatted in the code.
 
-Once you have added this line, save your HTML file and head back to your "sketch.js" file. This loads p5.play.js in your sketch. At this point, it is _highly_ recommended that you duplicate your code and save it as a starting template for the remaining assignments in this course. Doing so will save you the time needed to continually return to this page to copy and insert the same link in every project that will require this library, and will ensure that the library is always present in your codes. To do so, simply name your current code `P5.play Starting Template` and then press file > duplicate. This will make an exact copy of your code. You can now edit the cope however you need without overwriting the original. You can open the original and create as many duplicates as you need, resulting in a large time saver over the entirety of this course.
+Once you have added this line, save your HTML file and head back to your "sketch.js" file. This loads p5.play.js in your sketch. At this point, it is _highly_ recommended that you duplicate your code and save it as a starting template for the remaining assignments in this course. Doing so will save you the time needed to continually return to this page to copy and insert the same link in every project that will require this library, and will ensure that the library is always present in your codes. To do so, simply name your current code `P5.play Starting Template` and then press file > duplicate. This will make an exact copy of your code. You can now edit the cope however you need without overwriting the original. You can open the original and create as many duplicates as you need, resulting in a large time saver over the entirety of this course. Once this line is present in your HTML file, you do not have ot do anything else. Once you save you will be able to access all of the code available in the P5.play library.
+
+As mentioned, the libraries are a collection of javascript code. To see this raw code, type the url from the HTML line above into your browser and you can see the base code for this library.
 
 
-## Spawning Sprites
+## Spawning Sprites with P5.play
 
 Now that we have the P5.play library included in our sketch we can begin working with a sprite. Sprites are the main building block of the P5.play library and are our main way of interacting with its code and features. These sprites are powerful characters with customizable properties that we can use to interact with our code in unique and customizable ways. We will be utilizing the sprites as a way to generate these interactions without having to perform and code complex mathematic equations for every element desired on the canvas such as movement, acceleration, collisions, animations, etc.
 
@@ -27,8 +29,8 @@ To generate a sprite we must first create a variable that will contain our sprit
 
 * X-location of the sprite's center
 * Y-location of the sprite's center
-* Width of teh sprite
-* height of the sprite
+* Width of the sprite
+* Height of the sprite
 
 Each of these arguments can be changed later on in your code, but you ust give a starting value in order to be able to create the sprite. However, look at the code below. We have created the sprite, but cannot see it on the canvas.
 
