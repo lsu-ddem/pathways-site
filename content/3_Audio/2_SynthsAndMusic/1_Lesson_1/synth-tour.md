@@ -1,79 +1,34 @@
 ---
-title: "Synthesizer tour"
+title: "Synthesizer Examples"
 weight: 10
 ---
 
-<a href="/slides/sound/synth-tour-slides" target="_blank">View slides</a>
-
-## Getting presets
-
-[presets](https://www.guitarland.com/MusicTheoryWithToneJS/Presets-gh-pages/)
+Over the couse of the past several chapters we have gone over how to build simple synthesizers using Tone.js. This page serves as a series of examples and the ideas behind different, more complex synthesizers.
 
 #  Simple Synths 
   
-## Synth
-
+This is where we left of. We can generate a sound with an oscillator, apply an envelope, maybe a filter, and then send the output to the master speakers.
 ![](https://docs.google.com/drawings/d/1-1_0YW2Z1J2EPI36P8fNCMcZG7N1w1GZluPs4og4evo/pub?w=1163&h=231)
-
-## Preset -  Alien Synth
-
-* type
-  * fatsine4
-    * prefix the basic types with “fm”, “am”, or “fat” to use the FMOscillator, AMOscillator or FatOscillator types.
-    * sine, square, triangle, or sawtooth. 
-    * number of partials
-
-* from FatOscillator docs
-  * [docs](https://tonejs.github.io/docs/r13/FatOscillator)
-  * count
-    * number of detuned oscillators
-  * spread  
-    * detune spread between oscillators
-  * The effect of modulation here is timbral not control 
-
-### Example
-
-<iframe height="500" style="width: 100%;" scrolling="no" title="Synth - Presets - Alien Chorus" src="//codepen.io/lsuddem/embed/BbBQdj/?height=425&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/lsuddem/pen/BbBQdj/'>Synth - Presets - Alien Chorus</a> by LSU DDEM
-  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
----
-
-## Preset - Steelpan
-
-*  type
-  * fatcustom
-    *  osc type + custom partials
-    *  partials represented as an array
-    *  each number is the gain of a partial
-  
----
-
-<iframe height="445" style="width: 100%;" scrolling="no" title="Synth - Presets - Steelpan" src="//codepen.io/lsuddem/embed/VRZPZY/?height=445&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/lsuddem/pen/VRZPZY/'>Synth - Presets - Steelpan</a> by LSU DDEM
-  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
 
 ---
 
 ## PolySynth
 
- * Make any synth polyphonic
- * play more than one note at a time! 
- * [example](https://tonejs.github.io/examples/polySynth.html)
+We can create multiple copies of these in order to generate multiple notes at once. We could do this manually by creating multiple `Tone.Synth90` objects with varying settings and identical triggers, or you could utilize the `Tone.Polysynth()` object.  
+
+This is an [example](https://tonejs.github.io/examples/polySynth.html) of what the object can do, and what parameters are available. 
 
 ---
 
 ## MonoSynth
+
+This kind of synth applies an envelope to the filter applied to a sound, in addition to the amplitude envelope being applied to the sound's loudness.
   
 ![monosynth diagram](https://docs.google.com/drawings/d/1gaY1DF9_Hzkodqf8JI1Cg2VZfwSElpFQfI94IQwad38/pub?w=924&h=240)
 
----
 
-* everything triggered at the same time
-* FilterEnvelope, sim to ScaledEnvelope but with musical values
-  * see: [FrequencyEnvelope docs](https://tonejs.github.io/docs/r13/FrequencyEnvelope) 
+* `FilterEnvelope()` is similar to `ScaledEnvelope()` but with musical values.
+  * see: [FrequencyEnvelope docs](https://tonejs.github.io/docs/r13/FrequencyEnvelope) for more information on the object
   * parameters only noticeable with longer amplitude envelopes
   * baseFrequency - min
   * octaves - max
@@ -89,9 +44,11 @@ weight: 10
  
 ## DuoSynth
 
+Utilizes two different `monoSynth()` objects and the ratio between them (also called harmonicity) to generate a modulated sound output.
+
 ![diagram](https://docs.google.com/drawings/d/1bL4GXvfRMMlqS7XyBm9CjL9KJPSUKbcdBNpqOlkFLxk/pub?w=1012&h=448)
 
----
+Parameters include;
 
 *  vibratoAmount
 *  vibratoRate
@@ -113,22 +70,17 @@ weight: 10
 
 ## AMSynth
 
-* Amplitude Modulation
-* [example](https://tonejs.github.io/examples/amSynth.html)
-* we have less control over this than when we built it ourselves
-  
+Creates sound through [amplitude modulation](https://en.wikipedia.org/wiki/Amplitude_modulation), or AM. AM is achieved by combining one signal with another. The [example](https://tonejs.githubio/examples/amSynth.html) here shows how to use `Tone.AMSynth()` to generate various amplitude modulations simply. You can manually create amplitude modulations with more control, but this method is a little more user friendly at first. To modulate a signal, you can send the output of one oscillator to adjust a parameter of another, like with LFOs or sliders from the previous sections.
+
 ---
 
 ## FMSynth
-* Frequency Modulation
-* can make interesting effects for games
+
+[Frequency Modulation](https://en.wikipedia.org/wiki/Frequency_modulation) is a more complex version of modulation, but it can result in a larger variety of sound outputs. many of which are great for use in video games. rather than altering the amplitudes of the original frequency, FM will modulate the frequencies.
+
 ![diagram](https://docs.google.com/drawings/d/1h0PUDZXPgi4Ikx6bVT6oncrYPLluFKy7lj53puxj-DM/pub?w=902&h=462)
 
----
-  
-* modulationIndex
-* amount of the modulation
-* ratio of the frequency of the modulating signal (mf) to the amplitude of the modulating signal (ma) – as in ma/mf.
+The modulation index is essentially the amound of modulation occuring. It is the ratio of the frequency of the modulating signal (mf) to the amplitude of the modulating signal (ma) – as in ma/mf.
 
 <iframe height="265" style="width: 100%;" scrolling="no" title="Synth - Presets - FMSynth - Kalimba" src="//codepen.io/lsuddem/embed/XGrgPr/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/lsuddem/pen/XGrgPr/'>Synth - Presets - FMSynth - Kalimba</a> by LSU DDEM
@@ -138,6 +90,8 @@ weight: 10
 ---
 
 ## NoiseSynth
+
+This object generates noise.
   
 <iframe height="265" style="width: 100%;" scrolling="no" title="Synth - Presets - NoiseSynth" src="//codepen.io/lsuddem/embed/ywBXrW/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/lsuddem/pen/ywBXrW/'>Synth - Presets - NoiseSynth</a> by LSU DDEM
@@ -148,11 +102,7 @@ weight: 10
 
 ## MetalSynth
   
-* FMosc
-* amplitude env
-* filter
-* Resonance
-  * The frequency of the highpass filter attached to the envelope
+Utilizes a highly filtered FM signal to create noisy, metallic sounds; similar to cymbals. 
   
 ---
 
@@ -165,14 +115,8 @@ weight: 10
 
 ## MembraneSynth
 
- * make a kickdrum
-  * pitchDecay
-    * length of frequency envelope 
-    * [frequency.exponentialRampToValueAtTime](https://github.com/Tonejs/Tone.js/blob/dev/Tone/instrument/MembraneSynth.js#L92)
-  * octaves
-    * The number of octaves the pitch envelope ramps.
+ utilizes both amplitude and frequency envelopes to replicate drums and other instruments with a membrane that can be hit.
 
----
 
 <iframe height="265" style="width: 100%;" scrolling="no" title="Synth - Presets - MembraneSynth - Kick" src="//codepen.io/lsuddem/embed/XGraJm/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/lsuddem/pen/XGraJm/'>Synth - Presets - MembraneSynth - Kick</a> by LSU DDEM
@@ -181,3 +125,4 @@ weight: 10
 
 ---
 
+Now that we have a through understanding of how we can create and customize synthesizers inside of Tone.js, lets discuss how to program automatic melody sequences that we can utilize in our codes. 
