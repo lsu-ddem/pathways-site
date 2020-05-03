@@ -8,7 +8,7 @@ A synthesizer generates tones by generating an electrical signal that moves betw
 
 Here is an example of a basic synthesizer, which we will dive into later:
 
-{{% codepen-results 600 VwvbLQo %}}
+{{% codepen-results 400 VwvbLQo %}}
 
 ## Building a Synthesizer
 

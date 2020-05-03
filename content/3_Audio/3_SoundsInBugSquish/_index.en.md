@@ -3,8 +3,4 @@ title: Sprite Collisions w/Sound!
 weight: 3
 ---
 
-### Chapter 1
-
-Everything on a chapter page will be centered.
-
-{{% codepen 500 ByvmMo %}}
+Now that we are comfortable creating synthesizers and sequences, we can combine them with our sprites from the previous unit to create dynamic audio/visual environments that make our games much more enjoyable to play. s
