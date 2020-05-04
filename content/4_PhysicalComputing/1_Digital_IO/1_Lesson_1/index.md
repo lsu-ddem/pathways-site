@@ -1,7 +1,9 @@
 ---
-title: Lesson 1
-weight: "1"
+title: What is a Digital Signal 
+weight: 1
 ---
 ## Digital Inputs
 
-Buttons
+### Buttons
+
+### Switches

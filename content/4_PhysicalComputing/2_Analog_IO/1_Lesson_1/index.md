@@ -1,5 +1,4 @@
 ---
-title: Lesson 1
+title: What is an Analog Signal
 weight: '1'
 ---
-hi

@@ -1,4 +1,4 @@
 ---
-title: Lesson 2
+title: Receiving Data from P5
 weight: '2'
 ---
