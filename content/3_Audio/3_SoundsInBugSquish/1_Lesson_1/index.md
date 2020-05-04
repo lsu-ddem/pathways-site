@@ -11,7 +11,6 @@ From there we simply need to set up a trigger to playback the sound involving ou
 
 All of the sound playback commands are located within the custom function `collectBones` (never trigger sound playback inside of the draw function). This function is serving as a callback function for whenever our sprite, rover, collides with a sprite inside of the bone group. Looking at that function in more detail we can see two different methods for triggering sounds present here. 
 
-### Use the arrow keys to collect the bones!!
 
 ```
 function collectBones(character, bone) {

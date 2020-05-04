@@ -5,17 +5,19 @@ weight: '3'
 
 This is the final assignment for the sound unit, and it will combine everything we have learned so far in the course: Basic coding skills, graphics and sprites, sound playback, synthesis, and sequencing.
 
-The goal for this assignment is to take **EITHER** your _Bug Squish_ **or** _Paint App_ assignments from the graphics unit and add dynamic sounds to the user interactions. Below is a potential example of the _Bug Squish_ assignment with sounds added in. 
+The goal for this assignment is to take **EITHER** your _Bug Squish_ **or** _Paint App_ assignments from the graphics unit and add dynamic sounds to the user interactions. Below is a potential example of the _Bug Squish_ assignment with sounds added in.
 
-{{% codepen 600 LYpOQQy %}}
+{{% codepen-results 600 LYpOQQy %}}
 
 
 and here is an example of the _Paint App_
 
+{{% codepen-results 600 WNQXVVJ %}}
+
 
 Notice the characteristics that both of these have in common:
 
-* Each project has at least 2 different synthesizer sounds and one soundfile playback. 
+* Each project has at least 2 different synthesizer sounds and one soundfile playback.
 * The sounds change/are triggered based on the user interactions, and these changes make logical sense.
 * the differences in sounds are noticeable.
 
