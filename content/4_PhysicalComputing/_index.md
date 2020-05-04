@@ -1,6 +1,6 @@
 ---
 title: Physical Computing (Arduino)
-weight: 4
+weight: 1
 ---
 ## Chapter 6
 
