@@ -17,21 +17,74 @@ Below is a list of some of the more common differences and functions that we wil
 
 ### void vs function
 
+The designation 'void' replaces 'function' that we have been using in P5
+
 ### loop vs draw
 
-### const vs let
+`void loop()` in Arduino behaves in the same was as `function draw()` in P5
 
-#### int & float
+### Variable types
+
+Unlike in P5, you will have to specify the kind of variable you are using in Arduino. The words below all replace `let` depending on the data type or behaviors of the variable
+
+####  int
+
+used for integer numbers
+
+#### float
+
+Used for floating point numbers
+
+#### const
+
+Used for values that do not change. You may want to utilize a const if you want to assign the same value to multiple objects in the code and be able to edit them all at one time when the code is not running.
+
+#### char (strings)
+
+This designation is used when your variable will contain a string
 
 ### pinMode()
 
+Sets the Arduino's pins to either transmit or receive data. each pin can only do one or the other at one time. 
+
+```
+// arguments: 
+// pinNumber: number designation of the pin you want to set (can be stored as variable)
+// mode: INPUT or OUTPUT
+
+pinMode(pinNumber, mode);
+```
+
 ### digitalWrite()
+
+sends data out through a digital pin
+
+```
+// arguments: 
+// pinNumber: number designation of the pin you want to set (can be stored as variable)
+// state: HIGH or LOW
+
+digitalWrite(pinNumber, state);
+```
 
 ### digitalRead()
 
+receives data from a digital pin. value can be stored in a variable
+
+```
+// arguments: 
+// pinNumber: number designation of the pin you want to set (can be stored as variable)
+
+digitalRead(pinNumber);
+```
+
 ### analogRead()
 
+sends data through an analog pin
+
 ### analogWrite()
+
+receives data from an analog pin
 
 ---
 
