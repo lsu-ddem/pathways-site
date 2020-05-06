@@ -81,7 +81,7 @@ A scale set of notes in a given pattern. In Western Music come of these common p
 By adding in the [scale maker](https://github.com/davidcole1977/scale-maker) library, we can have the program define these scales for us before giving the information to toneRhythm and Tone.js.
 
 
-## Creating a Scale 
+### Creating a Scale 
 
 To create a scale with [scale maker](https://github.com/davidcole1977/scale-maker), first we need to add the library into our project.
 
@@ -195,7 +195,7 @@ Control patterns are a part of the `Tone.js` library used to control various ele
 
 ---
 
-## combining Patterns and tuning 
+## combining control Patterns and tuning 
 
 The example below combines elements from `Tune.js` and `Tone.js` in order to create different scales and patterns. To do this we first have to define a new scale tuning to use:
 
