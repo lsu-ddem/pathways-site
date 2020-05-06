@@ -1,6 +1,6 @@
 ---
-title: "Rhythm and tuning"
-weight: 5
+title: "Rhythm and Tuning"
+weight: 4
 ---
 
 The last application of the internal clock that we will discuss before moving into the next assignment will be automatically assigning pitches and rhythms together in order to create more rhythmically complex melodies. To make this easier, we can utilize a few more addon libraries.

@@ -40,7 +40,7 @@ The next code example contains all of the elements listed at the beginning of th
 sequence1 = new Tone.Sequence();
 ```
 
-4. Open up a function within the .Sequence parentheses and format it as shown below. This lets us trigger the notes present in the array called melody. each element will be a quarter note at the transport's tempo.
+4. Open up a function within the `.Sequence()` parentheses and format it as shown below. This lets us trigger the notes present in the array called melody. each element will be a quarter note at the transport's tempo.
 
 ```
 sequence1 = new Tone.Sequence(function(time, note) { 
@@ -49,11 +49,13 @@ sequence1 = new Tone.Sequence(function(time, note) {
 ```
 
 5. You can change the interpretation of the melody by changing the third argument of `Tone.Sequence()`.
-    * 16n: 16th nots
-    * 8n: 8th note
-    * 4n: quarter note
-    * 2n: half note
-    * 1n: whole note
+    * These values are all relative to the `Tone.Transport().bpm` parameter.
+        * 16n: 16th nots (4 per beat)
+        * 8n: 8th note (2 per beat)
+        * 4n: quarter note (1 per beat)
+        * 2n: half note (2 beats per note)
+        * 1n: whole note (4 beats per note)
+    * There are additional beat divisions of the tempo that we can use, as well as ways to discuss time using seconds, which we will discuss in higher level sequencing and scheduling.
 6. Next we can set the parameters of `Tone.Transport()` shown above.
 7. The final step is to set the trigger to begin the sequence. You could include the `.start()` method at the end of the setup function to have music that begins automatically, or set up a condition to trigger/stop the sequence based on certain conditions. (remember to always use mousePressed(), mouseReleased(), keyPressed() and/or keyReleased() for these triggers)
 
