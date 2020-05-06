@@ -23,6 +23,8 @@ As we discussed, we will mainly be coding inside of the "sketch.js" file, so the
 
 The other two files, HTML and CSS, have different functions that let the js file work efficiently. On a general level, the HTML file is the foundation that the code is built on. It tells the program where to find various resources and how to structure all of those resources. The CSS file is used for changing the appearance of various on-screen elements. Later in the course we will dive into the HTML file, but won't be getting too much into the CSS as much.
 
+Throughout this website several codes will be embedded to allow you to experience concepts or copy material into a P5 project. If for some reason these codes do not function as described in the text, you can click on the 'edit on Codepen' icon to see most of the codes on [codepen.io](codepen.io). (This may happen more with codes in the sound unit for still unknown reasons.)
+
 ## Functions
 
 Take a look at the code below, which matches the code in your project on the P5 Web Editor:

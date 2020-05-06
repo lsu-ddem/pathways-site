@@ -3,40 +3,44 @@ title: 'Building a sequence'
 weight: 1
 ---
 
-In order to build a sequence we need threefour main items:
+In order to build a sequence we need three-four main items:
 
-* the elements in the order we want them sequenced
-* how fast we want the sequence to occur
-* a synthesizer to generate th sounds
-* a trigger to begin or end the sequence. 
+* the elements in the order we want them sequenced.
+* how fast we want the sequence to occur.
+* a synthesizer to generate th sounds.
+* a trigger to begin or end the sequence.
 
-## Timing Notes
+## Timing Notes with Tone.transport()
 
 To use any sequencing functions ```Tone.Transport()``` must be started. This object handles the internal clock for the timing of various musical events that occur within Tone.js. Some of its parameters include:
 
  - **start** 
  - **stop**
- - **toggle** - go between start and stop
- - **seconds** - get current position in seconds
- - **position** - get bars:beats:sixteenths
- - **bpm** - beats per minute
+ - **toggle** - go between start and stop.
+ - **seconds** - get current time position in seconds.
+ - **position** - get current time position in bars:beats:sixteenths.
+ - **bpm** - beats per minute. (tempo).
+
+ To set the parameters for `Tone.Transport()`, you can simply call the parameters you wish to set in the `setup()` function. In the next code example this happens after all of the other code that is used to set up the synthesizer and the sequences. No mstter what settings you use for `Tone.Transport()`, you **HAVE** to call `Tone.Transport.start()` in order for your sequence to be able to be triggered.
 
 
-See <a href="https://tonejs.github.io/docs/r13/Transport" target="_blank">documentation</a> for more information. 
+Check out the <a href="https://tonejs.github.io/docs/r13/Transport" target="_blank"> Tone.js documentation</a> for more information on `.TRansport()`. 
 
-The example below contains all three elements above in order to generate a musical sequence. To create your own musical sequence, follow the steps below:
+## Steps to Make a Sequence
 
-1. create your synth with information from the previous chapter. 
-2. create an array containing all of the notes in the order you want them read.
+The next code example contains all of the elements listed at the beginning of this section in order to generate a musical sequence. To create your own musical sequence, follow the steps below:
+
+1. Create your synth with information from the previous chapter. 
+2. Create an array containing all of the notes in the order you want them read.
     * each element in the array is one beat in the `Tone.Transport()` object.
     * nesting an array with this array will create subdivisions of those beats. 
-3. create a variable to store this sequence. The next step becomes a little more complicated.
+3. Create a variable to store this sequence. The next step becomes a little more complicated.
 
 ```
 sequence1 = new Tone.Sequence();
 ```
 
-4. open up a function within the .Sequence parentheses and format it as shown below. This lets us trigger the notes present in the array called melody. each element will be a quarter note at the transport's tempo.
+4. Open up a function within the .Sequence parentheses and format it as shown below. This lets us trigger the notes present in the array called melody. each element will be a quarter note at the transport's tempo.
 
 ```
 sequence1 = new Tone.Sequence(function(time, note) { 
@@ -44,13 +48,13 @@ sequence1 = new Tone.Sequence(function(time, note) {
   }, Melody, '4n');
 ```
 
-5. you can change the interpretation of the melody by changing the third argument of `Tone.Sequence()`.
+5. You can change the interpretation of the melody by changing the third argument of `Tone.Sequence()`.
     * 16n: 16th nots
     * 8n: 8th note
     * 4n: quarter note
     * 2n: half note
     * 1n: whole note
-6. next we can set the parameters of `Tone.Transport()` shown above.
+6. Next we can set the parameters of `Tone.Transport()` shown above.
 7. The final step is to set the trigger to begin the sequence. You could include the `.start()` method at the end of the setup function to have music that begins automatically, or set up a condition to trigger/stop the sequence based on certain conditions. (remember to always use mousePressed(), mouseReleased(), keyPressed() and/or keyReleased() for these triggers)
 
 {{% codepen 500 QWjvbzq %}}
@@ -58,14 +62,28 @@ sequence1 = new Tone.Sequence(function(time, note) {
 
 Below are a few  more examples examples of sequences in various contexts.
 
-### Another Basic Synthesizer
+### Another Basic Synthesizer: musical pitches
+
+This is another basic synthesizer sequence. In fact, they even have the same melody be default. The main difference is how to stop the sequence: this code uses `function keyPressed()` instead of `function mouseReleased()` Experiment with this code by changing the melody notes to see what kind of sounds you can come up with. 
 
 {{% codepen 500 NzZNBp %}}
 
+Musical pitches are labeled with their note names and octaves as if they were on a keyboard. Below is an image of an 88-key keyboard with all of the notes and their octaves labeled. Each letter designates a musical pitch (C-B), and the number designates a specific octave (0-8, with higher numbers meaning higher pitches.) Tone.js ustilizes this notation so that you do not have to memorize 88+ different sound frequencies in order to generate a simple sequence.
+
+![](/images/graphics/keyboard.png)
+
 ### Modifying a Sequence During Performance
+
+This next code functions a little differently that the previous ones: you are able to change the contents being performed in real time by adjusting the slider. This is done by using the [Tone.CtrlPattern()](https://tonejs.github.io/docs/13.8.25/CtrlPattern.html) object ot process the melody array before it is fed into the sequence. With this object you can specify ways that Tone.js interacts with a pattern of notes given to it as an array. In this example, the pattern is set to 'Random once' which cycles through the given notes in a random order. By adjusting the probability value with the slider on line 46 we are able to change how likely it is that Tone.js will feed the next array index into the `Tone.Sequence()` on the following beat.
 
 {{% codepen 500 dKjLpR %}}
 
+We will discuss control patterns in more detail in the [Rhythm and Tuning](https://pdm.lsupathways.org/3_audio/2_synthsandmusic/2_lesson_2/rhythm-and-tuning/) section.
+
 ### Removing and Replacing Patterns in the Same Sequence
 
+This code interacts with `Tone.Sequence()` in a different way than either of the previous examples. You can start and stop the sequences by pressing the capital P and S keys respectively. Once the transport has started you are able to specify which of the melodies from the nested array is fed into `Tone.Sequence()` by clicking on the corresponding rectangular tab on the canvas.
+
 {{% codepen 500 wXVVgX %}}
+
+Looking at the code, we can see that these tabs are defined as a specific class of objects in the code. The majority of code within the setup and draw functions tell the tabs how to appear and behave once they are clicked. However, like most of the examples in this unit, the code to adjust the sound is located within `function MousePressed()`. We can see every time the mouse is clicked the code automatically removes the current notes from the sequence. Then, using a for loop, the code checks which tab is being clicked through custom function checkForClick() and uses the return of that function to trigger the change in appearance oon the canvas, as well as select the new melody from the nested array to give to `Tone.Sequence()`.

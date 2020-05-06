@@ -1,9 +1,12 @@
 ---
 title: Higher level sequencers
-weight: 2
+weight: 1
 ---
+
+So far we have only utilized `Tone.Transport()` to schedule musical note playback, but remember, this object functions as an internal clock within the Tone.js library. Once we have started the transport, we can utilise this clock in order to program, schedule, and execute specific events in our code.
   
 ## Event
+
 * abstracts away Tone.Transport.schedule and provides a schedulable callback for a single or repeatable events along the timeline
 * loop
   * true of false

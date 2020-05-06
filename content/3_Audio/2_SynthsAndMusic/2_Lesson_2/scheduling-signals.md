@@ -1,7 +1,9 @@
 ---
 title: "Scheduling Signals"
-weight: 1
+weight: 2
 ---
+
+In addition to programming nots and events, we can also schedule changes to an audio signal.
 
 <a href="/slides/sound/scheduling-signals-slides" target="_blank">View slides</a>
 
