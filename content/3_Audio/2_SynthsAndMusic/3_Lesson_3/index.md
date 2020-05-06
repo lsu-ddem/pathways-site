@@ -22,4 +22,4 @@ No pre-generated audio files may be used.
 
 Here is a working example of a potential solution:
 
-![](/images/graphics/pdmSplashAssmt3.mp4)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wHCQfXpmpDs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
