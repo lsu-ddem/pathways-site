@@ -1,11 +1,9 @@
 ---
 title: "Tone.js"
-weight: 99
-chapter: true
-# pre: "<b>2. </b>"
+weight: 2
 ---
 
-### Chapter 2
+
 
 ## Documentation
 
