@@ -1,13 +1,17 @@
 ---
-title: Chapter 10 Review & Assignments
+title: Adding Toggles and Switches
 weight: 5
 ---
-## Chapter 10 Review
 
-Lets go over some of the basics from the previous lessons:
+Now that we can build a simple circuit, lets look at how we can add in a button and a switch to both turn an LED off and on.
+
+## Toggles and Switches
 
 
 ---
 
-## Chapter 10 Review Assignment
+## buttons to connect electrical current
+
+## buttons to set values with dititalRead()
+
 
