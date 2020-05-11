@@ -1,8 +1,8 @@
 ---
-title: Physical Computing (Arduino)
+title: Physical Computing with Arduino
 weight: 4
 ---
-## Chapter 6
+## Chapter 10
 
 The following lessons and assignments will introduce students to the practice of Physical Computing using the Arduino platform. **While code for the Arduino is not written in JavaScript, the syntax and structure of basic coding concepts covered in previous chapters will carry over to these lessons with only minor changes required.** Topics covered include basic understanding of electrical signals and components for building circuits, analog and digital input and output into an interactive circuit, understanding differences between JavaScript and Arduino coding, and how to get an Arduino to communicate with a web-based project.
 
@@ -13,7 +13,9 @@ While completing these lessons, be sure to check out additional examples and ext
 
 ## Specific differences between Arduino and Javascript, and things to note:
 
-Below is a list of some of the more common differences and functions that we will come across when using arduino for this class. Be sure to reference this page if you need a refresher on these items when you are working on your assignments. 
+Below is a list of some of the more common differences from Javascript as well as functions that we will come across when using Arduino for this class. Be sure to reference this page if you need a refresher on these items when you are working on your assignments. 
+
+
 
 ### void vs function
 
@@ -69,22 +71,36 @@ digitalWrite(pinNumber, state);
 
 ### digitalRead()
 
-receives data from a digital pin. value can be stored in a variable
+receives data from a digital pin. 
+values can be stored in a variable.
 
 ```
-// arguments: 
+// arguments: pin number you wish to read
 // pinNumber: number designation of the pin you want to set (can be stored as variable)
+//returns: HIGH or LOW
 
 digitalRead(pinNumber);
 ```
 
 ### analogRead()
 
-sends data through an analog pin
+receives data through an analog pin
+arguments: pin number (A0-A5 on Arduino Uno)
+values can be stored in a variable.
 
 ### analogWrite()
 
-receives data from an analog pin
+Sends Pulse Width Modulation data through a PWM compatible pin
+
+```
+
+//arguments: pin number, value
+//pin number: certain pins can be used to our put pulse width modulation to control various elements such as leds and motors. On an arduino Uno, those pins are 3, 5, 6, 9, 10, & 11 (on the digital side)
+//value: PW duty cycle. Range 0-255. 0 is always off, 255 is always on.
+
+analogWrite(5, 100);
+
+```
 
 ---
 
