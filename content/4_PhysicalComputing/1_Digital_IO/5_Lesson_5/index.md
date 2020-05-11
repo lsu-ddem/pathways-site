@@ -1,6 +1,6 @@
 ---
 title: 'Assignment #1: Controlling Multiple objects at Once'
-weight: '3'
+weight: '6'
 ---
 
 Below is a starter Arduino code for this assignment.

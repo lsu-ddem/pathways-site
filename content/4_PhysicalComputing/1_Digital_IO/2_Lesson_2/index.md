@@ -1,6 +1,6 @@
 ---
 title: LEDs in a circuit
-weight: '2'
+weight: '3'
 ---
 
 ## The Circuit components
