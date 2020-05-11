@@ -97,6 +97,6 @@ Improperly formatted tests can softlock your device, so make sure that the test 
 
 ## Chapter 2 Review Assignment
 
-
+(placeholder text and code block for the assignment)
 
 {{% codepen-results 600 WNQJLeW %}}
