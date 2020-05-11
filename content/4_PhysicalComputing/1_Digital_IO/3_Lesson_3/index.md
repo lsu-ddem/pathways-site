@@ -1,8 +1,13 @@
 ---
-title: 'Assignment #1: Controlling Multiple objects at Once'
-weight: '3'
+title: Chapter 10 Review & Assignments
+weight: 5
+---
+## Chapter 10 Review
+
+Lets go over some of the basics from the previous lessons:
+
+
 ---
 
-Below is a starter Arduino code for this assignment.
+## Chapter 10 Review Assignment
 
-<iframe src=https://create.arduino.cc/editor/LSU_DDEM/d2b88a2b-e746-4edf-9683-236d266ebd0c/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>

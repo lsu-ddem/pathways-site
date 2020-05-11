@@ -59,7 +59,7 @@ if (test 1 === true) {
 }
 ```
 
-### arrays
+### Arrays
 
 An array can serve as a kind of "super variable" that can store multiple values in a list.
 Arrays are designated with brackets when they are declared. 
@@ -77,7 +77,7 @@ ellipse(array1[5], 50, 50 50); //talks only to the element within the index numb
 
 All naming guidelines for variables also apply to arrays.
 
-### for loops
+### Aor loops
 
 For loops are powerful tool that will execute a series of code for as long as a condition is true once they have been triggered.
 For loops will run as fast as possible when executed.
