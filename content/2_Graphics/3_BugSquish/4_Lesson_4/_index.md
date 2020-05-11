@@ -14,6 +14,6 @@ Here is a working example of the Bug-Squish assignment. Notice the following ite
     4.  When all bugs are squished, more appear.
 * A specific background image is present.
 
-In order to achieve this, you will need to utilize all of the skills we have learned so far: conditionals, for loops, custom functions, variables/arrays, as well as how to create groups of sprites. The images used are available in the [resources]() page.
+In order to achieve this, you will need to utilize all of the skills we have learned so far: conditionals, for loops, custom functions, variables/arrays, as well as how to create groups of sprites. The images used are available in the [resources](https://pdm.lsupathways.org/6_resources/4_gaphics/p5.play/sprites-images-sprite-sheets/) page.
 
 {{% codepen-results 600 eKyvxX %}}
