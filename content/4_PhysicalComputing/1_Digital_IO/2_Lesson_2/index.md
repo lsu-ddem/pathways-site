@@ -70,7 +70,7 @@ now that we have made a circuit, lets talk about different ways we can utilize a
 
 The first way is with images showing exactly which parts need to connect on the breadboard. These are helpful, but limited to a specific instance or set-up. These diagrams are usually used as part of a help file or tutorial. The image below is a version of the circuit we just built, but utilizing pin number 13 instead of number 4.
 
-![default](/images/graphics/leddiag.png)
+![default](/images/graphics/leddiag1.png)
 
 Another way is a little mor traditional, and only shows what elements need to be connected together. This diagram allows for a little more flexibility in where you can place things on th breadboard. These can be used for everything previously mentioned, but are also used for describing existing circuits as well.
 
