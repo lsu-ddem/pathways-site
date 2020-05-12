@@ -96,4 +96,6 @@ In the example above, the code is an excerpt from a draw function. The first tes
 
 ## Chapter 5 Review Assignment
 
-This chapter has no review assignment as all of the concepts covered are utilized within the *Paint App*.
+To prepare for the *Paint App* assignment, look at the code below. Copy it into a new P5 project and follow the instructions in the comments. The goal is to have the background color change to a unique color whenever a moving shape is clicked on.
+
+{{% codepen 500 LYpregQ %}}

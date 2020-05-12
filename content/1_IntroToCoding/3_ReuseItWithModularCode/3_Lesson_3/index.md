@@ -63,6 +63,4 @@ In this summary, `example`, as well as any other specific result of a function t
 
 ## Chapter 3 Review Assignment
 
-The review assignment for this chapter is to generate your own code with custom functions, as well as multiple objects within a class. Use the Carlos and Marco examples from the previous pages as an example of what you need to utilize within your code. Your version should have a unique object with its own characteristics, and not simply be an exact copy of the materials you have been given.
-
-{{% codepen 600 QxawdO %}}
+The review assignment for this chapter is to generate your own code with custom functions, as well as multiple objects within a class. Use the Carlos and Marco examples from the previous pages as an example of what you need to utilize within your code. Your version should have a unique object with its own characteristics, and not simply be a copy of the materials you have been given.

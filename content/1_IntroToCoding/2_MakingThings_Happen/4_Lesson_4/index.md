@@ -97,6 +97,13 @@ Improperly formatted tests can softlock your device, so make sure that the test 
 
 ## Chapter 2 Review Assignment
 
-(placeholder text and code block for the assignment)
+For this assignment there is no started code. Your goal is to create your own code that does the following:
 
-{{% codepen-results 600 WNQJLeW %}}
+* starts with an empty array.
+* uses a for loop to add the numbers 0-20 into the array.
+  * You should utilize th following line inside your for loop:
+  ```
+  arrayName.push(value to add to array);
+  ```
+
+* uses a conditional statement that logs those numbers to the console whenever the mouse is pressed.
