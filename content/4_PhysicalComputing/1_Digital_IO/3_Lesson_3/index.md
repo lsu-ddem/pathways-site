@@ -152,6 +152,18 @@ At this time you can power on your Arduino and press the button. You should see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ExCuHNhfAfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+While your arduino is connected to the computer and running this code, open the serial monitor in the arduino code editor. We can see the state of the buttonState variable change in real time. This will be useful for troubleshooting and determining various settings later in chapter 11. By default you will not see anything in the monitor so we have to add two lines of code to our project. We need to first add this line to the setup function:
+
+```
+Serial.begin(9600);
+```
+
+And this line to the loop function:
+```
+Serial.println(buttonState);
+```
+
+Once we have these line in the correct place we can upload the code to our Arduino and see the values update in real time. The argument for the `Serial.begin()` command is how frequently the signal updates per second. and is indicated in the monitor under 'baud'. Try pressing the button with the serial monitor open now. It will automatically connect to the same serial port as your Arduino. You should now see a series of 0s that change to 1s whenever the button is held down.
 
 ### Applications
 
@@ -161,7 +173,7 @@ So why go through these extra steps just to create a toggle when it is much easi
 
 ![default](/images/graphics/buttonled6.jpg)
 
-Lets go back to the code real quick to wrap this up. below is the conditional statement that we added to tell our board how to react to the `buttonState` value.
+Lets go back to the code real quick to wrap this up. Below is the conditional statement that we added to tell our board how to react to the `buttonState` value.
 
 ```
  if (buttonState == HIGH) {

@@ -41,6 +41,8 @@ The current, again, is the amount of water flowing through the river and can mak
 
 Resistance in the river is brought on through rocks and logs and other elements that disrupt the water flow. A river with no rocks in it will flow smoothly, but a river with many large rocks will turn into rapids.
 
+Much like a river, electricity will only flow in a single direction. In our circuits the power will move from the source, labeled + through the circuit, to the opposite end labeled labeled - or ground. You cannot try to cause the circuit to flow in the opposite direction, but you can block or change the flow of the electricity from positive to ground like you can alter a river's flow with dams and canals. 
+
 ## Ohm's Law
 
 As you may have noticed, all three of these elements, voltage, current, and resistance are closely related. In fact we can calculate each of the values for these elements with a simple equation known as Ohm's Law:

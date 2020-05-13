@@ -15,7 +15,9 @@ While completing these lessons, be sure to check out additional examples and ext
 
 Below is a list of some of the more common differences from Javascript as well as functions that we will come across when using Arduino for this class. Be sure to reference this page if you need a refresher on these items when you are working on your assignments. 
 
+### semicolons
 
+In P5 the software would be a little forgiving and still function without proper semicolon syntax at the end of lines. However Arduino is not quite as user friendly in that regard. When writing this code you will have to be sure that the appropriate lines end with a semicolon or you will not be able to upload your code to the board.
 
 ### void vs function
 
