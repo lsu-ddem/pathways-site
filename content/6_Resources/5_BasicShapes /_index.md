@@ -1,5 +1,5 @@
 ---
-title: Basic Shapes
+title: Basic & Advanced Shapes
 weight: 5
 ---
 
