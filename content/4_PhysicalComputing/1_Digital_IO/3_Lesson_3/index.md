@@ -130,20 +130,36 @@ Once you have successfully added your code to the Arduino board it is now time t
 
 We will start by connecting the button to the middle of the breadboard like shown. 
 
+![default](/images/graphics/buttonled1.jpg)
+
 Then connect the 5V and ground pins ont he arduino to the breadboard. Notice that the arduino is not connected to any power source.
+
+![default](/images/graphics/buttonled2.jpg)
 
 The next step is connect the power to one side of the switch as shown.
 
-followed by connecting the opposite side fo the switch to pin 2 on your arduino (or whichever pin you set the buttonPin variable to)
+![default](/images/graphics/buttonled3.jpg)
+
+Followed by connecting the opposite side fo the switch to pin 2 on your arduino (or whichever pin you set the buttonPin variable to). Notice that this is diagonally across from the button's input.
+
+![default](/images/graphics/buttonled4.jpg)
 
 The last step is to include a resistor so that the LED is not overloaded. Arduino recommends utilizing a 10K Ohm resistor, shown below.
 
+![default](/images/graphics/buttonled5.jpg)
+
 At this time you can power on your Arduino and press the button. You should see the built in LED turn on an off like in the video below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ExCuHNhfAfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Applications
 
-So why go through these extra steps just to create a toggle when it is much easier to just build something like our first code in this lesson? The answer is that in this version we are now reading the electricity level and responding to it instead of breaking the pathway. Most Arduino boards have a built in LED attached to pin 13. If you connect the pin 13 output to an external LED circuit like shown, you will be able to toggle additional lights as well. And not just lights, anything connected to this pin can be triggered with just a single button press.
+So why go through these extra steps just to create a toggle when it is much easier to just build something like our first code in this lesson? The answer is that in this version we are now reading the electricity level and responding to it instead of breaking the pathway. Most Arduino boards have a built in LED attached to pin 13. If you connect the pin 13 output to an external LED circuit like shown in the video and image below, you will be able to toggle additional lights as well. And not just lights, anything connected to this pin can be triggered with just a single button press.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CIp9NW7Oi5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![default](/images/graphics/buttonled6.jpg)
 
 Lets go back to the code real quick to wrap this up. below is the conditional statement that we added to tell our board how to react to the `buttonState` value.
 
