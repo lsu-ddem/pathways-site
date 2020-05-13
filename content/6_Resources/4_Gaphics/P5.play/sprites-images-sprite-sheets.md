@@ -28,4 +28,5 @@ Other places such as [The Spriter's Resource](https://www.spriters-resource.com/
 
 ## Free to Use Sprite Images
 
-Below are several sprite images that you may utilize for any of the assignments or projects in this class:
+Several sprite images that you may utilize for any of the assignments or projects in this class can be found in [this .zip folder](https://drive.google.com/file/d/1epRb_hWG83Vy64DPt8odBb31Gs1kM20X/view?usp=sharing).
+
