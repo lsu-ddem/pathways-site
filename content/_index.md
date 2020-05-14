@@ -52,7 +52,7 @@ Below is a table of contents for all 12 of the chapters covered in this online t
     * [Chapter 10: Digital I/O](https://pdm.lsupathways.org/4_physicalcomputing/1_digital_io/)
     * [Chapter 11: Analog I/O](https://pdm.lsupathways.org/4_physicalcomputing/2_analog_io/)
     * [Chapter 12: Serial Communications](https://pdm.lsupathways.org/4_physicalcomputing/3_serialcommunication/)
-* [integrations Project](https://pdm.lsupathways.org/5_integrationproject/)
+* [Integrations Project](https://pdm.lsupathways.org/5_integrationproject/)
 * [Additional Resources](https://pdm.lsupathways.org/6_resources/)
 
 ---
