@@ -1,6 +1,6 @@
 ---
 title: 'Sound Assignment # 2 - Multiple Synthesizers, Multiple Sequences'
-weight: '3'
+weight: 5
 ---
 
 For this assignment you need to:

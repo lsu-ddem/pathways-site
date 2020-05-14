@@ -175,7 +175,7 @@ By including a call to a separate function inside of the test to change the stat
 
 ## Changing a Sequence Without Game States
 
-But what is your code does not have built in game states? Lets look at this example from a previous chapter in more detail to see how we can achieve that.
+But what if your code does not have built in game states? Lets look at this example from a previous chapter in more detail to see how we can achieve that.
 
 {{% codepen 700 wXVVgX %}}
 

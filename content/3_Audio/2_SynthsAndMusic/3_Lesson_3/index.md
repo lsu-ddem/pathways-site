@@ -1,6 +1,6 @@
 ---
 title: Chapter 8 Review & Assignments
-weight: 5
+weight: 3
 ---
 ## Chapter 8 Review
 

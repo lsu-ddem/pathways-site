@@ -1,5 +1,5 @@
 ---
-title: Sampler with effects
+title: Sound File Playback and Audio Effects
 weight: 1
 ---
 ## Chapter 7

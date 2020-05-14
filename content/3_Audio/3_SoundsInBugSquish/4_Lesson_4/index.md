@@ -1,6 +1,6 @@
 ---
 title: 'Sound Assignment #3 - Adding Sound Events to BugSquish or Paint App!'
-weight: '3'
+weight: 4
 ---
 
 This is the final assignment for the sound unit, and it will combine everything we have learned so far in the course: Basic coding skills, graphics and sprites, sound playback, synthesis, and sequencing.

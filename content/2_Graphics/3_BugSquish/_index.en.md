@@ -1,5 +1,5 @@
 ---
-title: Game Design using the p5.play library
+title: Game Design using the P5.play Library
 weight: 3
 ---
 ## Chapter 6

@@ -1,5 +1,5 @@
 ---
-title: Sprite Collisions w/Sound!
+title: Sprite Collisions with Sound!
 weight: 3
 ---
 

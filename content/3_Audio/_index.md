@@ -1,5 +1,5 @@
 ---
-title: Sound (Tone.js)
+title: Sounds with Tone.js
 weight: 3
 ---
 ## Unit 3

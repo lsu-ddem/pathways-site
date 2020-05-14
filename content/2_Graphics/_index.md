@@ -1,5 +1,5 @@
 ---
-title: Graphics (p5.js)
+title: Graphics and P5.Play
 weight: 2
 ---
 ## Unit 2
