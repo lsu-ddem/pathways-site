@@ -2,12 +2,12 @@
 title: Proposing Your Integrations Project
 weight: '1'
 ---
-Before you begin on your project, you should submit a proposal to your instructor with the following informaiton:
+Before you begin on your project, you should submit a proposal to your instructor with the following information:
 
-* Discription of your project. (be as detailed as possible)
+* Description of your project. (be as detailed as possible)
 * How you will utilize elements from the graphics unit.
 * How you will utilize elements from the audio unit.
-* How you will utilize elements from the physicacl computing unit.
+* How you will utilize elements from the physical computing unit.
 * External resources such as images, sounds, or physical computing components that you plan on needing.
 * Any other important information about the project.
 
@@ -16,9 +16,9 @@ The purpose of this is so that your instructor can make sure that your project m
 
 Your instructor will either approve your proposal, or ask you to revise parts of it as needed before you begin working on the project. 
 
+---
 
-
-##Example Proposal
+## Example Proposal
 
 
 **Student Name:** Jane FakeNamington
@@ -33,11 +33,14 @@ Your instructor will either approve your proposal, or ask you to revise parts of
 
 **Physical Computing Elements:** A red LED will blink in tempo with the music, speeding up when the time begins to run out. 4 buttons will be used to trigger the character to move up, down, left, and right. 
 
-**Other important information:** The sprite sheets will come from spriter’s resource, and the sound effects will come from free sounds. Background images will come from shutterstock.
+**Other important information:** The sprite sheets will come from spriter’s resource, and the sound effects will come from free sounds. Background images will come from shutter stock.
 
+---
 
-##Thoughts about this proposal.
+## Thoughts about this proposal.
 
-In this provided proposal, Jane meets all of the requirements that are needed. In some instances, she even porposes more than the minimmum by wanting to use 4 buttons and have 7 differently behaving sprites. While there is nothing wrong with this, it might be a better idea for Jane to simplify her project so that there are less elements. Depending on the time remaining ot work on the project, this may not be something that can be completed in that time line. in that case, Jane coul dbegin with a simplified starting version, and then add in the elements she wants once the main project is completed. Like adding an expansion pack or DLC to a video game.
+In this provided proposal, Jane meets all of the requirements that are needed. In some instances, she even proposes more than the minimum by wanting to use 4 buttons and have 7 differently behaving sprites. While there is nothing wrong with this, it might be a better idea for Jane to simplify her project so that there are less elements. Depending on the time remaining ot work on the project, this may not be something that can be completed in that time line. in that case, Jane could begin with a simplified starting version, and then add in the elements she wants once the main project is completed. Like adding an expansion pack or DLC to a video game.
 
-One other thought is where Jane is getting her resources from. These places should be fine, but be sure that anything that you find is appropriate for your school. When in doubt, the answer is probably no, but be sure to ask your instructor once you have found enternall media you want to use.
+One other thought is where Jane is getting her resources from. These places should be fine, but be sure that anything that you find is appropriate for your school. When in doubt, the answer is probably no, but be sure to ask your instructor once you have found external media you want to use.
+
+---

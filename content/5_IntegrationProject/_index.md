@@ -16,3 +16,5 @@ First, Your project has to have the following elements, which integrate all of t
 While not required, having some processing of the audio via Tone.js is highly recommended to help polish your soundtrack. 
 
 While not specified, elements from the ‘Basics of Coding’ such as conditionals, variables, loops, custom functions, etc. will more than likely be in your project. If your project is missing one of these key elements, make sure that you are not forgetting something. 
+
+---

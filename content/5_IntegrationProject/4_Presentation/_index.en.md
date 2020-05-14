@@ -19,3 +19,5 @@ Remember, you should document your project as detailed in the previous page. If 
 
 
 Thank you for all your hard work throughout the course, and best wishes as you keep learning, and hopefully keep coding!
+
+---
