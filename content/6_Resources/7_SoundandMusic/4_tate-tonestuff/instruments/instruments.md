@@ -7,15 +7,32 @@ A code instrument is a combination of a synthesizer various envelopes, parameter
 
 ## Types of synths
 
+Here is a tutorial video for creating a basic synthesizer in P5 and Tone:
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=NbR9JTEcanQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Basic Synth 
 
-### Envelope 
+---
+
+## Envelopes 
 
 Attack, decay, sustain, release 
 
 triggerAttackRelease 
 
-### Notes and Frequency 
+---
 
-### Timing 
+## Notes and Frequency 
+
+---
+
+## Timing 
+
+This is a tutorial video for creating basic small scale musical sequences in P5 and Tone:
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=yGp1Y1SJru8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 

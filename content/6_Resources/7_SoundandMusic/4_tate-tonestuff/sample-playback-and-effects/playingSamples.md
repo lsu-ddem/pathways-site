@@ -33,6 +33,8 @@ Click on the canvas to play.
 
 {{% codepen 400 MVQeGQ %}}
 
+---
+
 ## Tone.Players
 
 ### Play multiple sounds
@@ -40,6 +42,8 @@ Click on the canvas to play.
 We used **Tone.Players** when we want to collect multiple samples to play.
 
 To define which sounds to play we create an object with multiple file paths, each with a unique name to call the sound up by later. You can think of this name as a type of variable that is inside of an object.
+
+---
 
 ### Trigger sounds
 
@@ -90,6 +94,8 @@ createSlider(min,max,[value],[step])
 
 To get the current value of the slider: **slider.value()**
 
+---
+
 #### Labeling your sampler
 
 To label the sampler we use the **text()** function.
@@ -107,3 +113,9 @@ text(str,x,y,[x2],[y2])
 * y - y-coordinate of text
 
 {{% codepen 600 Brbbbj %}}
+
+---
+
+Here is a video showing the basic logic behind the sampler assignment from chapter 4:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BThpwJuDQYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
