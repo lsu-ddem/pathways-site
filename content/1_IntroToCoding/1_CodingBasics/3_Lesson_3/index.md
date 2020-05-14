@@ -2,7 +2,7 @@
 title: Storing Things in Code - Variables
 weight: 3
 ---
-So far, our code has used concrete, static data to create visuals. However, we can use updatable, changing data in order to modify our projects while they are running in order to make them more dynamic. To do this, we use _**variables.**_ A variable is a container that stores a single value in the memory or our code so that we can use it at a later time, in multiple places throughout our code. This make variables more flexible than fixed, concrete values.
+So far, our code has used concrete, static data to create visuals. However, we can use updatable, changing data in order to modify our projects while they are running in order to make them more dynamic. To do this, we use [variables](https://pdm.lsupathways.org/6_resources/2_variables/). A variable is a container that stores a single value in the memory or our code so that we can use it at a later time, in multiple places throughout our code. This make variables more flexible than fixed, concrete values.
 
 Take a look at the embedded code below:
 

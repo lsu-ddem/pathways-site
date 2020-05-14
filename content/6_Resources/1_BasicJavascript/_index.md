@@ -3,7 +3,13 @@ title: Basic Javascript
 weight: 1
 ---
 
+The next several pages all cover resources and external materials that can help to expand the concepts covered in [Unit 1](https://pdm.lsupathways.org/1_introtocoding/).
+
 As you go through this course you may find various resources from different places. Some of these may utilize an older, non-web-based version of P5.js. Those examples will function almost identically to your version of P5, which was updated to run completely online a few years ago.
+
+---
+
+### Tutorials & Reference
 
 [Javascript.com](https://www.javascript.com/) contains multiple interactive javascript recourses that you can explore. [javascript.info](https://javascript.info/), [W3 Schools](https://www.w3schools.com/js/), [LearnJS](https://www.learn-js.org/), [Code Academy](https://www.codecademy.com/learn/introduction-to-javascript), and [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript) all offer tutorials and interactive classes on javascript as well. Be sure to explore these sites for additional practice working in javascript.
 
@@ -12,3 +18,19 @@ As you go through this course you may find various resources from different plac
 More detailed information about various elements discussed in this course can be found in the book [Eloquent Javascript](https://eloquentjavascript.net/) by Marijn Haverbeke. Once you have had a little practice using the language, check out this book for more in depth explications of various javascript features.
 
 The [P5 reference pages](p5js.org/reference/) can offer information and examples on every function built into the P5 coding library. 
+
+Here are some general 'pro tips' for java script coding once you have a little bit of experience under your belt.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mus_vwhTCq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+---
+
+### History
+
+Here is a video with a condensed history of the javascript coding language.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Sh6lK57Cuk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---

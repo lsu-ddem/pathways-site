@@ -12,7 +12,7 @@ Take a look at the amount of repeating functions in our **draw()** block. We use
 
 In order to simplify this process, we can create a self-contained loop that repeats a block of code for a set amount of times before stopping. This way, we can re-run the two lines of code needed to make the square as many times as we want without having to explicitly retype everything. 
 
-This second version of the project uses a type of loop known as a **for loop** to create 100 squares, alternating between teal and pink colors in the **fill()** function and placing each square 20 pixels away from the previous one. This results in a much shorter code that then we would have had if we didn't use a loop :
+This second version of the project uses a type of loop known as a [for loop](https://pdm.lsupathways.org/6_resources/3_loops/) to create 100 squares, alternating between teal and pink colors in the **fill()** function and placing each square 20 pixels away from the previous one. This results in a much shorter code that then we would have had if we didn't use a loop :
 
 {{% codepen 400 PamXqd %}}
 
