@@ -6,7 +6,9 @@ weight: 5
 
 Lets go over some of the basics from the previous lessons:
 
-### functions
+---
+
+### Functions
 
 We can utilize the skills we have learned so far in order to crate our own functions. Make sure that you do not accidentally create a new function within the braces for one that already exists in your code.
 
@@ -27,7 +29,9 @@ Functions can return a value to the main code with the `return` command. However
 
 To call a function somewhere else in your code, simply type out the name of your function followed by parentheses where you need to use it. If your function needs an argument, type those within the parentheses. Each function call is unique, so calling a function twice will produce 2 versions of the results. These results may be different depending on the arguments given at the function call.
 
-### objects and classes
+---
+
+### Objects and Classes
 
 Because each function call is a separate action, we can refer to each call as a specific item, or object, within our code.
 
@@ -64,3 +68,5 @@ In this summary, `example`, as well as any other specific result of a function t
 ## Chapter 3 Review Assignment
 
 The review assignment for this chapter is to generate your own code with custom functions, as well as multiple objects within a class. Use the Carlos and Marco examples from the previous pages as an example of what you need to utilize within your code. Your version should have a unique object with its own characteristics, and not simply be a copy of the materials you have been given.
+
+---

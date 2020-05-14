@@ -10,6 +10,8 @@ Here is an example of a basic synthesizer, which we will dive into later:
 
 {{% codepen-results 400 VwvbLQo %}}
 
+---
+
 ## Building a Synthesizer
 
 To build a synth in Tone.js we need to use the `Tone.Synth()` object. By opening a set of braces inside of the object's parentheses we can specify various object parameters. The first one is the type of oscillator. We will go over the different type of oscillators later in the page. this is formatted just like `Tone.Players()` object from the previous page. 
@@ -32,7 +34,6 @@ In the above example the pitch A3 is used to show how to create a basic synthesi
 A standard 88 key keyboard has a range from A0-C8.
 
 ---
-
 
 ## Oscillators
  
@@ -75,3 +76,4 @@ These partials follow the natural harmonic series of the fundamental pitch that 
 
 An [example](https://tonejs.github.io/examples/oscillator.html) of the Tone.js oscillator types with partials can be found here.
 
+---

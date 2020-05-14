@@ -22,3 +22,5 @@ Notice the characteristics that both of these have in common:
 * the differences in sounds are noticeable.
 
 Be sure to check through the previous two units as well as the resources section as you begin adding sound interactions to your project.
+
+---

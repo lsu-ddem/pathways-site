@@ -17,8 +17,6 @@ fill("blue")
 rect(100, 68, 4, 19);
 ```
 
-
-
 ### Setting Color with fill( )
 
 p5.js allows the `fill()` function to accept a number of different data types. Strings allow you to choose from a handful of colors that p5.js designers have preprogrammed into the main p5.js library. Not all colors imaginable are possible to represent with a string, so try out as many as you can think of and see what works!
@@ -74,7 +72,7 @@ fill(roseColor);
 
 The difference between `fill()` and `color()` is that **fill( )** sets the color of an object whereas **color( )** actually generates a color out of hexcode or RGB values. There are benefits and downsides to using either of them, and which one you use may depend on your specific project needs. To learn more about their differences, head to the [p5.js Reference Page](https://p5js.org/reference/#group-Color).
 
-
+---
 
 ## Grayscale and Transparency
 
@@ -89,3 +87,5 @@ We can also control the transparency value of a color by adding in an **alpha va
 {{% codepen 600 YbaRbK %}}
 
 Notice how the shapes with this alpha value added can now be seen through. This can be useful for various drawing and interactive purposes in our projects later on.
+
+---

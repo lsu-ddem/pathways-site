@@ -10,6 +10,8 @@ Take a look at the embedded code below:
 
 In this code, we've drawn two polygons to the screen. The teal square is built using four fixed values as arguments; its location, width, and height will never be changed unless we stop the code, edit the values, and rerun the program. The pink rectangle uses two variables: "rectWidth" and "rectHeight". 
 
+---
+
 ## Making Variables
 
 To make a variable, we start by _declaring_ a name for the container. In our code, we've declared both "rectWidth" and "rectHeight" at the very top of our code by first typing the keyword **let**. This is synonymous to asking our code to let "rectWidth" contain a specific value in its memory, so that we can refer to it by that name in our project from now on. We've done this outside of either the **setup( )** or **draw( )** blocks, which means that we've declared these variables _**globally**_ and they can be used/accessed anywhere in our code(we'll discuss this in detail at the bottom of the page).
@@ -61,7 +63,7 @@ function setup(){
 let circleX, circleY, speed, jumpHeight;
 ```
 
-
+---
 
 ## Fixed Values vs. Changeable Values
 
@@ -102,6 +104,8 @@ Boolean System Variables
 | ---------------- | ------------------------------------------------------------ |
 | `mouseIsPressed` | boolean - contains "true" if mouse pressed, "false" if not   |
 | `keyIsPressed`   | boolean - contains "true" if any key pressed, "false" if not |
+
+---
 
 ## Global Scope vs. Local Scope
 

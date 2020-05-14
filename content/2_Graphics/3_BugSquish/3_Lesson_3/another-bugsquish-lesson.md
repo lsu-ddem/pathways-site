@@ -26,3 +26,5 @@ a callback function is a function that is utilized in your code whenever some ot
 {{% codepen 400 JQjxra %}}
 
 Callbacks can be customized to include whatever results you want to have happen when two sprites interact. This could include creating or removing sprites, changing various properties and values within the code, and many other potential results.
+
+---

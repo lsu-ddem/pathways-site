@@ -8,6 +8,8 @@ The following lessons and assignments will introduce students to the practice of
 
 While completing these lessons, be sure to check out additional examples and extended readings in the **Resources** section as well as the lessons and example codes found on the [Arduino](https://www.arduino.cc/en/Tutorial/HomePage) website to build a stronger understanding of these concepts.
 
+The remainder of this course will require an Arduino kit. If this is not provided by the school, or you would like to purchase your own for at-home use or experimenting after you have completed the course, these kits are open-source and can be purchased online. Kits containing that [Arduino Uno board and necessary components](https://www.amazon.com/s?k=arduino+uno+kit&i=electronics&ref=nb_sb_noss_1) usually range form $40-$60.
+
 ---
 
 

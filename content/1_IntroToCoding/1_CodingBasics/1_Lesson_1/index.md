@@ -3,6 +3,7 @@ title: Getting Started
 weight: 1
 ---
 
+
 Let's get started! In this first example, we'll cover the basics of text-based coding in the JavaScript language.
 
 Head to the [P5.js Web Editor](http://alpha.editor.p5js.org/), sign up for a personal account, and open a new File. You'll be presented with a new editor window that displays the code found in your "sketch.js" file. The P5 Web Editor starts you off with some basic code that is needed to create a blank, grey canvas.
@@ -25,6 +26,8 @@ The other two files, HTML and CSS, have different functions that let the js file
 
 Throughout this website several codes will be embedded to allow you to experience concepts or copy material into a P5 project. If for some reason these codes do not function as described in the text, you can click on the 'edit on Codepen' icon to see most of the codes on [codepen.io](codepen.io). (This may happen more with codes in the sound unit for still unknown reasons.)
 
+---
+
 ## Functions
 
 Take a look at the code below, which matches the code in your project on the P5 Web Editor:
@@ -45,7 +48,7 @@ Take a look at the embedded code below, and add the new console.log() lines into
 
 Place your cursor inside the Console section and scroll up. You should see the statements "Ready" and "Set" printed only once, and then a long list of "Go!" plus an increasing number statements listed after that. The first two statements only printed to the console once since the were coded inside the`setup()` block, while the "GO!" statement printed multiple times. The increasing number attached to "GO!" represents the current iteration of the `draw()` loop.
 
-## Arguments
+### Arguments
 
 Functions can be given additional information in order to specify the way they behave. This additional information is known as an _**argument**_, and is added into the parenthesis found behind function names. In our previous example, the `createCanvas()`, `background()`, and `console.log()` functions all include arguments designed to specify their behavior.
 
@@ -66,3 +69,5 @@ Our canvas background is now a shade of violet. When three arguments are passed 
 Each function in the p5.js library will require different types of data in different orders to adjust their behavior. Check the [P5.js Reference Page](https://p5js.org/reference/) to see a complete list of functions and their adjustable properties. 
 
 Remember, you are giving your computer a set of instructions to follow. If you just say "draw a square" but don't tell the computer where or how large to draw the square, then your computer won't be able to follow your instructions because it doesn't have enough information. 
+
+---

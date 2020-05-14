@@ -2,7 +2,8 @@
 title: 'Sound Assignment # 2 - Multiple Synthesizers, Multiple Sequences'
 weight: '3'
 ---
-Sound Assignment # 2 Result
+
+For this assignment you need to:
 
 Find an image of an action or event that might occur.  Create a video game-like sound synthesis effect for this event. (Something like breaking a block with your head – Super Mario style. Or diving into a pool.)  When the canvas is clicked, display an image of the event and trigger the corresponding sound event.
 
@@ -23,3 +24,5 @@ No pre-generated audio files may be used.
 Here is a working example of a potential solution:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wHCQfXpmpDs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---

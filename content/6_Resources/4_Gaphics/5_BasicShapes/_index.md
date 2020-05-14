@@ -16,3 +16,13 @@ Below are some additional functions that can change exactly how P5 draws these s
 ---
 
 ## colors
+
+A Computer color mixer is available [here](https://www.w3schools.com/colors/colors_rgb.asp). You can experiment with the color values and see them output as both RGB and hex values. A second one is available [here](https://www.csfieldguide.org.nz/en/interactives/rgb-mixer/), this time with interactive sliders, but no hex values.
+
+Here are a few different Coding Train videos involving working with colors in P5.js.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/riiJTF5-N7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+A slightly older video talking about the same kind of idea in P5.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9mucjcrhFcM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

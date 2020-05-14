@@ -1,6 +1,6 @@
 ---
 title: "Tone.js"
-weight: 2
+weight: 3
 ---
 
 The Following pages include information and resources important to the [Tone.js](https://tonejs.github.io/) library

@@ -41,6 +41,7 @@ player = new Tone.Player('sound.mp3').connect(effect1);
 
 By building the elements in this order, you can see the direct pathway from the speakers, through the effect chain, back to the sound file. Changing the order will cause the code not to execute because it will try ot connect a sound to an object that has not been created yet.Building the objects in preload ensures that the pathway is properly rendered prior to any potential sound playback triggers.
 
+---
 
 ## Common Audio Effects
 
@@ -103,7 +104,6 @@ Bitcrusher is a distortion effect that creates a lo-fi version of the incoming s
 {{% codepen 600 pKQmPM %}}
 
 
-
 ### PitchShift
 
 PitchShift is an effect that changes the pitch of an incoming sound source by shifting its pitch up or down by a designated number of half steps. For audio files, this is done without having to change the player's **playbackRate** property.
@@ -129,6 +129,8 @@ While the chorus effect is similar to the Tremolo effect, we do _**not**_ need t
 * **depth** - the depth of the effect upon the sound source
 
  {{% codepen 600 vrbNQP %}}
+ 
+ ---
 
  ## Final Notes
 
@@ -141,3 +143,5 @@ While the chorus effect is similar to the Tremolo effect, we do _**not**_ need t
  ```
  Tone.Player('soundfile').chain(effect1, effect2, effect3, Tone.Master)
  ```
+ 
+---

@@ -10,6 +10,8 @@ In order to build a sequence we need three-four main items:
 * a synthesizer to generate th sounds.
 * a trigger to begin or end the sequence.
 
+---
+
 ## Timing Notes with Tone.transport()
 
 To use any sequencing functions ```Tone.Transport()``` must be started. This object handles the internal clock for the timing of various musical events that occur within Tone.js. Some of its parameters include:
@@ -25,6 +27,8 @@ To use any sequencing functions ```Tone.Transport()``` must be started. This obj
 
 
 Check out the <a href="https://tonejs.github.io/docs/r13/Transport" target="_blank"> Tone.js documentation</a> for more information on `.TRansport()`. 
+
+---
 
 ## Steps to Make a Sequence
 
@@ -64,6 +68,8 @@ sequence1 = new Tone.Sequence(function(time, note) {
 
 Below are a few  more examples examples of sequences in various contexts.
 
+---
+
 ### Another Basic Synthesizer: musical pitches
 
 This is another basic synthesizer sequence. In fact, they even have the same melody be default. The main difference is how to stop the sequence: this code uses `function keyPressed()` instead of `function mouseReleased()` Experiment with this code by changing the melody notes to see what kind of sounds you can come up with. 
@@ -73,6 +79,8 @@ This is another basic synthesizer sequence. In fact, they even have the same mel
 Musical pitches are labeled with their note names and octaves as if they were on a keyboard. Below is an image of an 88-key keyboard with all of the notes and their octaves labeled. Each letter designates a musical pitch (C-B), and the number designates a specific octave (0-8, with higher numbers meaning higher pitches.) Tone.js ustilizes this notation so that you do not have to memorize 88+ different sound frequencies in order to generate a simple sequence.
 
 ![](/images/graphics/keyboard.png)
+
+---
 
 ### Modifying a Sequence During Performance
 
@@ -89,3 +97,5 @@ This code interacts with `Tone.Sequence()` in a different way than either of the
 {{% codepen 500 wXVVgX %}}
 
 Looking at the code, we can see that these tabs are defined as a specific class of objects in the code. The majority of code within the setup and draw functions tell the tabs how to appear and behave once they are clicked. However, like most of the examples in this unit, the code to adjust the sound is located within `function MousePressed()`. We can see every time the mouse is clicked the code automatically removes the current notes from the sequence. Then, using a for loop, the code checks which tab is being clicked through custom function checkForClick() and uses the return of that function to trigger the change in appearance oon the canvas, as well as select the new melody from the nested array to give to `Tone.Sequence()`.
+
+---

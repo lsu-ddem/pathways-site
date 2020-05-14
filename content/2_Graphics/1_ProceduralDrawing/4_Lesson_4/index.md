@@ -6,7 +6,9 @@ weight: 5
 
 Lets go over some of the basics from the previous lessons:
 
-### basic and advanced shapes
+---
+
+### Basic and Advanced shapes
 
 We already have experience with the basic shapes such as `rect()`, `triangle()`, and `line()`. In this chapter we were also introduced to `arc()` and the functions needed to create custom shapes.
 
@@ -37,7 +39,9 @@ vertex(100, 200);
 vertex(100, 100);
 ```
 
-### color and transparency
+---
+
+### Color and Transparency
 
 Color can be represented in multiple ways. This course will mostly utilize RGB color values to represent color. RBG is made up of three numbers. All three of them range from 0-255, and indicate the amount of Red, Green, and Blue in a color make up respectively. 0 means none of a color, and 255 means the maximum of that color.
 
@@ -60,3 +64,5 @@ For this chapter, the review assignment is to create a piece of abstract art usi
 Here is an example
 
 {{% codepen-results 600 dyozqYw %}}
+
+---

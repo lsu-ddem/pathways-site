@@ -28,3 +28,5 @@ Below is the code that utilizes all of the elements discussed so far:
 For this assignment, your goal is to recreate the code below as accurately as possible. Remember that you will have to use variables and modulo in order to achieve this.
 
 {{% codepen-results 600 WNQJLeW %}}
+
+---

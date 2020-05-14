@@ -1,10 +1,12 @@
 ---
 title: Chapter 6 Review & Assignments
-weight: 5
+weight: 4
 ---
 ## Chapter 6 Review
 
 Lets go over some of the basics from the previous lessons:
+
+---
 
 ## Loading the P5. Play library
 
@@ -14,6 +16,8 @@ You need to include this line of code in your project's HTML file if you want to
 <script src="https://cdn.jsdelivr.net/gh/molleindustria/p5.play/lib/p5.play.js"></script>
 
 ```
+
+---
 
 ## Spawning a Sprite
 
@@ -26,11 +30,15 @@ in order to make a sprite you need to use the function `createSprite()`. Its arg
 
 You also need to store this sprite inside of a variable so that you can refer to it by name later in your code.
 
+---
+
 ## Methods and Properties
 
 A method if an action that you can do with or to your sprite. These are designated with parentheses, and receive arguments just like a function call.
 
-A property is an attribute or behaviors characteristic of a sprite. These can be assigned a value with an equal sign. =
+A property is an attribute or behaviors characteristic of a sprite. These can be assigned a value with an equal sign. `=`
+
+---
 
 ### Dot Notation
 
@@ -45,6 +53,8 @@ sprite.property = value
 ```
 
 These can also have sub-properties that need to be specified in order to take effect on your sprite, such as sprite.velocity.x and sprite.velocity.y
+
+---
 
 ## Moving Sprites Across the Canvas
 
@@ -65,6 +75,8 @@ if (keyIsPressed){
 ```
 
 This allows up to move a sprite around the screen as we want. We can also set the sprite.position.x and sprite.position.y properties. This will cause a sprite to warp to a given location value.
+
+---
 
 ## Sprite Animations
 
@@ -91,6 +103,8 @@ rover = createSprite(width / 2, height / 2);
 
 Be sure to give the animation a name as a string. You can change the animation with the .changeAnimation() method. Your sprite will automatically resize itself in order to fit the dimensions of whatever image is currently on the sprite.
 
+---
+
 ## Sprite Interactivity
 
 Sprites can react to being clicked on with the `.onMousePressed()` method, as well as bouncing off of and pushing other sprites with the `.bounce()` and `.displace()`methods. Each of these allow for a callback function as an optional second argument. These are custom functions that you can define specific interactions rules inside of and are only called when two certain sprites or members of a group of sprites interact with each other.
@@ -106,3 +120,5 @@ As preparation for the *Bug Squish* assignment, your assignment is to recreate t
 ![default](/images/graphics/apple background.jpg)
 
 ![default](/images/graphics/red-apple.png)
+
+---

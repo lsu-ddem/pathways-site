@@ -65,3 +65,5 @@ When we define the new `Tone.Part()`, we can then give it the score array as an 
     ```
 
 Then we can treat the part as an event with all of the same properties. You can see in the code excerpt above that this part will be used to trigger notes in our synthesizer (defined later) based on the tempo of the Tone.Transport() object. Again, experiment with the parameters to see how you can adjust the elements of a part.
+
+---

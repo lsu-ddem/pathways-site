@@ -1,10 +1,12 @@
 ---
 title: Chapter 7 Review & Assignments
-weight: 5
+weight: 3
 ---
 ## Chapter 7 Review
 
 Lets go over some of the basics from the previous lessons:
+
+---
 
 ## Tone.JS library
 
@@ -14,9 +16,13 @@ Be sure to include this line in your HTML file if you want to utilize Tone.js in
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.8.9/Tone.min.js"></script>
 ```
 
+---
+
 ## loading sounds
 
 You can load a sound file into a P5 project just like an image file. The only difference is that now we are using the file with `Tone.Player()` and `Tone.Players()` instead of `loadImage()`
+
+---
 
 ## audio file playback
 
@@ -33,6 +39,8 @@ function keyPressed(){
     }
 }
 ```
+
+---
 
 ## Audio Signal Pathway
 
@@ -51,6 +59,8 @@ reverb = new Tone.reverb().toMaster();
 delay = new Tone.FeedbackDelay().connect(reverb);
 playler player = new Tone.Player(soundSample.mp3).connect(delay);
 ```
+
+---
 
 ## Buttons and Sliders
 
@@ -72,3 +82,4 @@ The buttons can call a callback function whenever they are clicked and those can
 
 All of the elements from chapter 7 are covered in the [Sound assignment #1](https://pdm.lsupathways.org/3_audio/1_sampler/3_lesson_3/) page, so there will be no additional assignment. However if you would like more practice before attempting the assignment, try loading various sound files into a project and applying various effects to their playback in order to see what kind of sounds you can achieve.
 
+---

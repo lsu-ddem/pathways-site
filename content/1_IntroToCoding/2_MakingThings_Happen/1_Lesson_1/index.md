@@ -12,7 +12,9 @@ Most of our tests in web programing will boil down to measuring boolean conditio
 
 We can also design tests that compare the relationship between two values and only pass based on what that relationship is. The chart below lists some common relational expressions (many of which you may have encounter in math class) and the symbols we use in JavaScript to add them into our code:
 
-**Common relational expressions**
+---
+
+##Common relational expressions
 
 | Operator | Expression               |
 | -------- | ------------------------ |
@@ -25,8 +27,7 @@ We can also design tests that compare the relationship between two values and on
 
 We might need to make tests that ask for more than one condition to be measured at a time, allowing the test to pass only if both conditions are met or if either one or more options listed are met. In these cases, we can chain conditions together with the && operator (which stands for "and") or use the || operator (which stands for "or") to allow for two passable options for a single test:
 
-**Common logic expressions**
-
+##Common logic expressions
 
 
 | Operator | Expression               |
@@ -35,6 +36,8 @@ We might need to make tests that ask for more than one condition to be measured 
 | \|\|     | or                       |
 
 Let's take a look at some common conditional statements and see how we code them into our projects.
+
+---
 
 ## Single Test, Single Result  (The If Statement)
 
@@ -67,6 +70,8 @@ Pay close attention to the various symbols in the code example above. Every Cond
 The embedded code below shows an If Statement in action. Clicking and dragging your mouse along the gray canvas draws lines made of teal squares. The test measures the `mouseIsPressed` system variable from our previous lesson and waits to see if it contains the boolean value "true." If it does, a teal square is produced by running the two lines of code found inside of the braces. If it doesn't, the test continues to check and wait to see when it will be passed because we have placed it inside of the **draw( )** loop. The code outside of the If Statement continues to run regardless:
 
 {{% codepen 600 aKWKmj%}}
+
+---
 
 ## Single Test, Two Results  (The If/Else Statement)
 
@@ -104,6 +109,8 @@ Notice how similar this looks to our If Statement. The only difference is the ad
 The code embedded below modifies out original square drawing code by changing our If Statement to an If/Else Statement. Our test is still the same: it measures the `mouseIsPressed`  variable and waits to see if it contains the boolean value "true." If it does, a teal square is produced. If the **mouseIsPressed** variable contains the boolean value "false", the code in our else block is run, giving us the secondary result of drawing peach circles to the screen instead. The code outside of the If Statement continues to run regardless:
 
 {{% codepen 600 YvVvwM%}}
+
+---
 
 ## Multiple Tests, Multiple Results  (The If/Else If Statement)
 
@@ -146,8 +153,8 @@ We can now make one final modification to our embedded code and change our If/El
 
 {{% codepen 600 zaGpgp%}}
 
-{{% notice warning %}}
+
 
 Building extensive If/Else If Statements can end up making your code look cluttered and hard to debug if certain tests aren't acting the way they should. In our [Graphics Unit](https://pdm.lsupathways.org/2_graphics/2_paintapp/2_lesson_2/), we'll learn how to nest a conditional test inside of another test in order to make more clean-looking, sensical logic flows for advanced projects.
 
-{{% /notice %}}
+---

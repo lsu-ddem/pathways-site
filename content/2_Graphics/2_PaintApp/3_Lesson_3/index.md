@@ -6,6 +6,8 @@ weight: 5
 
 Lets go over some of the basics from the previous lessons:
 
+---
+
 ### Advanced interactions on shapes
 
 We can utilize conditionals in order to determine if our mouse if located in the same place on the canvas as a shape. By applying a little math to the coordinates of a shape, we can determine the proper values to place in our conditional statement.
@@ -68,6 +70,8 @@ function draw(){
 }
 ```
 
+---
+
 ### Nested Conditionals 
 
 We can nest conditional statements inside of each other, just like we can with for loops. when this happens, the result of one test passing is another test. Both of these tests have their own independent conditions for passing and results if they do pass. However, the inner-level test wlll never be run without the outer-level test first passing.
@@ -99,3 +103,5 @@ In the example above, the code is an excerpt from a draw function. The first tes
 To prepare for the *Paint App* assignment, look at the code below. Copy it into a new P5 project and follow the instructions in the comments. The goal is to have the background color change to a unique color whenever a moving shape is clicked on.
 
 {{% codepen 500 LYpregQ %}}
+
+---

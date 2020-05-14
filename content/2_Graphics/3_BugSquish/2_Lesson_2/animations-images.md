@@ -17,6 +17,8 @@ The first thing we have to do before adding an image to our sprite is to include
 
 The second method tends to be a little more stable than method 1 because if the server location changes at all in the previous method, P5 will be unable to locate the images and the project will break. The downside is that each P5 account has a limited amount of storage, so you will have to be careful not to use all of this space. This process works the same for images, sound files, and video files. You can delete these assets to free up space under the `My Account` tab in the top right of the screen.
 
+---
+
 ## Putting an image onto a sprite
 
 Now that p5 knows where to find the image, you need to have the program load the image into your project. To do this, we need to call function preload(). This function's purposes is to load any external assets prior to the setup function. This will prevent the code from trying to perform a task with an asset that isn't actually in the project yet. Not doing this in preload() will cause multiple errors. 
@@ -39,7 +41,7 @@ You can use `addAnimation()` instead because `addImage()` is creating a single f
 
 You must give each animation a name so that you can refer to it whenever you need ot adjust a parameter of the animation or change it. You then have to tell P5 which image file(s) you want to use.
 
-## Changing the image on a sprite
+#3# Changing the image on a sprite
 
 To change the image on a sprite, it is fairly simple. First you must repeat the process of loading in each image and adding it to the sprite with `addImage()` or `addAnimation()`
 
@@ -47,6 +49,7 @@ Next you will need to set up a condition that will tell your code when to change
 
 {{% codepen 400 GRpMdym %}}
 
+---
 
 ## Animating a sprite with multiple images
 
@@ -59,3 +62,5 @@ Here is an example of adding a looping animation to a sprite and coding for inte
 {{% codepen 400 ZRRoEG %}}
 
 Notice how the images are loaded into an array using a for loop in order to keep them all in one place. you can then easily reference the array index to find a specific image.
+
+---

@@ -1,5 +1,5 @@
 ---
-title: "Synthesis"
+title: "Sound Synthesis"
 weight: 11
 chapter: true
 ---

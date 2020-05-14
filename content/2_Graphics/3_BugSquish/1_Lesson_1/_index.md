@@ -20,6 +20,7 @@ Once you have added this line, save your HTML file and head back to your "sketch
 
 As mentioned, the libraries are a collection of javascript code. To see this raw code, type the url from the HTML line above into your browser and you can see the base code for this library.
 
+---
 
 ## Spawning Sprites with P5.play
 
@@ -49,6 +50,8 @@ The default appearance of the sprite is a rectangle with a randomly generated co
 
 Using this process you can now generate as many sprites as needed using `createSprite()` for each one. Every sprite will need its own unique name, but you will only need to call `drawSprites()` one time in your code. It is best that this happens last in the draw function so that any calculations can occur be applied to the sprite before it is drawn.
 
+---
+
 ## Making Groups of Sprites
 
 Once you have multiple sprites you may find it beneficial to group them together. This will allow you to refer to multiple sprites at once if you need to update the properties of multiple sprites at the same time. 
@@ -69,3 +72,5 @@ To create a group, follow these steps:
     ```
 
 You can now refer to your sprites individually or as a group, similar to a teacher giving instructions to an individual student, or addressing the whole class at one time. You can also remove a sprite from a group with the `.remove()` method.
+
+---

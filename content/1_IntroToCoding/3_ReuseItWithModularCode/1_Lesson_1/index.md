@@ -17,6 +17,8 @@ Look at this code; what is different from the previous code? You will notice tha
 
 {{% codepen 600 oywJee %}}
 
+---
+
 
 ## Making a Function
 
@@ -31,7 +33,9 @@ To create a function, follow these general steps:
 4. Now you can call your function inside of draw(). Notice how this happens twice in the previous code, and two different ghosts appear. This is because the first call happens with one set of arguments, and the second happens with a new set. Each function call is independent, like when you called rect() multiple times to create multiple rectangles on the canvas.
 
 
-### Functions with a return
+---
+
+### Functions that Return a Value
 
 When making a function, you can have it return a value to be used elsewhere in your code. 
 
@@ -42,3 +46,5 @@ Look at the code below; the array ghostColorz[ ] is calling the function randomC
 When a function has a return, it means that it will execute its code, and then give back a value. This can be something generated entirely within the function, like in this example, or based on the input of an argument. When a function returns a value, the function call is replaced by the value that is returned. So in this example, calling randomColorz() results in a series of arrays used to determine the colors of the ghosts. 
 
 One thing to note is that a return should be the last thing inside of a function. THis is because once the computer returns a value, the function will stop running until it is called again, at which point it will start from the top. This means that any code beneath the return will be ignored by the computer which would be a waste of code and computer memory in the best case, and cause multiple errors at the worst. 
+
+---

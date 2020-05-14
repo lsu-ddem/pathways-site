@@ -12,3 +12,5 @@ Below is an example of the Paint app assignment. Play around with it and notice 
 
 
 {{% codepen-results 600 qKxRGM %}}
+
+---

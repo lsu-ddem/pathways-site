@@ -99,3 +99,5 @@ Noise is a kind of generate sound with no definite pitch, and that occurs across
 Try changing the noise type in the example below to see their differences in timbre and frequency.
 
 {{% codepen 600 VdxRxz %}}
+
+---

@@ -13,6 +13,8 @@ At this point we have seen many code examples that already show ways to move a s
 
 The next assignment will have you work to combine all of the elements we have gone over in order to create your own game: "Bug Squish". This game will require you to code similar interactions between sprites and the user in a new context. Check out the next page for an example of your final goal!
 
+---
+
 ## Game States
 
 Now that you have looked at the working example for 'Bug Squish", you will notice that the game has several different states:
@@ -58,6 +60,8 @@ function draw() {
 
 By setting things up this way, the computer will only run the code that is present for each game state. Within each main state there is also a nested loop containing a condition for changing the game state to a different value. If one game state can go to multiple other stats, you will need a separate nested test for each potential state change. By calling `setup()` at the end of the end state, the code resets everything to their state at the beginning of the game.
 
+---
+
 ## Timer
 
 Also present in 'Bug Squish' is a tier function. in order to achieve this, be sure to include the following variables and function in your code:
@@ -77,3 +81,5 @@ function timer() {
 ```
 
 As long as this function is being called it will check the current time of the computer's clock against the time that the the function was called and return that value as a whole number. Additionally, once the difference reaches a certain threshold it will change the `timerIsDone` variable. You can utilize this function and variables to help your code keep a timer and change states from 'play' to 'end'.
+
+---

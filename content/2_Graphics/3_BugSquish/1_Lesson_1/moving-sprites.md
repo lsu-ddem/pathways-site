@@ -31,6 +31,8 @@ Looking in the setup() function of the code above we can see several properties 
 
 There are several other properties that can be used in the P5.play library, and their details can be found [here.](https://molleindustria.github.io/p5.play/docs/index.html)
 
+---
+
 ### Methods
 
 Methods serve as functions or actions that the sprite can be told to perform. They are called in the following manner:
@@ -57,6 +59,8 @@ Any angle between 0 and 359 can be used, but those are some of the more commonly
 
 We will utilize many more methods throughout this unit, but for now lets focus on these. You can look more into a sprite's methods here.](https://molleindustria.github.io/p5.play/docs/index.html)
 
+---
+
 ## Moving Your Sprites
 
 {{% codepen 600 RzPbrY %}}
@@ -68,3 +72,5 @@ We can also use these parameters to set automatic movements. In the code below t
 {{% codepen 600 NWGaMxa %}}
 
 Later on we will discuss how to program colossians with other sprites to build more complex environments to move through. 
+
+---

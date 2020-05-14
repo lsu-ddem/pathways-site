@@ -3,7 +3,9 @@ title: "Synthesizer Examples"
 weight: 10
 ---
 
-Over the couse of the past several chapters we have gone over how to build simple synthesizers using Tone.js. This page serves as a series of examples and the ideas behind different, more complex synthesizers.
+Over the course of the past several chapters we have gone over how to build simple synthesizers using Tone.js. This page serves as a series of examples and the ideas behind different, more complex synthesizers.
+
+
 
 #  Simple Synths 
   

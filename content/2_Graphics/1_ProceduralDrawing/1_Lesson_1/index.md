@@ -51,6 +51,8 @@ The following code adds changeable stroke color and stroke weight to the same sh
 
 {{% codepen 500 WBMVbd %}}
 
+---
+
 ## Drawing Custom Shapes
 
 We can create complex images by overlapping basic shapes, but we can also design our our shapes by connecting multiple vertices together. To do this, we first call the `beginShape()`function, then one `vertex()` function with a pair of X & Y coordinates for the location of each angle point of our shape. These form the corners of the shape, just like the arguments of the `triangle()` function. Finally, we call the `endShape()` function to designate that we have completed our design. Similar to the `triangle()` function, p5 draws connects the coordinates in our `vertex()` functions in the order in which we code them, so take extra care to have a plan in place for working in a clockwise or counterclockwise order or you will have stroke outlines bisecting your finished shape. When in doubt, it is always a good idea to label the vertex points in a custom shape.
@@ -62,3 +64,5 @@ The following code shows two custom shapes drawn using the `beginShape()`, `endS
 {{% codepen 500 dEmKre %}}
 
 These shape functions can be used in various repetitions and combinations within P5 to create a near limitless variety of images, however this is not an exhaustive list of all available functions. Depending on the context of a particular assignment or your [Final Integration Project](https://pdm.lsupathways.org/5_integrationproject/) you may need to utilize additional drawing functionality. Be sure to look at the [P5 Reference](https://p5js.org/reference/) material for detailed information on these and other functions within P5.
+
+---

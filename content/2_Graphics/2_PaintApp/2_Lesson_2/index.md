@@ -34,6 +34,8 @@ With a Nested Conditional, we embed an Inner Level Test inside of an Outer Level
 
 As coders, using Nested Conditionals serves a number of practical purposes in addition to making our code look neat and tidy. While our previous boundary measuring tests weren't _too_ long, using multiple &&-linked sub-tests inside of one If Statement can make our code difficult to debug if that test isn't working the way we want it to. Furthermore, Nested Conditionals allow us to devise more complex logic flows, which will in turn allow us to design more complex  games and interactive art.
 
+---
+
 ## Nested Conditional Examples
 
 Let's take a look at a code similar to one we worked with in the last lesson. This time, we have two squares that we want to interact with. Clicking on both causes different results, so we need to use an If/Else If statement: 
@@ -84,6 +86,8 @@ The code below works just like our original version, but with our final Nested C
 
 {{% codepen 400 VOxyVa %}}
 
+---
+
 ## Bracket Alignment & Test Levels
 
 Nesting conditional statements helps show other coders the order of our decision-making logic in more ways than one. When practicing this, there are a few things to keep in mind:
@@ -94,3 +98,5 @@ Nesting conditional statements helps show other coders the order of our decision
   ![](/images/uploads/test_indent_picture.png)
   
   While your code might still work if you don't follow this system, it will most likely lead to lots of confusion if you have to debug a problem and can't visually tell which test belongs inside of which! Thankfully, most code editors have a "Tidy" or "Beautify" command that you can run in order to help auto-indent and clean up your code spacing.
+
+  ---

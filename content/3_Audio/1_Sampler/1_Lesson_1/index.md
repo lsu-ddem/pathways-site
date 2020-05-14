@@ -12,6 +12,8 @@ Sound waves can be measured as teh energy from the sound pushes air molecules, c
 
 If the frequency of a sound is the number of times per second that a wound wave oscillates, then the **amplitude** is the size of that oscillation. When the sound source vibrates more air, it increases the amplitude, and resulting volume, of that sound. To test this, try lightly placing your finger on the computer speaker and playing a sound at a quiet volume. Then play it again at a much louder volume. Did you feel a difference in the vibrations? The louder sound contains much larger vibrations than the softer one.
 
+---
+
 ## Getting the Sound into the Computer
 
 So how do you go from vibrations in the air to a sound file you can play back on a computer? To get there you need a few pieces of equipment; most of this equipment is available built into electronics such as phones and laptops, but the sound, part quality, and price can all vary widely. To record and playback a sound, the following processes must happen:
@@ -29,6 +31,8 @@ In the above process number three, the computer takes a series of snapshots of t
 * **Sample Rate**: The number of times per second that the computer takes a snapshot of the incoming signal level. The standard rate is 44,100 times per second. Higher quality products such as movies can go as high as 48,000 or 96,000 times per second, but these higher sampling rates result in larger file sizes. 
 * **Bit Depth**: The resolution of the sound. When the computer checks the incoming signal, it can only check to a certain level of exactness for each sample. Standard audio recording happens at 16-bits, which is 2^16 potential discrete values (just over 65 million). Higher quality audio can be recorded at 24-bits, but like increasing the sample rate, will increase the file size. 
 
+---
+
 ## Understanding the Audio Signal Path
 
 Because computer audio playback is a real-time processing of data in a continual stream. This data is stored as a sound file and processed every time you tell the computer to play back the audio. However, because this is a continual stream of information, we have to keep the data flowing so the computer can keep reading the upcoming data. To do this, when we playback our sound files, we need to send the playback to the master speakers of our device with the method .toMaster() as shown below. Without this command, we will not hear our sound playback for any audio in this unit.
@@ -36,6 +40,8 @@ Because computer audio playback is a real-time processing of data in a continual
 ![null](/images/uploads/simple_audio_pathway-1-.png)
 
 Because this is a stream of data, we can alter the flow of this data through different types of precessing to change the contents of that data with the `.connect()` and `.chain()` methods, which we will go over later.
+
+---
 
 ## Creating a Sound File Player
 
@@ -57,6 +63,7 @@ However it is **IMPORTANT** that you do not try to use `.start()` inside of the 
 
 {{% codepen 500 MXVgVR %}}
 
+---
 
 ## Playing Multiple Sounds with Tone.Players
 
@@ -155,3 +162,5 @@ In the code below, we use a button to trigger the playback of each sound and  a 
 {{% codepen 500 LrJrVe %}}
 
 We will discuss audio effects that can be controlled via sliders in the next page.
+
+---

@@ -16,3 +16,11 @@ One way to think of a variable is like an excel spreadsheet. You can store data 
 The picture below will update items in column F based on changes to other cells in the same row.
 
 ![excel sheet math](/images/graphics/excel.jpg)
+
+---
+
+A video demonstration of variables from The Coding Train:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RnS0YNuLfQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---

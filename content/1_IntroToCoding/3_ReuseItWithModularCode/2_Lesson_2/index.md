@@ -22,3 +22,5 @@ The way we are able to specify a specific object to talk to in our code is throu
 Experiment with this code by creating at least 2 more ghosts and letting them move with both functions **haunt()** and **bounce()**.
 
 We will get more experience using dot notation later in the [Graphics](https://pdm.lsupathways.org/2_graphics/) unit once we begin working with sprites and groups of sprites.
+
+---

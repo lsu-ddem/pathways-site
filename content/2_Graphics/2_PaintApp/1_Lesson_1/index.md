@@ -8,7 +8,7 @@ In your projects, you'll often want to have interactive mouse events tied to spe
 
 The process of tracking and reacting to mouse clicks on objects will becomes easier with the use of a specialty library, particularly ones used to make game development more intuitive. We'll begin working with just such a library, **p5.play.js**, in the next chapter. However, to understand how the library is functioning, we first need to go over the basic concepts and math involved.
 
-
+---
 
 ## Stationary Shape Measurements
 
@@ -54,8 +54,6 @@ Measuring the boundaries of a circle is a slightly more challenging task, since 
 
 
 
-
-
 The first three values can be found as the four arguments passed into the **ellipse( )** function called to draw the circle to the canvas. The circle's radius is half of its diameter. We should declare a variable to hold that result of the circle's diameter divided by 2 so that we can use that value later.
 
 Since the radius is the distance between the center of the circle and its enter outer perimeter, our next step is find a way to trigger an event whenever our **mouseX** and **mouseY** variables cross that perimeter. If we can compare the value in our circle radius variable against the distance between the current mouse location and the circle's center, we could use that to test if our mouse has hovered over or been been clicked inside of our circle:
@@ -70,6 +68,8 @@ Because the radius is half of the diameter, a value we need to draw the circle, 
 
 Remember that you are not interacting directly with the shape that is visible on the canvas. in reality an invisible boundary is being set up that (intentionally) matches the measurements of our shapes. Try commenting out the `rect()` or `ellipse()` functions in any of these codes (leave everything else) and you will see that they still function if you click where the shape is no longer being drawn.
 
+---
+
 ## Moving Shape Measurements
 
 The techniques learned above will also work for shapes that are moving across the canvas. The only difference in our boundary measurement tests will is the need to measure our mouse location against variables that stand in for the ever-changing location of the shape's edges/centers. Take a look at the code below and test it out. The background will change to different colors when you click on the square versus when you click on the circle. Compare this code to the ones we studied above:
@@ -77,3 +77,5 @@ The techniques learned above will also work for shapes that are moving across th
 {{% codepen 500 vwjWEa %}}
 
 Notice how the shape parameters are all variables instead of being hard-coded like before. Because the logic is still the same, we can substitute and variety of values and achieve a consistent effect. This is why the shapes can move and still be measured. Try changing the variable values and you will see that the code still contains the same functionality. 
+
+---

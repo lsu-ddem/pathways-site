@@ -59,6 +59,8 @@ if (test 1 === true) {
 }
 ```
 
+---
+
 ### Arrays
 
 An array can serve as a kind of "super variable" that can store multiple values in a list.
@@ -77,7 +79,9 @@ ellipse(array1[5], 50, 50 50); //talks only to the element within the index numb
 
 All naming guidelines for variables also apply to arrays.
 
-### Aor loops
+---
+
+### For loops
 
 For loops are powerful tool that will execute a series of code for as long as a condition is true once they have been triggered.
 For loops will run as fast as possible when executed.
@@ -107,3 +111,5 @@ For this assignment there is no started code. Your goal is to create your own co
   ```
 
 * uses a conditional statement that logs those numbers to the console whenever the mouse is pressed.
+
+---

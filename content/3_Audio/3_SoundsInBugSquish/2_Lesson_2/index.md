@@ -3,8 +3,6 @@ title: 'Adding Sound Events to Games: Synthesizers & Sequences'
 weight: '2'
 ---
 
-
-
 There are a few ways that we can utilize synthesizers and sequences with sprites, but first lets go into how we can set that up. If you did the activity on the previous page, they you will already have a code that is ready to go. Otherwise you will need to follow the steps below:
 
 1. open a new P5 project. Make sure that **BOTH** Tone.js and P5.play are installed in the HTML file.
@@ -13,6 +11,8 @@ There are a few ways that we can utilize synthesizers and sequences with sprites
 4. create a `.collide()` command for each sprite group and a callback function for each collision. 
 
 To save time, it is recommended that you begin with there-made code, however you will have to follow these generalized steps whenever you want to make a project utilizing both sound and sprite interactions. (see [Integrations Project](https://pdm.lsupathways.org/5_integrationproject/) for more information)
+
+---
 
 ## Background Music
 
@@ -171,7 +171,9 @@ function bgChangeEnd(){
 
 By including a call to a separate function inside of the test to change the state, we can alter parameters of the background music based on how the game is being interacted with by the user. These changes can be subtle, such as tempo or timbre changes, or more drastic such as switching the entire sequence being utilized in each section.
 
-### Changing a Sequence Without Game States
+---
+
+## Changing a Sequence Without Game States
 
 But what is your code does not have built in game states? Lets look at this example from a previous chapter in more detail to see how we can achieve that.
 
@@ -180,3 +182,5 @@ But what is your code does not have built in game states? Lets look at this exam
 In this example, the sequence being played changes based on where the user clicks on the canvas. (you have to press capital 'P' to start the sound and capital 'S' to stop it.) These sequences are stored inside of the patterns array on line 16. Each tab on the canvas is given a set of characteristics that check whether it has been clicked and tell it how to appear on the canvas. When we click on a tab, the `mousePressed()` function is called. Inside this function the current set of notes is removed from the sequence, followed by a test to check which tab was clicked, and then based on that tab, a new set of notes is added into the `Tone.Sequence()` object. 
 
 So what does this mean for you? I'm fairly sure that you won't be recreating this code for an assignment in this class. The key points to take a way from this example is how you can set up a conditional statement to check where the mouse is being clicked on the screen and define specific sequences to play based on that location. also, just like before, you do not have to change the entire sequence as part of this test. instead of replacing the sequence on line 139, the code creators could have altered some other parameter of the synthesizer or the sequence. Try thinking of ways you could utilize these ideas to modify the Paint App to contain dynamic audio interactions. 
+
+---

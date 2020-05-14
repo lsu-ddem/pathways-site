@@ -1,5 +1,5 @@
 ---
-title: "Resources"
+title: "Additional Resources"
 weight: 8
 chapter: true
 # pre: "<b>2. </b>"

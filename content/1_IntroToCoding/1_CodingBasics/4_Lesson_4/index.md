@@ -24,6 +24,8 @@ We can also run these same equations against a variable that isn't a fixed, stat
 
 {{% codepen 400 byMorm %}}
 
+---
+
 ## Math for Animation
 
 In order to animate a shape or image, we will need to replace one or more of its fixed location arguments with a variable, and then write a line of code that causes that variable to update with a new, changed. This last action will need to repeat continuously at a rate fast enough for our eyes to perceive the location change as a smooth motion. The **draw( )** block is a perfect place to add this new code since it loops the code inside of it at a rate of 60 frames per second.
@@ -50,7 +52,7 @@ Once you are comfortable with the process of adding to or subtracting from a var
 | /=               | X = X / value | X /= value; |
 | %=               | X = X % value | X %= value; |
 
-
+---
 
 ## Cyclical Animations with Modulo
 
@@ -69,3 +71,5 @@ The embedded code below shows this process in action. Notice how we are reassign
 {{% codepen 400 mKmxPR%}}
 
 If you want to slow down the speed of the square's travel, call the `frameRate( )` function in your **setup( )** block and give it a number that is less than 60 in order to slow down the looping rate of the **draw( )** block. Adjusting this system variable will change how many times the **draw()** function loops per second.
+
+---

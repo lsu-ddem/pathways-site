@@ -17,3 +17,5 @@ Here is a working example of the Bug-Squish assignment. Notice the following ite
 In order to achieve this, you will need to utilize all of the skills we have learned so far: conditionals, for loops, custom functions, variables/arrays, as well as how to create groups of sprites. The images used are available in the [resources](https://pdm.lsupathways.org/6_resources/4_gaphics/p5.play/sprites-images-sprite-sheets/) page.
 
 {{% codepen-results 600 eKyvxX %}}
+
+---

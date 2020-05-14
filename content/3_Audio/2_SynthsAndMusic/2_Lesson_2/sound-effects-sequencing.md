@@ -66,4 +66,6 @@ This effect Applies an LFO to the cutoff frequency a filters connected to 8 diff
 
 ---
 
-The next section is an assignment that will have you combine your knowledge of synthesizers and sequences to create a new code.
+Before we move on to the chapter assignment, which will have you combine your knowledge of synthesizers and sequences to create a new code, lets review what we have learned so far because there has been a lot of information given in the past few pages.
+
+---
