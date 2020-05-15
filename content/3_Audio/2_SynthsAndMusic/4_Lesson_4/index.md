@@ -5,7 +5,7 @@ weight: 5
 
 For this assignment you need to:
 
-Find an image of an action or event that might occur.  Create a video game-like sound synthesis effect for this event. (Something like breaking a block with your head – Super Mario style. Or diving into a pool.)  When the canvas is clicked, display an image of the event and trigger the corresponding sound event.
+Find an image of an action or event that might occur.  Create a video game-like sound synthesis effect for this event. (Something like breaking a block with your head – Super Mario style. Or diving into a pool.)  When the canvas is clicked, display an image of the event and trigger the corresponding sound event. Keep in mind that all events must be triggered from the same original click.
 
 Utilize a collection of these elements:
 

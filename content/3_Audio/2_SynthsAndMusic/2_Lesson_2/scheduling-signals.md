@@ -43,7 +43,7 @@ As a refresher, we can specify times, beats and durations in various ways
 
 - Number: seconds
   - 1.2: 1.2 seconds 
-  - String: synchronized to the `Tone.Transport()`
+- String: synchronized to the `Tone.Transport()` '2:1:2' is measure two, beat 1, 2 subdivisions 
 - Musical Beats & Subdivisions
   - Speed is relative to the `Tone.Transport.bpm` value
     - "4n" = quarter note

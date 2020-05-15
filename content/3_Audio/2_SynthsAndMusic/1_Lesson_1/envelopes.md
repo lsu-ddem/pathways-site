@@ -25,22 +25,25 @@ We can update these four values in real time if we want. The example below uses 
 
 {{% codepen 600 yLYzQLa %}}
 
-You can also set trigers to adjust the parameters in a fashion similar to below;
+You can also set triggers to adjust the parameters in a fashion similar to below:
 
 ```
+
 if(condition to change attack === true){
   simpSynth.envelope.attack = 1;
 } else {
-  simpSynth.envelope.attack = 0.05;}
-  ```
+  simpSynth.envelope.attack = 0.05;
+  }
 
-  This is an effective way to create different variations on the same synthesized sound. An idea that will come in handy during the sext assignment.
+```
 
-  ---
+This is an effective way to create different variations on the same synthesized sound. An idea that will come in handy during the next assignment.
+ 
+---
 
-  ## Filters
+## Filters
 
-  - A [filter](https://tonejs.github.io/docs/r11/Filter) modifies a source sound by either amplifying or reducing certain frequency ranges of that sound; causing a change in the 'brightness' of that sound. They act similarly to a coffee filter, letting some materials through the fine mesh, while blocking others.
+- A [filter](https://tonejs.github.io/docs/r11/Filter) modifies a source sound by either amplifying or reducing certain frequency ranges of that sound; causing a change in the 'brightness' of that sound. They act similarly to a coffee filter, letting some materials through the fine mesh, while blocking others.
 
 ### Parameters of Tone.Filter()
 
@@ -93,7 +96,8 @@ Noise is a kind of generate sound with no definite pitch, and that occurs across
   * pink: Higher frequencies are less present than lower frequencies. The rolloff is 3dB per octave. 
   * brown: similar to pink noise, but with a steeper rolloff of 6dB per octave
 - Each has a different sound, covers a different frequency range, and is used for different purposes. 
-- There are other colors of [noise](https://en.wikipedia.org/wiki/Colors_of_noise) that Tone doesn't implement that are good to know about.  
+
+There are other colors of noise that Tone doesn't implement that are good to know about.  You can check out information about those types of noise at [this link](https://en.wikipedia.org/wiki/Colors_of_noise)
 
   
 Try changing the noise type in the example below to see their differences in timbre and frequency.

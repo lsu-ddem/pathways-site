@@ -6,7 +6,9 @@ weight: '1'
 
 A synthesizer generates tones by generating an electrical signal that moves between high and low voltages in various patterns, and at different speeds. These signals can be sent to control various parameters of the sound output. 
 
-Here is an example of a basic synthesizer, which we will dive into later:
+Here is an example of a basic synthesizer:
+
+We will dive into the specifics of it later in this chapter. Be sure to check your volume before clicking to avoid hearing discomfort.
 
 {{% codepen-results 400 VwvbLQo %}}
 
@@ -18,7 +20,7 @@ To build a synth in Tone.js we need to use the `Tone.Synth()` object. By opening
 
 Once we have made the synthesizer, we have to tell the computer how to trigger the sound. We can use `triggerAttackRelease()` to set these parameters. just like in the previous section we need to avoid triggering sounds in the `draw()` function; in the example below we use `keyPressed()`. 
 
-`triggerattackrelease()` has two main arguments:
+`.triggeraAttackAelease()` has two main arguments:
 
 * **Pitch**: given as a string. Indicates the desired keyboard note and octave to play on the `Tone.Synth()`.
 * **Duration**: number of seconds the note sounds before at automatically stopping.
@@ -36,10 +38,10 @@ A standard 88 key keyboard has a range from A0-C8.
 ---
 
 ## Oscillators
- 
+
  The backbone of the `Tone.Synth()` object is its virtual oscillators. an oscillator moves back and forth between two points. By setting these points to be electric voltages and changing the pattern of how the computer moves from high-low-high, and how quickly this pattern occurs, the synthesizer is able to create its variety of timbres and pitches. These patterns are called waveforms.
 
- ### Types of oscillators
+### Types of oscillators
 
 The most basic unit of synthesis in Tone is [Tone.Oscillator](https://tonejs.github.io/docs/r11/Oscillator), which is utilized inside of `Tone.Synth()`. There are 4 different kinds of waveforms.
 

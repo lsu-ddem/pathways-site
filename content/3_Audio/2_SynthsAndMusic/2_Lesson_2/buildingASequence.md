@@ -40,17 +40,17 @@ The next code example contains all of the elements listed at the beginning of th
     * nesting an array with this array will create subdivisions of those beats. 
 3. Create a variable to store this sequence. The next step becomes a little more complicated.
 
-```
-sequence1 = new Tone.Sequence();
-```
+    ```
+    sequence1 = new Tone.Sequence();
+    ```
 
 4. Open up a function within the `.Sequence()` parentheses and format it as shown below. This lets us trigger the notes present in the array called melody. each element will be a quarter note at the transport's tempo.
 
-```
-sequence1 = new Tone.Sequence(function(time, note) { 
-    simpSynth.triggerAttackRelease(note, 0.5);
-  }, Melody, '4n');
-```
+    ```
+    sequence1 = new Tone.Sequence(function(time, note) { 
+        simpSynth.triggerAttackRelease(note, 0.5);
+      }, Melody, '4n');
+    ```
 
 5. You can change the interpretation of the melody by changing the third argument of `Tone.Sequence()`.
     * These values are all relative to the `Tone.Transport().bpm` parameter.
