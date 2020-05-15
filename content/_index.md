@@ -12,7 +12,7 @@ Programming Digital Media introduces a broad array of topics related to digital 
 
 The specific digital media topics covered in this course are:
 
-* Real-time Graphics rendering and user interactions.
+* Real-time graphics rendering and user interactions.
 * An introduction to the concepts and coding applications of sound design.
 * Basic electronics and physical computing.
 

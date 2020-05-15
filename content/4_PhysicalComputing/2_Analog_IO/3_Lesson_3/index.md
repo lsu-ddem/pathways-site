@@ -1,6 +1,6 @@
 ---
 title: Chapter 11 Review & Assignments
-weight: 5
+weight: 3
 ---
 ## Chapter 11 Review
 
