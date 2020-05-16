@@ -5,7 +5,7 @@ weight: '2'
 
 Now that we have an idea of what an analog signal is, lets look at some hardware that we can utilize to control these signals in real time. Many of the components are variable resistors, meaning that they will act like a fixed resistor in terms of how they interact with the flow of electricity, but their Ohm value can change under different circumstances. A few of them are voltage dividers, which can be noticed by their three leads. (This is not a hard rule as some components have three leads, but fall into other categories.) In a voltage divider, the electrical signal is sent two resistors. The different between the two resistors can be measures and used for a variety of purposes.
 
-In this lesson we will go over details about some of the more common types of analog components and how to connect them to your Arduino board. We will not go into details about how to hook up every sensor however as tmany of the circuits are identical except for the sensor that is being used.
+In this lesson we will go over details about some of the more common types of analog components and how to connect them to your Arduino board. We will not go into details about how to hook up every sensor however as many of the circuits are identical except for the sensor that is being used.
 
 ## Potentiometers
 
@@ -15,9 +15,15 @@ A potentiometer, abbreviated pot, is a type of variable resistor that can easily
 
 ![default](/images/graphics/pot2.jpg)
 
+![default](/images/graphics/slidepot.jpg)
+
 Pots have three pins as shown in the images. The outside pins connect to the positive and negative source voltage, while the middle pin is connected to the wiper. By connecting this middle pin to an analog input on our boards, we can read the voltage division as a value between 0 and 1 with the `analogRead()` function.
 
 ### Wiring up a Pot
+
+![default](/images/graphics/potwledcode.png)
+
+![default](/images/graphics/Basic Pot and LED.png)
 
 #### Reading the Voltage Data
 

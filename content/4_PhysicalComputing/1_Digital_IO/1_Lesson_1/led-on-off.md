@@ -32,13 +32,13 @@ You can save a copy of this sketch by going to the file menu -> save as. You wil
     * This will make our code set up another pin on the arduino to function identically to the original pin.
 3. Make a global variable called ledPin. You can change this value to change which pin is used to control our LED
 
-```
-// line 24 in the starting file is a good place to put this line
-int ledPin = 4;
-```
+    ```
+    // line 24 in the starting file is a good place to put this line
+    int ledPin = 4;
+    ```
 
 4. Now we repeat the process of step number 2. with the `digitalWrite()` functions inside of `void loop()` so that the function now looks like this
 
-![default](/images/graphics/saveas.png)
+    ![default](/images/graphics/saveas.png)
 
 5. Now we can upload the code to our arduino. You will see the original LED still blink, but now we can move to the next page and build the circuit.

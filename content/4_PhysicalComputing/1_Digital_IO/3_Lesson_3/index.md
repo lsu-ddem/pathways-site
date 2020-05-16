@@ -51,6 +51,9 @@ Next remove the ground end of the white cable and connect it to the button. Add 
 
 You can now reconnect your power cable to the 5V pin on the Arduino. Your circuit should look like this:
 
+
+![default](/images/graphics/simplebutton.png)
+
 ![default](/images/graphics/simple button.JPG)
 
 Notice how the input and output are located diagonally across the button? Many buttons are arranged this way internally. Unless you have the internal diagram for the buttons, there is no way to know if your button is arranged diagonally or not. Be sure to try different combinations and orientations if your button does not work the first time.
@@ -65,6 +68,8 @@ Now lets change our button to a switch. Start by removing the button, and connec
 
 From there you can connect either the top or the bottom pin to ground so that your circuit looks like the image below.
 
+![default](/images/graphics/simpleswitch.png)
+
 ![default](/images/graphics/simpleswitch.JPG)
 
 By changing the switch from the up or down position we are now either completing or breaking the circuit. Below is a short video showing the circuit pictured above in action. Notice how the light will remain on until it is turned off and vice versa. This is a simplified version of what happens when you turn a light switch on and off in your home.
@@ -74,6 +79,8 @@ By changing the switch from the up or down position we are now either completing
 As mentioned previously, you can utilize a switch to change between multiple states. The video below illustrates that by using the same switch to change between two different LEDs.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/etvNOnt-G0Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![default](/images/graphics/2ledtoggle.png)
 
 This time notice that the power supply is is being fed into the switch, and the output pins are connected to the LEDs which each have their own resistor and connection to ground. No matter which state the switch is in there is a complete circuit so a light will always be on. We are now able to route the electricity to a different pathway *before* it reaches the LED. Keep in mind that if you try to recreate this, you may need to reverse the direction of your LEDs. Remember, the longer lead is the positive end, and the shorter one connects towards ground.
 
@@ -152,6 +159,8 @@ At this time you can power on your Arduino and press the button. You should see 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ExCuHNhfAfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+![default](/images/graphics/ibuttonledswitch.png)
+
 While your arduino is connected to the computer and running this code, open the serial monitor in the arduino code editor. We can see the state of the buttonState variable change in real time. This will be useful for troubleshooting and determining various settings later in chapter 11. By default you will not see anything in the monitor so we have to add two lines of code to our project. We need to first add this line to the setup function:
 
 ```
@@ -169,9 +178,11 @@ Once we have these line in the correct place we can upload the code to our Ardui
 
 So why go through these extra steps just to create a toggle when it is much easier to just build something like our first code in this lesson? The answer is that in this version we are now reading the electricity level and responding to it instead of breaking the pathway. Most Arduino boards have a built in LED attached to pin 13. If you connect the pin 13 output to an external LED circuit like shown in the video and image below, you will be able to toggle additional lights as well. And not just lights, anything connected to this pin can be triggered with just a single button press.
 
+![default](/images/graphics/simpleswitch.png)
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CIp9NW7Oi5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![default](/images/graphics/buttonled6.jpg)
+![default](/images/graphics/2ledtoggle.jpg)
 
 Lets go back to the code real quick to wrap this up. Below is the conditional statement that we added to tell our board how to react to the `buttonState` value.
 

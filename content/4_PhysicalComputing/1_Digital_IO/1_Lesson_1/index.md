@@ -36,4 +36,4 @@ If you connect your board and upload the code, you should see that the built in 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3tErNe5782Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-You may have recognized this code form the page [Arduino SetUp](https://pdm.lsupathways.org/4_physicalcomputing/arduino-setup/). This is a simple code to check that your computer can properly communicate with your Arduino as ir requires no extra components and is small in size.
+You may have recognized this code form the page [Arduino SetUp](https://pdm.lsupathways.org/4_physicalcomputing/arduino-setup/). This is a simple code to check that your computer can properly communicate with your Arduino as it requires no extra components and is small in size.

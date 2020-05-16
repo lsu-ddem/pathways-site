@@ -20,7 +20,7 @@ This will most likely be the most common size resistor that you utilize within t
 
 Depending on the number of bands on your resistor, you must interpret this chart slightly differently. A 270 Ohm, 5-band resistor will read red, violet, black, black, brown.
 
-* The first 3 bands tell you the hundreds, tens, and ones digit values of the resistor, teh 4th band tells you what to multiply the 3 digit number you just recieved by, and the 5th band gives a range of variance that can occur with that resistor. This final band is almost always brown or gold, and will help you read the resistor in the correct order. 
+* The first 3 bands tell you the hundreds, tens, and ones digit values of the resistor, teh 4th band tells you what to multiply the 3 digit number you just received by, and the 5th band gives a range of variance that can occur with that resistor. This final band is almost always brown or gold, and will help you read the resistor in the correct order. 
 
 #### Breadboard
 
@@ -52,11 +52,17 @@ The second to last step is where you will connect the breadboard to your arduino
 
 ![default](/images/graphics/led2.5.jpg)
 
+Here is a diagram showing the circuit from the top-down. More information on diagrams will be presented later in the lesson.
+
+![default](/images/graphics/solidled.png)
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6K4Zyrdyw6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This is almost what we want, but lets take a second to look at what we have. We are sending 5 volts of electricity from the Arduino to the led via the red cable (positive is always red if possible), that current is flowing through the LED, to the resistor, to ground (-. ground is usually black or white cables if possible) All of the connections are made by the breadboard. The 5V however is constant. You can see the built-in LED is still flashing. Simply change the red cable so that it connects to pin 4 (whichever pin you specified in the code) on the Arduino instead of '5V'.
 
 ![default](/images/graphics/led3.jpg)
+
+![default](/images/graphics/blinkingled.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8cUsqyo12s0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -72,7 +78,7 @@ The first way is with images showing exactly which parts need to connect on the 
 
 ![default](/images/graphics/leddiag1.png)
 
-Another way is a little mor traditional, and only shows what elements need to be connected together. This diagram allows for a little more flexibility in where you can place things on th breadboard. These can be used for everything previously mentioned, but are also used for describing existing circuits as well.
+Another way is a little mor traditional, and only shows what elements need to be connected together. This diagram allows for a little more flexibility in where you can place things on th breadboard. These can be used for everything previously mentioned, but are also used for describing existing circuits as well. (this is an example picture below of a more complicated circuit)
 
 ![default](/images/graphics/time_lapse_schematic.jpg)
 
