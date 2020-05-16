@@ -21,9 +21,16 @@ Pots have three pins as shown in the images. The outside pins connect to the pos
 
 ### Wiring up a Pot
 
-![default](/images/graphics/potwledcode.png)
+In order to wire up a potentiometer, you need to connect its three pins to the appropriate places. The outside pins connect to the power and ground, while the middle pin should be connected to the input pin on your Arduino, like below
 
 ![default](/images/graphics/Basic Pot and LED.png)
+
+Next you can open up the Arduino code editor and upload the code below to the board. Once the code is loaded you will notice that the LED begins to blink. As you adjust the position of the pot, you will see that the LED's blink speed either increases or decreases.
+
+![default](/images/graphics/potwledcode.png)
+
+When turning the potentiometer, which direction causes the LED to speed up? Try taking the pot out and turning it around so the 1st and 3rd pins are switched. What happens now?
+
 
 #### Reading the Voltage Data
 
