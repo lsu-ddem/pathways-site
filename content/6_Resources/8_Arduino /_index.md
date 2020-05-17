@@ -9,7 +9,9 @@ Depending on the arduino kits used, they main contain a booklet of various circu
 
 [The chapter 10 introduction page](https://pdm.lsupathways.org/4_physicalcomputing/) contains a list of the common differences between the arduino code and the javascript that we have been using for the course up to this point. 
 
-[learn.sparkfun.com](https://learn.sparkfun.com/) contains many instructional pages and tutorials on many of the concepts and components utillized in this course
+[learn.sparkfun.com](https://learn.sparkfun.com/) contains many instructional pages and tutorials on many of the concepts and components utilized in this course.
+
+[This page](https://learn.sparkfun.com/tutorials/pulse-width-modulation/all) contains more detailed information about Pulse Width Modulation and LEDs.
 
 An [automatic calculator](http://www.resistorguide.com/resistor-color-code-calculator/) like this one can be used to easily determine the resistance of your fixed resistor.
 
