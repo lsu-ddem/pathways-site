@@ -1,7 +1,9 @@
 ---
-title: Assignment: Creating Multiple Dimmer Switches
+title: Creating Multiple Dimmer Switches
 weight: '5'
 ---
+
+Assignment: 
 
 Earlier on this page you were shown how to utilize pulse width modulation in order to use a potentiometer to control the brightness of an LED, this will be the basis of the assignment for this chapter. The goal of this assignment is to create a circuit with the following criteria;
 
