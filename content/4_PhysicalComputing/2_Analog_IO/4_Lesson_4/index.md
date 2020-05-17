@@ -1,5 +1,5 @@
 ---
-title: Assignment: Pulse Width Modulation
+title: Pulse Width Modulation
 weight: '4'
 ---
 
