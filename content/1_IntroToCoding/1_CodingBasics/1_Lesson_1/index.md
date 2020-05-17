@@ -34,7 +34,7 @@ Take a look at the code below, which matches the code in your project on the P5 
 
 {{% codepen 500 MGMMXv %}}
 
-When coding a project that uses the p5.js library, every JS file must contain the two large blocks you see below: `function setup() ` and `function draw()`. These are _**functions**_: code elements that behave like actionable machines, producing a result. In our projects, we will be mainly calling for certain functions to be run _inside_ of the two main function blocks you see here. These larger function blocks use a pair of curly braces ( "{ }" ) as boundary markers; any code that you want to place inside of these blocks must be typed between the open and closed curly brace pair.
+When coding a project that uses the p5.js library, every JS file must contain the two large blocks you see below: `function setup()` and `function draw()`. These are _**functions**_: code elements that behave like actionable machines, producing a result. In our projects, we will be mainly calling for certain functions to be run _inside_ of the two main function blocks you see here. These larger function blocks use a pair of curly braces ( "{ }" ) as boundary markers; any code that you want to place inside of these blocks must be typed between the open and closed curly brace pair.
 
 In p5.js-based projects, code that is placed inside of the larger `setup()` and `draw()` blocks will behave differently based on which block they are called from within, and it's important for us to understand the difference between their behaviors.
 
