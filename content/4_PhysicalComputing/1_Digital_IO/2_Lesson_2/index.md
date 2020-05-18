@@ -58,7 +58,7 @@ Here is a diagram showing the circuit from the top-down. More information on dia
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6K4Zyrdyw6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-This is almost what we want, but lets take a second to look at what we have. We are sending 5 volts of electricity from the Arduino to the led via the red cable (positive is always red if possible), that current is flowing through the LED, to the resistor, to ground (-. ground is usually black or white cables if possible) All of the connections are made by the breadboard. The 5V however is constant. You can see the built-in LED is still flashing. Simply change the red cable so that it connects to pin 4 (whichever pin you specified in the code) on the Arduino instead of '5V'.
+This is almost what we want, but lets take a second to look at what we have. We are sending 5 volts of electricity from the Arduino to the led via the red cable (positive is always red if possible), that current is flowing through the LED, to the resistor, to ground (-. ground is usually black or white cables if possible) All of the connections are made by the breadboard. The 5V however is constant. You can see the built-in LED is still flashing. Simply change the red cable so that it connects to pin 4 (or whichever pin you specified in the code) on the Arduino instead of '5V'.
 
 ![default](/images/graphics/led3.jpg)
 
@@ -72,7 +72,7 @@ Congratulations! you have made your first circuit with Arduino!!
 
 ## Circuit Diagrams
 
-now that we have made a circuit, lets talk about different ways we can utilize a graphic representation of the circuit.
+Now that we have made a circuit, lets talk about different ways we can utilize a graphic representation of the circuit.
 
 The first way is with images showing exactly which parts need to connect on the breadboard. These are helpful, but limited to a specific instance or set-up. These diagrams are usually used as part of a help file or tutorial. The image below is a version of the circuit we just built, but utilizing pin number 13 instead of number 4.
 

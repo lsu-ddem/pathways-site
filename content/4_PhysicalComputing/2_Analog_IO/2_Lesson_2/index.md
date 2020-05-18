@@ -68,7 +68,7 @@ The circuit for utilizing a force/pressure sensor is identical to the one used f
 
 ## Distance Sensor
 
-distance sensors are a little unique on this list because they have their own built-in circuitry. They are set up to function like a voltage divider however, which makes them easy to utilize as a means of data input.
+Distance sensors are a little unique on this list because they have their own built-in circuitry. They are set up to function like a voltage divider however, which makes them easy to utilize as a means of data input.
 
 ![default](/images/graphics/motionsensor.jpg)
 
@@ -76,7 +76,6 @@ An infrared beam is sent out of one lens and when an object is within the range 
 
 We can connect this sensor in place of a potentiometer
 
-## Movement Sensor
 
 ## Flex Sensor
 

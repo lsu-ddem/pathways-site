@@ -195,4 +195,24 @@ Lets go back to the code real quick to wrap this up. Below is the conditional st
 }
 ```
 
-But what if we were to add in additional output pins at the beginning of the code so we had more than just a single pin that can output data? We could incorporate those into our conditional statement in order to control multiple complex elements with a single button press and a relatively simple conditional statement. Which just so happens to be the goal of the next assignment, but before we get to that, lets review. There has been a lot of information given in just a few short pages.
+But what if we were to add in additional output pins at the beginning of the code so we had more than just a single pin that can output data? We could incorporate those into our conditional statement in order to control multiple complex elements with a single button press and a relatively simple conditional statement. 
+
+---
+
+## Other digital Sensors
+
+There are a ton of different sensors and modules that you can get for your Arduino in order to measure different kinds of input. We will go over most of the more common ones that most likely came in your kit in the next chapter, but before we wnd the chapter, lets talk about one digital sensor that may have come with your kit. In this lesson we set up the arduino to sense the input from a button and respond in a certain way. With sensors we can move that interaction into one piece of hardware and reduce the amount of wires and coding that we need. 
+
+### IR Movement Sensor
+
+ An IR movement sensor contains their a chip in order to tell them how to behave. Depending on the brand and size of the sensor this chip may be incased within the sensor or connected to it. You will notice three leads coming out of the bottom of your sensor. The outside ones connect to power and ground, while the middle pin will output either a high or low signal depending on if the sensor is triggered. 
+
+ ![default](/images/graphics/momtion.jpg)
+
+ All objects give off a trace amount of infrared radiation that is invisible to the human eye, and these sensors can detect that radiation (often interpreted as heat) within their field of vision. The sensor will take a snapshot of the amount of radiation it can detect and compare it to the previous one. if it detects a large enough difference, the middle pin transmits a HIGH signal. Otherwise it transmits a LOW signal.
+
+---
+
+So we have gone over a lot of information in just a few short pager so lets take second to review before going onto the chapter assignment: Controlling multiple LEDs with a single input.
+
+---
