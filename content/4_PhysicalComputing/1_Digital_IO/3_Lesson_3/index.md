@@ -182,7 +182,7 @@ So why go through these extra steps just to create a toggle when it is much easi
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CIp9NW7Oi5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![default](/images/graphics/2ledtoggle.jpg)
+![default](/images/graphics/2ledtoggle.png)
 
 Lets go back to the code real quick to wrap this up. Below is the conditional statement that we added to tell our board how to react to the `buttonState` value.
 
