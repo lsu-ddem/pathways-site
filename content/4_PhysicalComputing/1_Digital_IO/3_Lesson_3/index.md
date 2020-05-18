@@ -207,7 +207,7 @@ There are a ton of different sensors and modules that you can get for your Ardui
 
  An IR movement sensor contains their a chip in order to tell them how to behave. Depending on the brand and size of the sensor this chip may be incased within the sensor or connected to it. You will notice three leads coming out of the bottom of your sensor. The outside ones connect to power and ground, while the middle pin will output either a high or low signal depending on if the sensor is triggered. 
 
- ![default](/images/graphics/momtion.jpg)
+ ![default](/images/graphics/motion.jpg)
 
  All objects give off a trace amount of infrared radiation that is invisible to the human eye, and these sensors can detect that radiation (often interpreted as heat) within their field of vision. The sensor will take a snapshot of the amount of radiation it can detect and compare it to the previous one. if it detects a large enough difference, the middle pin transmits a HIGH signal. Otherwise it transmits a LOW signal.
 
