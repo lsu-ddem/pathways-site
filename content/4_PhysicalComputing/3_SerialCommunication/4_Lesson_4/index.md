@@ -1,6 +1,6 @@
 ---
 title: 'Adding Physical Control To a Program'
-weight: '3'
+weight: '5'
 ---
 
 The third and final assignment of the PHysical computing unit is to combine sending receiving data between your Arduino and P5. Below are the details for the assignment:

@@ -1,6 +1,6 @@
 ---
 title: Chapter 12 Review & Assignments
-weight: 5
+weight: 4
 ---
 ## Chapter 12 Review
 
