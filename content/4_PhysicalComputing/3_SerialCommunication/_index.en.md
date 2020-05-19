@@ -17,7 +17,7 @@ Before we move on however, there is one more item that needs to be installed on 
 
 #### Download and install
 
-[P5 Serial Control](https://pdm.lsupathways.org/p5.serialconreol.zip) can be downloaded directly from the embedded link, or the github repository can be access at the address below:
+[P5 Serial Control](/Users/matthewbardin/pathways-site/static/p5.serialcontrol.zip) can be downloaded directly from the embedded link, or the github repository can be access at the address below:
 
 ```
 https://github.com/p5-serial/p5.serialcontrol/releases
