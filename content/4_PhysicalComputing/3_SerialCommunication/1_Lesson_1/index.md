@@ -14,7 +14,7 @@ On their own, each element of this process is not super complicated. It is makin
 * Connect pot to power & ground
 * Connect middle pin to A0
 
-![serialpot](/images/graphics/serialpot/png)
+![serialpot](/images/graphics/serialpot.png)
 
 This will be a basic basic circuit. For now all we want to do is measure the potentiometer's voltage division with pin A0. We will now move on to the Arduino code.
 
