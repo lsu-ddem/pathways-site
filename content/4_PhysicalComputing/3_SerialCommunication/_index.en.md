@@ -17,8 +17,16 @@ Before we move on however, there is one more item that needs to be installed on 
 
 #### Download and install
 
-[P5 Serial Control](/Users/matthewbardin/pathways-site/static/p5.serialcontrol.zip) can be downloaded directly from the embedded link, or the github repository can be access at the address below:
+[P5 Serial Control](https://pdm.lsupathways.org/p5.serialcontrol.zip) can be downloaded directly from the embedded link, or the github repository, which contains multiple versions and an updated READ_ME file can be access at the address below:
 
 ```
 https://github.com/p5-serial/p5.serialcontrol/releases
 ```
+
+Once you follow the install instructions for your device following the READ_ME's instructions, you can open the application and explore its functionality. 
+
+![p5serialcontrol1](/images/graphics/p5sc1)
+
+![p5serialcontrol2](/images/graphics/p5sc2)
+
+As shown above, the interface is minimal. In the middle of the screen you have a list of all of your devices serial ports. Selecting the 'list ports' button will refresh this list. 
