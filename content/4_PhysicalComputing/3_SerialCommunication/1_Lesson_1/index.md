@@ -16,7 +16,9 @@ On their own, each element of this process is not super complicated. It is makin
 
 ![serialpot](/images/graphics/serialpot.png)
 
-This will be a basic basic circuit. For now all we want to do is measure the potentiometer's voltage division with pin A0. We will now move on to the Arduino code.
+This will be a basic basic circuit. For now all we want to do is measure the potentiometer's voltage division with pin A0. We will now move on to the Arduino code. However you may want to move your potentiometer closer to one end of the breadboard, especially if you have one of the smaller sizes of boards, or only one available. By the end of this unit we will have a pot, a button, an analog sensor, and two LEDs wired into the breadboard, so saving space is necessary.
+
+---
 
 ## Arduino Code
 
@@ -27,6 +29,8 @@ For this step we need to tell our Arduino board to rad the incoming analog signa
 * 
 
 Once all of these elements are present, your code should look like the one below. Flash that to your board and navigate to a new P5 project.
+
+---
 
 ## P5 Code
 
@@ -43,6 +47,8 @@ src="https://cdn.jsdelivr.net/gh/vanevery/p5.serialport/lib/p5.serialport.js"></
 Over the next several lessons we will discuss the elements of this library needed in order to complete this course, but additional information on the library can be found at the library's [github](https://github.com/p5-serial/p5.serialport) and [reference page](https://processing.org/reference/libraries/serial/index.html).
 
 Once this library is installed, we will be able to utilize serial communications in P5, as well as the p5.serialcontrol app that was mentioned at the beginning of this chapter. Remember that these lessons will not work without the app and libraries.
+
+---
 
 ## Bringing it all together: P5 reacting to physical input
 
@@ -139,6 +145,10 @@ In this function we will be looking at the data coming in from the serial port a
 Now we have a working code. Connect the arduino to the computer and go into P5.serialcontrol. Close the serial port that the Arduino is connected to and make sure the string at the beginning of your code marches that port exactly. Once that is done, open the port again and run the code. If everything was done properly, you should see the onscreen circle change in size depending on the position of the potentiometer like in the video below. Our next step will be to include a button in addition to out analog data. This button will be used to control boolean information within P5. in the following lesson we will use it to set the color of the on-screen circle.
 
 ---
+
+## Practice
+
+Now that we have been able to send analog data into P5 via a potentiometer, try to experiment with the other sensors you have in your kit. What kinds of interactions are you able to achieve? The chapter assignment and the [Final Integrations Project](https://pdm.lsupathways.org/5_integrationproject/) will have you creating your own codes that receive and transmit serial data using P5 and Arduino. Start thinking now about what interactions you can use that make logical sense for what you want to alter on the screen. This will help save you a little time later on and help you to make a stronger final project!
 
 
 ### Library Suggestion
