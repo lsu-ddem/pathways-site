@@ -17,18 +17,24 @@ Before we move on however, there is one more item that needs to be installed on 
 
 #### Download and install
 
-[P5 Serial Control](https://pdm.lsupathways.org/p5.serialcontrol.zip) for macOS can be downloaded directly from the embedded link, or the github repository, which contains multiple versions across a variety of operating systems as well as an updated READ_ME file can be access at the address below:
-
+[P5 Serial Control](https://pdm.lsupathways.org/p5.serialcontrol-darwin-x64.zip) for macOS version 1.2 can be downloaded directly from the embedded link, However, it is preferred that you visit the link below in order to download whichever version is the most up-to-date. This page will also include several reference articles and links that may prove helpful.
 ```
 https://github.com/p5-serial/p5.serialcontrol/releases
 ```
 
-Once you follow the install instructions for your device following the READ_ME's instructions, you can open the application and explore its functionality. 
+Once you follow the install instructions for your device, you can open the application and explore its functionality. 
 
-![p5serialcontrol1](/images/graphics/p5sc1.png)
+![serial1](/images/graphics/p5serial1.png)
 
-![p5serialcontrol2](/images/graphics/p5sc2.png)
+In the default screen you will see a list of serial ports available on your device. If you do not see the one for your arduino, reconnect the USB and click the rescan button. This port will generally look like this:
+```
+/dev/cu.usbmodem1462301
+```
 
-As shown above, the interface is minimal. In the middle of the screen you have a list of all of your devices serial ports. Selecting the 'list ports' button will refresh this list. By selecting the port you wish to use with P5, you can then manually close connections to it, and re-open the port so that P5 can access it. The bottom of the application interface has an area that will allow you to send data that can be used to verify a connection, but we will get more into that later. This app will have to be running in the background on your device in order for your code to work. Our next step is to send and receive data with P5 and Arduino!
+Only the numbers that identify the port will vary from device to device, and port to port. If you disconnect your Arduino and reconnect it to a different USB port when working on the codes in this unit, you will have to close the original port, select the new one, and then open it before te code will work again.
+
+![serial2](/images/graphics/p5serial2.png)
+
+Once you select the correct serial port from the dropdown menu and click on the open button, you will see several new things pop up. There are now window that you can use to send serial messages through the selected port in order to ensure that they are connected, as well as a box of code that appears on the right side of the screen. This will be important to getting our codes up and running in P5 in the next lessons. You can copy this starter code into a new P5 project in order to have the necessary port information already filled in when the project starts. just don't forget to include the P5.serial library, which will be discussed in the P5 section of the next page.
 
 ---

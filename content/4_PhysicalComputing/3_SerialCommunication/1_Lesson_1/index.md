@@ -41,7 +41,7 @@ We are in the home stretch now. We have built a circuit that measures input from
 This library is officially supported by P5 and can be found on their [libraries page](https://p5js.org/libraries/). In order to save time, below is the line of HTML code that is needed to install this library into a P5 project:
 
 ```
-src="https://cdn.jsdelivr.net/gh/vanevery/p5.serialport/lib/p5.serialport.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5.serialserver@0.0.28/lib/p5.serialport.js"></script>
 ```
 
 Over the next several lessons we will discuss the elements of this library needed in order to complete this course, but additional information on the library can be found at the library's [github](https://github.com/p5-serial/p5.serialport) and [reference page](https://processing.org/reference/libraries/serial/index.html).
