@@ -3,14 +3,50 @@ title: "Code Demos"
 weight: 10
 ---
 
-This page contains many of the codes and assignment examples in one convenient place, as well as a growing collection of exemplary assignments and projects created by both students and instructors of this course.
+This page contains a growing collection of exemplary assignments and projects created by both students and instructors of this course.
 
 ---
 
 ## Community Work Examples
 
----
+#### Alien Invasion
 
-## Textbook Examples
+{{% codepen 600 JjYzpLP %}}
+
+#### Glaceon
+
+{{% codepen 600 rNORJdP %}}
+
+#### City Traffic (with for loops)
+
+{{% codepen 600 vYNPdjK %}}
+
+#### Mouse-Disco
+
+{{% codepen 600 eYpXVrx %}}
+
+#### 3:15 to LAX
+
+{{% codepen 600 yLYwvER %}}
+
+#### Groovy Pattern
+
+{{% codepen 600 eYNRJZj %}}
+
+#### Circle Movement
+
+{{% codepen 600 QWjoQBr %}}
+
+#### Fortune Cookie Generator
+
+{{% codepen 600 eYNELpG %}}
+
+#### Pong (with nested conditionals)
+
+{{% codepen 600 LYVNoNK %}}
+
+#### Legend of Zelda Collection (with Sprites)
+
+<iframe src="https://editor.p5js.org/Prof.Tesfay/embed/9Us0jvPBI"></iframe>
 
 ---
