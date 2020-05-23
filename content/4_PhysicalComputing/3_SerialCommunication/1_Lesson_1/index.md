@@ -88,7 +88,7 @@ If you have multiple USB devices connected you may need to experiment to see whi
 
 Then, you will be able to copy the code from the window on the right side of the app and copy it into a new P5 project. 
 
-![serial2](/images/graphics/p5serial12.png)
+![serial2](/images/graphics/p5serial2.png)
 
 If you have not, be sure to include the p5.serial library in your HTML file or nothing from here on will be able to work.
 
