@@ -15,6 +15,8 @@ Depending on the arduino kits used, they main contain a booklet of various circu
 
 An [automatic calculator](http://www.resistorguide.com/resistor-color-code-calculator/) like this one can be used to easily determine the resistance of your fixed resistor.
 
+A [voltage divider calculator](https://www.allaboutcircuits.com/tools/voltage-divider-calculator/) is a handy tool for calculating the difference in voltages when wetting up a voltage divider in your circuits.
+
 ---
 
 ## Buying More Components
@@ -28,6 +30,8 @@ An [automatic calculator](http://www.resistorguide.com/resistor-color-code-calcu
 ## Diagrams
 
 The application [Fritzing](https://fritzing.org/home/) was used to generate many of the Arduino diagrams shown in this course. While not free, this program is inexpensive and allows for the user ot create highly customizable diagrams of their Arduino projects. The company also offers a platform for sharing projects and can create printed circuit boards that replicate your submitted projects in a more permanent fashion. This could be a potential resource for a mor impressive final project, but will require purchases, shipping, and the soldering of components. 
+
+[This page](https://en.wikipedia.org/wiki/Electronic_symbol) shows how to interpret the symbols in traditional circuit diagrams
 
 ---
 

@@ -15,6 +15,10 @@ Be sure to include this line in the body of your HTML file in order to include t
 ---
 
 
-The Resource material for the P5.play library is available [here](https://molleindustria.github.io/p5.play/docs/index.html). A downladable version of the library's code can also be downloaded from this cite and uploaded into whatever code editor you are using, even if it is not P5.
+The Resource material for the P5.play library is available [here](https://molleindustria.github.io/p5.play/docs/index.html). A downloadable version of the library's code can also be downloaded from this cite and uploaded into whatever code editor you are using, even if it is not P5.
 
 Examples using the P5.play library's various sprite and animation capabilities are available [here](https://molleindustria.github.io/p5.play/examples/index.html).
+
+[Allison Parrish's Lessons](https://creative-coding.decontextualize.com/making-games-with-p5-play/) on P5.play.
+
+---

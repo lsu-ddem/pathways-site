@@ -29,8 +29,6 @@ Here are some general 'pro tips' for java script coding once you have a little b
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Mus_vwhTCq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
 ---
 
 ### History
@@ -45,6 +43,10 @@ Here is a video with a condensed history of the javascript coding language.
 
 [The Knightlab](https://knightlab.northwestern.edu/?_ga=2.37416355.2003559739.1590262422-817674079.1590262422) at Northwestern University offers several javascript based creative tools that have a variety of potential applications both in this and other courses.
 
-The [NYC Department of Education: Computer Science for All](https://nycdoe-cs4all.github.io/index.html) program contains a class that utilizes P5 much like this one. Check out these pages for another presentation of the material, as well as other assignment ideas 
+The [NYC Department of Education: Computer Science for All](https://nycdoe-cs4all.github.io/index.html) program contains a class that utilizes P5 much like this one. Check out these pages for another presentation of the material, as well as other assignment ideas.
+
+Educator Allison Parrish has set up a [website with several examples and instructor notes](https://creative-coding.decontextualize.com/) for teaching the course mentioned above. Be sure to go through the pages for additional exploration of the topics covered in this course. (This was used for teaching a course in 2015, so some of the materials may be out of date.)
+
+A desktop version of P5 can be downloaded via [this github page](https://github.com/processing/p5.js-editor/releases/tag/v0.6.2). However this application is discontinued, and it is recommended that you utilize the online editor whenever possible. This application is completely local to your device, and will require you to download all files, libraries, and create a local server in order to see your sketches being implemented.
 
 ---

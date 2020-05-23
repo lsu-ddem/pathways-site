@@ -13,11 +13,15 @@ Below are some additional functions that can change exactly how P5 draws these s
 * point() draws a single pixel point on the canvas at a given location
 * circle() only draws circles, square() only draws squares, and quad() functions like triangle, but creates a 4 sided shape.
 
+[Here is an example](https://p5js.org/examples/hello-p5-simple-shapes.html) of P5 making several basic 2D shapes.
+
 ---
 
 ## colors
 
 A Computer color mixer is available [here](https://www.w3schools.com/colors/colors_rgb.asp). You can experiment with the color values and see them output as both RGB and hex values. A second one is available [here](https://www.csfieldguide.org.nz/en/interactives/rgb-mixer/), this time with interactive sliders, but no hex values.
+
+[Here is a lesson](https://p5js.org/learn/color.html) on the basics of color from the book [Learning Processing](http://learningprocessing.com/) by Daniel Schiffman.
 
 Here are a few different Coding Train videos involving working with colors in P5.js.
 
