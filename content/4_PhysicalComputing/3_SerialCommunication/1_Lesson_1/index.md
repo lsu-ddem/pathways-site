@@ -11,8 +11,8 @@ In this lesson we will start to combine elements from our work in P5 with the Ar
 
 On their own, each element of this process is not super complicated. It is making all of the elements talk to each other that we want to focus on. We can begin by creating a simple circuit with a potentiometer like the one shown below:
 
-* Connect pot to power & ground
-* Connect middle pin to A0
+* Connect pot to power & ground.
+* Connect middle pin to A0. (this can be any of the analog pins, but you will have to update the code examples below to match the pin of your choice.)
 
 ![serialpot](/images/graphics/serialpot.png)
 
@@ -24,11 +24,25 @@ This will be a basic basic circuit. For now all we want to do is measure the pot
 
 For this step we need to tell our Arduino board to rad the incoming analog signal and send the data out along the USB connection where it will ultimately be read by P5. In order to do that our code needs a few things:
 
-* 
-* 
-* 
+* Read the data from out potentiometer.
+* Process/map that data (this can happen here or in P5).
+* Transmit the data through the serial connection. This will be the longest step.
+  
+In order to save a little time, here is a starting code that can be used. This code is setup with everything we need in order to transmit and receive both digital and analog data, and we will go through the parts of it that are important to each section over the course of the next few lessons.
 
-Once all of these elements are present, your code should look like the one below. Flash that to your board and navigate to a new P5 project.
+<iframe src=https://create.arduino.cc/editor/mbardin/8b1d14b4-895a-4c00-9010-568769b246c9/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+
+Looking at the global variables, we can see that we need one to receive the values from the potentiometer, as well as one to output the data to the serial port. In this example they are pins A0 and 3 respectively. We can ignore the digital pin information for the moment.
+
+Working our way through the code we need to set pins A0 and 3 to INPUT and OUTPUT respectively inside of the setup function. In more complicated codes this is where we can set up more data transmission. We also need to call the `Serial.begin(9600);` function. PReviously we utilized this in order to view data within Arduino's serial monitor. This will serve as the backbone for this unit only instead of sending the data to the monitor, we will be sending it to P5.
+
+Next is `void loop()`. In here we are reading the data from each input pin, and in the case of the analog data, we are mapping the values to fit between 0.0 - 1.0. This will give us a more compact range of values to use in P5. Continuing through the function there is some information regarding sending digital data which we will look at in the next lesson. The following section sends the values as well as a label out the serial port. The label here is very important as this will be how P5 receives and sorts the incoming information.  The last part of this function is used for checking for any incoming data and setting a pin that will be connected to an LED later on. We will go over that in more detail in the next lesson.
+
+The next function `boolean checkSerial()` performs its tasks and returns a value of either true or false. It is used to determine if there is data incoming and helps to sort the data to the appropriate places. It is the next section that we are more interested in for now.
+
+The final section is the muscle used to transmit the data through the serial port. It is comprised of different versions of the `transmitSensor()` function. THey each behave a little differently based on the type of data that will be transmitted. Because the arguments for each function require a certain data type, only the functions that can receive the appropriate arguments will transmit the data. This allows for us to have multiple versions of this function, and send the information to them with the function call in `void loop()`.
+
+Each of the functions start the same with a test to see if the incoming data has stopped. If this is true the serial instruction for a new line is given. Following that is an instruction to add a comma to separate each piece of data being transmitted. This part only occurs in the transmit functions involving a value. The final section of each function compiles all of the data (the label and value) into one unit and transmits it. in short, the `.c_str()` line is used to help avoid duplication. 
 
 ---
 

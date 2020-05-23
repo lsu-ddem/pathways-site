@@ -17,6 +17,8 @@ As you go through this course you may find various resources from different plac
 
 More detailed information about various elements discussed in this course can be found in the book [Eloquent Javascript](https://eloquentjavascript.net/) by Marijn Haverbeke. Once you have had a little practice using the language, check out this book for more in depth explications of various javascript features.
 
+The website [CodeCombat](https://codecombat.com/) is a platform that allows students to explore coding concepts in a non-traditional format. They use concepts discussed throughout the first few units in order to play a top-down style adventure/combat game. This may be an entertaining way to introduce and enforce concepts. This game is available for both Javascript and Python.
+
 The [P5 reference pages](p5js.org/reference/) can offer information and examples on every function built into the P5 coding library. 
 
 Here are some general 'pro tips' for java script coding once you have a little bit of experience under your belt.
