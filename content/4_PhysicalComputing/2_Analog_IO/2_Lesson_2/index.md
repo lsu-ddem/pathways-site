@@ -26,9 +26,9 @@ Since we know the initial voltage in our circuits is 5V, we can set certain resi
 
 A potentiometer, abbreviated pot, is a type of variable resistor that can easily be used to create a voltage divider. Potentiometers generally look like a knob or a slider and by adjusting the position of the knob or slider an internal wiper moves across a resistive material, changing the resistance the component has on the current. This change can either be linear or exponential depending on the hardware. The total amount of resistance also varies based on the hardware.
 
-![default](/images/graphics/pot1.jpg)
-
 ![default](/images/graphics/pot2.jpg)
+
+![default](/images/graphics/pot1.jpg)
 
 ![default](/images/graphics/slidepot.jpg)
 
@@ -45,6 +45,8 @@ Next you can open up the Arduino code editor and upload the code below to the bo
 ![default](/images/graphics/potwledcode.png)
 
 When turning the potentiometer, which direction causes the LED to speed up? Try taking the pot out and turning it around so the 1st and 3rd pins are switched. What happens now?
+
+The circuit we just made is a voltage divider. Generally speaking, any of the sensors below that have three leads on them will also create a voltage divider. When wiring them up you can just remove the potentiometer and replace it with the new sensor and it will function identically. You can replicate the set up, but connect the component's middle lead to a different pin on the arduino in order to have multiple voltage dividers on the breadboard at once. 
 
 
 #### Reading the Voltage Data
@@ -88,6 +90,8 @@ Many of the smaller photoresistors tend to be less accurate than some of the oth
 We can wire up a photoresistor like shown in the image below. By measuring the analog values with our Arduino's analog pins and the `analogRead()` function we can apply the values coming from this sensor to various other components. Just don't forget the 10K resistor.
 
 ![photocircuit](/images/graphics/photocircuit.png)
+
+These 2 lead sensors function as a resistor that can change their resistance based on their reaction to an external stimulus. For all of the variable resistors shown below you will need an additional fixed resistor in order to function properly. Without one the voltage could overload the sensor. The exact size of the resistor will vary depending on the component being used. Be sure to double check your kit for more details. 
 
 ### Force/Pressure Sensor
 
