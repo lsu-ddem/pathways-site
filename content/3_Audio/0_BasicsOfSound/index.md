@@ -128,7 +128,7 @@ A condenser mic functions a little differently and can be a little more fragile 
 
 Ribbon microphones are perhaps the most fragile microphones, and function similarly to the human ear. Inside of the large capsule is a thin metallic ribbon suspended within a magnet. The vibrations coming into the microphone cause different parts of the ribbon to vibrate, which causes different the different frequencies to be sent out of the microphone cable. ribbon microphones also contain a transformer to increase the output voltage to be strong enough for the other electronics to work with. In many older ribbon mics the ribbon was extremely delicate and could be destroyed by large amounts of air pressure, or burnt out if too much electrical current (such as phantom power) was passed through the system. This caused many older ribbon microphones to be extremely expensive. Modern ribbon microphones are a little more robust and a few even require phantom power in order to function, however they can still be some of the more expensive microphones on the market.
 
-![ribbon](/images/graphics/condense.jpeg)
+![ribbon](/images/graphics/ribbon.jpg)
 
 ### Recording the signal
 
