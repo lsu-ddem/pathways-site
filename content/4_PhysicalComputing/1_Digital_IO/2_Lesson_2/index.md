@@ -54,7 +54,7 @@ The second to last step is where you will connect the breadboard to your arduino
 
 Here is a diagram showing the circuit from the top-down. More information on diagrams will be presented later in the lesson.
 
-![default](/images/graphics/solidled.png)
+![default](/images/graphics/LED_in_circuit_1.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6K4Zyrdyw6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -62,7 +62,7 @@ This is almost what we want, but lets take a second to look at what we have. We 
 
 ![default](/images/graphics/led3.jpg)
 
-![default](/images/graphics/blinkingled.png)
+![default](/images/graphics/LED_in_circuit_2.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8cUsqyo12s0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -78,7 +78,7 @@ The first way is with images showing exactly which parts need to connect on the 
 
 ![default](/images/graphics/leddiag1.png)
 
-Another way is a little mor traditional, and only shows what elements need to be connected together. This diagram allows for a little more flexibility in where you can place things on th breadboard. These can be used for everything previously mentioned, but are also used for describing existing circuits as well. (this is an example picture below of a more complicated circuit)
+Another way is a little more traditional, and only shows what elements need to be connected together. This diagram allows for a little more flexibility in where you can place things on the breadboard. These can be used for everything previously mentioned, but are also used for describing existing circuits as well. (this is an example picture below of a more complicated circuit)
 
 ![default](/images/graphics/time_lapse_schematic.jpg)
 

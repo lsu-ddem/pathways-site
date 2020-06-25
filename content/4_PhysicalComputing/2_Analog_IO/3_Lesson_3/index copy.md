@@ -65,16 +65,16 @@ After following all of these steps, your code should look like this:
 
 ---
 
- ## Building the circuit. 
+## Building the circuit. 
 
- The circuit needed to interact with this code is almost identical to the one shown at the beginning of this lesson. 
+The circuit needed to interact with this code is almost identical to the one shown at the beginning of this lesson. 
 
- Connect a potentiometer to power and ground, and the center pin to A0. Then wire in an LED wit the power coming from PWM pin 9 (or whichever PWM pin you selected in your code.) use the diagram below if you need a visual guide.
+Connect a potentiometer to power and ground, and the center pin to A0. Then wire in an LED wit the power coming from PWM pin 9 (or whichever PWM pin you selected in your code.) use the diagram below if you need a visual guide.
 
- ![default](/images/graphics/pwm.png)
+![default](/images/graphics/PWM_diag_3.png)
 
- Once the circuit is built, connect power and you should see the LED behave like in the video below. Now with no rapid blinking.
+Once the circuit is built, connect power and you should see the LED behave like in the video below. Now with no rapid blinking.
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/v_7V_w3W5PU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v_7V_w3W5PU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
- ---
+---

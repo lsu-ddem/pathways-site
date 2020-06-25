@@ -52,7 +52,7 @@ Next remove the ground end of the white cable and connect it to the button. Add 
 You can now reconnect your power cable to the 5V pin on the Arduino. Your circuit should look like this:
 
 
-![default](/images/graphics/simplebutton.png)
+![default](/images/graphics/LED_Switch.png)
 
 ![default](/images/graphics/simple button.JPG)
 
@@ -68,7 +68,7 @@ Now lets change our button to a switch. Start by removing the button, and connec
 
 From there you can connect either the top or the bottom pin to ground so that your circuit looks like the image below.
 
-![default](/images/graphics/simpleswitch.png)
+![default](/images/graphics/LES_switch2.png)
 
 ![default](/images/graphics/simpleswitch.JPG)
 
@@ -80,7 +80,7 @@ As mentioned previously, you can utilize a switch to change between multiple sta
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/etvNOnt-G0Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![default](/images/graphics/2ledtoggle.png)
+![default](/images/graphics/new_LED_toggle.png)
 
 This time notice that the power supply is is being fed into the switch, and the output pins are connected to the LEDs which each have their own resistor and connection to ground. No matter which state the switch is in there is a complete circuit so a light will always be on. We are now able to route the electricity to a different pathway *before* it reaches the LED. Keep in mind that if you try to recreate this, you may need to reverse the direction of your LEDs. Remember, the longer lead is the positive end, and the shorter one connects towards ground.
 
@@ -98,19 +98,19 @@ Our next step will be to receive data from a button in order to toggle a light. 
 
 Because we will be receiving digital data instead of transmitting it like in our original circuit, we will now have to go back to the Arduino code editor and re-write some new code to send to our board. Remember that this process will overwrite the code that we currently have on the board (A modified version of the 'Blink' example if you are going through this book in order.)
 
-Start by opening the Arduino Code Editor. This can be either the online editor, or the downloadable application. instead of beginning from a tutorial code, lets build this one from the ground up. Open a new file and rename it so that you can find the file later. 
+Start by opening the Arduino Code Editor. This can be either the online editor, or the downloadable application. Instead of beginning from a tutorial code, lets build this one from the ground up. Open a new file and rename it so that you can find the file later. 
 
-Start by creating three new global variables as shown below. You do not have to add the identifier `const` to the first two, however these will not change at all, so re can identify them as 'Read Only' by the code to prevent any accidental changes. you can change the pins to be any two digital pins on your arduino that you want, as long as they are not identical.
+Start by creating three new global variables as shown below. You do not have to add the identifier `const` to the first two variables. However,  because these will not change at all when our code is running so we can identify them as 'Read Only' with this keyword to prevent any accidental changes. You can change the `buttonPin` variable to be any digital pin on your arduino that you want, but for this example you will need the `ledPin` variable to be set to 13. Most Arduino boards contain a built in LED and on the Uno board, that LED is connected to pin 13. So when pin 13 is set to `HIGH` the LED will light up, and when it is set to `LOW` the LED will turn off.
 
 ![default](/images/graphics/ledbutton2.1.png)
 
-The third variable will measure the whether or not the button is pressed, and cannot have the `const` identifier.
+The third variable will measure the whether or not the button is pressed, and cannot have the `const` identifier because it will change.
 
 Next we need to specify that the buttonPin, which we are assigning to pin 2 in this example is an input, and the ledPin (pin 13) is an output using the `pinMode()` function inside of `void setup()`
 
 ![default](/images/graphics/ledbutton2.2.png)
 
-Moving on to the loop function, we need to tell the arduino to read the current state of teh buttonPin and store that value inside of the buttonState variable. That line looks like this;
+Moving on to the loop function, we need to tell the arduino to read the current state of the buttonPin and store that value inside of the buttonState variable. That line looks like this;
 
 ```
 buttonState = digitalRead(buttonPin);
@@ -127,7 +127,7 @@ The final step in the code is to create an if/else statement that tells the code
 }
 ```
 
-Now we can send the code to our arduino and move on to building the circuit. Incidentally, the exact process we just went through created the built in button example, which is located in the `digital` section of the built in examples. You can open this code in the arduino web editor in order to see the schematics and layouts for the circuit we are about to build.
+Now we can send the code to our arduino and move on to building the circuit. Incidentally, the exact process we just went through created the built in "Button" example, which is located in the `digital` section of the built in examples. You can open this code in the arduino web editor in order to see the schematics and layouts for the circuit we are about to build.
 
 <iframe src=https://create.arduino.cc/example/builtin/02.Digital%5CButton/Button/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
 
@@ -139,7 +139,7 @@ We will start by connecting the button to the middle of the breadboard like show
 
 ![default](/images/graphics/buttonled1.jpg)
 
-Then connect the 5V and ground pins ont he arduino to the breadboard. Notice that the arduino is not connected to any power source.
+Then connect the 5V and ground pins ont he arduino to the breadboard. Notice that the arduino is not connected to any power source at this time.
 
 ![default](/images/graphics/buttonled2.jpg)
 
@@ -155,13 +155,13 @@ The last step is to include a resistor so that the LED is not overloaded. Arduin
 
 ![default](/images/graphics/buttonled5.jpg)
 
-At this time you can power on your Arduino and press the button. You should see the built in LED turn on an off like in the video below.
+At this time you can connect your Arduino to power and press the button. You should see the built in LED turn on an off like in the video below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ExCuHNhfAfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![default](/images/graphics/ibuttonledswitch.png)
+![default](/images/graphics/builtintoggle.png)
 
-While your arduino is connected to the computer and running this code, open the serial monitor in the arduino code editor. We can see the state of the buttonState variable change in real time. This will be useful for troubleshooting and determining various settings later in chapter 11. By default you will not see anything in the monitor so we have to add two lines of code to our project. We need to first add this line to the setup function:
+While your arduino is connected to the computer and running this code we can tell the computer to display the value of the `buttonState` variable so we can keep track of it in real time. Open the serial monitor in the arduino code editor. We can see the state of the buttonState variable change in real time. This will be useful for troubleshooting and determining various settings later in chapter 11. By default you will not see anything in the monitor so we have to add two lines of code to our project. We need to first add this line to the setup function:
 
 ```
 Serial.begin(9600);
@@ -176,18 +176,18 @@ Once we have these line in the correct place we can upload the code to our Ardui
 
 ### Applications
 
-So why go through these extra steps just to create a toggle when it is much easier to just build something like our first code in this lesson? The answer is that in this version we are now reading the electricity level and responding to it instead of breaking the pathway. Most Arduino boards have a built in LED attached to pin 13. If you connect the pin 13 output to an external LED circuit like shown in the video and image below, you will be able to toggle additional lights as well. And not just lights, anything connected to this pin can be triggered with just a single button press.
+So why go through these extra steps just to create a toggle when it is much easier to just build something like our first code in this lesson? The answer is that in this version we are now reading the electricity level and responding to it instead of breaking the pathway. Like previously mentioned, most Arduino boards have a built in LED attached to pin 13. With the code we have now, we can connect the pin 13 output to an external LED circuit like shown in the video and image below, you will be able to toggle additional lights as well. And not just lights, anything connected to this pin can be triggered with just a single button press. 
 
-![default](/images/graphics/simpleswitch.png)
+![default](/images/graphics/double_switch.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CIp9NW7Oi5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![default](/images/graphics/2ledtoggle.png)
+
 
 Lets go back to the code real quick to wrap this up. Below is the conditional statement that we added to tell our board how to react to the `buttonState` value.
 
 ```
- if (buttonState == HIGH) {
+ if (buttonState === HIGH) {
     digitalWrite(ledPin, HIGH);
   } else {
     digitalWrite(ledPin, LOW);
@@ -195,7 +195,7 @@ Lets go back to the code real quick to wrap this up. Below is the conditional st
 }
 ```
 
-But what if we were to add in additional output pins at the beginning of the code so we had more than just a single pin that can output data? We could incorporate those into our conditional statement in order to control multiple complex elements with a single button press and a relatively simple conditional statement. 
+But what if we were to add in additional output pins at the beginning of the code so we had more than just a single pin that can output data? We could incorporate those into the results of our conditional statement in order to control multiple complex elements connected to multiple pins with a single button press and a relatively simple conditional statement. 
 
 ---
 
