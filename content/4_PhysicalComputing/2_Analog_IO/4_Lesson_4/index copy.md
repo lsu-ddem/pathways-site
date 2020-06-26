@@ -31,7 +31,7 @@ Other sensors, such as photo resistors, only make contain a single resistor. The
 
 We can use analog sensors and outputs in order to create a gradual change in signal strength of digital components. This is commonly done with LEDs. It may not look like it, but even though we can use PWM to have and LED fade in and out, it still only has two main states: ON and OFF. PWM happens when we change the ratio between these two states over time. The amount of time that the LED is on is called the duty cycle. This idea is shown a little more clearly in the diagram below.
 
-![dutycycle](/images/graphics/dutycycle.jpg)
+![dutycycle](/images/graphics/dutycycle.jpeg)
 
 Because the signal is transitioning between on and off faster than the eye can see (This is happening approximately 100 times per second in LEDs), humans will interpret what as happening as a change in brightness of the light. Compared to being on 100% of the time, a LED being operated with a 25% duty cycle will only be in the ON state for 25% of the time, so it will appear 25% as bright by comparison.
 
