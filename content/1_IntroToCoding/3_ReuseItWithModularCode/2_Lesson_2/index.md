@@ -151,6 +151,12 @@ Experiment with this example and try to create an additional two instances of th
 
 ---
 
+Here is a video going through the ideas discussed in this lesson in a live-coding context:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a3emX23a73U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Additional Examples
 
 
