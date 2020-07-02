@@ -82,7 +82,7 @@ Objects are a wonderful tool for beginning to attach values to a certain object.
 
 A class is a collection of objects that all have the same properties or behaviors. Take smartphones as an example. Generally speaking, all smartphones do the same things: make calls, access the internet, run apps, take pictures, etc. They also have similar appearances. However each person's individual phone will have a different configuration of apps, be used for a different purpose, or be a different brand/model from person to person. In this sense, 'smartphone' is the class, and the individual phones are the objects. Another example could be how all apples have the same approximate shape and grow on trees, but there are a variety of species with different colors and flavors within the broader category of 'apple'.
 
-To use this in our code, we can build on what we have already learned with objects. The code below can be used to show what needs to be done. The elements from the previous exmple are still present here, but they have been commented out with the `/* */` format.
+To use this in our code, we can build on what we have already learned with objects. The code below can be used to show what needs to be done. The elements from the previous example are still present here, but they have been commented out with the `/* */` format.
 
 {{% codepen 600 ZEQLMOR %}}
 
