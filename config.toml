@@ -3,8 +3,8 @@ languageCode = "en-US"
 defaultContentLanguage = "en"
 
 title = "Hugo Learn Documentation"
-theme = ["reveal-hugo", "hugo-pathways-theme"]
-# themesdir = "../.."
+theme = ["hugo-pathways-theme", "reveal-hugo"]
+
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
@@ -17,6 +17,9 @@ defaultContentLanguageInSubdir= true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+unsafe = true
 
 [outputFormats.Reveal]
   baseName = "index"

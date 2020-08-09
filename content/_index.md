@@ -1,22 +1,24 @@
----
-title: "Programming Digital Media"
----
++++
+title = "Programming Digital Media"
+outputs = ["Reveal"]
+[reveal_hugo]
+theme = "night"
+margin = 0.2
++++
 
-<script async src="//jsfiddle.net/oyz8zg40/1/embed/result/"></script>
+# Programming Digital Media
+
+---
 
 ## Course Description and Objectives
 
-<!-- Course objectives, costs, general schedule, etc: {{% link "programming-digital-media.pdf" %}} -->
-
+{{%note%}}
 Programming Digital Media introduces a broad array of topics related to digital media through project oriented programming of graphics, audio, and hardware applications. The motivation for this course is to provide a basic introduction to computer programming using subjects that are relevant or appealing to students who are new to technological fields of study, with little to no prior programming experience. The course is presented in five segments covering an introduction to the basic concepts of coding, three distinct areas in digital media, followed by a final integration project combining elements of these areas. There is a strong emphasis on computer programming tasks throughout, and the hands-on exercise of digital media tools in class is required.
-
-The specific digital media topics covered in this course are:
+{{%/note%}}
 
 * Real-time graphics rendering and user interactions.
 * An introduction to the concepts and coding applications of sound design.
 * Basic electronics and physical computing.
-
-A more detailed breakdown of this course's core objectives, costs, a general schedule of the topics covered, and more can be found [here](https://pdm.lsupathways.org/programming-digital-media.pdf).
 
 ---
 
