@@ -15,7 +15,7 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-		"Make Speaker Notes": {
+		"makeSpeakerNotes": {
 		"scope": "markdown",
 		"prefix": "note",
 		"body": [
