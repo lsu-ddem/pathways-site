@@ -6,7 +6,7 @@ weight: 1
 
 Let's get started! In this first example, we'll cover the basics of text-based coding in the JavaScript language.
 
-Head to the [P5.js Web Editor](http://alpha.editor.p5js.org/), sign up for a personal account, and open a new File. You'll be presented with a new editor window that displays the code found in your "sketch.js" file. The P5 Web Editor starts you off with some basic code that is needed to create a blank, grey canvas.
+Head to the [P5.js Web Editor](http://editor.p5js.org/), sign up for a personal account, and open a new File. You'll be presented with a new editor window that displays the code found in your "sketch.js" file. The P5 Web Editor starts you off with some basic code that is needed to create a blank, grey canvas.
 
 ![default](/images/graphics/p5default.png)
 
@@ -54,17 +54,17 @@ Functions can be given additional information in order to specify the way they b
 
 In your code, try changing the single number argument found inside the parenthesis for the `background()` function like this:
 
-```
+```js
 background(96);
 ```
 
 `background()` sets the color of the canvas background, and a single number between 0 and 255 will result in a black (0), white (255), or gray canvas. If we want something more exciting, we can add two more arguments into the `background()` function, each of them separated by a comma, like this:
 
-```
+```js
 background(96, 110, 220);
 ```
 
-Our canvas background is now a shade of violet. When three arguments are passed into the `background(`) function, it blends red, green, and blue hues together (in that order) based on the values you give it.
+Our canvas background is now a shade of violet. When three arguments are passed into the `background()` function, it blends red, green, and blue hues together (in that order) based on the values you give it.
 
 Each function in the p5.js library will require different types of data in different orders to adjust their behavior. Check the [P5.js Reference Page](https://p5js.org/reference/) to see a complete list of functions and their adjustable properties. 
 

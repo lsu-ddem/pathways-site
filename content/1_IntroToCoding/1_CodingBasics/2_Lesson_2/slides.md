@@ -4,7 +4,7 @@ outputs = ["Reveal"]
 layout = "bundle"
 hidden = "true"
 [reveal_hugo]
-theme = "night"
+theme = "solarized"
 margin = 0.2
 +++
 
