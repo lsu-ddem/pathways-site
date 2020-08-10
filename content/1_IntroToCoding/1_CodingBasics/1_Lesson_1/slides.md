@@ -118,4 +118,4 @@ Each function in the p5.js library will require different types of data in diffe
 Remember, you are giving your computer a set of instructions to follow. If you just say "draw a square" but don't tell the computer where or how large to draw the square, then your computer won't be able to follow your instructions because it doesn't have enough information. 
 {{</note>}}
 
----
+
