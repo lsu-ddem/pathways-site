@@ -28,7 +28,7 @@ We can also run these same equations against a variable that isn't a fixed, stat
 
 ## Math for Animation
 
-In order to animate a shape or image, we will need to replace one or more of its fixed location arguments with a variable, and then write a line of code that causes that variable to update with a new, changed. This last action will need to repeat continuously at a rate fast enough for our eyes to perceive the location change as a smooth motion. The **draw( )** block is a perfect place to add this new code since it loops the code inside of it at a rate of 60 frames per second.
+In order to animate a shape or image, we will need to replace one or more of its fixed location arguments with a variable, and then write a line of code that causes that variable to update with a new value. This last action will need to repeat continuously at a rate fast enough for our eyes to perceive the location change as a smooth motion. The **draw( )** block is a perfect place to add this new code since it loops the code inside of it at a rate of 60 frames per second.
 
 Take a look at the two examples embedded below. The first code produces a PacMan character that is fixed in place, while the second example produces a PacMan that is gradually moving across the screen as the "pacX" variable gradually updates with a growing value:
 
@@ -46,11 +46,11 @@ Once you are comfortable with the process of adding to or subtracting from a var
 
 | Compound Symbols | Operation     | Example     |
 | ---------------- | ------------- | ----------- |
-| +=               | X = X + value | X += value; |
-| \-=              | X = X - value | X -= value; |
-| \*=              | X = X * value | X *= value; |
-| /=               | X = X / value | X /= value; |
-| %=               | X = X % value | X %= value; |
+| +=               | x = x + value | x += value; |
+| \-=              | x = x - value | x -= value; |
+| \*=              | x = x * value | x *= value; |
+| /=               | x = x / value | x /= value; |
+| %=               | x = x % value | x %= value; |
 
 ---
 
