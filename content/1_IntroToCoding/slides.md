@@ -2,6 +2,7 @@
 title = "Intro to Coding"
 outputs = ["Reveal"]
 layout = "list"
+hidden = "true"
 [reveal_hugo]
 theme = "solarized"
 margin = 0.2
