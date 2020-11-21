@@ -3,7 +3,7 @@ title: Storing Things in Code - Variables
 weight: 3
 ---
 
-So far, our code has used concrete, static data to create visuals. However, we can use updatable, changing data in order to modify our projects while they are running in order to make them more dynamic. To do this, we use [variables](https://pdm.lsupathways.org/6_resources/2_variables/). A variable is a container that stores a single value in the memory or our code so that we can use it at a later time, in multiple places throughout our code. This make variables more flexible than fixed, concrete values.
+So far, our code has used concrete, static data to create visuals. This kind of data can also be called `hard coded`. However, we can use updatable, changing data in order to modify our projects while they are running in order to make them more dynamic. To do this, we use [variables](https://pdm.lsupathways.org/6_resources/2_variables/). A variable is a container that stores a single value in the memory or our code so that we can use it at a later time, in multiple places throughout our code. This make variables more flexible than fixed, concrete values.
 
 Take a look at the embedded code below:
 
@@ -120,3 +120,17 @@ We also have a second variable, squareSize, that is declared inside of the brack
 This is a common error related to using variables in a project, and in this instance, it is caused because we are trying to read the value of "squareSize" form inside the **draw( )** function block. Our code then tells us that it doesn't understand what "squareSize" is because it hasn't been properly defined, even though we declared and initialized it. This variable's local scope won't allow us to do anything with it outside of **mousePressed( )**. Try cutting line 33 and pasting it into **mousePressed( )** on any line after we declare it, and both console.log() functions will now work properly. You may also get this error if you misspell a variable name in your code. Remember that a computer will read `squareSize` and `squareSize` as two entirely different items.
 
 There are a number of reasons why you would want to declare a variable locally instead of globally, but many of them depend on specific circumstances. As we progress through this unit and others, we'll call attention to instances where we choose local vs. global and explain why this choice is sometimes necessary.
+
+---
+
+## a little practice
+
+Now that we have gone through all of the basic information about variables, you can expect to see them constantly in the sketches for this class. The ability to save and recall data is powerful when working with computer code.
+
+Before moving on, lets try a little practice using variables:
+
+Create a new p5 sketch and use the information from this chapter to draw one of each of the shapes shown above. Try using a global variable for each argument in the shape functions. 
+
+Then, create an additional ellipse(). Experiment and see what happens when you use the system variables mentioned in this lesson co control the different arguments. (`mouseX` and `mouseY` can be extremely useful)
+
+---

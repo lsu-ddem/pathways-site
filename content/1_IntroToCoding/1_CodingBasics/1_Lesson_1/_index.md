@@ -28,6 +28,16 @@ Throughout this website several codes will be embedded to allow you to experienc
 
 ---
 
+## Saving Your Sketches
+
+The P5 web editor lets you save your sketches to the cloud where you can access them from any web browser. Click `file > save` in order to save your sketch to your account. Keep in mind that if you don't do this and you close the webpage then all of your work will be lost, so be sure to save and save often!
+
+By default P5 names the sketch with two random words. You can click on this title (next to the run button) in order to rename it to whatever you want. Once you've done these things you can easily share your sketches with your teachers, friends, embed them in webpages, or share them however you want! Simply click `file > share` and copy the different urls for different formats. 
+
+For students, it is recommended to use the 'edit' link for various assignments so that teachers can see both the results and the code for grading and troubleshooting. Don't worry, people with this link won't be able to overwrite your code. They will have to click on `file > duplicate` to save a copy to their personal account where any changes will be saved as a separate file. 
+
+---
+
 ## Functions
 
 Take a look at the code below, which matches the code in your project on the P5 Web Editor:
@@ -42,7 +52,7 @@ Any code inside of `setup()` will only be run _once_ upon the loading of the HTM
 
 The `draw()` function behaves like a loop. Any code placed inside this block will be read by our browser from top to bottom and executed over and over again. The speed of the `draw()` block loop is 60 cycles (or **_frames_**) per second.
 
-Take a look at the embedded code below, and add the new console.log() lines into your project on the P5 Web Editor so that both code examples match. Once you've done that, hit the Run Button (shaped like a triangle) at the top of your editor window, and watch the section below marked "Console." After a few seconds, hit the Stop Button.
+Take a look at the embedded code below, and add the new console.log() lines into your project on the P5 Web Editor so that both code examples match. Once you've done that, hit the Run Button (shaped like a triangle/play button) at the top of your editor window, and watch the section below marked "Console." After a few seconds, hit the Stop Button.
 
 {{% codepen 500 GGKdaj %}}
 
@@ -69,5 +79,15 @@ Our canvas background is now a shade of violet. When three arguments are passed 
 Each function in the p5.js library will require different types of data in different orders to adjust their behavior. Check the [P5.js Reference Page](https://p5js.org/reference/) to see a complete list of functions and their adjustable properties. 
 
 Remember, you are giving your computer a set of instructions to follow. If you just say "draw a square" but don't tell the computer where or how large to draw the square, then your computer won't be able to follow your instructions because it doesn't have enough information. 
+
+---
+
+## When you're done exploring
+
+Now that you've had a little time to start getting familiar with the P5 environment and editing the basic code template, try to save your changes as a new file if you haven's already.  `(file > save)`
+
+You can now open this file on any device by clicking `file > open` once you've logged into P5. Be sure to rename your sketch to something useful so you can find it later! Throughout this course we will be making several sketches and it will be impossible to find correct one using P5's default naming scheme.
+
+Once you've saved the sketch, try sharing it with the sharing links to see how they appear on other people's computers.
 
 ---

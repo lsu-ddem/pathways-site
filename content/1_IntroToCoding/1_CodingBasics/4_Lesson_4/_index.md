@@ -26,6 +26,34 @@ We can also run these same equations against a variable that isn't a fixed, stat
 
 ---
 
+### Mini-Practice: Centering objects on the canvas
+
+Try and open a new p5 sketch and use what we have gone over so far to place an ellipse() exactly in the center of the canvas. THere are a few different ways to go about this:
+
+* Hard coded numbers: You could enter `(200, 200)` for the ellipse's location arguments which can work, but what if the canvas changes size? Try adjusting the size of the canvas in `createCanvas()` to see what happens.
+* Variables: you could create a variable to store the value, but we will run into similar issues here as well.
+* System Variables: This would be ideal, however there is no system variable for the center point of the canvas. This is where math comes into play.
+
+Looking back at the last lesson, you will see that there is a system variable called `width`, and another called `height`. These system variables store the size of the canvas (number of pixels wide and tall respectively) as a number. You can see/manipulate these numbers by changing the values inside of `createCanvas()`. Lets use them to draw our circle
+
+```js
+ellipse(width, height, 50, 50);
+
+```
+
+Notice how the ellipse is not in the center, but rather at the bottom right corner. To fix this and get our desired results, we will need ot use math to manipulate the values. If you look at the canvas, you will see that the x-position and y-position of the center of the circle are twice of what we want them to be.
+
+You can also say that the center is both halfway between 0 and width and 0 and height. So lets divide those values by 2.
+
+```js
+ellipse(width / 2, height / 2, 50, 50);
+
+```
+
+Now we will see that the circle is right in the center of the canvas. Because we took the width/height values and found the midpoint between them and 0. Because `width` and `height` automatically update with the size of the canvas, and we are just feeding whatever those numbers happen to be into the math equation, this ellipse() will always appear in the middle of the canvas, regardless of what arguments you give `createCanvas()` Try changing them and see!
+
+---
+
 ## Math for Animation
 
 In order to animate a shape or image, we will need to replace one or more of its fixed location arguments with a variable, and then write a line of code that causes that variable to update with a new value. This last action will need to repeat continuously at a rate fast enough for our eyes to perceive the location change as a smooth motion. The **draw( )** block is a perfect place to add this new code since it loops the code inside of it at a rate of 60 frames per second.

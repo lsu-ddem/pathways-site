@@ -13,7 +13,7 @@ There is a definitive top and bottom for the canvas.
 Look at the default starting code in p5, you can see a few items that are used to set up the canvas. 
 
 
-Inside of function setup(), you can see the line createCanvas(400, 400); this line is what tell p5 to create the canvas, and how large to make it. The numbers represent how wide and tall to make the canvas from the top-left corner, in pixels. The default is 400px x 400px. Try adjusting these number to see how the canvas changes.
+Inside of function setup(), you can see the line createCanvas(400, 400); this line is what tell p5 to create the canvas, and how large to make it. The numbers represent how wide and tall to make the canvas from the top-left corner, in pixels. The default is 400px x 400px. Try adjusting these numbers to see how the canvas changes.
 
 ![The P5 starting code](/images/graphics/p5default.png)
 
@@ -26,7 +26,16 @@ As previously mentioned, the canvas is arranged in pixels, similar to a coordina
 ![Image originally from: https://socratic.org/questions/in-what-quadrant-is-the-point-6-7 ](/images/graphics/coordinateplane.jpg)
 
 
-As shown in the code below, by increasing the X coordinate of various items on the canvas, that object will move to the right. Increasing the Y coordinate will lower the item on the canvas. The inverse of this is also true. 
+Try adding the lines below inside of the draw function (after background(220), but before the closing brace })
+
+```js
+console.log(mouseX, mouseY);
+
+```
+
+This line will show us the current pixel coordinate of the mouse in the p5 canvas on the bottom of the screen. Notice how moving the mouse changes the numbers. We can use these numbers to tell out code where to put different objects on the canvas.
+
+As shown in the code below, by increasing the X coordinate of various items on the canvas, that object will move to the `right`. Increasing the Y coordinate will `lower` the item on the canvas. The inverse of this is also true. 
 
 {{% codepen 600 pojzjoX %}}
 
@@ -45,7 +54,7 @@ Below are a few basic shape functions that we will expand on later. All shape fu
     * line() draws a straight line between the two coordinate points given as arguments. 
 * ellipse(X location of center, Y location of center, width of shape, [height of shape])
     * An ellipse is a circle or oval. By default, an ellipse is drawn out from the center point. (note, the height of the shape is not required to draw an ellipse, but p5 will assume that it will be a perfect circle unless you give it a specific height)
-* rect(X of top left, Y of top left, width of shape, height of shape)
+* rect(X of top left, Y of top left, width of shape, [height of shape])
     * Rectangles are drawn similarly to the canvas: starting at the top left, and then out by a specified width and height. Having the last two arguments be identical will result in a perfect square.
 * triangle(X1, Y1, X2, Y2, X3, Y3)
     * Triangle can be a little difficult. Each pair of numbers is the XY pixel location of a point of the triangle. To move the shape, you will have to move each point individually, and may have to do a little math in order to make everything line up properly.
