@@ -46,7 +46,7 @@ In the next code, the same functionality from the previous code is present, but 
 
 ---
 
-## Drawing basic shapes on the canvas:
+## LETS PRACTICE!: Drawing basic shapes on the canvas:
 
 Below are a few basic shape functions that we will expand on later. All shape functions need a set of coordinates in order to be drawn on the screen. 
 

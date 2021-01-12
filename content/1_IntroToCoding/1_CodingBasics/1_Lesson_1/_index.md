@@ -36,6 +36,10 @@ By default P5 names the sketch with two random words. You can click on this titl
 
 For students, it is recommended to use the 'edit' link for various assignments so that teachers can see both the results and the code for grading and troubleshooting. Don't worry, people with this link won't be able to overwrite your code. They will have to click on `file > duplicate` to save a copy to their personal account where any changes will be saved as a separate file. 
 
+### LETS PRACTICE!
+
+Once you have made your account practice creating a new file and saving it. This may seem simple, but it is important since it will be impossible to submit assignments, come back to work on projects at a later time, or have your teacher be able to grade your work unless the sketch is properly saved!
+
 ---
 
 ## Functions
@@ -82,7 +86,7 @@ Remember, you are giving your computer a set of instructions to follow. If you j
 
 ---
 
-## When you're done exploring
+### LETS PRACTICE!
 
 Now that you've had a little time to start getting familiar with the P5 environment and editing the basic code template, try to save your changes as a new file if you haven's already.  `(file > save)`
 

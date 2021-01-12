@@ -72,6 +72,24 @@ The embedded code below shows an If Statement in action. Clicking and dragging y
 
 {{% codepen 600 aKWKmj%}}
 
+
+### LETS PRACTICE!
+
+Look at the code below (you can copy it into a p5 sketch if you want)
+
+```js
+
+function draw(){
+  background(220);
+  if(mouseX > pmouseX){
+   fill(0, 255, 0);
+   ellipse(width / 2, height / 2, 200, 200);
+  }
+}
+```
+* What is this conditional testing for and what are the results for the cod passing the test?
+* How could you change this test so that the code behaves in the opposite manner?
+
 ---
 
 ## Single Test, Two Results  (The If/Else Statement)

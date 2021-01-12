@@ -101,3 +101,12 @@ The embedded code below shows this process in action. Notice how we are reassign
 If you want to slow down the speed of the square's travel, call the `frameRate( )` function in your **setup( )** block and give it a number that is less than 60 in order to slow down the looping rate of the **draw( )** block. Adjusting this system variable will change how many times the **draw()** function loops per second.
 
 ---
+
+### LETS PRACTICE!
+
+Create a new sketch in p5 and draw a shape. (you can pick the specific one and the color) then use the system variables mouseX and mouseY in order to adjust the position of the shape in real-time. 
+Add some of the math shown in this chapter to see how it could alter the position of the shape on the screen (ex. mouseX + 50).
+
+For an added challenge, create a single custom variable in your code, then use the various mathematical expressions in order to draw 2 rectangles using only the one variable. (you will need multiple instances of `variable + number` or `variable - number`).
+
+---

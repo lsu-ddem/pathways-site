@@ -32,3 +32,43 @@ For this assignment, your goal is to recreate the code below as accurately as po
 <iframe src="https://editor.p5js.org/mbardin/embed/h_dsP2Bs3" width=500 height=500></iframe>
 
 ---
+
+## Additional Practice Assignment
+
+Here is another practice assignment that utilizes all of the concepts discussed in this chapter.
+
+Use the code below as a starting place. Copy it into a blank p5 sketch.
+
+```js
+ 
+ //create your variables here 
+ let redX, redY;
+  
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+//use this space to add the necessary math  
+redX = mouseX;
+redY = mouseY;
+  
+  background(0);
+//you will need to use the variables you created and altered in order to draw the various shapes
+  fill("red");
+  ellipse(redX, redY, 25, 25);
+  fill("green");
+  ellipse();
+  fill("lightBlue");
+  ellipse();
+  fill("white");
+  ellipse();
+  fill("coral");
+  ellipse();
+}  
+
+```
+
+For this assignment, you will need to create 2 variables for each ellipse function given. Then you will have to assign them a value. These values should all be based on mouseX and mouseY. Lastly you should use these vales inside of the ellipse functions. If done properly, all 5 ellipses should follow the mouse at different distances. The red ellipse has been completed for you as an example.
+
+---

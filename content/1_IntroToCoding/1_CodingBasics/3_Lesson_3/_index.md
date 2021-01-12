@@ -3,19 +3,19 @@ title: Storing Things in Code - Variables
 weight: 3
 ---
 
-So far, our code has used concrete, static data to create visuals. This kind of data can also be called `hard coded`. However, we can use updatable, changing data in order to modify our projects while they are running in order to make them more dynamic. To do this, we use [variables](https://pdm.lsupathways.org/6_resources/2_variables/). A variable is a container that stores a single value in the memory or our code so that we can use it at a later time, in multiple places throughout our code. This make variables more flexible than fixed, concrete values.
+So far, our code has used concrete, static data to create visuals. This kind of data can also be called `hard-coded`. However, we can use updatable, changing data in order to modify our projects while they are running in order to make them more dynamic. To do this, we use [variables](https://pdm.lsupathways.org/6_resources/2_variables/). A variable is a virtual container that stores a single value in the memory or our code so that we can use it at a later time, in multiple places throughout our code. This make variables more flexible than fixed, hard-coded values.
 
 Take a look at the embedded code below:
 
 {{% codepen 400 wXdQOE %}}
 
-In this code, we've drawn two polygons to the screen. The teal square is built using four fixed values as arguments; its location, width, and height will never be changed unless we stop the code, edit the values, and rerun the program. The pink rectangle uses two variables: "rectWidth" and "rectHeight".
+In this code, we've drawn two polygons to the screen. The teal square is built using four hard-coded values as arguments; its location, width, and height will never be changed unless we stop the code, edit the values, and rerun the program. The pink rectangle uses two variables: "rectWidth" and "rectHeight". The teal rectangle will always load with the same hard-coded values, however as we will see later, the pink triangle will be able to adapt and change as the code runs. But first lets make a few  variables.
 
 ---
 
 ## Making Variables
 
-To make a variable, we start by _declaring_ a name for the container. In our code, we've declared both "rectWidth" and "rectHeight" at the very top of our code by first typing the keyword **let**. This is synonymous to asking our code to let "rectWidth" contain a specific value in its memory, so that we can refer to it by that name in our project from now on. We've done this outside of either the **setup( )** or **draw( )** blocks, which means that we've declared these variables _**globally**_ and they can be used/accessed anywhere in our code(we'll discuss this in detail at the bottom of the page).
+To make a variable, we start by _declaring_ a name for the container. In our code, we've declared both "rectWidth" and "rectHeight" at the very top of our code by first typing the keyword **let**. This is synonymous to asking our code to save "rectWidth" contain a specific value in its memory, so that we can refer to it by that name in our project from now on. We've done this outside of either the **setup( )** or **draw( )** functions, which means that we've declared these variables _**globally**_ and they can be used/accessed anywhere in our code (we'll discuss this in detail at the bottom of the page).
 
 Next, we need to _assign_ an initial value to each variable. This is also called _initialization_, or _init_ for short. This step can be done immediately after declaring a variable:
 
@@ -52,9 +52,17 @@ function setup() {
 }
 ```
 
-because the original value of "xValue", which was 1, has now be replaced with 21.
+Because the original value of "xValue", which was 1, has now be replaced with 21. This new value is also locally trapped inside of the setup function (more on global scope at the bottom of this page.)
 
-- You _**should not**_ have two separate variables that share the same name. The same code example above would also cause an issue due to the fact that you are attempting to declare two separate variables that share the same name. While this sort of thing is POSSIBLE to do, it makes for a very confusing code. This has to do with the scope in which both variables were declared (more on this below).
+- You _**should not**_ have two separate variables that share the same name. The same code example above would also cause an issue due to the fact that you are attempting to declare two separate variables that share the same name. While this sort of thing is POSSIBLE to do, it makes for a very confusing code for both the computer and the coder. 
+- When naming your variables you should choose a name that describes how the variable will be used in your code. If you were to look at an example of code and see this: 
+
+```js
+let x14, hasiyuergthiww, bob, sally, i1l0, variable6;
+```
+
+You would have no idea how any of these variables would be used. This makes fixing errors in the code unnecessarily complicated. The example below is a much better list of names for variables.
+
 - If you are declaring a number of variables without immediately initializing them, you can save some vertical space in your code editor by declaring them all on the same line while using a single **let** keyword. The example below declares four different variables all on one line, separated by commas:
 
 ```js
@@ -68,6 +76,8 @@ let circleX, circleY, speed, jumpHeight;
 Variables can contain fixed values as well as changeable values. In our example, rectHeight contains a fixed value of 50 inside of it (which happens at the very top of our code, above the **setup( )** function block), allowing us to use the value of 50 in any location we type the phrase "rectHeight." rectWidth, however, contains the result of a function called `random()`, which generates a random number between its two arguments each time it is run. Since it only runs inside of the **setup( )** block, we need to hit the rerun button in the embedded Result panel in order to get a different width for the pink rectangle. We can easily modify our code so that `random()` spits out a new value and updates our variable with every frame of the draw loop:
 
 {{% codepen 400 BVRVYL %}}
+
+Notice that we are referring to the name of the variable, and then using whatever value is stored inside it. (in this case the result of random(1, 400)). We can see that the value inside of the varible is being repeatedly changed since we are using that value to set the width of the pink rectangle.
 
 ## System Variables
 
@@ -103,6 +113,8 @@ Boolean System Variables
 | `mouseIsPressed` | boolean - contains "true" if mouse pressed, "false" if not   |
 | `keyIsPressed`   | boolean - contains "true" if any key pressed, "false" if not |
 
+
+Boolean variables can only contain one of two values, true or false.
 ---
 
 ## Global Scope vs. Local Scope
@@ -123,14 +135,21 @@ There are a number of reasons why you would want to declare a variable locally i
 
 ---
 
-## a little practice
+### LETS PRACTICE!
 
 Now that we have gone through all of the basic information about variables, you can expect to see them constantly in the sketches for this class. The ability to save and recall data is powerful when working with computer code.
 
 Before moving on, lets try a little practice using variables:
 
-Create a new p5 sketch and use the information from this chapter to draw one of each of the shapes shown above. Try using a global variable for each argument in the shape functions. 
+Create a new p5 sketch and use the information from this chapter to draw one of each of these shapes using a custom variable:
 
-Then, create an additional ellipse(). Experiment and see what happens when you use the system variables mentioned in this lesson co control the different arguments. (`mouseX` and `mouseY` can be extremely useful)
+* square
+* circle
+* line
+* triangle
+
+Be sure to both declare and initialize the variables before you use them, and try to make them all global variables. 
+
+Then, create an additional ellipse(). Experiment and see what happens when you use the system variables mentioned in this lesson co control the different arguments. (`mouseX` and `mouseY` can be extremely useful) Try and achieve different results by using different system variables in different places inside the ellipse() function.
 
 ---
