@@ -24,3 +24,5 @@ This project can be completed both with or without objects. Both methods can res
 While students can complete this project using strings to represent pre-set color names, it is recommended that they utilize RGB values as a way to practice the format. 
 
 Lastly, the particular shades shown in these examples and the number of options are mearly suggestions. If desired a student could create a paint app using which ever shades they wanted. Let your creativity flow!
+
+---
