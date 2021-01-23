@@ -46,9 +46,14 @@ When we add this line into our draw function we can now see the sprite appear.
 
 {{% codepen 600 NWGaYgr %}}
 
-The default appearance of the sprite is a rectangle with a randomly generated color. If you were to change the size of the sprite in the arguments of the `createSprite()` function on line 9, you would see both the size and color change when the code re-ran. The specific color of a sprite can be set using the `.shapeColor` property. One thing to keep in mind that unlike the `rect()` function, `createSprite()' generates its shapes from the center.
+The default appearance of the sprite is a rectangle with a randomly generated color. If you were to change the size of the sprite in the arguments of the `createSprite()` function on line 9, you would see both the size and color change when the code re-ran. The specific color of a sprite can be set using the `.shapeColor` property. One thing to keep in mind that unlike the `rect()` function, `createSprite()' generates its shapes from the center. We will go over properties and methods more in the next lesson, but their use and formatting is almost identical to other JS objects and classes that were mentioned in [this lesson](https://pdm.lsupathways.org/1_introtocoding/3_reuseitwithmodularcode/2_lesson_2/).
 
 Using this process you can now generate as many sprites as needed using `createSprite()` for each one. Every sprite will need its own unique name, but you will only need to call `drawSprites()` one time in your code. It is best that this happens last in the draw function so that any calculations can occur be applied to the sprite before it is drawn.
+
+---
+### Let's Practice!
+
+Try using what we know now in order to create a total of 5 different sprites in a p5 sketch. Remember that You need to have the p5.play library installed in the sketch before functions like `createSprite()` will work! Afterwards, try to give each sprite a unique color using the property `shapeColor()`. 
 
 ---
 
@@ -72,5 +77,11 @@ To create a group, follow these steps:
     ```
 
 You can now refer to your sprites individually or as a group, similar to a teacher giving instructions to an individual student, or addressing the whole class at one time. You can also remove a sprite from a group with the `.remove()` method.
+
+---
+
+### Let's Practice!
+
+Try taking your code from the first practice in this lesson and add all five of the sprites you created into a group. We will work more with groups of sprites in a few lessons, but it is important to know that once you make the sprites, you can group together similar ones.
 
 ---
