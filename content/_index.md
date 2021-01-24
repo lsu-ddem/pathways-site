@@ -56,3 +56,14 @@ Below is a table of contents for all 12 of the chapters covered in this online t
 * [Additional Resources](https://pdm.lsupathways.org/6_resources/)
 
 ---
+
+## Authors
+
+The lessons and code examples shown on this webpage were created by: (in alphabetical order)
+
+* [Dr. Jesse Allison](https://www.lsu.edu/cmda/music/people/faculty/allison.php)
+* [Matthew A. Bardin](http://matthewbardin.com)
+* Tate Carson
+* [Dr. Anthony Marasco](https://www.utrgv.edu/music/people/faculty/anthony_marasco1.pdf)
+
+---
