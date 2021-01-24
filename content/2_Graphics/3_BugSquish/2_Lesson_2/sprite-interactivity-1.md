@@ -1,6 +1,6 @@
 ---
 title: Sprite Collisions
-weight: '3'
+weight: '4'
 ---
 
 ## Understanding Collisions
