@@ -14,4 +14,6 @@ Here is an example of our final goal of attaching an animation to a sprite:
 
 {{% codepen 400 ZRRoEG %}}
 
+All of the interactivity from the previous section still applies, but next we will add new assets to our code so that the sprite appearance can change to be even more dynamic!
+
 ---

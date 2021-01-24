@@ -63,7 +63,7 @@ We will utilize many more methods throughout this unit, but for now lets focus o
 
 ### Group Methods
 
-When working with sprite groups, there is a limited number of methods that can be applied to all sprites in the group at once. Some of the more common ones we will use in the next lessons are: 
+When working with sprite groups, there is a limited number of methods that can be applied to all sprites in the group at once. Some of the more common ones we will use in the next few lessons are: 
 
 * .add()
 * .remove()

@@ -25,7 +25,7 @@ As mentioned, the libraries are a collection of javascript code. To see this raw
 
 For a quick practice, let's do exactly what is _highly_ recommended in the section just above us.
 
-* Open a new p5 sketch. Name it something easily recodnizable like `p5.play starting template`.
+* Open a new p5 sketch. Name it something easily recognizable like `p5.play starting template`.
 * Copy the line of html code form above and past it into the `index.html` file of your newly created sketch.
     * Be sure that you go to line 6 and move all of the contents down one line to avoid possible formatting errors.
 * Once you have pasted this line into the code, save the sketch.
@@ -51,8 +51,8 @@ Each of these arguments can be changed later on in your code, but you ust give a
 
 In order to see sprites drawn to the canvas, one of two functions are needed inside of the `draw()` function:
 
-* `drawSprite()`: Draws a single sprite to the canvas. Use the desires sprite's variable name as the argument.
-* `drawSprites()`: Draws all sprites to the canvas. Most examples in this unit will utilize this function.
+* `drawSprite()`: Draws a single sprite to the canvas. Use the desired sprite's variable name as the argument. You will need one of these for each sprite that you want to draw.
+* `drawSprites()`: Draws all sprites to the canvas. Most examples in this unit will utilize this function. You will only need to use this line of code once in the project.
 
 When we add this line into our draw function we can now see the sprite appear.
 

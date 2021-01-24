@@ -172,3 +172,14 @@ As preparation for the *Bug Squish* assignment, your assignment is to recreate t
 ![default](/images/graphics/red-apple.png)
 
 ---
+
+## Additional Practice Assignments
+
+For additional practice, try creating multiple sketches that do the following:
+
+* Cave a player character navigate through randomly generated obstacles. If they touch the obstacles they lose, if they reach a goal point they win
+* Create a large number of sprites. Give them all unique animations/images. Have the animations and sprite behavior change when they are clicked on. Give each sprite a unique reaction.
+* Using the dog code from the animation lessons as a guideline, try to create your own collection game.
+* Using sprites, make a scene where it is raining. If the player character comes into contact with a raindrop, they lose. See the lesson on sprite movement for an example of random/automatic sprite movement.
+
+---
