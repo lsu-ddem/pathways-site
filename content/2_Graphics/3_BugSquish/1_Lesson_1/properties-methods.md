@@ -41,6 +41,8 @@ Methods serve as functions or actions that the sprite can be told to perform. Th
 sprite.method(argument(s));
 ```
 
+These methods are formatted and function essentially the same as when we created our own methods in the [lessons on objects and classes](https://pdm.lsupathways.org/1_introtocoding/3_reuseitwithmodularcode/2_lesson_2/).
+
 In the code above we can see `.attractionPoint()` is used. This method tells the sprite to move at a given speed (pixels per frame) toward the X,Y position indicated in its arguments. `.setSpeed()` however, only specifies an initial speed and single angular direction in which to move. A few commonly used angles are:
 
 | Angle (degrees) | Direction                |
@@ -57,7 +59,13 @@ In the code above we can see `.attractionPoint()` is used. This method tells the
 
 Any angle between 0 and 359 can be used, but those are some of the more commonly utilized ones in 2D character movement. Keep in mind that 0 degrees is horizontal to the right, and that the degrees then follow clockwise.
 
-We will utilize many more methods throughout this unit, but for now lets focus on these. You can look more into a sprite's methods here.](https://molleindustria.github.io/p5.play/docs/index.html)
+A few other common methods are: 
+
+* `.addAnimation(label, image(s))` which adds animations to the sprite.
+* `.displace(target)` which lets a sprite push another sprite around the canvas.
+* `.remove(sprite)` which removes the sprite from the sketch completely.
+
+We will utilize many more methods throughout this unit, but for now lets focus on these. You can look more into a sprite's methods [here](https://molleindustria.github.io/p5.play/docs/index.html).
 
 ---
 

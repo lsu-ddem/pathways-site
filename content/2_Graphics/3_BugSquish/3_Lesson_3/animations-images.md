@@ -54,7 +54,9 @@ myImage = loadImage(images/test1.png);
 }
 ```
 
-In the case of method two, we first have to indicate the folder that the image is located in, then the image. We will need ot specify any sub-folders as well, marking each level with a `/`. If your image isn't in a folder, then just typing `loadImages(filename.extention);` would work. You also need to specify the extention of the file. using .jpeg or .png files are recommended for this unit.
+In the case of method two, we first have to indicate the folder that the image is located in, then the image. We will need ot specify any sub-folders as well, marking each level with a `/`. If your image isn't in a folder, then just typing `loadImages(filename.extension);` would work. You also need to specify the extension of the file. using .jpeg or .png files are recommended for this unit.
+
+Once you have loaded an image to a sprite, the sprite will automatically resize itself to match the dimensions of the image. This will automatically update whenever the image or animation changes so you don't have to worry about that at all!
 
 ---
 
@@ -136,7 +138,7 @@ Generally, it is easier to create animations when the images are all separate fi
 
 There are methods for loading an interpreting a sprite sheet, however this section of the p5.play library is the most limited. You can use these to load in a sprite sheet, however you must know exactly how many pixels wide and tall each frame of the sheet is to avoid any drifting or other errors. Since this is difficult to achieve, it is instead recommended that you manually split the sprite sheet into separate images.
 
-There are several ways to do this. The most precise way is to use an online photo editor to automatically split the images and save them as seperate files. There are several webpages that do this. Here are a few potential options (in no particular order):
+There are several ways to do this. The most precise way is to use an online photo editor to automatically split the images and save them as separate files. There are several webpages that do this. Here are a few potential options (in no particular order):
 
 * [ezgif.com](https://ezgif.com/sprite-cutter)
 * [Sprite Sheet Animator](https://is.si/animator/)
@@ -144,3 +146,5 @@ There are several ways to do this. The most precise way is to use an online phot
 * [Sprite Sheet Slicer](https://isometric8.itch.io/sprite-sheet-slicer) 
 
 Once you have split the sprite sheet into separate images, you can then load them into your sketch and use them as shown throughout this lesson. 
+
+---
