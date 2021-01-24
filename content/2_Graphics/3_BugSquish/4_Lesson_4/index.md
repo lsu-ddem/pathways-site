@@ -109,11 +109,61 @@ Be sure to give the animation a name as a string. You can change the animation w
 
 Sprites can react to being clicked on with the `.onMousePressed()` method, as well as bouncing off of and pushing other sprites with the `.bounce()` and `.displace()`methods. Each of these allow for a callback function as an optional second argument. These are custom functions that you can define specific interactions rules inside of and are only called when two certain sprites or members of a group of sprites interact with each other.
 
+## Game States
+
+```js
+let gameState;
+
+function setup() {}
+  createCanvas(400, 400);
+  background(220);
+  gameState = 'start';
+}
+
+function draw() {
+  if(gameState === 'start){
+      all code for this state goes here
+      if(condition to trigger next state){
+          gameState = 'play';
+      }
+  } else if(gameState === 'play'){
+      all code for this state goes here
+      if(condition to trigger next state){
+          gameState = 'end';
+      }
+      } else if(gameState === 'end'){
+          all code for this state goes here
+          if(condition to restart the game){
+              setup();
+          }
+      }
+}
+```
+
+---
+
+## Timer
+
+```js
+let time;
+let timerIsDone = false;
+let startTime = 30; 
+
+function timer() {
+  time = int((millis() - startTime) / 1000);
+  if (time > 30) {
+    timerIsDone = true;
+  }
+  return time;
+}
+```
+
+
 ---
 
 ## Chapter 6 Review Assignment
 
-As preparation for the *Bug Squish* assignment, your assignment is to recreate the following code using the background and sprite images below. the background shohuld be set to the given image, and each apple should be a sprite with the provided image added to the sprite
+As preparation for the *Bug Squish* assignment, your assignment is to recreate the following code using the background and sprite images below. the background should be set to the given image, and each apple should be a sprite with the provided image added to the sprite
 
 {{% codepen-results 500 KKdeQga %}}
 

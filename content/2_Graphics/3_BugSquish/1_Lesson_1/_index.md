@@ -21,6 +21,18 @@ Once you have added this line, save your HTML file and head back to your "sketch
 As mentioned, the libraries are a collection of javascript code. To see this raw code, type the url from the HTML line above into your browser and you can see the base code for this library.
 
 ---
+### Let's Practice!
+
+For a quick practice, let's do exactly what is _highly_ recommended in the section just above us.
+
+* Open a new p5 sketch. Name it something easily recodnizable like `p5.play starting template`.
+* Copy the line of html code form above and past it into the `index.html` file of your newly created sketch.
+    * Be sure that you go to line 6 and move all of the contents down one line to avoid possible formatting errors.
+* Once you have pasted this line into the code, save the sketch.
+
+Now whenever you create a sketch using the p5.play library you can search for this code in the `My Sketches` menu and duplicate it before working. This will help you automatically have the p5.play library ready to go and you won't need to come back to this page over and over again just for that single line.
+
+---
 
 ## Spawning Sprites with P5.play
 
@@ -47,6 +59,21 @@ When we add this line into our draw function we can now see the sprite appear.
 {{% codepen 600 NWGaYgr %}}
 
 The default appearance of the sprite is a rectangle with a randomly generated color. If you were to change the size of the sprite in the arguments of the `createSprite()` function on line 9, you would see both the size and color change when the code re-ran. The specific color of a sprite can be set using the `.shapeColor` property. One thing to keep in mind that unlike the `rect()` function, `createSprite()' generates its shapes from the center. We will go over properties and methods more in the next lesson, but their use and formatting is almost identical to other JS objects and classes that were mentioned in [this lesson](https://pdm.lsupathways.org/1_introtocoding/3_reuseitwithmodularcode/2_lesson_2/).
+
+If you use the `.shapeColor` property to set a permanent color to a sprite, you can define the color a few different ways. Perhaps the two easiest are:
+
+* using a predefined web-color name as a string
+* using an array to set the RGB value for the sprite
+
+```js
+sprite.shapeColor = "coral";
+
+//or
+
+sprite.shapeColor = [200. 105, 10];
+
+```
+
 
 Using this process you can now generate as many sprites as needed using `createSprite()` for each one. Every sprite will need its own unique name, but you will only need to call `drawSprites()` one time in your code. It is best that this happens last in the draw function so that any calculations can occur be applied to the sprite before it is drawn.
 
@@ -82,6 +109,6 @@ You can now refer to your sprites individually or as a group, similar to a teach
 
 ### Let's Practice!
 
-Try taking your code from the first practice in this lesson and add all five of the sprites you created into a group. We will work more with groups of sprites in a few lessons, but it is important to know that once you make the sprites, you can group together similar ones.
+Try taking your code from the previous practice in this lesson and add all five of the sprites you created into a group. We will work more with groups of sprites in a few lessons, but it is important to know that once you make the sprites, you can group together similar ones.
 
 ---

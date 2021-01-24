@@ -1,5 +1,5 @@
 ---
-title: Moving Sprites Around the Canvas
+title: Properties and Methods
 weight: '2'
 ---
 
@@ -61,16 +61,15 @@ We will utilize many more methods throughout this unit, but for now lets focus o
 
 ---
 
-## Moving Your Sprites
+### Group Methods
 
-{{% codepen 600 RzPbrY %}}
+When working with sprite groups, there is a limited number of methods that can be applied to all sprites in the group at once. Some of the more common ones we will use in the next lessons are: 
 
-Once again we have this spinning sprite code. If you look at functions mousePressed() and keyPressed() you can see specific properties and methods used to tell the sprite how to move around the canvas. By clicking the mouse, we can use `.attractionPoint()` to indicate a spot the sprite should move to. this is great for a "click and move" type environment common in many games. Inside of keyPressed() we can see a series of conditional statements that test to see if a certain key is pressed. because we are using .setSpeed() as the results of this test, we can tell the sprite to move up, down, left, and right to match with the arrow keys. Using this logic we can tell our sprites how to move around the canvas. Different sprites can be mapped to different key combinations, or multiple sprites can be given the same keys to have identical, synchronized movements.
-
-We can also use these parameters to set automatic movements. In the code below there is an additional sprite that now moves automatically. This is done by setting the movement speed and direction inside of `setup()` and then utilizing conditional statements inside of `draw(()` to adjust those properties. Try changing the values and properties in order to change ho the sprite otto automatically moves around the canvas. 
-
-{{% codepen 600 NWGaMxa %}}
-
-Later on we will discuss how to program colossians with other sprites to build more complex environments to move through. 
+* .add()
+* .remove()
+* .bounce()
+* .collide()
+* .displace()
 
 ---
+
