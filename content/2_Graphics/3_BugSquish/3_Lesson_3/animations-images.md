@@ -50,11 +50,13 @@ function preload(){
 let myImage;
 
 function preload(){
-myImage = loadImage(images/test1.png);
+myImage = loadImage("images/test1.png");
 }
 ```
 
-In the case of method two, we first have to indicate the folder that the image is located in, then the image. We will need ot specify any sub-folders as well, marking each level with a `/`. If your image isn't in a folder, then just typing `loadImages(filename.extension);` would work. You also need to specify the extension of the file. using .jpeg or .png files are recommended for this unit.
+In the case of method two, we first have to indicate the folder that the image is located in, then the image. We will need ot specify any sub-folders as well, marking each level with a `/`. If your image isn't in a folder, then just typing `loadImages("filename.extension");` would work. You also need to specify the extension of the file. using .jpeg or .png files are recommended for this unit.
+
+For both methods of accessing files, you will need to type the image location as a string, regardless of it is a url or a local file that was added to the sketch.
 
 Once you have loaded an image to a sprite, the sprite will automatically resize itself to match the dimensions of the image. This will automatically update whenever the image or animation changes so you don't have to worry about that at all!
 
