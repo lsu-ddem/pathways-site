@@ -33,21 +33,31 @@ Each shape function requires a different set of arguments to be added when calle
   * By default, arcs are left "open" when drawn. To add a stroke outline to the flat edges of an arc (to the shape's center), add the word **_PIE_** as an optional seventh argument to the `arc()`function creating a pie-graph shape.
   * There are a total of three options for the arc's optional seventh argument. In addition to **_PIE_**, the argument **_CHORD_** connects the connects the edges of the arc with a straight line that avoids the center of the shape. **_OPEN_** resets the arc to its default settings.
 
+---
+
+### Let's Practice!
+
 An example of these four basic shapes can be found in the code below. Try changing some of the arguments to see how this modifies the shape's location or appearance:
 
 {{% codepen 500 zQRVby %}}
 
-### Outlines (Stroke weight and Stroke Color)
+There are a few other function for drawing shapes in the p5 library. We won't refer to them in this class, but feel free to check them out in [the p5 reference page](https://p5js.org/reference/) and see what you can make!
+
+## Outlines (Stroke weight and Stroke Color)
 
 p5 draws shapes with a thin black outline by default. This outline is called the **stroke**, and it can be modified in a number of ways.
 
-The `stroke()` function changes the color of any lines drawn after it is called. It can take either a String or RGB color values as arguments, similar to the `fill()` function. 
+The `stroke()` function changes the color of *_all_* lines drawn after it is called. It can take either a string or RGB color values as arguments (in the next lesson), similar to the `fill()` function. 
 
 The thickness of a shape's stroke can be set with the `strokeWeight()` function. It takes a single argument that sets the thickness in units of pixels.
 
-To remove an outline from a shape entirely, use the `noStroke()` function.
+To remove an outline from a shape entirely, use the `noStroke()` function. You will then have to call `stroke()` again to set the values for the next shape you need with an outline.
 
-The following code adds changeable stroke color and stroke weight to the same shapes from the previous code. Try adding the `noStroke()` to see its effect:
+---
+
+### Let's Practice!
+
+The following code adds changeable stroke color and stroke weight to the same shapes from the previous code. Try adding the `noStroke()` to different places in the code to see how it affects the shapes:
 
 {{% codepen 500 WBMVbd %}}
 
@@ -57,12 +67,18 @@ The following code adds changeable stroke color and stroke weight to the same sh
 
 We can create complex images by overlapping basic shapes, but we can also design our our shapes by connecting multiple vertices together. To do this, we first call the `beginShape()`function, then one `vertex()` function with a pair of X & Y coordinates for the location of each angle point of our shape. These form the corners of the shape, just like the arguments of the `triangle()` function. Finally, we call the `endShape()` function to designate that we have completed our design. Similar to the `triangle()` function, p5 draws connects the coordinates in our `vertex()` functions in the order in which we code them, so take extra care to have a plan in place for working in a clockwise or counterclockwise order or you will have stroke outlines bisecting your finished shape. When in doubt, it is always a good idea to label the vertex points in a custom shape.
 
-Like the arc() function, the final line segment of our custom shape is left "open". To add a final stroke and "close" the shape, we can add the word **_CLOSE_** as an argument in the `endShape()` function.
+Like the arc() function, the final line segment of our custom shape is left "open". To add a final stroke and "close" the shape, we can add the word **_CLOSE_** as an argument in the `endShape()` function. (you can also add another vertex with the same location as the first instance of `vertex()`, but adding CLOSE as an argument is easier.)
 
 The following code shows two custom shapes drawn using the `beginShape()`, `endShape()`, `vertex()`, procedure:
 
 {{% codepen 500 dEmKre %}}
 
 These shape functions can be used in various repetitions and combinations within P5 to create a near limitless variety of images, however this is not an exhaustive list of all available functions. Depending on the context of a particular assignment or your [Final Integration Project](https://pdm.lsupathways.org/5_integrationproject/) you may need to utilize additional drawing functionality. Be sure to look at the [P5 Reference](https://p5js.org/reference/) material for detailed information on these and other functions within P5.
+
+---
+
+### Let's Practice!
+
+Before moving onto the next lesson, try and draw one of each of the shapes mentioned in this chapter. Give them all unique colors and outlines with fill() and stroke(). How creative can you get with the custom shape functions?
 
 ---

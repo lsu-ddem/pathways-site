@@ -6,7 +6,7 @@ weight: 1
 
 ---
 
-The upcoming assignment will be to recreate four images using p5. We have some experience with shapes, but for this we will need to go over a few more basic concepts:
+The upcoming assignment will be to recreate four images using p5 and a few advanced shape/color tools. We have some experience with shapes from the last unit, but for this we will need to go over a few more basic concepts:
 
 * Review of basic shapes
 * Introduction to more advanced and custom shapes
