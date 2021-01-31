@@ -30,3 +30,13 @@ Here are a few different Coding Train videos involving working with colors in P5
 A slightly older video talking about the same kind of idea in P5.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9mucjcrhFcM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+## Measuring the boundaries of shapes
+
+This live-stream recording by [Matthew A. Bardin](https://matthewbardin.com/) goes over how to measure the boundaries of rectangle and circles, have the shapes react to that information, and how to apply the concepts to objects and classes.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ypx8rypBYs8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---

@@ -124,3 +124,9 @@ if(mouseIsPressed){     //first level test
   While your code might still work if you don't follow this system, it will most likely lead to lots of confusion if you have to debug a problem and can't visually tell which test belongs inside of which! Thankfully, most code editors have a "Tidy" or "Beautify" command that you can run in order to help auto-indent and clean up your code spacing.
 
   ---
+
+  ## Objects and Classes
+
+  All of the logic from the previous two lessons can be applied to objects within a class look back at the [lesson on objects](https://pdm.lsupathways.org/1_introtocoding/3_reuseitwithmodularcode/2_lesson_2/) then check out this video which acts as a tutorial for both the content covered in these lessons, and how to apply the logic to an object within a class.
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ypx8rypBYs8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

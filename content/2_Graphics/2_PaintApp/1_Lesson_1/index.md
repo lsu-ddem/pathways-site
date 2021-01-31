@@ -112,6 +112,7 @@ For an added level of difficulty, create an additional test to have the reaction
 ---
 
 One thing to note is that you are not interacting directly with the shape that is visible on the canvas. In reality an invisible boundary is being set up that (intentionally) matches the measurements of our shapes. Try commenting out the `rect()` or `ellipse()` functions in any of these codes (leave everything else) and you will see that they still function if you click where the shape is no longer being drawn. If you want to have the shape directly interact with the interaction, you would have to crete the shapes as objects in a class, and give them a method to measure the boundaries and react. See [the lesson on objects and classes](https://pdm.lsupathways.org/1_introtocoding/3_reuseitwithmodularcode/2_lesson_2/) to review how to do that.
+
 ---
 
 ## Moving Shape Measurements

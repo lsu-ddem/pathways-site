@@ -173,3 +173,11 @@ Experiment with this code by creating at least 2 more ghosts and letting them mo
 
 
 ---
+
+## Going Further
+
+when working with objects, you may want them to react to being clicked on. This is a great way to add some responsiveness to your code. However, if you are reading through this book linearly, you won't have gotten through the material needed to achieve this just yet. 
+
+Check out the lessons on [measuring the boundaries of shapes](https://pdm.lsupathways.org/2_graphics/2_paintapp/1_lesson_1/) before attempting this. Once you know the basics, the video below acts like a tutorial for both reviewing how to add mouse interactions to basic shapes, as well as creating a method that allows for the same interactions with objects and classes.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ypx8rypBYs8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
