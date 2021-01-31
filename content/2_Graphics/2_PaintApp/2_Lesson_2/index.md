@@ -105,7 +105,7 @@ Nesting conditional statements helps show other coders the order of our decision
 
 ![indented test levels](/images/uploads/test_indent_picture.png)
 
-Notice how in the example below, all of the braces line up vertically depending on their level of nesting. The first level and its else statement line up, then the second level test lines up vertically, before the multiple third level tests all appear at the same level of indentation from the screen margin. (and all the braces line up with the if() that they are paired to). This is a great way to easily see which tests belong in which level and keep your code easy to read.
+Below is some code (with out the graphics added) that you can copy into a sketch if you want. Notice how all of the braces line up vertically depending on their level of nesting. The first level and its else statement line up, then the second level test lines up vertically, before the multiple third level tests all appear at the same level of indentation from the screen margin. (and all the braces line up with the if() that they are paired to). This is a great way to easily see which tests belong in which level and keep your code easy to read.
 
 ```javascript
 if(mouseIsPressed){     //first level test 
@@ -121,7 +121,7 @@ if(mouseIsPressed){     //first level test
 }
 ```
   
-While your code might still work if you don't follow this system, it will most likely lead to lots of confusion if you have to debug a problem and can't visually tell which test belongs inside of which! Thankfully, most code editors have a "Tidy" or "Beautify" command that you can run in order to help auto-indent and clean up your code spacing.
+While your code might still work if you don't follow this system, it will most likely lead to lots of confusion if you have to debug a problem and can't visually tell which test belongs inside of which! Thankfully, most code editors have a "Tidy" or "Beautify" command that you can run in order to help auto-indent and clean up your code spacing. To do this in p5, you can click on the edit menu, then "tidy code", or the much simpler "shift + tab" keyboard shortcut. Make like a touch easier for you (any anyone ready your code) by keeping it tidy!
 
 ---
 
