@@ -96,6 +96,14 @@ By setting things up this way, the computer will only run the code that is prese
 
 ---
 
+### Let's Practice!
+
+There has been a lot of code on this page so far. The video below combines everything we have worked with in sprites so far with game states. Watch the live-coding demo to see how you can use this information to create your own games.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H-6jaZBH-hs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Timer
 
 A timer is a great way to work out when a certain game state should end. If you look a head to the example of the Bug Squish project, you can see that this game utilizes a timer to end the play game state. There are many possible ways to create a times in javascript and p5,. The example below is a quick and easy one.  
@@ -115,6 +123,8 @@ function timer() {
 ```
 
 This timer won't function unless it is being called inside of draw(). This way it can be used within a game state. This example timer uses the millis() function in order to work. millis() counts up the total number of milliseconds that have passed since the sketch started running. By comparing this value to the startTime variable, we can use a conditional statement to determine when the timer has stopped. Think of the startTime value as the duration of the timer. Since we will set this in seconds, we have to divide the result of millis() by 1000 in order to get a timer that will count down in seconds. Additionally, once the difference reaches a certain threshold it will change the `timerIsDone` variable. You can use this variable as needed in a conditional statement to tell your computer what to do once the value has been changed from true to false.
+
+You can use this timer code to advance game states based on the value stored inside of the "timerIsDone" variable.
 
 ---
 
