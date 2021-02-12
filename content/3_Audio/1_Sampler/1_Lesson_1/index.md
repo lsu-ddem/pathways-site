@@ -1,45 +1,23 @@
 ---
-title: WebAudio Basics & Sound File Players
+title: Creating a Sound File Players
 weight: '1'
 ---
-## Sound Basics
 
-Sound is a series of vibrations that are generated from a source, such as a person talking, and travel through the air until they reach someone's ears. These vibrations travel at approximately 343 meters per second through air. THere are a few important properties of sound that we should cover before going too deep into digital audio.
-
-### Frequency and Amplitude
-
-Sound waves can be measured as teh energy from the sound pushes air molecules, causing them to condense and separate in oscillating patterns. The number of times per second that a sound wave is oscillating at is its **frequency**. Humans can generally hear frequencies between 20 and 20,000 Hertz (Hz), or times per second. The higher the frequency, the higher the pitch of the sound.  
-
-If the frequency of a sound is the number of times per second that a wound wave oscillates, then the **amplitude** is the size of that oscillation. When the sound source vibrates more air, it increases the amplitude, and resulting volume, of that sound. To test this, try lightly placing your finger on the computer speaker and playing a sound at a quiet volume. Then play it again at a much louder volume. Did you feel a difference in the vibrations? The louder sound contains much larger vibrations than the softer one.
+Before beginning this chapter, it may be useful to go over the [Basics of Sound](https://pdm.lsupathways.org/3_audio/0_basicsofsound/) lesson to make sure you have an understanding of how sound behaves, how sounds are recorded, and interacted with by the computer. 
 
 ---
 
-## Getting the Sound into the Computer
+## Before we start
 
-So how do you go from vibrations in the air to a sound file you can play back on a computer? To get there you need a few pieces of equipment; most of this equipment is available built into electronics such as phones and laptops, but the sound, part quality, and price can all vary widely. To record and playback a sound, the following processes must happen:
+In the newer versions of Tone, you have to tell Tone to begin processing audio. to do this, simply include the line 
 
-1. The sound must happen and travel through the air.
-2. The air pressure caused by the sound hits a microphone. This pressure causes slight movements of a wire coiled around a magnet. These movements result in an electrical charge to be sent out of the microphone cable. (There are different types of microphone with slightly different types of mechanisms for picking up sound)
-3. This electrical signal, which matches the original audio, is sent to the computer's _Analog-to-Digital Converter_ which takes snapshots of the electrical signal and stores its current level as data in the sound file.
-4. The sound file, which is just a series of numbers, can be stores, moved and changed as needed until it is processed and read by the device's _Digital-to-Analog Converter_. This device outputs an electrical signal that corresponds to the stream of data from the sound file being read.
-5. This electrical signal is then amplified and sent to a speaker, where the fluctuation in signal cause wire coils wrapped around a magnet to vibrate. These coils are attached to a speaker cone which pushes the air next to the cone, resulting in the sound playback being heard.
+```js
 
-### Sample Rate and Bit Depth
+Tone.start()
 
-In the above process number three, the computer takes a series of snapshots of the electrical signal in order to recreate it at a later time. there are two important elements to this process which determine the quality of the audio recording. 
+```
 
-* **Sample Rate**: The number of times per second that the computer takes a snapshot of the incoming signal level. The standard rate is 44,100 times per second. Higher quality products such as movies can go as high as 48,000 or 96,000 times per second, but these higher sampling rates result in larger file sizes. 
-* **Bit Depth**: The resolution of the sound. When the computer checks the incoming signal, it can only check to a certain level of exactness for each sample. Standard audio recording happens at 16-bits, which is 2^16 potential discrete values (just over 65 million). Higher quality audio can be recorded at 24-bits, but like increasing the sample rate, will increase the file size. 
-
----
-
-## Understanding the Audio Signal Path
-
-Because computer audio playback is a real-time processing of data in a continual stream. This data is stored as a sound file and processed every time you tell the computer to play back the audio. However, because this is a continual stream of information, we have to keep the data flowing so the computer can keep reading the upcoming data. To do this, when we playback our sound files, we need to send the playback to the master speakers of our device with the method .toMaster() as shown below. Without this command, we will not hear our sound playback for any audio in this unit.
-
-![null](/images/uploads/simple_audio_pathway-1-.png)
-
-Because this is a stream of data, we can alter the flow of this data through different types of precessing to change the contents of that data with the `.connect()` and `.chain()` methods, which we will go over later.
+at the beginning of your setup() function. This will have Tone automatically start when the code begins. You can avoid potential errors by including this line right at the beginning! 
 
 ---
 
@@ -47,15 +25,16 @@ Because this is a stream of data, we can alter the flow of this data through dif
 
 There are a few steps needed in order to create a way to playback sound files in Tone.js:
 
-1. Create a variable that will contain the audio player, just like creating a sprite.
-2. Tell P5 where to access the necessary sound files. This process is identical to loading images, and the files acn either be hosted online or loaded directly in the P5 server.
-3. Inside of function preload(), create the new player object as shown in the code below. We have to do this in `preload()` so that P5 can locate all of the files before it attempts to play them.
+1. Create a variable that will contain the audio player, just like when creating a sprite.
+2. Tell P5 where to access the necessary sound files. This process is identical to loading images, and the files can either be hosted online or loaded directly in the P5 server.
+  a. Keep in mind that audio files are larger than image files. There are some sound files you can download in the [refrences tab](https://pdm.lsupathways.org/6_resources/7_soundandmusic/4_tate-tonestuff/sample-playback-and-effects/samples/). You can also find these and more sound samples [at this github repository](https://github.com/mbardin/PDM-resources).
+3. Inside of function preload(), create the new player object as shown in the code below. We have to do this in `preload()` so that P5 can locate all of the files *_before_* it attempts to play them.
 4. as an argument for the Tone.Player() object, list out the file pathway or url for the desired sound file.
-5. after the arguments' closing parentheses, add `.toMaster()`.
+5. after the arguments' closing parentheses, add `.toDestination()`.
 
 You can then then trigger the sound with the `.start()` method as shown below:
 
-```
+```js
 soundPlayerName.start();
 ```
 
@@ -74,7 +53,7 @@ multiplayer = new Tone.Players({
     chains: baseURL + "Rhythmics/120+bpm/Rhythmic+Chains.mp3",
     bells: baseURL + "Natural+Sounds/Truro+Cathedral+Bell+with+seagulls.mp3",
     arpeggio: baseURL + "SID+Arps+119bpm.mp3"
-  }).toMaster();
+  }).toDestination();
 ```
 
 Since we are now dealing with multiple sound files, we should cover some of the best ways to trigger individual sounds in your project, as well as ways to modulate and manipulate those sounds while they are playing.
@@ -107,11 +86,11 @@ The example below shows `Tone.PLayers()` in action.
 
 #### Using buttons
 
-Instead of using **keyIsDown()** we can create buttons to trigger sounds. The playback of sounds (creating the `Tone.Players().toMaster()` object and including the `.get().start()` methods) ramins identical. The only change is how we trigger the sounds. in this case, we will be using on-screen buttons that can be clicked with the mouse.
+Instead of using **keyIsDown()** we can create buttons to trigger sounds. The playback of sounds (creating the `Tone.Players().toDestination()` object and including the `.get().start()` methods) remains identical. The only change is how we trigger the sounds. in this case, we will be using on-screen buttons that can be clicked with the mouse.
 
 We can create a button with the P5 function **createButton()**. Inside the ('') we give the button text to display. You need to have te button display a label or it will not appear. The label will also help determine the size of the button.
 
-```
+```js
 createButton("button label");
 ```
 
@@ -128,7 +107,7 @@ To change an aspect of our sound while it is playing we can use a slider. To mak
 
 ##### Syntax
 
-```
+```js
 createSlider(min,max,[value],[step]);
 ```
 
@@ -162,5 +141,15 @@ In the code below, we use a button to trigger the playback of each sound and  a 
 {{% codepen 500 LrJrVe %}}
 
 We will discuss audio effects that can be controlled via sliders in the next page.
+
+---
+
+## Understanding the Audio Signal Path
+
+Because computer audio playback is a real-time processing of data in a continual stream. This data is stored as a sound file and processed every time you tell the computer to play back the audio. However, because this playback a continual stream of information, we have to keep the data flowing so the computer can keep reading the next piece of upcoming data. To do this, when we playback our sound files, we need to send the playback to the destination speakers of our device with the method .toDestination() as shown below. Without this command, we will not hear our sound playback for any audio in this unit.
+
+![null](/images/uploads/simple_audio_pathway-1-.png)
+
+Because this is a stream of data, we can alter the flow of this data through different types of precessing to change the contents of that data with the `.connect()` and `.chain()` methods, which we will go over later.
 
 ---

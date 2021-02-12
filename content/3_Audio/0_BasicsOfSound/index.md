@@ -3,7 +3,7 @@ title: Basics of Sound
 weight: '1'
 ---
 
-This unit will be focusing on utilizing the Tone.js library to crate programs that can playback audio and generate its own synthesized sounds in real time. The purpose of this page will be to act as a basic introduction to the physical properties of sound and the processes needed for digital audio. Some of these ideas are explored in the lessons to come, but this page contains more detailed information for each topic needed to have a core understanding of the concepts of sound. This page is not necessary to complete the chapter, but provides extra knowledge that could prove helpful for understanding the concepts we are about to explore.
+This unit will be focusing on utilizing the [Tone.js](https://tonejs.github.io/) library to crate programs that can playback audio and generate its own synthesized sounds in real time. The purpose of this page will be to act as a basic introduction to the physical properties of sound and the processes needed for digital audio. Some of these ideas are explored in the lessons to come, but this page contains more detailed information for each topic needed to have a core understanding of the concepts of sound. This page is not necessary to complete the chapter, but provides extra knowledge that could prove helpful for understanding the concepts we are about to explore.
 
 ---
 
@@ -22,7 +22,7 @@ Sound travels in the form of vibrational waves through different materials. The 
 | Copper   | 6420                     |
 | Space    | 0                        |
 
-Notice how sound waves travel faster through denser materials. For the purposes of this course, we will be using the speed of sound in air: 331 m/s.
+Notice how sound waves travel _faster through denser materials_. For the purposes of this course, we will be using the speed of sound in air: 331 m/s whenever we refer to the "speed of sound".
 
 In order to crate these waves something needs to create vibrations. This something could be an instrument, a voice, a speaker, or anything else. These vibrations cause the molecules in the air (or other medium) to vibrate as well; these molecules will then push into the ones next to them before moving back into their original position. When the molecules are close together the sound medium's density increases as shown in the image below:
 
