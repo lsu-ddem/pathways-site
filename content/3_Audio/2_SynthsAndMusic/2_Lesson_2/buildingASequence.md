@@ -3,12 +3,12 @@ title: 'Building a sequence'
 weight: 1
 ---
 
-In order to build a sequence we need three-four main items:
+In order to build a sequence we need three-to-four main items:
 
 * the elements in the order we want them sequenced.
 * how fast we want the sequence to occur.
 * a synthesizer to generate th sounds.
-* a trigger to begin or end the sequence.
+* a trigger to begin or end the sequence. (optional. This could be a never-ending sequence that begins as soon as the sketch is loaded)
 
 ---
 

@@ -17,7 +17,7 @@ and here is an example of the _Paint App_
 
 Notice the characteristics that both of these have in common:
 
-* Each project has at least 2 different synthesizer sounds and one soundfile playback.
+* Each project has at least 2 different synthesizer sounds and one sound file playback.
 * The sounds change/are triggered based on the user interactions, and these changes make logical sense.
 * the differences in sounds are noticeable.
 

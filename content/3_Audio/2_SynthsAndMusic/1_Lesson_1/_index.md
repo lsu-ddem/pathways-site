@@ -79,3 +79,13 @@ These partials follow the natural harmonic series of the fundamental pitch that 
 An [example](https://tonejs.github.io/examples/oscillator.html) of the Tone.js oscillator types with partials can be found here.
 
 ---
+
+### Let's Practice!
+
+In this lesson there were several sketches showing different synthesizers. Using them as a starting place can you create your own synthesizer?
+
+Try making 2 different synthesizers that have unique sounds. Control one with on-screen buttons and the other with keyboard inputs.
+
+Lastly, try adding a chan of at least 2 effects to each synthesizer. You can process these sounds in real-time just like we did in the last chapter!
+
+---

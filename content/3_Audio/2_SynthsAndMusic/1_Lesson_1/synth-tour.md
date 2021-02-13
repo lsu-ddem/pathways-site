@@ -16,7 +16,7 @@ This is where we left of. We can generate a sound with an oscillator, apply an e
 
 ## PolySynth
 
-We can create multiple copies of these in order to generate multiple notes at once. We could do this manually by creating multiple `Tone.Synth90` objects with varying settings and identical triggers, or you could utilize the `Tone.Polysynth()` object.  
+We can create multiple copies of these in order to generate multiple notes at once. We could do this manually by creating multiple `Tone.Synth()` objects with varying settings and identical triggers, or you could utilize the `Tone.Polysynth()` object.  
 
 This is an [example](https://tonejs.github.io/examples/polySynth.html) of what the object can do, and what parameters are available. 
 

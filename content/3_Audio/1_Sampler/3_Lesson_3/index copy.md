@@ -13,7 +13,7 @@ Lets go over some of the basics from the previous lessons:
 Be sure to include this line in your HTML file if you want to utilize Tone.js in your P5 projects. 
 
 ```
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.8.9/Tone.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js"></script>
 ```
 
 ---
@@ -30,11 +30,11 @@ You must first create a new `.Player()` or `.Players()` object and store it insi
 
 You can trigger the file playback with the .start() method. However you **HAVE TO** use this method inside of functions like `setup()`, `mousePressed()`, or `keyPressed()` that only occur once when they are called in order to prevent playback malfunctions.
 
-```
+```js
 //plays a certain sample whenever the space bar is pressed. 
 
 function keyPressed(){
-    if(keyCode === 32){
+    if(keyCode === 32){ //spacebar
         playersName.get(sampleName).start()
     }
 }
@@ -44,20 +44,20 @@ function keyPressed(){
 
 ## Audio Signal Pathway
 
-in order to hear any sound playback, you need to connect the player output to the master speakers when you crete the object. 
+in order to hear any sound playback, you need to connect the player output to the Destination speakers when you crete the object. 
 
 ```
-let player = new Tone.Player(soundSample.mp3).toMaster();
+let player = new Tone.Player(soundSample.mp3).toDestination();
 ```
 
 Then you will be able to hear the playback through your computer's main sound output whenever you trigger the sound with `.start()`.
 
 You can also load audio effects with the Tone.js library and pass the signal playback through a series of effects to process the sounds using `.connect()` or `.chain()`
 
-```
-reverb = new Tone.reverb().toMaster();
+```js
+reverb = new Tone.reverb().toDestination();
 delay = new Tone.FeedbackDelay().connect(reverb);
-playler player = new Tone.Player(soundSample.mp3).connect(delay);
+player player = new Tone.Player(soundSample.mp3).connect(delay);
 ```
 
 ---
