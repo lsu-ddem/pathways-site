@@ -73,7 +73,7 @@ function setup() {}
 }
 
 function draw() {
-  if(gameState === 'start){
+  if(gameState === 'start'){
       //all code for this state goes here. This would be the starting screen.
       if(condition to trigger next state){
           gameState = 'play';

@@ -9,7 +9,7 @@ So far we have only utilized `Tone.Transport()` to schedule musical note playbac
 
 Events abstract away the Tone.Transport.schedule and provides the user with schedulable callback function actions to occur along the timeline. These events  can be scheduled to occur once, or multiple times for as long as the transport is running.
 
-Tone.Event has a few useful parameters:
+Tone.ToneEvent has a few useful parameters:
 
 * loop: tells the event to repeat
   * true of false
@@ -37,7 +37,7 @@ Tone.Event has a few useful parameters:
   
 ## Part
 
-Parts serve as a collection of multiple `Tone.Event()` which can be started/stopped and looped as a single unit.
+Parts serve as a collection of multiple `Tone.ToneEvent()` which can be started/stopped and looped as a single unit.
 
 {{% codepen 500 aMbBPa %}}
 

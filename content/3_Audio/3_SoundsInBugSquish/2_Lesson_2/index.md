@@ -18,7 +18,7 @@ To save time, it is recommended that you begin with there-made code, however you
 
 Once you have a working code with sprites, we can start building sound into it. Lets begin with simple background music. The first step is to create a synthesizer. For this example, it can be a simple one. Live we have done before, we need to create a condition to start the sequence. To create background music, we can place this trigger inside of a custom function. 
 
-```
+```js
 //starts the sequence
 function bgMusic() {
   sequence1.start();
@@ -28,7 +28,7 @@ We can then call this function as the last line inside of the `setup()` function
 
 {{% codepen 600 GRpOyNZ %}}
 
-If the code will not play in this page, copy the contents of the JS file into a new P5 project that has Tone.js installed. 
+Because a browser will no automatically begin playing music, we have to interact with the canvas in some way for the audio to begin playing. In this simple example we have the audio begin when the canvas is clicked. In other games you may have a start button or something a little more sophisticated.
 
 Once we have a single melody playing, we can change that background melody with different combinations of the `.start()` and `.stop()` methods, which we will get into later on this page.
 
@@ -38,9 +38,9 @@ Once we have a single melody playing, we can change that background melody with 
 
 Now that we have our background music playing, lets develop a more complex sounding series of interactions. This process will setup a sound interaction that sounds complicated, but you actually already know everything you need to to achieve this type of interaction!
 
-In you code (either the one from the previous page or another one you made) there are callback functions that play back a sound file as part of their program. This can be easily changed to a sequence of synthesizer notes instead of a pre-recorded sound. Start by creating 2 new melody sequences. You can look at the code above this section for a refresher on setting up a `Tone.Sequence()` object if you need to. Once you have these sequences ready to go, simply change out the code inside of the callback functions to start the sequence instead of the sound file. It is that easy! Here is an example of the new callback function for the dog, rover's, interactions with the bone sprites. 
+In your codes (either the one from the previous page or another one you made) there are callback functions that play back a sound file as part of their program. This can be easily changed to a sequence of synthesizer notes instead of a pre-recorded sound. Start by creating 2 new melody sequences. You can look at the code above this section for a refresher on setting up a `Tone.Sequence()` object if you need to. Once you have these sequences ready to go, simply change out the code inside of the callback functions to start the sequence instead of the sound file. It is that easy! Here is an example of the new callback function for the dog, rover's, interactions with the bone sprites. 
 
-```
+```js
 function collectBones(character, bone) {
   bone.remove();
   boneCount++;
@@ -59,7 +59,7 @@ One more type of interaction we commonly use are those with the computer mouse. 
 
 As a refresher from the _Bug Squish_ assignment, we needed a method called `.onMousepressed()` in order to tell our sprites how to behave when they were clicked on. We can easily add in a sound file playback or sequence to these interactions, just like with sprite collisions. The example below contains just the code needed to achieve this sequence or file playback when a sprite is clicked. sprite1 is set up to play the sequence when clicked, and sprite2 is set up to play a sound file.
 
-```
+```js
 let clickMelody = [[B3, F3], B3];
 let sequence, synth, sprite1, sprite2;
 
@@ -79,7 +79,7 @@ function setup(){
       sustain: 1,
       release: 5
     }
-  }).toMaster();
+  }).toDestination();
 
 sequence = new Tone.Sequence(function(time, note) {
     synth.triggerAttackRelease(note, 0.5);
@@ -121,7 +121,7 @@ Now that we have gone over how to set up sequences of background music and trigg
 
 If your code has game states, changing the background music can be done as part of the state change.
 
-```
+```js
 
 let gameState;
 

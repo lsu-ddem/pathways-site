@@ -17,7 +17,24 @@ Tone.start()
 
 ```
 
-at the beginning of your preload function. This will have Tone automatically start when the code begins. You can avoid potential errors by including this line right at the beginning! 
+When you interact with the canvas. By default, browsers will not begin playing audio until you have interacted with them in some way. You could possibly make a "start audio" button (more on buttons later), or include the code below in your sketches:
+
+```js
+let toneStart = 0;
+
+
+function mousePressed(){
+  if (toneStart = 0){
+    Tone.start();
+    toneStart = 1;
+  }
+
+  //place other code needed in function mousePressed() here
+}
+
+```
+
+This will check to see if Tone has started, and automatically start it when the user clicks on the canvas for the first time. 
 
 ---
 
@@ -52,7 +69,7 @@ Can you make a new Tone.Player() that can play a sound? How about two or three w
 
 ## Playing Multiple Sounds with Tone.Players
 
-Instead of making multiple single-file sound file players, we can build one `Tone.Players()` instrument and load it with multiple sound files. Both ways are perfectly fine, but using Tone.Players() can save some typing; somtheing that can come in handy with longer sketches. To define which sounds to play we must create an object with multiple file paths (done by opening a pair of { } brackets inside of the Tone.Players function's parenthesis), each with a unique name to call the sound up by later. You can think of this name as a type of variable that is inside of an object. This should look just like a (JSON object)[https://pdm.lsupathways.org/1_introtocoding/3_reuseitwithmodularcode/2_lesson_2/]. Keep in mind that each differently labeled sound is a different instance of Tone.player(), wrapped inside of a single Tone.players(). (This may seem confusing, but will come in handy when triggering different sounds later in the lesson.)
+Instead of making multiple single-file sound file players, we can build one `Tone.Players()` instrument and load it with multiple sound files. Both ways are perfectly fine, but using Tone.Players() can save some typing; something that can come in handy with longer sketches. To define which sounds to play we must create an object with multiple file paths (done by opening a pair of { } brackets inside of the Tone.Players function's parenthesis), each with a unique name to call the sound up by later. You can think of this name as a type of variable that is inside of an object. This should look just like a (JSON object)[https://pdm.lsupathways.org/1_introtocoding/3_reuseitwithmodularcode/2_lesson_2/]. Keep in mind that each differently labeled sound is a different instance of Tone.player(), wrapped inside of a single Tone.players(). (This may seem confusing, but will come in handy when triggering different sounds later in the lesson.)
 
 ```
 multiplayer = new Tone.Players({
