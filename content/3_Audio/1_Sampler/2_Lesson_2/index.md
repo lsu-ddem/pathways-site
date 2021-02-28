@@ -20,7 +20,7 @@ Here is an example of how to add an audio effect into your code and attach it to
 
 {{% codepen 500 QxBmpm %}}
 
-Every effect has a universal parameter called its **wet** value. The wet value represents the proportion of mix between the original (or "dry") sound source signal coming into the effect and the effected (or "wet") signal coming out of the effect. Try adjusting the slider in the embedded code above to hear the resulting sound at various rations of dry/wet mixes.
+Every effect has a universal parameter called its **wet** value. The wet value represents the proportion of mix between the original, un-altered (or "dry") sound source signal coming into the effect and the effected (or "wet") signal coming out of the effect. Try adjusting the slider in the embedded code above to hear the resulting sound at various rations of dry/wet mixes.
 
 
 Remember to build your audio effects *_before_* you try to connect your sound source to them using the .connect( ) method. If you attempt to connect a sound source to an effect that hasn't been built yet, your code won't render even if your code has no other mistakes. Since our code is read from top to bottom, it's best to put the code that builds your effects above any code that connects sound sources to them, like below:
@@ -40,6 +40,36 @@ player = new Tone.Player('sound.mp3').connect(effect1);
 ```
 
 By building the elements in this order, you can see the direct pathway from the speakers, through the effect chain, back to the sound file. Changing the order will cause the code not to execute because it will try ot connect a sound to an object that has not been created yet.Building the objects in preload ensures that the pathway is properly rendered prior to any potential sound playback triggers.
+
+### Another way to format effect connectiond
+
+You can also format your connections like shown below. There will be no change in how the code functions, but you don't have to worry about building things in the wrong order as much.
+
+```js
+let effect1, effect2, effect3, effect4;
+
+function preload(){
+
+ effect4 = new Tone.Freeverb();
+ effect3 = new Tone.PitchShift(2).;
+ effect2 = new Tone.Tremolo(4, 0.6);
+ effect1 = new Tone.FedbackDelay(0.5, 0.5);
+
+ player = new Tone.Player('sound.mp3');
+}
+
+function setup(){
+ player.connect(effect1);
+ effect.connect(effect2);
+ effect2.connect(effect3);
+ effect3.connect(effect4);
+ effect4.toDestination();
+}
+
+
+```
+
+Both ways are correct, and either one can be used depending on which is preferred by the coder. It is recommended that you pick one and stick with it for all of your sketches, so that way you don't accidentally make a formatting mistake by switching between them.
 
 ---
 
@@ -209,4 +239,53 @@ When you are done, try adding as many effects as you can to the signal pathway. 
 
 Finally, add a few sliders to the canvas to be able to update the parameters of the effects to further customize your sounds.
 
+---
+
+## Effect Chains with Tone.Players()
+
+Generally, everything we have mentioned so far can be applied to both the Tone.Player() and Tone.Players() objects, however there are a few key differences to mention before we move on.
+
+First, if we were to build our code like shown below, we run into an interesting scenario. Can you identify it?
+
+```js
+let multiplayer, reverb, delay;
+
+function preload(){
+multiplayer = new Tone.Players({
+sound1: "sound1URL,
+sound2: "sound2URL
+});
+
+reverb = new Tone.Reverb();
+delay = new Tone.FeedbackDelay();
+}
+
+function setup(){
+  multiplayer.connect(reverb);
+  reverb.connect(delay);
+  delay.toDestination();
+}
+
+```
+
+The scenario we run into is that whenever we trigger a sound from the multiplayer, regardless of the sound it will be sent through the same effect chain. This isn't necessarily a bad thing, but can be problematic in certain scenarios. Let's say we wanted to have unique could pathways, but didn't want to have multiple sound players since that is a lot of redundant typing. The example below achieves that:
+
+{{% codepen 500 VwmXxmQ %}}
+
+In words, the steps are:
+  * Create the Tone.Players() object and any effects needed in `preload()`.
+  * Store the `Players.player(soundFileName)` command within a variable inside of `setup()`.
+  * Refer to this new variable when creating the connections within setup and playing back audio.
+
+
+Below is a video showing how the code was made, and will let you hear how the various sounds can be routed. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A7oe5KlxX5Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+### Let's practice:
+
+Can you make a Tone.Players() object and route the audio through different effects? How many effects can you use? try to create a sketch with at least 5 different ones to see what sounds cool.
+  
 ---

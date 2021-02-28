@@ -12,8 +12,8 @@ Lets go over some of the basics from the previous lessons:
 
 Be sure to include this line in your HTML file if you want to utilize Tone.js in your P5 projects. 
 
-```
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js"></script>
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js" integrity="sha512-nUjml8mN4CNYqBAy0ndDrd8pJV/eTtBNDsnvNtPqozx9/BccUeWSoKW14qWkQUnhuh8E3m+yra3qdzM68lqPEQ==" crossorigin="anonymous"></script>
 ```
 
 ---
@@ -35,7 +35,7 @@ You can trigger the file playback with the .start() method. However you **HAVE T
 
 function keyPressed(){
     if(keyCode === 32){ //spacebar
-        playersName.get(sampleName).start()
+        playersName.player(sampleName).start()
     }
 }
 ```
@@ -46,7 +46,7 @@ function keyPressed(){
 
 in order to hear any sound playback, you need to connect the player output to the Destination speakers when you crete the object. 
 
-```
+```js
 let player = new Tone.Player(soundSample.mp3).toDestination();
 ```
 
@@ -58,6 +58,24 @@ You can also load audio effects with the Tone.js library and pass the signal pla
 reverb = new Tone.reverb().toDestination();
 delay = new Tone.FeedbackDelay().connect(reverb);
 player player = new Tone.Player(soundSample.mp3).connect(delay);
+
+//or
+reverb = new Tone.reverb();
+delay = new Tone.FeedbackDelay();
+player player = new Tone.Player(soundSample.mp3);
+
+player.connect(delay);
+delay.connect(reverb);
+reverb.toDestination();
+
+// or
+
+reverb = new Tone.reverb();
+delay = new Tone.FeedbackDelay();
+player player = new Tone.Player(soundSample.mp3);
+
+player.chain(delay, reverb, Tone.Destination);
+
 ```
 
 ---
@@ -66,7 +84,7 @@ player player = new Tone.Player(soundSample.mp3).connect(delay);
 
 P5 has built in buttons and sliders that can be programmed to control various elements. 
 
-```
+```js
 let button1 = createButton('button label')
 button1.position.x = 100;
 button1.position.y = 100;

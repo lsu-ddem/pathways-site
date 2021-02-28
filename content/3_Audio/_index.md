@@ -17,16 +17,17 @@ Head to `cdnjs.com` and search for Tone.js. Find a URL to the minified (.min) ve
 Next, open your project-folder and find the index.html file. Add this line under the first two script tags, replacing the URL in the quotes with the URL you just copied from `cdnjs.com`:
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js" integrity="sha512-nUjml8mN4CNYqBAy0ndDrd8pJV/eTtBNDsnvNtPqozx9/BccUeWSoKW14qWkQUnhuh8E3m+yra3qdzM68lqPEQ==" crossorigin="anonymous"></script>
 ```
 
 (This line contains the most recent version of the `tone.js` library at the time of writing. You can just copy directly from the line of code above to include version 14.8.9)
 
-Once you have added this line, save your HTML file and head back to your "sketch.js" file. This loads Tone.js in your sketch.
+When adding this line be sure to _*replace*_ the script containing p5.sound library. (this is on line 5 of the default index.html file) p5.Sound utilizes parts of the Tone.js library, but isn't as flexible as just using Tone by itself. If you don't replace the link to p5.sound, then the two commands will fight each other and none of the desired functions in this section will work properly.
 
-Again, it is recommended that you duplicate your code at this point in order to have a starting template that already contains the Tone.js library by default. If desired, you can combine this template with yours frm the graphics unit so that all of your starting codes contain both libraries by default.  
+If you would like to learn more about the built-in library, there are condensed lessons on how to achieve the core concepts of this unit with the native p5.sound library in the [resources tab](https://pdm.lsupathways.org/6_resources/7_soundandmusic/p5.sound/).
 
-If you look at the HTML file you will see that P5 contains a built in sound library be default. These assignments are built around te Tone.js library, and will not function in the built in sound processing functions. To learn more about the built in library, P5.Sound, please check the resources page.
+Again, it is recommended that you duplicate your code at this point in order to have a starting template that already contains the Tone.js library by default. If desired, you can combine this template with yours from the graphics unit so that all of your starting codes contain both libraries by default.  
+
 
 ---
 
@@ -37,7 +38,7 @@ Duplicate that code, then add this line of html code to the index file right bel
 Rename and save this new version. If you start from this code, you will automatically have a starting sketch that can utilize BOTH p5.play and Tone.js, something that will be useful later down the line!
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js" integrity="sha512-nUjml8mN4CNYqBAy0ndDrd8pJV/eTtBNDsnvNtPqozx9/BccUeWSoKW14qWkQUnhuh8E3m+yra3qdzM68lqPEQ==" crossorigin="anonymous"></script>
 ```
 
 ---
