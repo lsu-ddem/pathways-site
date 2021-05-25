@@ -9,10 +9,11 @@ In this lesson we will start to combine elements from our work in P5 with the Ar
 
 ## The Circuit
 
-On their own, each element of this process is not super complicated. It is making all of the elements talk to each other that we want to focus on. We can begin by creating a simple circuit with a potentiometer like the one shown below:
+On their own, each element of this process is not complicated. It is making all of the elements talk to each other that we want to focus on. We can begin by creating a simple circuit with a potentiometer like the one shown below:
 
 * Connect pot to power & ground.
 * Connect middle pin to A0. (this can be any of the analog pins, but you will have to update the code examples below to match the pin of your choice.)
+* Don't forget the necessary 10K resistor.
 
 ![serialpot](/images/graphics/serialpot.png)
 
@@ -22,7 +23,7 @@ This will be a basic basic circuit. For now all we want to do is measure the pot
 
 ## Arduino Code
 
-For this step we need to tell our Arduino board to rad the incoming analog signal and send the data out along the USB connection where it will ultimately be read by P5. In order to do that our code needs a few things:
+For this step we need to tell our Arduino board to read the incoming analog signal and send the data out along the USB connection where it will ultimately be read by P5 in a few lessons. In order to do that our code needs a few things:
 
 * Read the data from out potentiometer.
 * Process/map that data (this can happen here or in P5. for now we will leave it as is.).
@@ -32,43 +33,55 @@ This code will be a basic test just to see if the connection will work.
 
 <iframe src=https://create.arduino.cc/editor/mbardin/ff843442-be30-4b2e-b888-ad235c3ba431/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
   
-Send this code to your arduino and lets move on to P5.
+Upload this code to your Arduino, and now lets see what is happening. 
 
-<!-- In order to save a little time, here is a starting code that can be used. This code is setup with everything we need in order to transmit and receive both digital and analog data, and we will go through the parts of it that are important to each section over the course of the next few lessons.
+In `setup()`, the code is telling the Arduino to open a communication channel with the line `Serial.Begin(9600)`. This will allow the Arduino to send and receive messages along this channel while it is plugged into USB. 
 
-<iframe src=https://create.Arduino.cc/editor/mbardin/8b1d14b4-895a-4c00-9010-568769b246c9/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+Inside of `loop()`, we are simply reading the voltage coming in from the potentiometer circuit, storing it in a variable, and then transmitting the contents of that variable out the USB cable with the line `Serial.println(sensorValue);`. 
 
-Looking at the global variables, we can see that we need one to receive the values from the potentiometer, as well as one to output the data to the serial port. In this example they are pins A0 and 3 respectively. We can ignore the digital pin information for the moment.
+We can see these values by opening the serial monitor.
 
-Working our way through the code we need to set pins A0 and 3 to INPUT and OUTPUT respectively inside of the setup function. In more complicated codes this is where we can set up more data transmission. We also need to call the `Serial.begin(9600);` function. PReviously we utilized this in order to view data within Arduino's serial monitor. This will serve as the backbone for this unit only instead of sending the data to the monitor, we will be sending it to P5.
+* In the web-editor, this con be done by clicking the `monitor` button on the left side fo the screen while the Arduino is connected and running the code.
+* In the downloaded program, select the `tools` menu on the top of the window, then select `serial monitor`.
 
-Next is `void loop()`. In here we are reading the data from each input pin, and in the case of the analog data, we are mapping the values to fit between 0.0 - 1.0. This will give us a more compact range of values to use in P5. Continuing through the function there is some information regarding sending digital data which we will look at in the next lesson. The following section sends the values as well as a label out the serial port. The label here is very important as this will be how P5 receives and sorts the incoming information.  The last part of this function is used for checking for any incoming data and setting a pin that will be connected to an LED later on. We will go over that in more detail in the next lesson.
+Both of these actions will open a separate window showing the serial communications happening along this channel.
 
-The next function `boolean checkSerial()` performs its tasks and returns a value of either true or false. It is used to determine if there is data incoming and helps to sort the data to the appropriate places. It is the next section that we are more interested in for now.
+---
+### Practice Time!
 
-The final section is the muscle used to transmit the data through the serial port. It is comprised of different versions of the `transmitSensor()` function. THey each behave a little differently based on the type of data that will be transmitted. Because the arguments for each function require a certain data type, only the functions that can receive the appropriate arguments will transmit the data. This allows for us to have multiple versions of this function, and send the information to them with the function call in `void loop()`.
+Once you are able to get your circuit built and the code running on the board, try opening up the serial monitor. You should see a constant stream of numbers appear. Experiment with the following:
 
-Each of the functions start the same with a test to see if the incoming data has stopped. If this is true the serial instruction for a new line is given. Following that is an instruction to add a comma to separate each piece of data being transmitted. This part only occurs in the transmit functions involving a value. The final section of each function compiles all of the data (the label and value) into one unit and transmits it. in short, the `.c_str()` line is used to help avoid duplication.  -->
+* Try turning the potentiometer. What happens when you turn it to the left? To the right?
+* Try removing the potentiometer, flipping it around, and turning it again. What happens now?
+* What is the range of the numbers on the screen? It may be different depending on the model of board you are using, but there should be a clear range of values.
+
+You can use the `map()` function to scale these to a range that you will need later on.
 
 ---
 
-## P5 Code
+## The map() Function
 
-We are in the home stretch now. We have built a circuit that measures input from a voltage divider and sends that information out via a USB connection. All we have to do now is tell P5 where to find this data and what to do with it. But first there is one more library we have to add: p5.serial
+The last thing we will do in Arduino is add a mapping function to make the values a little easier to manage in P5. This function has the following arguments:
 
-### P5.serial
+map(value to map, original value min, original value max, scaled min, scaled max);
 
-This library is officially supported by P5 and can be found on their [libraries page](https://p5js.org/libraries/). In order to save time, below is the line of HTML code that is needed to install this library into a P5 project:
+We can see this a little more clearly once we start adding numbers. Lets use the potentiometer from the last example:
 
-```
-<script src="https://cdn.jsdelivr.net/npm/p5.serialserver@0.0.28/lib/p5.serialport.js"></script>
-```
+map(sensorValue, 0, 1023, 0, 100);
 
-Over the next several lessons we will discuss the elements of this library needed in order to complete this course, but additional information on the library can be found at the library's [github](https://github.com/p5-serial/p5.serialport) and [reference page](https://processing.org/reference/libraries/serial/index.html). This library is made by the same people who created the p5.serialcontrol app, which will allow us to utilize both of these resources together
-
-Once this library is installed, we will be able to utilize serial communications in P5, as well as the p5.serialcontrol app that was mentioned at the beginning of this chapter. Remember that these lessons will not work without the app and libraries.
+This line, when called in the `loop()`, will look at the value inside of `sensorValue`, and scale it from its original range of 0-1023 (your range may vary depending on the model o fArduino board you are using), and scale the values to fit within a range of 0-100. This value can then be stored in a variable to be used either in the arduino code, or transmitted via the `Serial.println()` function.
 
 ---
+
+### Practice Time!
+
+That is going to be wrapping it up for this lesson. In the next we will begin with transmitting these values from arduino to the P5 web-editor. But for extra practice, try the following:
+
+* Replace the potentiometer with another sensor. How the doe behavior of the values in the serial=l monitor change? (don't forget about resistors)
+* Try adding an LED into the circuit. Can you use the sensor values to adjust the LED as well?
+
+---
+
 
 ## Bringing it all together: P5 reacting to physical input
 
@@ -82,7 +95,7 @@ Start by connecting your Arduino to your computer with the USB cable, and then o
 
 If you have multiple USB devices connected you may need to experiment to see which one is the correct port. The name will be formatted like shown below, but every port on every device will have a unique number identifier.
 
-```
+```js
 /dev/cu.usbmodem144101
 ```
 
@@ -104,7 +117,7 @@ If you are still having issues, you may need to restart your device, or there is
 
 So now lets do something a little more visually interesting. If you look at the code we copied from the p5.serialcontrol app you will notice there are quite a few functions. We do not need to concern ourselves with most of them as they mostly serve to send information to the console for the user to see that everything is behaving properly. If you move down to the draw function you will notice that the value coming in from the Arduino is being stored in the `latestData` variable. We can use that number to manipulate things on the canvas. Lets work with a circle for now. If you add this line into your `draw()` function and restart it, you should see a purple circle appear on the screen.
 
-```
+```js
 fill('purple');
 ellipse(width / 2, latestData, 100, 100);
 ```
@@ -215,17 +228,17 @@ There are also several example P5 codes present in the [p5.serial API](https://g
 As of this lesson we have introduced all of the required libraries for the P5 web-editor. In order to make your life easier it is recommended that you create a starting template with the following libraries already installed in your code's HTML file:
 
 * P5.play
-    ```
+    ```html
     <script src="https://cdn.jsdelivr.net/gh/molleindustria/p5.play/lib/p5.play.js"></script>
     ```
 
 * Tone.js
-    ```
+    ```html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.8.9/Tone.min.js"></script>
     ```
 
 * P5.serial
-    ```
+    ```html
     src="https://cdn.jsdelivr.net/gh/vanevery/p5.serialport/lib/p5.serialport.js"></script>
     ```
 

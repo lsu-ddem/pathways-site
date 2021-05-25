@@ -18,7 +18,8 @@ Before we move on however, there is one more item that needs to be installed on 
 #### Download and install
 
 [P5 Serial Control](https://pdm.lsupathways.org/p5.serialcontrol-darwin-x64.zip) for macOS version 1.2 can be downloaded directly from the embedded link, However, it is preferred that you visit the link below in order to download whichever version is the most up-to-date. This page will also include several reference articles and links that may prove helpful.
-```
+
+```html
 https://github.com/p5-serial/p5.serialcontrol/releases
 ```
 
@@ -27,6 +28,7 @@ Once you follow the install instructions for your device, you can open the appli
 ![serial1](/images/graphics/p5serial1.png)
 
 In the default screen you will see a list of serial ports available on your device. If you do not see the one for your arduino, reconnect the USB and click the rescan button. This port will generally look like this:
+
 ```
 /dev/cu.usbmodem1462301
 ```

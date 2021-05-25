@@ -52,7 +52,7 @@ This designation is used when your variable will contain a string
 
 Sets the Arduino's pins to either transmit or receive data. each pin can only do one or the other at one time. 
 
-```
+```js
 // arguments: 
 // pinNumber: number designation of the pin you want to set (can be stored as variable)
 // mode: INPUT or OUTPUT
@@ -64,7 +64,7 @@ pinMode(pinNumber, mode);
 
 sends data out through a digital pin
 
-```
+```js
 // arguments: 
 // pinNumber: number designation of the pin you want to set (can be stored as variable)
 // state: HIGH or LOW
@@ -77,7 +77,7 @@ digitalWrite(pinNumber, state);
 receives data from a digital pin. 
 values can be stored in a variable.
 
-```
+```js
 // arguments: pin number you wish to read
 // pinNumber: number designation of the pin you want to set (can be stored as variable)
 //returns: HIGH or LOW
@@ -95,7 +95,7 @@ values can be stored in a variable.
 
 Sends Pulse Width Modulation data through a PWM compatible pin
 
-```
+```js
 
 //arguments: pin number, value
 //pin number: certain pins can be used to our put pulse width modulation to control various elements such as leds and motors. On an arduino Uno, those pins are 3, 5, 6, 9, 10, & 11 (on the digital side)
@@ -108,3 +108,5 @@ analogWrite(5, 100);
 ---
 
 When you are ready, head to the next page to get Arduino set up on your computer.
+
+---
