@@ -34,7 +34,7 @@ Once this works, you are ready to go forward. However, there are a few things we
 
 Below is a labeled picture of the Arduino Uno board. This is one of the more popular Arduino boards available and is the one that this course is designed for. Other boards may be used, however changes to the information given in the upcoming chapters may need to be altered to match the specifications of the new board.
 
-![default](/images/graphics/labeledarduino.jpg)
+![ard_label](/images/graphics/labeledarduino.jpg)
 
 The items labeled are main items that we will interact with during this course. Other items on the board include capacitors, small resistors, and the main CPU located in the middle of the board, but we will not directly interact with those elements.
 

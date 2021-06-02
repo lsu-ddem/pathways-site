@@ -47,7 +47,7 @@ When we make our code there are functions that P5 includes that behave in a cert
 
 When creating a sequence of sounds we should build the synthesizer in either the preload or setup functions. (preload is a better choice because it guarantees that everything is built prior to the setup function completing.)  Once we have a synthesizer and sequence built, all that is left to do is play it. In the case of background music we want to have the music begin when the game starts and continue until the game ends. 
 
-```
+```js
 let synth, bgSeq;
 let melody = [A1, A2, A3, E4, A3, E3, G#2, A2]
 
@@ -82,7 +82,7 @@ As it stands right now this code will play the given sequence on loop for as lon
 
 One easy way to change the background music in a code is with the use of game states. Simply add commands to stop the current sound and begin  the next one in the part of your code that transitions states.
 
-```
+```js
 let gameState = 1;
 
 if(gameState === 1){

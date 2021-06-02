@@ -58,7 +58,7 @@ style C fill:#FFFFFF, stroke:#FFFFFF;
 
 Translated into code, an If Statement looks like this:
 
-```
+```js
 if (test) {
   result
 }
@@ -113,7 +113,7 @@ style E fill:#FFFFFF, stroke:#FFFFFF;
 
 Translated into code, an If/Else statement looks like this:
 
-```
+```js
 if (test) {
   result 1
 } else {
@@ -156,7 +156,7 @@ style G fill:#fe856b, stroke:#FFFFFF;
 
 Translated into code, an If/Else If statement looks like this:
 
-```
+```js
 if (test 1) {
   result 1
 } else if (test 2) {

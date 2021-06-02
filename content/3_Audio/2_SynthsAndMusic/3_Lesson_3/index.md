@@ -16,7 +16,7 @@ Lets go over some of the basics from the previous lessons in this chapter. This 
 * Pitch for the synth to play.
 * Trigger to play the pitch.
 
-Once we make the `new Tone.Synth().toMaster()` we can give the synthesizer the remaining informaiton as arguments to the `.triggerAttackRelease()` method.
+Once we make the `new Tone.Synth().toMaster()` we can give the synthesizer the remaining information as arguments to the `.triggerAttackRelease()` method.
 
 ---
 
@@ -36,7 +36,7 @@ Basic synthesizers create an electrical current that moves back and forth, or os
 
 Each of the 4 main waveform types has a unique timbre. We can specify this timbre when we first crate the synthesizer using the JSON format.
 
-```
+```js
 synth = new Tone.Synth({
     oscillator: {
         type: 'sawtooth'
@@ -54,7 +54,7 @@ Each envelope contains 4 parts: Attack, Decay, Sustain, and Release. The attack 
 
 By changing the durations of each of these values and how the computer ramps to them (linearly or exponentially), the types of sounds can be altered greatly without having to alter the waveform.
 
-```
+```js
 synth = new Tone.Synth({
     oscillator: {
         type: 'sawtooth'
@@ -93,7 +93,7 @@ Filters can be applied to sound in order to boost or lower certain frequencies. 
 
 A Low Frequency Oscillator behaves just like the oscillators used to generate sounds in Tone.Synth(), but with one main difference: the speed. LFOs generally move between their high and low values at a rate slower than humans can perceive at pitch. Because they can have unique waveform patterns and automatically transition  back and forth between states, LFOs are a perfect tool for automating the parameters of various effects and other objects. By changing the rate of the LFO, many interesting sounds can be generated. Simply connect the output of the LFO to the input of th parameter you wish to control. Below is an example from a code presented in the chapter of this connection.
 
-```
+```js
 ampLfo.connect(osc.volume);
 lfo2.connect(lowFilter.frequency);
 

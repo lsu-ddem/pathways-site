@@ -4,11 +4,17 @@ weight: '2'
 ---
 
 
-We are in the home stretch now. We have built a circuit that measures input from a voltage divider and sends that information out via a USB connection. All we have to do now is tell P5 where to find this data and what to do with it. But first there is one more library we have to add: p5.serial
+We are in the home stretch now. We have built a circuit that measures input from a voltage divider and sends that information out via a USB connection. All we have to do now is tell P5 where to find this data and what to do with it. But first, there is one more starting template/library that we need.
 
 ## P5.serial files
 
-This library is officially supported by P5 and can be found on their [libraries page](https://p5js.org/libraries/). In order to save time, below is the HTML code that is needed to install  everything we need into a P5 project:
+This is a library made by the authors of this course, and is designed to work together with the arduino code from the last chapter (we will go through both of the sketches in more detail here)
+
+You can access the starting template of the P5 sketch below. (also in a link in the following paragraphs)
+
+<iframe src="https://editor.p5js.org/mbardin/embed/cbPYxKcIJ"></iframe>
+
+Make sure that you have all of the necessary external libraries included in your HTML file like shown below.
 
 ```html
 <!DOCTYPE html>
@@ -73,7 +79,7 @@ We can use these values by calling `sensors.a0`, or `sensors.p7` like a variable
 ---
 ### Practice Time!
 
-Continue ot explore this sketch if you want, but know that id you run it you will get very erratic behavior, undefined values, and possible several errors all at once. We need to go back into Arduino one more time before everything works properly.
+Continue ot explore this sketch if you want, but know that if you run it you will get very erratic behavior, undefined values, and possibly several errors all at once. We need to go back into Arduino one more time before everything works properly.
 
 ---
 
@@ -81,11 +87,13 @@ Continue ot explore this sketch if you want, but know that id you run it you wil
 
 This chapter has a fair bit of switching back and forth, but this is the last big switch... for now.
 
-We need to go back into Arduino and tell it to send the messages to P5 so that we can utilize the various sensors that we just listed. Like with the P5 shetch, the authors have created a starting template that includes all of the necessary files and libraries. You can access that file [here](https://create.arduino.cc/editor/mbardin/176e87cd-3714-44ba-87a4-7877b754195a). If you are utilizing the downloaded application instead of the web-editor, simply click on the button with three dots, and select `download sketch`. This will download everything you need into one folder. (be sure to keep all of the files in the same folder)
+We need to go back into Arduino and tell it to send the messages to P5 so that we can utilize the various sensors that we just listed. Like with the P5 sketch, the authors have created a starting template that includes all of the necessary files and libraries. You can access that file [here](https://create.arduino.cc/editor/mbardin/176e87cd-3714-44ba-87a4-7877b754195a) or in the previous lesson. If you are utilizing the downloaded application instead of the web-editor, simply click on the button with three dots, and select `download sketch`. This will download everything you need into one folder. (be sure to keep all of the files in the same folder)
 
 You will notice a lot of the same things we saw in the P5 sketch are present here. We are setting specific pins based on how we want to utilize them. This isn't anything new at this point, so lets move on down to the loop.
 
-inside of `loop()`, we begin with the normal aspects of checking a pin value and storing it within a variable. Next is where the new things begin to appear. We can see `pdm.transmitSensor()` called several times. In this section is where you can give data a label (as a string) and transmit it to P5. Just like in P5 each piece of data needs a label, and in order for this to work properly you *MUST* have the labels batch between P5 and Arduino. Otherwise the computer will be unable to use the data properly.
+Inside of `loop()`, we begin with the normal aspects of checking a pin value and storing it within a variable. Next is where the new things begin to appear. We can see `pdm.transmitSensor()` called several times. In this section is where you can give data a label (as a string) and transmit it to P5. Just like in P5 each piece of data needs a label, and in order for this to work properly you *MUST* have the labels batch between P5 and Arduino. Otherwise the computer will be unable to use the data properly.
+
+For this example, let's wire in a pressure sensor (or whichever sensor you have access to) and connect it to pin A1. Refer back to the lesson on sensors if you need a refresher on how to do this. You don't need to connect the other sensors and elements mentioned in th code for now. We will send this data to P5 shortly.
 
 ---
 ### Tip
@@ -134,15 +142,22 @@ This is a simple application that helps to manage the USB connections in P5. Wha
 In the starting template, find the line `let portName = '/dev/tty.usbmodem1452401';` and replace the contents of the string with the new name you just copied. At this point, we have now completed everything needed for the codes to talk to each other.
 
 ---
+
+## Talking Codes
+
+At this point, you should notice a few thing happening when you run the code. There will be several instances of "undefined" popping up on the screen, and possibly an erratic purple circle appearing and disappearing. This is OK. Try pressing on the pressure sensor. You should notice the number on the screen increase and decrease. Remember, the Arduino is measuring the changes in voltages, mapping them, and then transmitting the number along with a label to P5 via the serial port. P5 is simply routing the data based on that label to whatever we need it to do. Try changing the pressure sensor from A1 to A0 on the breadboard. You should now notice that instead of changing the numbers, the x-position of the circle changes as you adjust your pressure. Next, lets work on adding the final elements needed for everything included with this template. 
+
+---
+
 ### Final Practice
 
-While we have made the codes be able to talk to each other, there are a few things we will need to do in order for things to work out properly. Mainly, we need to set up the breadboard to have all of the elements Arduino and P5 are expecting. You can utilize the sketch below as a starting point, or create your own sensor setup.
+While we have made the codes be able to talk to each other, there are a few things we will need to do in order for things to work out properly. Mainly, we need to set up the breadboard to have all of the elements Arduino and P5 are expecting. You can utilize the sketch as a starting point, or create your own sensor setup.
 
-<!-- put images here -->
+![bbDiagram](/images/graphics/serial_comm_bb.png)
 
-Once this is setup you will notice the following code behavior:
+Once this is set up you will notice the following code behavior:
 
-* P5 will display some values as text on the screen. These will respond to various sensors and buttons in real-time
+* P5 will display some values as text on the screen. These will respond to various sensors and buttons in real-time.
 * A purple circle will appear on the computer screen in P5. The size of the circle will change depending on a sensor value.
 * One LED will turn on and off when a button is pressed on the keyboard.
 * Another LED will change brightness when the mouse is clicked and dragged across the P5 canvas.
@@ -151,36 +166,3 @@ Once this is setup you will notice the following code behavior:
 Once you have gotten this working, experiment with various other sensors and values you can transmit. The final project will be to combine everything into a single sketch that can communicate with an Arduino.
 
 ---
-
-
-<!-- So far we have gone through the majority of the code we need to in this chapter. We have successfully built a circuit that sends a voltage to the arduino, and then that arduino transmits the signal to P5, which responds by changing values in the code based on the voltage levels. We have been able to do this with an analog signal, but how different would this be with a digital input from something like a button or a switch? As it happens, a large portion of this process is identical to the code we have just completed. In fact some of the examples in the previous lesson contained elements from this lesson that were commented out. As we work our way through this page, we will be adding a button into our code that we previously built so if you need to revisit that page in order ot make sure your circuit and code elements are correct, go a head and do that now. By the end of this lesson you will be able to affect your P5 code with real-world interactions using both analog and digital means.
-
----
-
-## The Circuit
-
-For this circuit we will be building from our previous one by adding a button. Your circuit should look like the one below. Keep in mind that we will be adding in two LEDs in addition to this so make sure you have enough space on your board.
-
-![serialwithbutton](/images/graphics/serial2.png)
-
-
----
-
-## The Arduino Code
-
-The codes for the remainder of this chapter will also be build upon each other, so the items that we have to add are minimal. In this example, we need to add the elements needed to detect whether ot not the button is being pressed, and then send that value through the serial port.
-
-
----
-
-## The P5 Code
-
----
-
-## Bringing it all together: Digital and Analog inputs
-
----
-
-## Practice
-
-Now that we have worked out how to implement a button in our code, what other digital components could we use? Try replacing the button with a switch or a PIR sensor to see what kinds of interactions you can achieve. In the chapter assignment and [Final Integrations Project](https://pdm.lsupathways.org/5_integrationproject/) you will have to create a new code that receives serial data. Be sure to experiments to see what kinds of physical interactions make sense and feel natural for your final goals. -->

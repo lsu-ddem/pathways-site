@@ -1,5 +1,5 @@
 ---
-title: Sending Data to P5 for Analog Controls
+title: Making a Controller - Sending Data to P5
 weight: '1'
 ---
 
@@ -13,7 +13,7 @@ On their own, each element of this process is not complicated. It is making all 
 
 * Connect pot to power & ground.
 * Connect middle pin to A0. (this can be any of the analog pins, but you will have to update the code examples below to match the pin of your choice.)
-* Don't forget the necessary 10K resistor.
+<!-- * Don't forget the necessary 10K resistor. -->
 
 ![serialpot](/images/graphics/serialpot.png)
 
@@ -55,7 +55,7 @@ Once you are able to get your circuit built and the code running on the board, t
 * Try removing the potentiometer, flipping it around, and turning it again. What happens now?
 * What is the range of the numbers on the screen? It may be different depending on the model of board you are using, but there should be a clear range of values.
 
-You can use the `map()` function to scale these to a range that you will need later on.
+You can use the `map()` function to scale these to any desired range of numbers.
 
 ---
 
@@ -63,13 +63,21 @@ You can use the `map()` function to scale these to a range that you will need la
 
 The last thing we will do in Arduino is add a mapping function to make the values a little easier to manage in P5. This function has the following arguments:
 
+```js
+
 map(value to map, original value min, original value max, scaled min, scaled max);
+
+```
 
 We can see this a little more clearly once we start adding numbers. Lets use the potentiometer from the last example:
 
+```js
+
 map(sensorValue, 0, 1023, 0, 100);
 
-This line, when called in the `loop()`, will look at the value inside of `sensorValue`, and scale it from its original range of 0-1023 (your range may vary depending on the model o fArduino board you are using), and scale the values to fit within a range of 0-100. This value can then be stored in a variable to be used either in the arduino code, or transmitted via the `Serial.println()` function.
+```
+
+This line, when called in the `loop()`, will look at the value inside of `sensorValue`, and scale it from its original range of 0-1023 (your range may vary depending on the model of Arduino board you are using), and scale the values to fit within a range of 0-100. This value can then be stored in a variable to be used either in the arduino code, or transmitted via the `Serial.println()` function.
 
 ---
 
@@ -77,7 +85,7 @@ This line, when called in the `loop()`, will look at the value inside of `sensor
 
 That is going to be wrapping it up for this lesson. In the next we will begin with transmitting these values from arduino to the P5 web-editor. But for extra practice, try the following:
 
-* Replace the potentiometer with another sensor. How the doe behavior of the values in the serial=l monitor change? (don't forget about resistors)
+* Replace the potentiometer with another sensor. How the doe behavior of the values in the serial monitor change? (don't forget about resistors)
 * Try adding an LED into the circuit. Can you use the sensor values to adjust the LED as well?
 
 ---
@@ -85,46 +93,16 @@ That is going to be wrapping it up for this lesson. In the next we will begin wi
 
 ## Bringing it all together: P5 reacting to physical input
 
-Now that the library is installed we can begin coding in P5. It has been a few chapters since we have worked in this platform, so feel free to check out the [reference material](https://p5js.org/reference/) if needed. This will be the longest/most complicated step in the process, but once you get a hang of it, it will only take slight modifications in order to get through the remaining lessons.
+Lets get those numbers into P5!. To do this, pull download [this .zip file](PDM_physicalComputing_copy.zip). It contains all of the starting arduino code needed for this chapter. Inside of this folder are several files. We will want to look at the .ino file. 
 
-Lets start by making a few variables. These variables will be used to store important serial information later on in the code.
+If you are using the web-editor, or are unable to access the imbedded folder, you can find the same library embedded below. The files can all be downloaded if needed.
 
-Start by connecting your Arduino to your computer with the USB cable, and then open the p5.serialcontrol app. Select the port that you connected the Arduino to from the dropdown menu and press the open button. 
+<iframe src=https://create.arduino.cc/editor/mbardin/528034f3-239b-4ca5-9c8b-7b900b6c2e0f/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
 
-![serial1](/images/graphics/p5serial1.png)
+The next section will go over this code in detail, but feel free to explore it now if you wish.
 
-If you have multiple USB devices connected you may need to experiment to see which one is the correct port. The name will be formatted like shown below, but every port on every device will have a unique number identifier.
+---
 
-```js
-/dev/cu.usbmodem144101
-```
-
-Then, you will be able to copy the code from the window on the right side of the app and copy it into a new P5 project. 
-
-![serial2](/images/graphics/p5serial2.png)
-
-If you have not, be sure to include the p5.serial library in your HTML file or nothing from here on will be able to work.
-
-Once you have copied this code into a P5 project, try running it. With the Arduino code we uploaded toy should see a small number appear in the top left corner of the canvas. As you adjust the position of the potentiometer you should see the numbers increase and decrease within the range of 0-1023. If you are not seeing this, try the following tips for making sure you have a correct connection:
-
-* Stop your P5 sketch and restart it.
-* Stop your sketch, close and reopen the port in p5.serialcontrol, restart your sketch.
-* Stop your sketch, unplug and re-plug your Arduino, restart your sketch.
-* Pause the Arduino web editor plug in and repeat the previous steps.
-* Re-upload your code to the Arduino. Make sure the port is closed via p5.serialcontrol first or you will be unable to.
-
-If you are still having issues, you may need to restart your device, or there is a conflict somewhere in your code. Be sure to go through the codes shown on this mage to make sure everything matches identically.
-
-So now lets do something a little more visually interesting. If you look at the code we copied from the p5.serialcontrol app you will notice there are quite a few functions. We do not need to concern ourselves with most of them as they mostly serve to send information to the console for the user to see that everything is behaving properly. If you move down to the draw function you will notice that the value coming in from the Arduino is being stored in the `latestData` variable. We can use that number to manipulate things on the canvas. Lets work with a circle for now. If you add this line into your `draw()` function and restart it, you should see a purple circle appear on the screen.
-
-```js
-fill('purple');
-ellipse(width / 2, latestData, 100, 100);
-```
-
-Now when you run the code you should see the circle move in time with the potentiometer like below. You will notice that the circle may appear a little jumpy. This is because the sensor is transmitting slight variations in data extremely fast. You can attempt to relieve this by lowering the frame rate in P5, but keep in mind that this can affect everything in the draw function in more complex examples. You may notice that the circle occasionally jumped a large distance. if the connection to the potentiometer or the arduino pins are not stable, random numbers will get passed in. Try removing your potentiometer from the circuit, or wiggling the pins and see what happens. (having a completely stable connection would involve soldering the parts together, which is not part of this course.)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gv8IfTsK6h0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- ```
 let serial; // Variable to hold instance of serialport library
@@ -213,35 +191,5 @@ function draw() {
 In this function we will be looking at the data coming in from the serial port and displaying it via the text function so the user can see it. Then we will display the circle object that we created in the `setup()` function.
 
 Now we have a working code. Connect the Arduino to the computer and go into P5.serialcontrol. Close the serial port that the Arduino is connected to and make sure the string at the beginning of your code marches that port exactly. Once that is done, open the port again and run the code. If everything was done properly, you should see the onscreen circle change in size depending on the position of the potentiometer like in the video below. Our next step will be to include a button in addition to out analog data. This button will be used to control boolean information within P5. in the following lesson we will use it to set the color of the on-screen circle. -->
-
----
-
-## Practice
-
-Now that we have been able to send analog data into P5 via a potentiometer, try to experiment with the other sensors you have in your kit. What kinds of interactions are you able to achieve? The chapter assignment and the [Final Integrations Project](https://pdm.lsupathways.org/5_integrationproject/) will have you creating your own codes that receive and transmit serial data using P5 and Arduino. Start thinking now about what interactions you can use that make logical sense for what you want to alter on the screen. This will help save you a little time later on and help you to make a stronger final project!
-
-There are also several example P5 codes present in the [p5.serial API](https://github.com/p5-serial/p5.serialport) that you can explore.
-
-
-### Library Suggestion
-
-As of this lesson we have introduced all of the required libraries for the P5 web-editor. In order to make your life easier it is recommended that you create a starting template with the following libraries already installed in your code's HTML file:
-
-* P5.play
-    ```html
-    <script src="https://cdn.jsdelivr.net/gh/molleindustria/p5.play/lib/p5.play.js"></script>
-    ```
-
-* Tone.js
-    ```html
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.8.9/Tone.min.js"></script>
-    ```
-
-* P5.serial
-    ```html
-    src="https://cdn.jsdelivr.net/gh/vanevery/p5.serialport/lib/p5.serialport.js"></script>
-    ```
-
-There were other libraries mentioned in the [Sound](https://pdm.lsupathways.org/3_audio/) unit. If your project requires these libraries in order to generate melodic synthesis, it is recommended to add them to this file as well.
 
 ---

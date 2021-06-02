@@ -78,10 +78,12 @@ The first way is with images showing exactly which parts need to connect on the 
 
 ![default](/images/graphics/leddiag1.png)
 
-Another way is a little more traditional, and only shows what elements need to be connected together. This diagram allows for a little more flexibility in where you can place things on the breadboard. These can be used for everything previously mentioned, but are also used for describing existing circuits as well. (this is an example picture below of a more complicated circuit)
+Another way is a little more traditional, and only shows what elements need to be connected together. This diagram allows for a little more flexibility in where you can place things on the breadboard. These can be used for everything previously mentioned, but are also used for describing existing circuits as well. This particular diagram represents a recommended circuit for the final project, however you will notice that unlike the breadboard diagrams, it only shows what elements are connected, not where they should go physically.
 
-![default](/images/graphics/time_lapse_schematic.jpg)
+![wireDiagram](/images/graphics/final_board_wire.png)
 
 These types of diagrams contain fairly standard images to represent various components. The link below will show what some of those are and how to interpret them in a diagram.
 
 [Here is a link to some slides](https://docs.google.com/presentation/d/1nyZWESVba9uJTZyRoqoEZ151bZhLVy_G4oF6OJ6PaA8/edit?usp=sharing) that show some of the different kinds of circuit diagrams. 
+
+---

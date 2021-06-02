@@ -13,7 +13,7 @@ This processes creates the electrical energy that we can use to power all of our
 
 ---
 
-## components of electricity
+## Components of Electricity
 
 Electricity is comprised of three main parts
 
@@ -84,3 +84,5 @@ Variable resistors are resistors that can change the amount of resistance they a
 ---
 
 There are several other components to electricity and building circuits, but this covers the information that you should know about before attempting to build your first circuit. We will dive into these other components over the course of the next three chapters.
+
+---
