@@ -26,10 +26,6 @@ This website serves as an online textbook covering the course material, code exa
 
 In addition to the sections covering course content, you will notice two additional units in the navigation panel: [Integrations Project](https://pdm.lsupathways.org/5_integrationproject/) and [Additional Resources](https://pdm.lsupathways.org/6_resources/). These units contain information relevant to the final project, which combines elements from all of this course's units, and outside resources such as tools, tutorials, videos, and more that may prove helpful for students taking this course. It is highly recommended that students taking this course add this page to their browser's bookmarks for easy access to all of this information.
 
-```
-https://pdm.lsupathways.org/
-```
-
 ---
 
 ## Table of Contents
