@@ -5,6 +5,9 @@ title: "Programming Digital Media"
 <script async src="//jsfiddle.net/oyz8zg40/1/embed/result/"></script>
 
 ## Course Description and Objectives
+  
+
+<!-- change -->
 
 <!-- Course objectives, costs, general schedule, etc: {{% link "programming-digital-media.pdf" %}} -->
 
