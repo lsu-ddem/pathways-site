@@ -1,0 +1,5 @@
+---
+title: What is an Analog Signal
+weight: '1'
+---
+In the previous chapter we learned about sending and receiving digital signals: Signals with only high and low values. But what about the values between 0 and 1? Only having two options doesn't leave a lot of room for finite control of different components. That is where analog signals ans sensors come into play. When sending or receiving analog signals the computer is dealing with a value other than 0 or 1. These range of these values can vary based on the components you are using for this course, and the processing power of your Arduino board. For the purposes of this book, the components and Arduino Uno board interpret analog signals as a range of 0-1023. These values can be scaled to whatever range your code needs with the use of the `map()` function, which we will discuss in more detail later.
