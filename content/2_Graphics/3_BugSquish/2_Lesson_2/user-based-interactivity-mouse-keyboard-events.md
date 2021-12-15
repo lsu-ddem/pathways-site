@@ -32,9 +32,38 @@ It is recommended to give each sprite a `.friction` value in the setup function 
 
 ---
 
-### Let's Practice: Automatic Movement
+## Assigning Movement to Keys
 
-We can also use these methods and parameters to set automatic movements. In the code below there is an additional sprite that now moves automatically. This is done by setting the movement speed and direction inside of `setup()` and then utilizing conditional statements inside of `draw(()` to adjust those properties. Try changing the values of the properties in order to change how the sprite named `otto` automatically moves around the canvas. Try adding new properties and methods as well!
+Lets take a second to look at the p5 sketch below. This was made my a student in the course and does a great job at setting up what we need to move a sprite with specific key presses.
+
+<iframe src="https://editor.p5js.org/mbardin/full/tTa9hcZoy"></iframe>
+
+You will notice that whenever you press a key on the keyboard, a number appears on the canvas. This number is the ASCII code for that key. All keys on a keyboard have a specific numeric value assigned to them. For example, all space bars have an ASCII value of 32, Escape keys are 27, and all return keys have an ASCII value of 13. This is useful because by using ASCII you can map a specific movement to a key regardless of the language or of the keyboard. To map the movements, we can take what we just learned and combine it with the ASCII code in a conditional like below:
+
+```js
+if(keyIsPressed){
+    if(keyCode === 32){
+        sprite.setSpeed(1,270);
+    }
+}
+
+```
+
+This example would have a sprite (poorly named "sprite") move up every time the space bar was pressed. By nesting the ASCII check with the `keyIsPressed` check, the sprite will only jump if a key is pressed AND it is the correct one. This can be useful to keep a sprite from moving after a key has been released. 
+
+---
+
+### Let's Practice!
+
+For this practice, lets explore a little more with moving a sprite with key presses. Using the above p5 sketch and nested conditional, create a sketch where you can move 2 sprites on the canvas. move one using the arrow keys and the other using the WASD keys. The sprite's directional movements should match up with the keys in a logical manner. This is the basis of simple character movement in many video games. 
+
+For an added challenge, try working out how to make a sprite jump and return to the ground whenever the space bar is pressed. (this will involve some sort of gravity value and the setSpeed() or velocity method/property)
+
+---
+
+## Automatic Movement
+
+We can also use these methods and parameters to set automatic movements. In the code below there is an additional sprite that now moves automatically. This is done by setting the movement speed and direction inside of `setup()` and then utilizing conditional statements inside of `draw()` to adjust those properties. Try changing the values of the properties in order to change how the sprite named `otto` automatically moves around the canvas. Try adding new properties and methods as well!
 
 {{% codepen 600 NWGaMxa %}}
 

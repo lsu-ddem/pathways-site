@@ -42,7 +42,7 @@ Take note: unlike in math operations, the equals sign means assignment, NOT equa
 It's important to note a few things about making variables:
 {{% /notice %}}
 
-- You can only declare a variable once. If you try to declare it more than once, your code will wipe the previous value inside of your variable from its memory. For instance, the following code is an issue:
+- You can only declare a variable **once**. If you try to declare it more than once, your code will wipe the previous value inside of your variable from its memory. For instance, the following code is an issue:
 
 ```javascript
 let xValue = 1;
