@@ -87,3 +87,10 @@ Click on the "Edit on CodePen" title on the embedded code below to see a few exa
 {{% codepen 500 OEmEpM %}}
 
 ---
+
+### Let's Practice!
+
+Try using the command `console.log()` to display various messages in the console.
+
+
+---

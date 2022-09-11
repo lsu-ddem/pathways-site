@@ -72,8 +72,9 @@ The embedded code below shows an If Statement in action. Clicking and dragging y
 
 {{% codepen 600 aKWKmj%}}
 
+---
 
-### LETS PRACTICE!
+### LET'S PRACTICE!
 
 Look at the code below (you can copy it into a p5 sketch if you want)
 

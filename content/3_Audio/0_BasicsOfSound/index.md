@@ -175,28 +175,28 @@ Below is a video showing these vibrations in case you were unable to feel them.
 
 ## Sound Synthesis
 
-The final concept to discuss on this page is sound synthesis. We have already gone over how a computer can store values from a recording as a sound file and play them back. Using this as a base the computer can generate its own audio tones that did not come from a previously recorded source. The computer can generate values that can then be sent to the DAC in order to generate sound. Below is a video showing a graphical representation of each waveform, and an audio example of them in the following order. 
+The final concept to discuss on this page is sound synthesis. We have already gone over how a computer can store values from a recording as a sound file and play them back. Using this as a base the computer can generate its own audio tones that did not come from a previously recorded source. The computer can generate values that can then be sent to the DAC in order to generate sound. Below is a video showing a graphical representation of each waveform, and an audio example of them, as well as a little more information on oncillators. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1dFJfX6A6QQ?start=15" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=qV10Gb-Dvao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Sine
 
-Sine waves have a gradual, curved slope between their high and low pressure levels.
+Sine waves have a gradual, curved slope between their high and low pressure levels. These sounds are considered to be 'pure'.
 
 
 #### Square
 
-Square waves jump immediately from high to low with no slope.
+Square waves jump immediately from high to low with no slope. These waves act like a boolean varible, because they only have two states.
 
 
 #### Triangle
 
-Triangle waves move linearly from their high to low pressure levels with no curves.
+Triangle waves move linearly from their high to low pressure levels with no curves. It sounds a little brighter than a sine wave.
 
 
 #### Sawtooth
 
-A Sawtooth moves linearly from low to high, and then immediately jumps back to low
+A Sawtooth moves linearly from low to high, and then immediately jumps back to low. The ratio between these events can be changed to alter the sound of the wave.
 
 ### Additive Synthesis
 

@@ -100,7 +100,7 @@ Here we have an example that is using the `Tone.LFO)()` object to modulate filte
 
 ### Let's Practice!
 
-Try using this [starter](https://codepen.io/lsuddem/pen/QYYGmL) code to create your own LFO modulations. 
+[Click on this sentance to open the link and try using this starter code to create your own LFO modulations.](https://codepen.io/lsuddem/pen/QYYGmL) 
 
 ---
 

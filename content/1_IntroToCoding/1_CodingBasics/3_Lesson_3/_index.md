@@ -101,12 +101,13 @@ Here are some commonly used System Variables found in the p5.js JavaScript libra
 | `mouseY`  | current location of mouse on the canvas' Y axis     |
 | `pmouseX` | previous location of mouse on the canvas' X axis    |
 | `pmouseY` | previous location of mouse on the canvas' Y axis    |
-| `key`     | current key pressed (ASCII keys only)               |
-| `keyCode` | current special key pressed (ENTER, UP_ARROW, etc.) |
+| `key`     | current special key pressed (ENTER, UP_ARROW, etc.) | 
+| `keyCode` | current key pressed (ASCII keys only)               |
 | `width`   | current width of the canvas in pixels               |
 | `height`  | current height of the canvas in pixels              |
 
-Boolean System Variables
+#### Boolean System Variables
+Boolean variables can only contain one of two values, true or false.
 
 | Variable         | Use                                                          |
 | ---------------- | ------------------------------------------------------------ |
@@ -114,7 +115,6 @@ Boolean System Variables
 | `keyIsPressed`   | boolean - contains "true" if any key pressed, "false" if not |
 
 
-Boolean variables can only contain one of two values, true or false.
 ---
 
 ## Global Scope vs. Local Scope

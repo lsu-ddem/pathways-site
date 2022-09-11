@@ -89,7 +89,7 @@ In all of the sketches in this lesson we are using online-hosted sound files, ju
 
 Since we are now dealing with multiple sound files, we should cover some of the best ways to trigger individual sounds in your project, as well as ways to modulate and manipulate those sounds while they are playing. The sketch below shows off using the Tone.Players() object, and a way to trigger the sounds with key presses.
 
-{{% codepen 500 yLVgJv %}}
+{{% codepen 500 vrzEjR %}}
 
 ---
 
@@ -121,7 +121,7 @@ Using the code sample from earlier in this lesson, we can use either multiplayer
 ```js
 multiplayer.player("bells").start();
 ```
-The example below shows `Tone.PLayers()` in action.
+The example below shows `Tone.PLayers()` in action. (We have seen this code before in this lesson, but look over it again to make sure everything in it makes sense.)
 
 {{% codepen 500 vrzEjR %}}
 
@@ -153,7 +153,7 @@ We can then customize the button by modifying some of its properties:
 
 Because computer audio playback is a real-time processing of data in a continual stream. This data is stored as a sound file and processed every time you tell the computer to play back the audio. However, because this playback a continual stream of information, we have to keep the data flowing so the computer can keep reading the next piece of upcoming data. To do this, when we playback our sound files, we need to send the playback to the destination speakers of our device with the method .toDestination() as shown below. Without this command, we will not hear our sound playback for any audio in this unit.
 
-![null](/images/uploads/simple_audio_pathway-1-.png)
+![null](static/images/uploads/simple_audio_pathway-1-.png)
 
 (In previous versions, the `.toDestination()` method was called .toMaster(). This has been removed in modern version and sketches shown in this book. You may still see various resources referring to this method, however.)
 

@@ -41,7 +41,7 @@ player = new Tone.Player('sound.mp3').connect(effect1);
 
 By building the elements in this order, you can see the direct pathway from the speakers, through the effect chain, back to the sound file. Changing the order will cause the code not to execute because it will try ot connect a sound to an object that has not been created yet.Building the objects in preload ensures that the pathway is properly rendered prior to any potential sound playback triggers.
 
-### Another way to format effect connectiond
+### Another way to format effect connections
 
 You can also format your connections like shown below. There will be no change in how the code functions, but you don't have to worry about building things in the wrong order as much.
 
