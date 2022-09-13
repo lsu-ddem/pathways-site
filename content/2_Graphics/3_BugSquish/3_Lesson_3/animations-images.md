@@ -90,6 +90,8 @@ Next you will need to set up a condition that will tell your code when to change
 
 {{% codepen 400 GRpMdym %}}
 
+As a side note, be sure that you double check all of the images you want to utilize in your sketches. normal `.jpg` files will work for the backgrounds of sketches, but usually having a `.png` file with a transparent background will be more appropriate for a sprite or anything that will more. Notice the cat image in the above sketch. This one does not have the properly transparent background, which becomes obvious when the file is displayed on the sprite.
+
 ---
 
 ### Let's Practice!

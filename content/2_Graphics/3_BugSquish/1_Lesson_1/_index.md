@@ -51,8 +51,8 @@ Each of these arguments can be changed later on in your code, but you ust give a
 
 In order to see sprites drawn to the canvas, one of two functions are needed inside of the `draw()` function:
 
-* `drawSprite()`: Draws a single sprite to the canvas. Use the desired sprite's variable name as the argument. You will need one of these for each sprite that you want to draw.
-* `drawSprites()`: Draws all sprites to the canvas. Most examples in this unit will utilize this function. You will only need to use this line of code once in the project.
+* `drawSprite(spriteName)`: Draws a single sprite to the canvas. Use the desired sprite's variable name as the argument. _You will need one of these for each sprite that you want to draw._
+* `drawSprites()`: Draws **all** sprites to the canvas. Most examples in this unit will utilize this function. You will only need to use this line of code once in the project since this will draw all possible sprites every frame.
 
 When we add this line into our draw function we can now see the sprite appear.
 
@@ -70,7 +70,7 @@ sprite.shapeColor = "coral";
 
 //or
 
-sprite.shapeColor = [200. 105, 10];
+sprite.shapeColor = [200, 105, 10];
 
 ```
 
@@ -99,11 +99,19 @@ To create a group, follow these steps:
 
 3. Add sprites to the group
 
+    ```js
+    groupName.add(spriteName);
     ```
-    groupName.add(sprite);
+    
+    OR
+
+
+    ```js
+
+    spriteName.addToGroup(groupName)
     ```
 
-You can now refer to your sprites individually or as a group, similar to a teacher giving instructions to an individual student, or addressing the whole class at one time. You can also remove a sprite from a group with the `.remove()` method.
+You can now refer to your sprites individually or as a group, similar to a teacher giving instructions to an individual student, or addressing the whole class at one time. For a list of all methods you can apply to a single group, check out the [p5.play reference material for groups](https://p5play.org/learn/group.html). You can also remove a sprite from a group with the `.remove()` method. The argument is the name of the sprite you wish to remove.
 
 ---
 

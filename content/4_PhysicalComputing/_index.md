@@ -7,7 +7,7 @@ The following lessons and assignments will introduce students to the practice of
 
 While completing these lessons, be sure to check out additional examples and extended readings in the **Resources** section as well as the lessons and example codes found on the [Arduino](https://www.arduino.cc/en/Tutorial/HomePage) website to build a stronger understanding of these concepts.
 
-The remainder of this course will require an Arduino kit. If this is not provided by the school, or you would like to purchase your own for at-home use or experimenting after you have completed the course, these kits are open-source and can be purchased online. Kits containing that [Arduino Uno board and necessary components](https://www.amazon.com/s?k=arduino+uno+kit&i=electronics&ref=nb_sb_noss_1) usually range form $40-$60.
+The remainder of this course will require an Arduino kit. If this is not provided by the school, or you would like to purchase your own for at-home use or experimenting after you have completed the course, these kits are open-source and can be purchased online. Kits containing the [Arduino Uno board and necessary components](https://www.amazon.com/s?k=arduino+uno+kit&i=electronics&ref=nb_sb_noss_1) usually range form $40-$60.
 
 ---
 
@@ -22,37 +22,49 @@ In P5 the software would be a little forgiving and still function without proper
 
 ### void vs function
 
-The designation 'void' replaces 'function' that we have been using in P5
+The designation 'void' replaces 'function' that we have been using in P5.
+If you are creating a function that will return a value, you will have to designate the function as that data type. See below for an example:
+
+```c++
+
+float randNum(min, max){
+    float newNum = random(min, max);
+    return newNum;
+}
+
+
+```
+See below for a more full list of the data types used in Arduino and c++ code.
 
 ### loop vs draw
 
-`void loop()` in Arduino behaves in the same was as `function draw()` in P5
+`void loop()` in Arduino behaves in the same was as `function draw()` in P5. both programs have a setup function which functions identically.
 
 ### Variable types
 
-Unlike in P5, you will have to specify the kind of variable you are using in Arduino. The words below all replace `let` depending on the data type or behaviors of the variable
+Unlike in P5, you will have to specify the kind of variable you are using in Arduino. The words below all replace `let` depending on the data type or behaviors of the variable.
 
 ####  int
 
-used for integer numbers
+Used for integer numbers.
 
 #### float
 
-Used for floating point numbers
+Used for floating point numbers.
 
 #### const
 
 Used for values that do not change. You may want to utilize a const if you want to assign the same value to multiple objects in the code and be able to edit them all at one time when the code is not running.
 
-#### char (strings)
+#### char
 
-This designation is used when your variable will contain a string
+This designation is used when your variable will contain a string.
 
 ### pinMode()
 
 Sets the Arduino's pins to either transmit or receive data. each pin can only do one or the other at one time. 
 
-```js
+```c++
 // arguments: 
 // pinNumber: number designation of the pin you want to set (can be stored as variable)
 // mode: INPUT or OUTPUT
@@ -64,7 +76,7 @@ pinMode(pinNumber, mode);
 
 sends data out through a digital pin
 
-```js
+```c++
 // arguments: 
 // pinNumber: number designation of the pin you want to set (can be stored as variable)
 // state: HIGH or LOW
@@ -77,7 +89,7 @@ digitalWrite(pinNumber, state);
 receives data from a digital pin. 
 values can be stored in a variable.
 
-```js
+```c++
 // arguments: pin number you wish to read
 // pinNumber: number designation of the pin you want to set (can be stored as variable)
 //returns: HIGH or LOW

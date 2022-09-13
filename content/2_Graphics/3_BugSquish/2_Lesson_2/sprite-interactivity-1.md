@@ -5,11 +5,13 @@ weight: '4'
 
 ## Understanding Collisions
 
-Each sprite has a hidden hit-box around its perimeter that is constantly checking if the sprite is overlapping with any other sprite. This condition is stored as a boolean variable. (is this sprite currently hitting another sprite? yes or no?) We can utilize these hit-boxes in order to create dynamic interactions between sprites. Lets look at the code below as it does a few things using these boxes.  
+Each sprite has a hidden hit-box around its perimeter that is constantly checking if the sprite is overlapping with any other sprite. This condition is stored as a boolean variable. (is this sprite currently hitting another sprite? yes or no?) We can utilize these hit-boxes in order to create dynamic interactions between sprites. 
+
+By default the hit-boxes are hidden, but can be made visible by setting the sprite's debug property to true. Doing so will bring up additional information that is also useful for checking the functionality of your sprites. Lets look at the code below as it does a few things using hit-boxes.  
 
 {{% codepen 400 RzwPKX %}}
 
-the first thing to notice are a few new methods being utilized:
+The first thing to notice are a few new methods being utilized:
 
 * **.bounce()** detects a collision with a specific sprite or group and reverses the direction of the initial sprite's movement. Causing the sprite to bounce off of the obstacle it just collided with. 
 * **.displace()** causes one sprite to push the other when they collide. this moves the secondary sprite to the closest pixel where the hit-boxes are not activated.  
@@ -17,8 +19,8 @@ the first thing to notice are a few new methods being utilized:
 
 Each of these methods require the same arguments:
 
-1. The name of the sprite (or group) to interact with
-2. An optional callback function
+1. The name of the sprite (or group) to interact with.
+2. An optional `callback function`.
 
 ## Callback Functions
 

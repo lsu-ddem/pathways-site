@@ -13,9 +13,9 @@ In the code below we have generated a single sprite and set specific properties 
 
 ### Properties
 
-A property is an element of a sprite's characteristics that can be set to a value and changed. Properties are utilized in the following format:
+A property is an element of a sprite's characteristics that can be set to a value and changed, similar to a variable. Properties are utilized in the following format:
 
-```
+```js
 sprite.property = value;
 ```
 
@@ -37,7 +37,7 @@ There are several other properties that can be used in the P5.play library, and 
 
 Methods serve as functions or actions that the sprite can be told to perform. They are called in the following manner:
 
-```
+```js
 sprite.method(argument(s));
 ```
 
@@ -65,7 +65,10 @@ A few other common methods are:
 * `.displace(target)` which lets a sprite push another sprite around the canvas.
 * `.remove(sprite)` which removes the sprite from the sketch completely.
 
-We will utilize many more methods throughout this unit, but for now lets focus on these. You can look more into a sprite's methods [here](https://molleindustria.github.io/p5.play/docs/index.html).
+
+To utilize a method, you must first talk to the sprite, then tell it which method to execute utilizing dot notation. This would look like this: `spriteA.displace(spriteB);`. By placing these commands within various parts of your code broken up by conditionals, for loops, and functions, you can create wonderfully dynamic sprites that will respond uniquely based on their environment, user interactions, or whatever other states may be present in your sketches.
+
+We will utilize many more methods throughout this unit, but for now lets focus on these. [You can look more into a sprite's methods here](https://molleindustria.github.io/p5.play/docs/index.html).
 
 ---
 
@@ -73,11 +76,14 @@ We will utilize many more methods throughout this unit, but for now lets focus o
 
 When working with sprite groups, there is a limited number of methods that can be applied to all sprites in the group at once. Some of the more common ones we will use in the next few lessons are: 
 
-* .add()
-* .remove()
-* .bounce()
-* .collide()
-* .displace()
+* `.add()`: adds a sprite to a group.
+* `.remove()`: removes a sprite from a group.
+*` .bounce()`: makes a sprite bounce off of a given sprite or group.
+* `.collide()`: makes sprites collide with a given sprite or group.
+* `.displace()`: makes a sprite push a given sprite or group.
+
+
+It is important to know that while most methods for groups are available on the sprite level, the opposite is not true. Groups have a much more limited pool of available methods than sprites do. If you would like to utilize a command from the larger pool, you will either have to find the specific sprite you wish to command, or cycle through the entire group contents and apply the commands individually.
 
 ---
 

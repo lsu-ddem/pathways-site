@@ -23,21 +23,21 @@ Electricity is comprised of three main parts
 
 Lets compare these parts to the flow of water. 
 
-![default](/images/graphics/elec.png)
+![waterElec](/images/graphics/elec.png)
 
 In this image, the electrons would be the water. The voltage would be the pressure created by the water pump. This pressure would cause water to flow up to the main reservoir, and back down into the pump continually. The current would be the volume of water moving through the pipes, and the resistance would be the size of the pipes. Larger pipes would allow for the water to flow through easier.
 
 Lets keep the water analogy, but instead compare the movement to a river.
 
-![default](/images/graphics/river1.jpg)
+![driver1](/images/graphics/river1.jpg)
 
 The voltage would be the flow of the river, this time caused by gravity.
 
-![default](/images/graphics/river2.jpg)
+![river2](/images/graphics/river2.jpg)
 
 The current, again, is the amount of water flowing through the river and can make the difference between a slowly tricking stream and a powerful storm-surge.
 
-![default](/images/graphics/river3.jpg)
+![river3](/images/graphics/river3.jpg)
 
 Resistance in the river is brought on through rocks and logs and other elements that disrupt the water flow. A river with no rocks in it will flow smoothly, but a river with many large rocks will turn into rapids.
 
@@ -47,7 +47,7 @@ Much like a river, electricity will only flow in a single direction. In our circ
 
 As you may have noticed, all three of these elements, voltage, current, and resistance are closely related. In fact we can calculate each of the values for these elements with a simple equation known as Ohm's Law:
 
-![default](/images/graphics/ohmslaw.jpg)
+![ohmsLaw](/images/graphics/ohmslaw.jpg)
 
 * V = voltage
 * I = current
@@ -63,7 +63,7 @@ watts = volts X amps
 
 When building an electrical circuit, we are connecting points on a battery via wires so that the electrons stored in the battery can travel through the wires, power a device, and then return to the other end of the battery, like the image below. (the green is the wire, and the arrow shows the flow of electrons)
 
-![default](/images/graphics/circuit1.png)
+![resistorCircuit](/images/graphics/circuit1.png)
 
 One thing that is not shown is the resistance. Everything naturally has some amount of resistance; the air, water, wires, you all have a resistance of some amount. Electricity will travel along the path of least resistance. In the case of our electrical circuits, the resistance of our wires are essentially negligible, and much lower than the insulation around them so the electricity will flow through the wires when they are connected to the power source. However, many of elements we will use in this unit cannot handle the natural flow of electricity, so we have to incorporate different resistors into the circuit to keep our electronics from exploding when we plug them in. these resistors restrict the flow of electricity by a specific amount.
 
@@ -71,11 +71,11 @@ One thing that is not shown is the resistance. Everything naturally has some amo
 
 Fixed resistors are elements that we connect into the electrical circuit in order to add a resistance that **does not change** into the system. These resistors have various sizes and shapes depending on the amount of resistance the offer.
 
-![default](/images/graphics/resistors.jpg)
+![fixedResistor](/images/graphics/resistors.jpg)
 
 The chart below will show you how to identify the resistors we will use throughout this unit. The value can change depending on the color and order of bands printed on the resistor, as well as the color of the resistor itself.
 
-![default](/images/graphics/resistorchart.jpg)
+![resistorLabelChart](/images/graphics/resistorchart.jpg)
 
 ### Variable Resistors
 

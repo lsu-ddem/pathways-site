@@ -5,12 +5,12 @@ weight: '2'
 
 There are a few ways that we can utilize synthesizers and sequences with sprites, but first lets go into how we can set that up. If you did the activity on the previous page, they you will already have a code that is ready to go. Otherwise you will need to follow the steps below:
 
-1. open a new P5 project. Make sure that **BOTH** Tone.js and P5.play are installed in the HTML file.
+1. Open a new P5 project. Make sure that **BOTH** Tone.js and P5.play are installed in the HTML file.
 2. Create a single sprite that you can move around the canvas. This will be the player character (PC)
-3. create 2 groups of multiple sprites. Our PC will have unique interactions with the different groups.
-4. create a `.collide()` command for each sprite group and a callback function for each collision. 
+3. Create 2 groups of multiple sprites. Our PC will have unique interactions with the different groups.
+4. Create a `.collide()` command for each sprite group and a callback function for each collision. 
 
-To save time, it is recommended that you begin with there-made code, however you will have to follow these generalized steps whenever you want to make a project utilizing both sound and sprite interactions. (see [Integrations Project](https://pdm.lsupathways.org/5_integrationproject/) for more information)
+To save time, it is recommended that you begin with pre-made code, however you will have to follow these generalized steps whenever you want to make a project utilizing both sound and sprite interactions. (see [Integrations Project](https://pdm.lsupathways.org/5_integrationproject/) for more information)
 
 ---
 
@@ -28,11 +28,21 @@ We can then call this function as the last line inside of the `setup()` function
 
 {{% codepen 600 GRpOyNZ %}}
 
-Because a browser will no automatically begin playing music, we have to interact with the canvas in some way for the audio to begin playing. In this simple example we have the audio begin when the canvas is clicked. In other games you may have a start button or something a little more sophisticated.
+Because a browser will not automatically begin playing music, we have to interact with the canvas in some way for the audio to begin playing. In this simple example we have the audio begin when the canvas is clicked. In other games you may have a start button or something a little more sophisticated.
 
 Once we have a single melody playing, we can change that background melody with different combinations of the `.start()` and `.stop()` methods, which we will get into later on this page.
 
 ---
+
+
+### Let's Practice!
+
+Using the information above, try to implement your own background music in a sketch. This can be as simple or as complex as you want, but try and create two different versions: one with a pre-recorded sound file, and one with synthesizers. Which do you prefer?
+
+
+---
+
+
 
 ## Melodies Based on Interactions
 
@@ -112,6 +122,13 @@ bloop.start();
 This example contains a lot of separate parts, however it once they have been built, it is a relatively simple matter to connect them all together via the `.onMousePressed()` method. Keep in mind that this is a basic example, and that everything we have talked about in regards to sprites and sound could potentially be applied to this idea, resulting in much more complex environments.
 
 If you want to see this code in action, you will have to copy it into a new P5 project with both of our libraries installed, and add in your own sound file. Also, don't forget to add `drawSprites()` so that they will be drawn to the canvas. 
+
+---
+
+### Let's Practice!
+
+Now that you know how to start and stop sequences and file playback under various conditions, try and create a sketch that will adapt the music based on different interactions. Have a unique sequence play when different sprites collide, and another when you click on a sprite.
+
 
 ---
 

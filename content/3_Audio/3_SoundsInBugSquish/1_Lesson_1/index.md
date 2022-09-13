@@ -3,7 +3,7 @@ title: 'Adding Sound Events to Games: Sound File Playback'
 weight: '1'
 ---
 
-The first step in adding interactive sounds to sprites is to add in the sound file that we want to use, like in the sampler assignment. From there we can load the sound into a new `Tone.Player()` or `Tone.Players()` object. 
+The first step in adding interactive sounds to sprites is to add in the sound file that we want to use, like in the sampler assignment. From there we can load the sound into a new `Tone.Player()` or `Tone.Players()` object. Generally, it is recommended to utilize `Tone.Players()` for this as you will likely utilize several sounds in your games. By using `Tone.Players()`, you can keep all of the sounds within a single, easy-to-remember object.
 
 From there we simply need to set up a trigger to playback the sound involving oue sprites. This can be done in several ways. Lets look at the code below to see a few of the more common ones.
 
