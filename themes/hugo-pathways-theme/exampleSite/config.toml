@@ -1,0 +1,29 @@
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Pathways theme"
+theme = "hugo-pathways-theme"
+themesdir = "../.."
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[params]
+  editURL = "http://pdm.lsupathways.org/admin/"
+  description = "Educational material for LSU Programming Digital Media"
+  author = "Tate Carson"
+  showVisitedLinks = true
+  themeVariant = "blue"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Educational material for LSU Programming Digital Media"
+weight = 1
+languageName = "English"
+# staticDir = "/"
+
+
+

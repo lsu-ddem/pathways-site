@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+
+  <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <button type="button" class="btn btn-default" onclick="print()">Print all</button>
+
+  <script>
+
+    //load chosen iframes 
+    let url = new URL(window.location);
+    let params = new URLSearchParams(url.search.slice(1));
+    let tempLessons = [];
+    let lessons = [];
+
+    for (let p of params) {
+      //remove odd index 
+      var filtered = p.filter(function (element, index, array) {
+        return (index % 2 === 0);
+      });
+      tempLessons.push(filtered)
+    }
+
+    //flatten 2d array 
+    lessons = tempLessons.reduce((acc, val) => acc.concat(val), []);
+
+    //create iframes based on lessons array 
+    lessons.forEach(lesson => {
+      //outer div with lesson id
+      var div = document.createElement('div');
+      div.id = lesson;
+      document.body.appendChild(div);
+
+      var pymParent = new pym.Parent(lesson, location.origin + lesson, {});
+    })
+
+    //remove extra menus from chosen content
+    $('iframe').on("load", function () {
+      var iframe = document.querySelectorAll('iframe');
+
+      iframe.forEach(frame => {
+
+        var innerDoc = frame.contentDocument || frame.contentWindow.document;
+
+        //remove menubar content 
+        innerDoc.body.querySelector('nav').style.display = 'none'
+        innerDoc.body.querySelector('#top-bar-sticky-wrapper').style.display = 'none'
+        innerDoc.body.querySelector('#navigation').style.display = 'none'
+        innerDoc.body.querySelector('#body').style.marginLeft = 0
+      })
+    });
+
+    // print each frame 
+    function print() {
+      var frames = window.frames; // or // var frames = window.parent.frames;
+      for (var i = 0; i < frames.length; i++) {
+        frames[i].focus();
+        frames[i].print()
+      }
+    }
+  </script>
+</body>
+
+</html>
