@@ -8,4 +8,6 @@ The following lessons will focus on introducing students to the concept of modul
 
 While completing these lessons, be sure to check out additional examples and extended readings in the **Resources** section to build a stronger understanding of these concepts.
 
+At the end of this unit, we will build our first game!
+
 ---
