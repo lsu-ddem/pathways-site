@@ -10,4 +10,5 @@ This chapter will ask you to use using the p5.play.js library to build "Bug Squi
 
  In the summer of 2022 p5.play updated to version 3.0. The old lessons will be available under 'Resources' once the new lessons have been uploaded here.
 
+
 ---
