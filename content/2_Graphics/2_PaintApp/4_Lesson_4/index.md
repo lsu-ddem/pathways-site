@@ -9,9 +9,7 @@ Below is an example of the Paint app assignment. Play around with it and notice 
 * What happens when you click and drag the mouse
 * What happens when you click on the white square
 
-
-
-{{% codepen-results 600 qKxRGM %}}
+{{% codepen-results 600 jOMvXZV %}}
 
 ---
 
