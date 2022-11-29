@@ -1,6 +1,6 @@
 ---
 title: 'Graphics Assignment #3 - Bug Squish game'
-weight: '5'
+weight: '6'
 ---
 
 Here is a working example of the Bug-Squish assignment. Notice the following items that need to be present in your version:

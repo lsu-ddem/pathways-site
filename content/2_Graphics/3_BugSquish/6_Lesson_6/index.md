@@ -136,6 +136,19 @@ Then for an added challenge, try adding a conditional statement or switch so tha
 ---
 ## Sprite Methods
 
+Just like any other Object within a class, we can utilize small functions called methods in order to have our sprites perform tasks. Keep in mind the difference in formatting between properties and methods:
+
+* Properties are values you can set and change with an equal sign (=).
+* Methods are functions and require parentheses (). No equal sign is needed for a method, but some require arguments.
+
+Below is a list of some commonly used methods with p5.play's sprites. A full list is available on their reference documents.
+
+* .move(direction, speed, distance) : moves a sprite when called. Direction is a string such as 'up', 'down', 'left', or right'. Speed is in pixels per frame, and distance is measured in pixels.
+* .moveTowards(destination, percentage) : moves a sprite towards another object or the mouse. percentage is how much of the distance between the two is covered each frame.
+* .colliding(sprite, callback) : returns true when the sprite is currently colliding with the designated sprite or group. An optional callback function can be called to create custom interactions. .collides() functions the same, but only returns true on the first frame of the collision. .collided() returns true on the first frame after the collision is no longer detected.
+* .overlaps(sprite) : allows sprites to overlap instead of colliding. Other methods following the same naming convention and functionality as .collided(), collides(), and .colliding() are also available.
+* .remove() : removes the sprite from the scene.
+
 
 ---
 ### Let's Practice!
@@ -144,17 +157,106 @@ Then for an added challenge, try adding a conditional statement or switch so tha
 ---
 ## Sprite Animations
 
+So far, our sprites have been simple colored polygons, however this is rarely the case in released games. We can load images into our sketch and use them to animate our sprites with a unique, adaptable appearance. As a reminder, while base p5 is capable of producing 3D graphics, p5.play is sed to create 2D games. All of the games created in this book will be 2D.
+
+### Loading Images into a Sketch
+
+In order to animate a sprite, we must first load the images into the sketch to do this, we need to follow these steps:
+
+1. Find the image file you want to use. Most file types will work, but .jpg, .png, and .gif files tend to work with the least amount of compatibility issues.
+2. Open your sketch's file browser. This is the gray arrow button shown in the image.
+3. Click the triangle and select "create folder". This is optional, but highly recommended to help organize files. Give the folder a name and then select it.
+4. Click the triangle next to your newly created folder and select "upload files". Here you can select your desired files from your hard drive and upload them to the sketch. When you see all of the files populate in the file browser, we have loaded our images!
+
+There are a few tips that are useful when working with external images in p5. Be sure that you have selected the desired folder for your files BEFORE you upload them. Once uploaded the only way to change the file location is to delete and reupload them. Another tip is to have your file sizes as small as possible. Each p5 account only has 250MB of total asset storage, so having large files will fill up the space more quickly. When full you will need to either delete some assets or create a new account. My final tip for now is to adjust your file names. You can select the triangle by each file and select rename. This can help you with formatting as we will see below, and to make your life easier when typing file names in `loadImage()`.
+
+Once the images are loaded, we can utilize them in the sketch. Let's look at the code example below and talk about it.
+
+```js
+
+let bgImage;
+
+function preload(){
+bgImage = loadImage("images/bgImage.jpg");
+}
+function setup(){
+  createCanvas(400,400);
+}
+function draw(){
+  background(bgImage);
+}
+
+
+```
+
+In this sketch, we are loading an image to be displayed on the background. A new function called `preload()` is used to load the image. This is a useful function that will run it's code prior to anything else in the sketch. This is helpful because we can load in any external assets prior to the sketch needing to use them. Loading assets here may cause slightly longer loading times, but will help avoid errors caused by trying to access unloaded materials.
+
+`loadImage()` needs an argument in order to find the image you want to load. In this hypothetical example, we have created a folder called "images" and loaded our file into it. Folders and sub-folders are separated with a slash `/`. You will also need to include the file name and extension. It is helpful to have a file name that is simple to spell, but still describes what the image is or is being used for. Having a typo in this line will cause the sketch to be unable to load the image and result in the following error.
+
+
+As a final note, you can also use a URL to link to an image hosted online. This is helpful as it will not take up your account's 250MB of storage, but problematic because if the file is eve changed or moved, the sketch will not update and result in a broken link and the same error message as above.
+
+By storing the image within a variable, we can then utilize it simply by calling its name like in the `background()` function above.
 
 ---
 ### Let's Practice!
 
+Using the code above as a guide, try loading your own image into the background of a p5 sketch. For ad added challenge, try loading multiple, then utilize the number keys on the keyboard to switch between them.
+
+
+---
+
+Now that we have a grasp on loading images into the sketch, let's apply them to a sprite. Sprites can display a single image, but it is more common to provide several frames in order to animate the sprite. A for loop and array can be used to easily load and group together the images into easy-to-implement formats. 
+
+```js
+
+let aniFrames = [];
+function preload(){
+  for(let i  = 0; i < 4; i++){
+aniFrames[i] = loadImage("assets/images/playerMoveAni" + i + ".png);
+  }
+}
+
+```
+
+The code above shows how you can utilize this process to quickly find and load the images into an array. It is helpful to number your image files so that they can be easily found and differentiated. It is common to see the file numbering begin with 0 in order to work with a standard for loop with minimal effort. The middle command of the for loop shows us how many frames will be in the animation. Having this number be incorrect will result in either missing frames or unfound files.
+
+Looking at `loadImage()`, we can see the string has some extra parts from the previous example. In this case, we are concatenating the strings. This means that we will take the various values and combine them into a single string. This way we can repeat the operation, but have the ID number for each file update with each iteration of the for loop.
+
+This method can be used for several animations. As long as the animations contain the same number of frames, you can utilize the same for loop, but is the number of frames differ, multiple loops will be needed in order to avoid dropped frames. 
+
+Once we have loaded the images, we can add them to the sprite in `setup()`. (We only need to use preload to load the files. after that they are available to use as needed.)
+
+To do this, we can use the ".addAni()" method. This method can be used to load animations to a sprite. Multiple animations can be loaded, but only one will be displayed at a time.
+
+```js
+mySprite.addAni("move", aniFrames[0], aniFrames[1], aniFrames[2], aniFrames[3]);
+
+```
+
+In .addAni() we first must give the animation a label. This is used for changing the animations. Each argument following the label is a frame in the animation. In the example above, the array indexes storing the images are used to indicate which files should be used. Frames can be placed in any order, repeated, or omitted as desired here.
+
+To change the animation, we can use the `.ani` property. Simply set the property equal to the label given in the `.addAni()` method.
+
+```js
+
+if(mouseIsPressed){
+mySprite.ani = "jump";
+} else {
+  mySprite.ani = "idle";
+}
+
+```
+
+---
+### Let's Practice!
 
 ---
 ## Sprite Interactions: Other Sprites
 
 
 ---
-## Sprite Interactions: The Mouse
+## Sprite Interactions: The Mouse and Keyboard
 
 
 ---
