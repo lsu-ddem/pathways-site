@@ -153,6 +153,8 @@ Below is a list of some commonly used methods with p5.play's sprites. A full lis
 ---
 ### Let's Practice!
 
+Let's load a new sprite into a sketch with p5.play. Then, using either a conditional statement or a switch, have the sprite execute a method from a total of 10 potential options using the number row kes on the keyboard. Pressing 1 will execute method A, pressing 2 executes B, 3 executes C and so on. For an added challenge, add another method that only is called when the sprite is clicked on.
+
 
 ---
 ## Sprite Animations
@@ -248,19 +250,96 @@ mySprite.ani = "jump";
 
 ```
 
----
-### Let's Practice!
 
 ---
 ## Sprite Interactions: Other Sprites
 
+p5.play utilizes three main methods to handle collisions with other sprites in a sketch. These are:
+
+* .collided()
+* .collides()
+* .colliding()
+
+In most cases, the practical differences between these is minimal, however they are all slightly unique and depending on the type of collision you are planning between sprites, you will want to use the correct one. Each of these methods will return a 1 value when their conditions are met, as well as call an optional callback function. Before we hop into the different ways to trigger a collision response, let's look a little more closely at the differences between the methods.
+
+`.collides()` will return a 1 on the first frame that two sprites are detected as colliding.
+`.colliding()` will return the number of frames that two sprites have been colliding.
+`.collided()` will return a 1 on the first frame AFTER the sprites are finished colliding and are no longer touching.
+
+All three of these methods take the same arguments. The first is the sprite or group of sprites that the computer will detect collisions with, and the second is an optional callback function.
+
+
+
+---
+### Callback Functions
+
+A callback function is a usually simple function that can be stored and called back as needed when another command is executed. In the case of sprite collisions, they will generally be formatted like this:
+
+```js
+
+function draw(){
+  mySprite.collides(enemySprite, die)
+}
+
+function die(){
+  mySprite.ani = "die";
+  mySprite.life = 60;
+  playerLives--; 
+  if(playerLives === 0){
+  gameOer();
+  } else {
+  levelReset();
+  }
+}
+
+
+```
+
+Notice how function die() indicates everything that should happen when the player collides with an enemy. In this case, the animation changes, then the sprite is removed after 60 frames. Then the number of lives decreases by one and the level either rests or moves to a game over state depending on the number of lives remaining after the decrease.
+
+To indicate a callback, you need to give its name _WITHOUT_ the parentheses. This will store the name of the function to call without immediately calling it. This is important because we do not want function to be called until the sprites collide.
+
+---
+
+### Collisions with Conditionals
+
+Remember that the callback functions are optional. Another way we can execute a collision interaction is with a basic conditional. Looking at the example below we can the formatting for this.
+
+
+```js
+// This example comes from p5play.org
+
+if (block.colliding(floor)) {
+		block.color = 'red';
+	} else block.color = 'blue';
+
+	if (block.colliding(floor) > 60) {
+		block.vel.y = -9;
+	}
+
+
+```
+
+
+This formatting works because the methods return a 1 or 0, which can be interpreted as a boolean value by the conditional.
 
 ---
 ## Sprite Interactions: The Mouse and Keyboard
 
 
+
 ---
 ### Let's Practice!
 
+At this point we should be able to load multiple animations onto a sprite and swap between them, as well as have a sprite collide with another sprite. Let's combine these two into a single sketch. 
+
+Begin by creating two sprites on the canvas and move them around using the WASD and IJKL keys respectively. Include a collision callback that will do the following to one of the sprites:
+
+* have the sprite bounce back a little from the collision.
+* change the animation of the sprite from a moving/idle animation to a death animation.
+* set the life property of the sprite to 60 frames.
+
+
+Once you have a solid grasp on setting these values, experiment with the second sprite and see what cool collision interactions you can come up with.
 
 ---
