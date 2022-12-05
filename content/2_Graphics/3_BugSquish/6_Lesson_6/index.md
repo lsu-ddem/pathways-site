@@ -61,7 +61,7 @@ To do this the formatting looks like this:
 let mySprite;
 function setup(){
 createCanvas(400,400);
-mySprite = new Sprite(100,200,50,50);
+mySprite = new Sprite(100,200,25,25);
 }
 
 ```
@@ -75,10 +75,13 @@ When we make the sprite we can give it a few arguments. the first two are always
 
 All sprites are drawn from the center regardless of the shape.
 
-By default each sprite will appear as a random color unless an image or specific color is given for the sprite to use.
+By default each sprite will appear as a random color unless an image or specific color is given for the sprite to use. The codepen sketch below shows the code above rendering a sprite.
+
+
+{{% codepen 500 bGKOLgy %}}
 
 ---
-## Sprite colors
+## Sprite Colors
 
 To set a sprite color we need to look at the `.color` property. From there we can simply set the sprite to any RBG color we want. If you need a refresher, check out the color and transparency lesson earlier in this unit.
 The code to set the color of a sprite manually looks like this:
@@ -93,8 +96,14 @@ mySprite.color = color(255,255,255) // white
 
 p5.play needs to use the color function in order to render values as an RGB color. Otherwise everything functions just as discussed in a previous chapter, except that we can talk directly to the sprite in question instead of worrying about the order of `fill()` or `stroke()`.
 
+The example below shows how we can set the color of a sprite manually. By clicking on the canvas, you can then press the return key to reset the code. Notice how no matter where the sprites are made, they always have the same color.
+
+{{% codepen 500 MWXZQQj %}}
+
+You can change the color of a sprite at any time by adjusting its `color` property.
+
 ---
-## Sprite properties
+## Sprite Properties
 
 Each sprite has a large number of properties that can be set to give the objects unique characteristics on the canvas. We have already looked at a few of them:
 
@@ -105,7 +114,7 @@ Each sprite has a large number of properties that can be set to give the objects
 * d: diameter of a circular sprite.
 * color: color of a sprite with no animation.
 
-In addition to these, a full list can be found using the [p5.play reference materials for sprites](https://p5play.org/docs/classes/Sprite.html). Some of the mroe common ones are listed below:
+In addition to these, a full list can be found using the [p5.play reference materials for sprites](https://p5play.org/docs/classes/Sprite.html). Some of the more common ones are listed below:
 
 * immovable: true or false. true make sprite unable to be moved by other objects on the canvas.
 * friction: gives the sprite a simulation of friction when moving.
@@ -126,12 +135,18 @@ mySprite.immovable = true;
 
 ```
 
+In the below sketch, you can use the keys 1-5 in order to change a property for each of the sprites on the canvas. pressing return will reset the sketch. Using something like this in our sketches can allow for sprites to react to very specific button presses.
+
+{{% codepen 500 XWYoZxa %}}
+
+Notice that the properties `.rotation` and `rotationSpeed` were not used here. Why do you think that is? Wat would you have to do in order to use those properties effectively?
+
 
 ---
 ### Let's Practice!
 
 For this practice, try spawning a sprite and setting it's properties. Have several properties set by default in setup() when you spawn the sprite. You just set the sprite values AFTER you have created the new object. 
-Then for an added challenge, try adding a conditional statement or switch so that when you press the keys 1-5 on your keyboard, each key will change a property value of you sprite, and when you press the escape key, all of the properties are set back to the default from when the sprite was spawned.
+Then for an added challenge, try adding a conditional statement or switch so that when you press the keys 1-10 on your keyboard, each key will change a property value of you sprite, and when you press the escape key, all of the properties are set back to the default from when the sprite was spawned. Look at the above code example if you are having difficulty.
 
 ---
 ## Sprite Methods
@@ -148,6 +163,10 @@ Below is a list of some commonly used methods with p5.play's sprites. A full lis
 * .colliding(sprite, callback) : returns true when the sprite is currently colliding with the designated sprite or group. An optional callback function can be called to create custom interactions. .collides() functions the same, but only returns true on the first frame of the collision. .collided() returns true on the first frame after the collision is no longer detected.
 * .overlaps(sprite) : allows sprites to overlap instead of colliding. Other methods following the same naming convention and functionality as .collided(), collides(), and .colliding() are also available.
 * .remove() : removes the sprite from the scene.
+
+The below sketch functions identically to the previous one, except that it is calling a sprite method instead of changing property values.
+
+{{% codepen 500 eYKbVwE %}}
 
 
 ---
@@ -250,6 +269,10 @@ mySprite.ani = "jump";
 
 ```
 
+That was a lot of information, but if you followed along, you will now be able to make sketches like the one below. Explore it's code so that you can see how it was made with the above parts. This is given as a link to a p5 editor so that you can see the full file directory when opened on the main webpage.
+
+<iframe src="https://editor.p5js.org/mbardin/full/Ax3LgGBcS"></iframe>
+
 
 ---
 ## Sprite Interactions: Other Sprites
@@ -321,11 +344,127 @@ if (block.colliding(floor)) {
 ```
 
 
-This formatting works because the methods return a 1 or 0, which can be interpreted as a boolean value by the conditional.
+This formatting works because the methods return a 1 or 0, which can be interpreted as a boolean value by the conditional. The example below renders these conditionals so that you can see how they can be used to setup simple interactions in the draw loop.
+
+{{% codepen 500 KKeboqv %}}
+
+We can also setup the collision methods to utilize a callback function. These are functions that bac be saved to be called when needed. Below is an example of what this would look like
+
+```js
+
+function draw(){
+  player.collides(enemy, hurt);
+}
+
+function hurt(){
+  player.ani = "damage";
+  player.moveAway(enemy);
+  player.health--;
+
+  if(player.health < 0){
+   player.ani = "death";
+   player.life = 120;
+  }
+}
+
+
+```
+
+---
+### Let's Practice!
+
+In this short practice, describe what you think will happen when the sprite called 'player' interacts with the sprite called 'enemy' as shown above. If you think you have a good idea, try making a sketch incorporating the above example to see how the sprites interact. Was everything how you expected? Were you surprised? Did you manage to find BOTH of the potential outcomes?
 
 ---
 ## Sprite Interactions: The Mouse and Keyboard
 
+To utilize the mouse and keyboard in this unit doesn't _TECHNICALLY_ require us to have p5play installed, however the library does provide several features that will make our lives a low easier.
+
+### Keyboard Inputs
+
+These methods will ONLY work with p5play installed.
+
+We can refer to the keyboard by simply calling keyboard, or the much quicker kb. Then by using the following methods, we can have the code respond to the keyboard inputs. All of the methods below return a 1 when their condition is met, with the exception of 2.
+
+* .presses() : when the key is first detected as being pressed
+* .pressing() : frames a ky has been pressed, but not held
+* .holds() : when a key is detected as being held (more than 12 frames of being pressed)
+* .holding() : frames that the key has been held
+* .released() : when a key is released
+* .held() : when a held key is released
+
+All six of these methods take an argument which indicates the button to check for an interaction on. These are formatted as a string, as shown below:
+
+```js
+
+if (kb.presses(' ')) {
+	background(0, 255, 0);
+}
+
+```
+
+In this example, taken directly from the p5play webpage, when the spacebar is pressed, the background is set to green instead of it's default color.
+
+A key is determined to be held down when it has been pressed for more than 12 frames. This can be adjusted with the `.holdThreshold` property.
+
+Lastly, a few handy shortcuts have been added when using the keyboard in p5play. These help with the creation of both single and multiplayer games using standard keyboard configurations for player movement. We can use these names when assigning keyboard reactions in the above methods:
+
+* "up" : mapped to the W & UP ARROW keys.
+* "left" : mapped to the A & LEFT ARROW keys
+* "down : mapped to the S & DOWN ARROW keys
+* "right" : mapped to the D and RIGHT ARROW keys
+* "up2" : mapped to the I key
+* "left2" : mapped to the J key
+* "down2" : mapped to the K key
+* "right2" : mapped to the L key
+
+---
+
+### Mouse Inputs
+
+We can look at the mouse as a data input method with the following methods:
+
+* .pressing() : returns 1 when the main mouse button is pressed.
+* .dragging() : returns 1 if the mouse position is moving while the mouse button is pressed.
+
+We can look at general mouse movement, or mouse interactions with a specific sprite. The example below shows that in action:
+
+```js
+
+// code by Quiton Ashley for p5play version 3
+let sprite;
+
+function setup() {
+	new Canvas(500, 100);
+	sprite = new Sprite();
+}
+
+function draw() {
+	clear();
+	sprite.color = 'yellow';
+
+	if (mouse.pressing()) {
+		sprite.color = 'red';
+	}
+	if (sprite.mouse.pressing()) {
+		sprite.color = 'green';
+	}
+
+	if (sprite.mouse.dragging()) {
+		sprite.moveTowards(
+			mouse.x + sprite.mouse.x,
+			mouse.y + sprite.mouse.y,
+			1 // full tracking
+		);
+	}
+}
+
+
+```
+
+In this example, rendered below, the sprite will respond differently depending on if the mouse is clicking on it or the background, and will allow for the user to click and drag to move the sprite around the canvas.
+
+{{% codepen 500 MWXZVbO %}}
 
 
 ---

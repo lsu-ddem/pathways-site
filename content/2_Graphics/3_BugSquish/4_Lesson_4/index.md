@@ -42,7 +42,7 @@ A property is an attribute or behaviors characteristic of a sprite. These can be
 
 ### Dot Notation
 
-In order to utilize both methods and properties you need to talk to the sprite first, and the specify the element that you want to set or adjust. we achieve this with dot notationm which is shown below;
+In order to utilize both methods and properties you need to talk to the sprite first, and the specify the element that you want to set or adjust. we achieve this with dot notation which is shown below;
 
 ```
 //method
